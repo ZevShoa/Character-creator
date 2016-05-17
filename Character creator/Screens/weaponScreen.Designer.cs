@@ -33,6 +33,7 @@
             this.axeButton = new System.Windows.Forms.Button();
             this.daggerButton = new System.Windows.Forms.Button();
             this.fistButton = new System.Windows.Forms.Button();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // swordButton
@@ -40,7 +41,7 @@
             this.swordButton.BackColor = System.Drawing.Color.MintCream;
             this.swordButton.BackgroundImage = global::Character_creator.Properties.Resources.sword;
             this.swordButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.swordButton.Location = new System.Drawing.Point(27, 35);
+            this.swordButton.Location = new System.Drawing.Point(25, 143);
             this.swordButton.Name = "swordButton";
             this.swordButton.Size = new System.Drawing.Size(175, 175);
             this.swordButton.TabIndex = 0;
@@ -52,7 +53,7 @@
             this.staffButton.BackColor = System.Drawing.Color.MintCream;
             this.staffButton.BackgroundImage = global::Character_creator.Properties.Resources.staff;
             this.staffButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.staffButton.Location = new System.Drawing.Point(127, 194);
+            this.staffButton.Location = new System.Drawing.Point(125, 302);
             this.staffButton.Name = "staffButton";
             this.staffButton.Size = new System.Drawing.Size(175, 175);
             this.staffButton.TabIndex = 1;
@@ -64,7 +65,7 @@
             this.axeButton.BackColor = System.Drawing.Color.MintCream;
             this.axeButton.BackgroundImage = global::Character_creator.Properties.Resources.axe;
             this.axeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.axeButton.Location = new System.Drawing.Point(279, 35);
+            this.axeButton.Location = new System.Drawing.Point(277, 143);
             this.axeButton.Name = "axeButton";
             this.axeButton.Size = new System.Drawing.Size(175, 175);
             this.axeButton.TabIndex = 2;
@@ -76,7 +77,7 @@
             this.daggerButton.BackColor = System.Drawing.Color.MintCream;
             this.daggerButton.BackgroundImage = global::Character_creator.Properties.Resources.dagger;
             this.daggerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.daggerButton.Location = new System.Drawing.Point(429, 194);
+            this.daggerButton.Location = new System.Drawing.Point(427, 302);
             this.daggerButton.Name = "daggerButton";
             this.daggerButton.Size = new System.Drawing.Size(175, 175);
             this.daggerButton.TabIndex = 3;
@@ -88,18 +89,28 @@
             this.fistButton.BackColor = System.Drawing.Color.MintCream;
             this.fistButton.BackgroundImage = global::Character_creator.Properties.Resources.fist;
             this.fistButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.fistButton.Location = new System.Drawing.Point(531, 35);
+            this.fistButton.Location = new System.Drawing.Point(529, 143);
             this.fistButton.Name = "fistButton";
             this.fistButton.Size = new System.Drawing.Size(175, 175);
             this.fistButton.TabIndex = 4;
             this.fistButton.UseVisualStyleBackColor = false;
             this.fistButton.Click += new System.EventHandler(this.fistButton_Click);
             // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.Location = new System.Drawing.Point(331, 58);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(0, 49);
+            this.nameLabel.TabIndex = 5;
+            // 
             // weaponScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
+            this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.fistButton);
             this.Controls.Add(this.daggerButton);
             this.Controls.Add(this.axeButton);
@@ -107,7 +118,9 @@
             this.Controls.Add(this.swordButton);
             this.Name = "weaponScreen";
             this.Size = new System.Drawing.Size(750, 500);
+            this.Load += new System.EventHandler(this.weaponScreen_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -118,5 +131,6 @@
         private System.Windows.Forms.Button axeButton;
         private System.Windows.Forms.Button daggerButton;
         private System.Windows.Forms.Button fistButton;
+        private System.Windows.Forms.Label nameLabel;
     }
 }

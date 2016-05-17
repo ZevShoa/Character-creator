@@ -16,5 +16,10 @@ namespace Character_creator
         {
             InitializeComponent();
         }
+
+        private void statScreen_Load(object sender, EventArgs e)
+        {
+            nameLabel.Text = NameScreen.name;
+        }
     }
 }

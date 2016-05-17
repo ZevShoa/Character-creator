@@ -56,5 +56,9 @@ namespace Character_creator
             f.Controls.Add(ss);
         }
 
+        private void weaponScreen_Load(object sender, EventArgs e)
+        {
+            nameLabel.Text = NameScreen.name;
+        }
     }
 }

@@ -116,6 +116,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Screens\statScreen.resx">
+      <DependentUpon>statScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\weaponScreen.resx">
       <DependentUpon>weaponScreen.cs</DependentUpon>
     </EmbeddedResource>
