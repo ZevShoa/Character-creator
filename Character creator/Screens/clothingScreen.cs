@@ -12,7 +12,7 @@ namespace Character_creator
 {
     public partial class clothingScreen : UserControl
     {
-        public string clothing;
+        public static string clothing;
         public clothingScreen()
         {
             InitializeComponent();

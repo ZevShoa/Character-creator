@@ -150,7 +150,7 @@
             // 
             this.messageLabel.AutoSize = true;
             this.messageLabel.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messageLabel.Location = new System.Drawing.Point(96, 417);
+            this.messageLabel.Location = new System.Drawing.Point(32, 426);
             this.messageLabel.Name = "messageLabel";
             this.messageLabel.Size = new System.Drawing.Size(0, 40);
             this.messageLabel.TabIndex = 10;
@@ -164,6 +164,7 @@
             this.continueButton.TabIndex = 11;
             this.continueButton.Text = "Continue";
             this.continueButton.UseVisualStyleBackColor = true;
+            this.continueButton.Click += new System.EventHandler(this.continueButton_Click);
             // 
             // backButton
             // 

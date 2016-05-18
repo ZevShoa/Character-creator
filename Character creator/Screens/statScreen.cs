@@ -12,6 +12,7 @@ namespace Character_creator
 {
     public partial class statScreen : UserControl
     {
+        int coutner = 0;
         public statScreen()
         {
             InitializeComponent();
@@ -101,6 +102,23 @@ namespace Character_creator
             weaponScreen ws = new weaponScreen();
             f.Controls.Add(ws);
             ws.Location = new Point((f.Width - ws.Width) / 2, (f.Height - ws.Height) / 2);
+        }
+
+        private void continueButton_Click(object sender, EventArgs e)
+        {
+            if (stat == 0 || coutner ==1 )
+            {
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                reviewScreen rs = new reviewScreen();
+                f.Controls.Add(rs);
+                rs.Location = new Point((f.Width - rs.Width) / 2, (f.Height - rs.Height) / 2);
+            }
+            else
+            {
+                messageLabel.Text = "You have not used all your stat points, do you still wish to continue? ";
+                coutner++;
+            }
         }
     }
 }

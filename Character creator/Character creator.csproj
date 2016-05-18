@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="Screens\reviewScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\reviewScreen.Designer.cs">
+      <DependentUpon>reviewScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\colorScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     <Compile Include="Screens\statScreen.Designer.cs">
       <DependentUpon>statScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Screens\reviewScreen.resx">
+      <DependentUpon>reviewScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\colorScreen.resx">
       <DependentUpon>colorScreen.cs</DependentUpon>
     </EmbeddedResource>
