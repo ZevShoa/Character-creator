@@ -35,6 +35,12 @@
             this.energyMinusButton = new System.Windows.Forms.Button();
             this.healthMinusButton = new System.Windows.Forms.Button();
             this.energyPlusButton = new System.Windows.Forms.Button();
+            this.statLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.messageLabel = new System.Windows.Forms.Label();
+            this.continueButton = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -50,21 +56,21 @@
             // 
             this.healthLabel.AutoSize = true;
             this.healthLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.healthLabel.Location = new System.Drawing.Point(311, 163);
+            this.healthLabel.Location = new System.Drawing.Point(338, 163);
             this.healthLabel.Name = "healthLabel";
-            this.healthLabel.Size = new System.Drawing.Size(92, 49);
+            this.healthLabel.Size = new System.Drawing.Size(38, 49);
             this.healthLabel.TabIndex = 1;
-            this.healthLabel.Text = "label1";
+            this.healthLabel.Text = "5";
             // 
             // energyLabel
             // 
             this.energyLabel.AutoSize = true;
             this.energyLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.energyLabel.Location = new System.Drawing.Point(307, 296);
+            this.energyLabel.Location = new System.Drawing.Point(338, 296);
             this.energyLabel.Name = "energyLabel";
-            this.energyLabel.Size = new System.Drawing.Size(100, 49);
+            this.energyLabel.Size = new System.Drawing.Size(38, 49);
             this.energyLabel.TabIndex = 2;
-            this.energyLabel.Text = "label2";
+            this.energyLabel.Text = "5";
             // 
             // healthPlusButton
             // 
@@ -75,6 +81,7 @@
             this.healthPlusButton.TabIndex = 3;
             this.healthPlusButton.Text = "+";
             this.healthPlusButton.UseVisualStyleBackColor = true;
+            this.healthPlusButton.Click += new System.EventHandler(this.healthPlusButton_Click);
             // 
             // energyMinusButton
             // 
@@ -85,6 +92,7 @@
             this.energyMinusButton.TabIndex = 4;
             this.energyMinusButton.Text = "-";
             this.energyMinusButton.UseVisualStyleBackColor = true;
+            this.energyMinusButton.Click += new System.EventHandler(this.energyMinusButton_Click);
             // 
             // healthMinusButton
             // 
@@ -95,6 +103,7 @@
             this.healthMinusButton.TabIndex = 5;
             this.healthMinusButton.Text = "-";
             this.healthMinusButton.UseVisualStyleBackColor = true;
+            this.healthMinusButton.Click += new System.EventHandler(this.healthMinusButton_Click);
             // 
             // energyPlusButton
             // 
@@ -105,11 +114,78 @@
             this.energyPlusButton.TabIndex = 6;
             this.energyPlusButton.Text = "+";
             this.energyPlusButton.UseVisualStyleBackColor = true;
+            this.energyPlusButton.Click += new System.EventHandler(this.energyPlusButton_Click);
+            // 
+            // statLabel
+            // 
+            this.statLabel.AutoSize = true;
+            this.statLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statLabel.Location = new System.Drawing.Point(621, 24);
+            this.statLabel.Name = "statLabel";
+            this.statLabel.Size = new System.Drawing.Size(92, 49);
+            this.statLabel.TabIndex = 7;
+            this.statLabel.Text = "label1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(70, 163);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 49);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Health:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(70, 298);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 49);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Energy:";
+            // 
+            // messageLabel
+            // 
+            this.messageLabel.AutoSize = true;
+            this.messageLabel.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.messageLabel.Location = new System.Drawing.Point(96, 417);
+            this.messageLabel.Name = "messageLabel";
+            this.messageLabel.Size = new System.Drawing.Size(0, 40);
+            this.messageLabel.TabIndex = 10;
+            // 
+            // continueButton
+            // 
+            this.continueButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.continueButton.Location = new System.Drawing.Point(532, 208);
+            this.continueButton.Name = "continueButton";
+            this.continueButton.Size = new System.Drawing.Size(181, 105);
+            this.continueButton.TabIndex = 11;
+            this.continueButton.Text = "Continue";
+            this.continueButton.UseVisualStyleBackColor = true;
+            // 
+            // backButton
+            // 
+            this.backButton.Font = new System.Drawing.Font("Agency FB", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.Location = new System.Drawing.Point(21, 24);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(75, 60);
+            this.backButton.TabIndex = 12;
+            this.backButton.Text = "↩";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // statScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.continueButton);
+            this.Controls.Add(this.messageLabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.statLabel);
             this.Controls.Add(this.energyPlusButton);
             this.Controls.Add(this.healthMinusButton);
             this.Controls.Add(this.energyMinusButton);
@@ -134,5 +210,11 @@
         private System.Windows.Forms.Button energyMinusButton;
         private System.Windows.Forms.Button healthMinusButton;
         private System.Windows.Forms.Button energyPlusButton;
+        private System.Windows.Forms.Label statLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label messageLabel;
+        private System.Windows.Forms.Button continueButton;
+        private System.Windows.Forms.Button backButton;
     }
 }

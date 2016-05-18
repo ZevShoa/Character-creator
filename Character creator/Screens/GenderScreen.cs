@@ -59,6 +59,17 @@ namespace Character_creator
             f.Controls.Remove(this);
             colorScreen cs = new colorScreen();
             f.Controls.Add(cs);
+            cs.Location = new Point((f.Width - cs.Width) / 2, (f.Height - cs.Height) / 2);
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+           NameScreen ns = new NameScreen();
+            f.Controls.Add(ns);
+            ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
+
         }
     }
 }

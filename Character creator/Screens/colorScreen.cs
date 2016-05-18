@@ -98,7 +98,16 @@ namespace Character_creator
             f.Controls.Remove(this);
             clothingScreen cs = new clothingScreen();
             f.Controls.Add(cs);
+            cs.Location = new Point((f.Width - cs.Width) / 2, (f.Height - cs.Height) / 2);
         }
 
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            GenderScreen gs = new GenderScreen();
+            f.Controls.Add(gs);
+            gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+        }
     }
 }

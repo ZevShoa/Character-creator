@@ -33,7 +33,7 @@
             // Form1
             // 
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(500, 300);
+            this.ClientSize = new System.Drawing.Size(690, 491);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";

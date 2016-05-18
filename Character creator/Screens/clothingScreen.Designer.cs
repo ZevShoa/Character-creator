@@ -35,13 +35,14 @@
             this.deprivedButton = new System.Windows.Forms.Button();
             this.nameLabel = new System.Windows.Forms.Label();
             this.clothingBox = new System.Windows.Forms.PictureBox();
+            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.clothingBox)).BeginInit();
             this.SuspendLayout();
             // 
             // knightButton
             // 
             this.knightButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.knightButton.Location = new System.Drawing.Point(34, 0);
+            this.knightButton.Location = new System.Drawing.Point(28, 409);
             this.knightButton.Name = "knightButton";
             this.knightButton.Size = new System.Drawing.Size(100, 100);
             this.knightButton.TabIndex = 0;
@@ -54,7 +55,7 @@
             // peasentButton
             // 
             this.peasentButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.peasentButton.Location = new System.Drawing.Point(180, 0);
+            this.peasentButton.Location = new System.Drawing.Point(177, 409);
             this.peasentButton.Name = "peasentButton";
             this.peasentButton.Size = new System.Drawing.Size(100, 100);
             this.peasentButton.TabIndex = 1;
@@ -67,7 +68,7 @@
             // mageButton
             // 
             this.mageButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mageButton.Location = new System.Drawing.Point(326, 0);
+            this.mageButton.Location = new System.Drawing.Point(326, 409);
             this.mageButton.Name = "mageButton";
             this.mageButton.Size = new System.Drawing.Size(100, 100);
             this.mageButton.TabIndex = 2;
@@ -80,7 +81,7 @@
             // rogueButton
             // 
             this.rogueButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rogueButton.Location = new System.Drawing.Point(472, 0);
+            this.rogueButton.Location = new System.Drawing.Point(475, 409);
             this.rogueButton.Name = "rogueButton";
             this.rogueButton.Size = new System.Drawing.Size(100, 100);
             this.rogueButton.TabIndex = 3;
@@ -93,7 +94,7 @@
             // deprivedButton
             // 
             this.deprivedButton.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deprivedButton.Location = new System.Drawing.Point(618, 0);
+            this.deprivedButton.Location = new System.Drawing.Point(624, 409);
             this.deprivedButton.Name = "deprivedButton";
             this.deprivedButton.Size = new System.Drawing.Size(100, 100);
             this.deprivedButton.TabIndex = 4;
@@ -115,18 +116,30 @@
             // clothingBox
             // 
             this.clothingBox.InitialImage = null;
-            this.clothingBox.Location = new System.Drawing.Point(227, 100);
+            this.clothingBox.Location = new System.Drawing.Point(218, 3);
             this.clothingBox.Name = "clothingBox";
             this.clothingBox.Size = new System.Drawing.Size(300, 400);
             this.clothingBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.clothingBox.TabIndex = 6;
             this.clothingBox.TabStop = false;
             // 
+            // backButton
+            // 
+            this.backButton.Font = new System.Drawing.Font("Agency FB", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.Location = new System.Drawing.Point(28, 18);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(75, 60);
+            this.backButton.TabIndex = 7;
+            this.backButton.Text = "↩";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // clothingScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.clothingBox);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.deprivedButton);
@@ -135,7 +148,7 @@
             this.Controls.Add(this.peasentButton);
             this.Controls.Add(this.knightButton);
             this.Name = "clothingScreen";
-            this.Size = new System.Drawing.Size(750, 500);
+            this.Size = new System.Drawing.Size(750, 543);
             this.Load += new System.EventHandler(this.clothingScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.clothingBox)).EndInit();
             this.ResumeLayout(false);
@@ -152,5 +165,6 @@
         private System.Windows.Forms.Button deprivedButton;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.PictureBox clothingBox;
+        private System.Windows.Forms.Button backButton;
     }
 }

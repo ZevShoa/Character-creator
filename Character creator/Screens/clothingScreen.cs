@@ -111,9 +111,16 @@ namespace Character_creator
             f.Controls.Remove(this);
             weaponScreen ws = new weaponScreen();
             f.Controls.Add(ws);
-          
-
+            ws.Location = new Point((f.Width - ws.Width) / 2, (f.Height - ws.Height) / 2);
         }
 
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            colorScreen cs = new colorScreen();
+            f.Controls.Add(cs);
+            cs.Location = new Point((f.Width - cs.Width) / 2, (f.Height - cs.Height) / 2);
+        }
     }
 }
