@@ -12,6 +12,7 @@ namespace Character_creator
 {
     public partial class reviewScreen : UserControl
     {
+        
         public reviewScreen()
         {
             InitializeComponent();
@@ -19,7 +20,8 @@ namespace Character_creator
         Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, statScreen.healthStat, statScreen.energyStat);
         private void reviewScreen_Load(object sender, EventArgs e)
         {
-            label1.Text = ch.name;
+            nameLabel.Text = ch.name;
+            classLabel.Text = ch.clothes;
         }
     }
 }
