@@ -35,6 +35,9 @@
             this.enrgyLabel = new System.Windows.Forms.Label();
             this.colorLabel = new System.Windows.Forms.Label();
             this.finalPictureBox = new System.Windows.Forms.PictureBox();
+            this.genderLabel = new System.Windows.Forms.Label();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.finalPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,7 +55,7 @@
             // 
             this.classLabel.AutoSize = true;
             this.classLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.classLabel.Location = new System.Drawing.Point(267, 137);
+            this.classLabel.Location = new System.Drawing.Point(267, 174);
             this.classLabel.Name = "classLabel";
             this.classLabel.Size = new System.Drawing.Size(93, 49);
             this.classLabel.TabIndex = 1;
@@ -92,7 +95,7 @@
             // 
             this.colorLabel.AutoSize = true;
             this.colorLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorLabel.Location = new System.Drawing.Point(267, 227);
+            this.colorLabel.Location = new System.Drawing.Point(267, 279);
             this.colorLabel.Name = "colorLabel";
             this.colorLabel.Size = new System.Drawing.Size(98, 49);
             this.colorLabel.TabIndex = 5;
@@ -100,17 +103,52 @@
             // 
             // finalPictureBox
             // 
-            this.finalPictureBox.Location = new System.Drawing.Point(611, 225);
+            this.finalPictureBox.Location = new System.Drawing.Point(522, 133);
             this.finalPictureBox.Name = "finalPictureBox";
             this.finalPictureBox.Size = new System.Drawing.Size(100, 50);
             this.finalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.finalPictureBox.TabIndex = 6;
             this.finalPictureBox.TabStop = false;
             // 
+            // genderLabel
+            // 
+            this.genderLabel.AutoSize = true;
+            this.genderLabel.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genderLabel.Location = new System.Drawing.Point(269, 116);
+            this.genderLabel.Name = "genderLabel";
+            this.genderLabel.Size = new System.Drawing.Size(88, 40);
+            this.genderLabel.TabIndex = 7;
+            this.genderLabel.Text = "Gender";
+            // 
+            // saveButton
+            // 
+            this.saveButton.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.Location = new System.Drawing.Point(141, 411);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(420, 69);
+            this.saveButton.TabIndex = 8;
+            this.saveButton.Text = "Save and Play";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // backButton
+            // 
+            this.backButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.Location = new System.Drawing.Point(36, 28);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(67, 66);
+            this.backButton.TabIndex = 9;
+            this.backButton.Text = "↩";
+            this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // reviewScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.genderLabel);
             this.Controls.Add(this.finalPictureBox);
             this.Controls.Add(this.colorLabel);
             this.Controls.Add(this.enrgyLabel);
@@ -136,5 +174,8 @@
         private System.Windows.Forms.Label enrgyLabel;
         private System.Windows.Forms.Label colorLabel;
         private System.Windows.Forms.PictureBox finalPictureBox;
+        private System.Windows.Forms.Label genderLabel;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button backButton;
     }
 }
