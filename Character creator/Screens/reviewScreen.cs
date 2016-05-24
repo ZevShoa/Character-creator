@@ -536,7 +536,7 @@ namespace Character_creator
                 #endregion
             }
 
-
+//d
             if (ch.gender == "female")
             {
                 #region female
