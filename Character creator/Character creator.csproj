@@ -133,6 +133,9 @@
     <Compile Include="Screens\statScreen.Designer.cs">
       <DependentUpon>statScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Screens\OptionsScreen.resx">
+      <DependentUpon>OptionsScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\reviewScreen.resx">
       <DependentUpon>reviewScreen.cs</DependentUpon>
     </EmbeddedResource>
