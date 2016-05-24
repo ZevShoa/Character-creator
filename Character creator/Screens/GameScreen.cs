@@ -16,5 +16,9 @@ namespace Character_creator
         {
             InitializeComponent();
         }
+
+        private void GameScreen_Load(object sender, EventArgs e)
+        {
+        }
     }
 }

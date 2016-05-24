@@ -16,5 +16,30 @@ namespace Character_creator
         {
             InitializeComponent();
         }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newUserButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void leaderboardButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void optionsButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
