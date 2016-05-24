@@ -22,10 +22,11 @@ namespace Character_creator
         private void Form1_Load(object sender, EventArgs e)
         {
             Form f = this.FindForm();
-            f.Controls.Remove(this);
-            NameScreen ns = new NameScreen();
-            this.Controls.Add(ns);
-            ns.Location = new Point((this.Width - ns.Width) / 2, (this.Height - ns.Height) / 2);
+            f.Controls.Remove(this);
+
+            signUpScreen sus = new signUpScreen();
+            this.Controls.Add(sus);
+            sus.Location = new Point((this.Width - sus.Width) / 2, (this.Height - sus.Height) / 2);
         }
     }
 }
