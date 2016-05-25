@@ -133,6 +133,10 @@
     <Compile Include="Screens\statScreen.Designer.cs">
       <DependentUpon>statScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\signUpScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\signUpScreen.Designer.cs" />
     <EmbeddedResource Include="BattleScreen.resx">
       <DependentUpon>BattleScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +189,7 @@
     <EmbeddedResource Include="Screens\weaponScreen.resx">
       <DependentUpon>weaponScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\signUpScreen.resx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
