@@ -28,18 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.backButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.updatesLabel = new System.Windows.Forms.Label();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.SystemColors.Control;
+            this.backButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.ForeColor = System.Drawing.Color.Black;
+            this.backButton.Location = new System.Drawing.Point(3, 3);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(99, 62);
+            this.backButton.TabIndex = 10;
+            this.backButton.Text = "↩";
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // exitButton
+            // 
+            this.exitButton.BackColor = System.Drawing.Color.Maroon;
+            this.exitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.ForeColor = System.Drawing.Color.White;
+            this.exitButton.Location = new System.Drawing.Point(691, 3);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(59, 50);
+            this.exitButton.TabIndex = 9;
+            this.exitButton.Text = "X";
+            this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // updatesLabel
+            // 
+            this.updatesLabel.BackColor = System.Drawing.Color.White;
+            this.updatesLabel.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatesLabel.Location = new System.Drawing.Point(159, 129);
+            this.updatesLabel.Name = "updatesLabel";
+            this.updatesLabel.Size = new System.Drawing.Size(478, 351);
+            this.updatesLabel.TabIndex = 8;
+            this.updatesLabel.Text = "Top Scores:";
+            // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Location = new System.Drawing.Point(299, 47);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(227, 59);
+            this.titleLabel.TabIndex = 7;
+            this.titleLabel.Text = "Leaderboard";
             // 
             // LeaderboardScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.updatesLabel);
+            this.Controls.Add(this.titleLabel);
             this.Name = "LeaderboardScreen";
             this.Size = new System.Drawing.Size(750, 500);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Label updatesLabel;
+        private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.Button exitButton;
     }
 }
