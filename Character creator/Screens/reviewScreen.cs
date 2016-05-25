@@ -1058,8 +1058,18 @@ namespace Character_creator
         {
             XmlTextWriter writer = new XmlTextWriter(ch.name+".xml", null);
 
+            writer.WriteStartElement("Character");
             writer.WriteStartElement(ch.name);
-            writer.WriteStartElement("Student");
+            writer.WriteElementString("name", ch.name);
+            writer.WriteElementString("class", ch.clothes);
+            writer.WriteElementString("color", ch.color);
+            writer.WriteElementString("weapon", ch.weapon);
+            writer.WriteElementString("gender", ch.gender);
+            writer.WriteElementString("health Stat", Convert.ToString(ch.healthStat));
+            writer.WriteElementString("energy Stat", Convert.ToString(ch.energyStat));
+            writer.WriteEndElement();
+            writer.WriteEndElement();            writer.Close();
+
 
         }
     }
