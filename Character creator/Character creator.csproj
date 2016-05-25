@@ -133,6 +133,21 @@
     <Compile Include="Screens\statScreen.Designer.cs">
       <DependentUpon>statScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BattleScreen.resx">
+      <DependentUpon>BattleScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\GameScreen.resx">
+      <DependentUpon>GameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LeaderboardScreen.resx">
+      <DependentUpon>LeaderboardScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoginScreen.resx">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\OptionsScreen.resx">
       <DependentUpon>OptionsScreen.cs</DependentUpon>
     </EmbeddedResource>
