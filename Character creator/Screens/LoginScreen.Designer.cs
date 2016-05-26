@@ -57,7 +57,7 @@
             this.exitButton.BackColor = System.Drawing.Color.Maroon;
             this.exitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(978, 3);
+            this.exitButton.Location = new System.Drawing.Point(989, 3);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(58, 63);
             this.exitButton.TabIndex = 13;

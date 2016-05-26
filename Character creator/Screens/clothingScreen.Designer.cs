@@ -34,8 +34,8 @@
             this.rogueButton = new System.Windows.Forms.Button();
             this.deprivedButton = new System.Windows.Forms.Button();
             this.nameLabel = new System.Windows.Forms.Label();
-            this.clothingBox = new System.Windows.Forms.PictureBox();
             this.backButton = new System.Windows.Forms.Button();
+            this.clothingBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.clothingBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,16 +113,6 @@
             this.nameLabel.Size = new System.Drawing.Size(0, 40);
             this.nameLabel.TabIndex = 5;
             // 
-            // clothingBox
-            // 
-            this.clothingBox.InitialImage = null;
-            this.clothingBox.Location = new System.Drawing.Point(218, 3);
-            this.clothingBox.Name = "clothingBox";
-            this.clothingBox.Size = new System.Drawing.Size(300, 400);
-            this.clothingBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.clothingBox.TabIndex = 6;
-            this.clothingBox.TabStop = false;
-            // 
             // backButton
             // 
             this.backButton.Font = new System.Drawing.Font("Agency FB", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -134,11 +124,23 @@
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // clothingBox
+            // 
+            this.clothingBox.BackColor = System.Drawing.Color.Transparent;
+            this.clothingBox.InitialImage = null;
+            this.clothingBox.Location = new System.Drawing.Point(218, 3);
+            this.clothingBox.Name = "clothingBox";
+            this.clothingBox.Size = new System.Drawing.Size(300, 400);
+            this.clothingBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.clothingBox.TabIndex = 6;
+            this.clothingBox.TabStop = false;
+            // 
             // clothingScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
+            this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.clothingBox);
             this.Controls.Add(this.nameLabel);

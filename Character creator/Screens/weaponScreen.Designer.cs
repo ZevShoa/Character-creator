@@ -39,7 +39,7 @@
             // 
             // swordButton
             // 
-            this.swordButton.BackColor = System.Drawing.Color.MintCream;
+            this.swordButton.BackColor = System.Drawing.Color.Transparent;
             this.swordButton.BackgroundImage = global::Character_creator.Properties.Resources.sword;
             this.swordButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.swordButton.Location = new System.Drawing.Point(25, 143);
@@ -51,7 +51,7 @@
             // 
             // staffButton
             // 
-            this.staffButton.BackColor = System.Drawing.Color.MintCream;
+            this.staffButton.BackColor = System.Drawing.Color.Transparent;
             this.staffButton.BackgroundImage = global::Character_creator.Properties.Resources.staff;
             this.staffButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.staffButton.Location = new System.Drawing.Point(125, 302);
@@ -63,7 +63,7 @@
             // 
             // axeButton
             // 
-            this.axeButton.BackColor = System.Drawing.Color.MintCream;
+            this.axeButton.BackColor = System.Drawing.Color.Transparent;
             this.axeButton.BackgroundImage = global::Character_creator.Properties.Resources.axe;
             this.axeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.axeButton.Location = new System.Drawing.Point(277, 143);
@@ -75,7 +75,7 @@
             // 
             // daggerButton
             // 
-            this.daggerButton.BackColor = System.Drawing.Color.MintCream;
+            this.daggerButton.BackColor = System.Drawing.Color.Transparent;
             this.daggerButton.BackgroundImage = global::Character_creator.Properties.Resources.dagger;
             this.daggerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.daggerButton.Location = new System.Drawing.Point(427, 302);
@@ -87,7 +87,7 @@
             // 
             // fistButton
             // 
-            this.fistButton.BackColor = System.Drawing.Color.MintCream;
+            this.fistButton.BackColor = System.Drawing.Color.Transparent;
             this.fistButton.BackgroundImage = global::Character_creator.Properties.Resources.fist;
             this.fistButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.fistButton.Location = new System.Drawing.Point(529, 143);
@@ -122,6 +122,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
+            this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.fistButton);

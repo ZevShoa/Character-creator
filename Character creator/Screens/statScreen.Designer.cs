@@ -55,7 +55,9 @@
             // healthLabel
             // 
             this.healthLabel.AutoSize = true;
+            this.healthLabel.BackColor = System.Drawing.Color.Transparent;
             this.healthLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.healthLabel.ForeColor = System.Drawing.Color.White;
             this.healthLabel.Location = new System.Drawing.Point(338, 163);
             this.healthLabel.Name = "healthLabel";
             this.healthLabel.Size = new System.Drawing.Size(38, 49);
@@ -65,7 +67,9 @@
             // energyLabel
             // 
             this.energyLabel.AutoSize = true;
+            this.energyLabel.BackColor = System.Drawing.Color.Transparent;
             this.energyLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.energyLabel.ForeColor = System.Drawing.Color.White;
             this.energyLabel.Location = new System.Drawing.Point(338, 296);
             this.energyLabel.Name = "energyLabel";
             this.energyLabel.Size = new System.Drawing.Size(38, 49);
@@ -119,7 +123,9 @@
             // statLabel
             // 
             this.statLabel.AutoSize = true;
+            this.statLabel.BackColor = System.Drawing.Color.Transparent;
             this.statLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statLabel.ForeColor = System.Drawing.Color.White;
             this.statLabel.Location = new System.Drawing.Point(621, 24);
             this.statLabel.Name = "statLabel";
             this.statLabel.Size = new System.Drawing.Size(92, 49);
@@ -129,7 +135,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(70, 163);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 49);
@@ -139,7 +147,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(70, 298);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 49);
@@ -181,6 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.continueButton);
             this.Controls.Add(this.messageLabel);

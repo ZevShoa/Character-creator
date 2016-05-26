@@ -48,7 +48,9 @@
             // nameChooseLabel
             // 
             this.nameChooseLabel.AutoSize = true;
+            this.nameChooseLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameChooseLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold);
+            this.nameChooseLabel.ForeColor = System.Drawing.Color.White;
             this.nameChooseLabel.Location = new System.Drawing.Point(148, 13);
             this.nameChooseLabel.Name = "nameChooseLabel";
             this.nameChooseLabel.Size = new System.Drawing.Size(243, 44);
@@ -92,6 +94,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
+            this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.continueButton);
             this.Controls.Add(this.ranNameButton);

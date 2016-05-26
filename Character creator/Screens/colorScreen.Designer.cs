@@ -101,6 +101,7 @@
             // 
             // colorBox
             // 
+            this.colorBox.BackColor = System.Drawing.Color.Transparent;
             this.colorBox.Location = new System.Drawing.Point(234, 64);
             this.colorBox.Name = "colorBox";
             this.colorBox.Size = new System.Drawing.Size(300, 400);
@@ -124,6 +125,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
+            this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.colorBox);

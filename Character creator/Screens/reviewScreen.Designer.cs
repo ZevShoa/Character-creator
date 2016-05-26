@@ -44,68 +44,80 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Font = new System.Drawing.Font("Agency FB", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel.Location = new System.Drawing.Point(212, 0);
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.nameLabel.Font = new System.Drawing.Font("Agency FB", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.ForeColor = System.Drawing.Color.White;
+            this.nameLabel.Location = new System.Drawing.Point(261, 6);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(214, 116);
+            this.nameLabel.Size = new System.Drawing.Size(177, 88);
             this.nameLabel.TabIndex = 0;
-            this.nameLabel.Text = "name";
+            this.nameLabel.Text = "Name";
             // 
             // classLabel
             // 
             this.classLabel.AutoSize = true;
-            this.classLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.classLabel.Location = new System.Drawing.Point(267, 174);
+            this.classLabel.BackColor = System.Drawing.Color.Transparent;
+            this.classLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.classLabel.ForeColor = System.Drawing.Color.White;
+            this.classLabel.Location = new System.Drawing.Point(267, 211);
             this.classLabel.Name = "classLabel";
-            this.classLabel.Size = new System.Drawing.Size(93, 49);
+            this.classLabel.Size = new System.Drawing.Size(105, 50);
             this.classLabel.TabIndex = 1;
-            this.classLabel.Text = "class";
+            this.classLabel.Text = "Class:";
             // 
             // weaponLabel
             // 
             this.weaponLabel.AutoSize = true;
-            this.weaponLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weaponLabel.Location = new System.Drawing.Point(23, 197);
+            this.weaponLabel.BackColor = System.Drawing.Color.Transparent;
+            this.weaponLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weaponLabel.ForeColor = System.Drawing.Color.White;
+            this.weaponLabel.Location = new System.Drawing.Point(27, 103);
             this.weaponLabel.Name = "weaponLabel";
-            this.weaponLabel.Size = new System.Drawing.Size(121, 49);
+            this.weaponLabel.Size = new System.Drawing.Size(134, 50);
             this.weaponLabel.TabIndex = 2;
-            this.weaponLabel.Text = "weapon";
+            this.weaponLabel.Text = "Weapon:";
             // 
             // healthLabel
             // 
             this.healthLabel.AutoSize = true;
-            this.healthLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.healthLabel.Location = new System.Drawing.Point(23, 291);
+            this.healthLabel.BackColor = System.Drawing.Color.Transparent;
+            this.healthLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.healthLabel.ForeColor = System.Drawing.Color.White;
+            this.healthLabel.Location = new System.Drawing.Point(27, 201);
             this.healthLabel.Name = "healthLabel";
-            this.healthLabel.Size = new System.Drawing.Size(108, 49);
+            this.healthLabel.Size = new System.Drawing.Size(115, 50);
             this.healthLabel.TabIndex = 3;
             this.healthLabel.Text = "Health:";
             // 
             // enrgyLabel
             // 
             this.enrgyLabel.AutoSize = true;
-            this.enrgyLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.enrgyLabel.Location = new System.Drawing.Point(27, 359);
+            this.enrgyLabel.BackColor = System.Drawing.Color.Transparent;
+            this.enrgyLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enrgyLabel.ForeColor = System.Drawing.Color.White;
+            this.enrgyLabel.Location = new System.Drawing.Point(27, 299);
             this.enrgyLabel.Name = "enrgyLabel";
-            this.enrgyLabel.Size = new System.Drawing.Size(117, 49);
+            this.enrgyLabel.Size = new System.Drawing.Size(122, 50);
             this.enrgyLabel.TabIndex = 4;
             this.enrgyLabel.Text = "Energy:";
             // 
             // colorLabel
             // 
             this.colorLabel.AutoSize = true;
-            this.colorLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.colorLabel.Location = new System.Drawing.Point(267, 279);
+            this.colorLabel.BackColor = System.Drawing.Color.Transparent;
+            this.colorLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.colorLabel.ForeColor = System.Drawing.Color.White;
+            this.colorLabel.Location = new System.Drawing.Point(267, 316);
             this.colorLabel.Name = "colorLabel";
-            this.colorLabel.Size = new System.Drawing.Size(98, 49);
+            this.colorLabel.Size = new System.Drawing.Size(103, 50);
             this.colorLabel.TabIndex = 5;
             this.colorLabel.Text = "Color:";
             // 
             // finalPictureBox
             // 
-            this.finalPictureBox.Location = new System.Drawing.Point(522, 133);
+            this.finalPictureBox.Location = new System.Drawing.Point(521, 106);
             this.finalPictureBox.Name = "finalPictureBox";
-            this.finalPictureBox.Size = new System.Drawing.Size(100, 50);
+            this.finalPictureBox.Size = new System.Drawing.Size(198, 243);
             this.finalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.finalPictureBox.TabIndex = 6;
             this.finalPictureBox.TabStop = false;
@@ -113,12 +125,14 @@
             // genderLabel
             // 
             this.genderLabel.AutoSize = true;
-            this.genderLabel.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genderLabel.Location = new System.Drawing.Point(269, 116);
+            this.genderLabel.BackColor = System.Drawing.Color.Transparent;
+            this.genderLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genderLabel.ForeColor = System.Drawing.Color.White;
+            this.genderLabel.Location = new System.Drawing.Point(267, 106);
             this.genderLabel.Name = "genderLabel";
-            this.genderLabel.Size = new System.Drawing.Size(88, 40);
+            this.genderLabel.Size = new System.Drawing.Size(127, 50);
             this.genderLabel.TabIndex = 7;
-            this.genderLabel.Text = "Gender";
+            this.genderLabel.Text = "Gender:";
             // 
             // saveButton
             // 
@@ -146,6 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.genderLabel);
