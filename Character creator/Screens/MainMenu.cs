@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// May 26 - updated UI
+
 namespace Character_creator
 {
     public partial class MainMenu : UserControl

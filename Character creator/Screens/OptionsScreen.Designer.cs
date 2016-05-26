@@ -78,7 +78,7 @@
             this.volumeBar.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.volumeBar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.volumeBar.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.volumeBar.Location = new System.Drawing.Point(251, 198);
+            this.volumeBar.Location = new System.Drawing.Point(180, 209);
             this.volumeBar.Name = "volumeBar";
             this.volumeBar.Size = new System.Drawing.Size(361, 11);
             this.volumeBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
