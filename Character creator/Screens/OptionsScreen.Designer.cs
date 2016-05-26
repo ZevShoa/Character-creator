@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OptionsScreen));
             this.optionsLabel = new System.Windows.Forms.Label();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.menuButton = new System.Windows.Forms.Button();
+            this.volumeBar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // optionsLabel
@@ -44,11 +47,52 @@
             this.optionsLabel.TabIndex = 0;
             this.optionsLabel.Text = "OPTIONS";
             // 
+            // exitButton
+            // 
+            this.exitButton.BackColor = System.Drawing.Color.Maroon;
+            this.exitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.ForeColor = System.Drawing.Color.White;
+            this.exitButton.Location = new System.Drawing.Point(659, 2);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(2);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(39, 32);
+            this.exitButton.TabIndex = 3;
+            this.exitButton.Text = "X";
+            this.exitButton.UseVisualStyleBackColor = false;
+            // 
+            // menuButton
+            // 
+            this.menuButton.BackColor = System.Drawing.SystemColors.Control;
+            this.menuButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuButton.ForeColor = System.Drawing.Color.Black;
+            this.menuButton.Location = new System.Drawing.Point(2, 2);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(2);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(136, 40);
+            this.menuButton.TabIndex = 5;
+            this.menuButton.Text = "Main Menu";
+            this.menuButton.UseVisualStyleBackColor = false;
+            // 
+            // volumeBar
+            // 
+            this.volumeBar.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.volumeBar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.volumeBar.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.volumeBar.Location = new System.Drawing.Point(251, 198);
+            this.volumeBar.Name = "volumeBar";
+            this.volumeBar.Size = new System.Drawing.Size(361, 11);
+            this.volumeBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.volumeBar.TabIndex = 8;
+            this.volumeBar.Value = 54;
+            // 
             // OptionsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.volumeBar);
+            this.Controls.Add(this.menuButton);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.optionsLabel);
             this.Name = "OptionsScreen";
             this.Size = new System.Drawing.Size(700, 500);
@@ -60,5 +104,8 @@
         #endregion
 
         private System.Windows.Forms.Label optionsLabel;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button menuButton;
+        private System.Windows.Forms.ProgressBar volumeBar;
     }
 }
