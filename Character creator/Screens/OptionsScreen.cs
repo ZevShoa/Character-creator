@@ -16,5 +16,23 @@ namespace Character_creator
         {
             InitializeComponent();
         }
+
+        private void volumeBar_Click(object sender, EventArgs e)
+        {
+            //int value = 
+        }
+
+        private void OptionsScreen_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void volumeBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            //int x = e.X;
+            volumeBar.Value = e.X;
+
+           // int temp = 0;
+        }
     }
 }

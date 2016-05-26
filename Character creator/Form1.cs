@@ -22,6 +22,9 @@ namespace Character_creator
             Form f = this.FindForm();
             f.Controls.Remove(this);
 
+            //OptionsScreen os = new OptionsScreen();
+            //this.Controls.Add(os);
+
             //signUpScreen sus = new signUpScreen();
             //this.Controls.Add(sus);
             //sus.Location = new Point((this.Width - sus.Width) / 2, (this.Height - sus.Height) / 2);
