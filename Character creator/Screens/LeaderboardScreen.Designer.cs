@@ -52,9 +52,9 @@
             this.exitButton.BackColor = System.Drawing.Color.Maroon;
             this.exitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(691, 3);
+            this.exitButton.Location = new System.Drawing.Point(988, 3);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(59, 50);
+            this.exitButton.Size = new System.Drawing.Size(58, 49);
             this.exitButton.TabIndex = 9;
             this.exitButton.Text = "X";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -63,20 +63,20 @@
             // updatesLabel
             // 
             this.updatesLabel.BackColor = System.Drawing.Color.White;
-            this.updatesLabel.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatesLabel.Location = new System.Drawing.Point(159, 129);
+            this.updatesLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updatesLabel.Location = new System.Drawing.Point(89, 177);
             this.updatesLabel.Name = "updatesLabel";
-            this.updatesLabel.Size = new System.Drawing.Size(478, 351);
+            this.updatesLabel.Size = new System.Drawing.Size(857, 559);
             this.updatesLabel.TabIndex = 8;
             this.updatesLabel.Text = "Top Scores:";
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Agency FB", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(299, 47);
+            this.titleLabel.Font = new System.Drawing.Font("Agency FB", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.Location = new System.Drawing.Point(325, 52);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(227, 59);
+            this.titleLabel.Size = new System.Drawing.Size(360, 88);
             this.titleLabel.TabIndex = 7;
             this.titleLabel.Text = "Leaderboard";
             // 
@@ -89,7 +89,7 @@
             this.Controls.Add(this.updatesLabel);
             this.Controls.Add(this.titleLabel);
             this.Name = "LeaderboardScreen";
-            this.Size = new System.Drawing.Size(750, 500);
+            this.Size = new System.Drawing.Size(1050, 769);
             this.ResumeLayout(false);
             this.PerformLayout();
 
