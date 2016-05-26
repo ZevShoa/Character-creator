@@ -16,5 +16,10 @@ namespace Character_creator
         {
             InitializeComponent();
         }
+
+        private void BattleScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

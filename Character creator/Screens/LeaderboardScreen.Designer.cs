@@ -41,7 +41,7 @@
             this.backButton.ForeColor = System.Drawing.Color.Black;
             this.backButton.Location = new System.Drawing.Point(3, 3);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(99, 62);
+            this.backButton.Size = new System.Drawing.Size(120, 69);
             this.backButton.TabIndex = 10;
             this.backButton.Text = "↩";
             this.backButton.UseVisualStyleBackColor = false;
@@ -54,7 +54,7 @@
             this.exitButton.ForeColor = System.Drawing.Color.White;
             this.exitButton.Location = new System.Drawing.Point(988, 3);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(58, 49);
+            this.exitButton.Size = new System.Drawing.Size(58, 63);
             this.exitButton.TabIndex = 9;
             this.exitButton.Text = "X";
             this.exitButton.UseVisualStyleBackColor = false;

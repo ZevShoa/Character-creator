@@ -45,7 +45,7 @@
             this.backButton.BackColor = System.Drawing.SystemColors.Control;
             this.backButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.ForeColor = System.Drawing.Color.Black;
-            this.backButton.Location = new System.Drawing.Point(3, 0);
+            this.backButton.Location = new System.Drawing.Point(3, 3);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(120, 69);
             this.backButton.TabIndex = 14;
@@ -57,9 +57,9 @@
             this.exitButton.BackColor = System.Drawing.Color.Maroon;
             this.exitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(978, 0);
+            this.exitButton.Location = new System.Drawing.Point(978, 3);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(69, 69);
+            this.exitButton.Size = new System.Drawing.Size(58, 63);
             this.exitButton.TabIndex = 13;
             this.exitButton.Text = "X";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -68,7 +68,7 @@
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Agency FB", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.Location = new System.Drawing.Point(422, 71);
+            this.titleLabel.Location = new System.Drawing.Point(454, 77);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(166, 88);
             this.titleLabel.TabIndex = 11;
@@ -78,7 +78,7 @@
             // 
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameLabel.Location = new System.Drawing.Point(183, 224);
+            this.usernameLabel.Location = new System.Drawing.Point(183, 221);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(198, 62);
             this.usernameLabel.TabIndex = 15;
@@ -115,7 +115,7 @@
             this.signInButton.BackColor = System.Drawing.SystemColors.Control;
             this.signInButton.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signInButton.ForeColor = System.Drawing.Color.Black;
-            this.signInButton.Location = new System.Drawing.Point(20, 520);
+            this.signInButton.Location = new System.Drawing.Point(20, 535);
             this.signInButton.Name = "signInButton";
             this.signInButton.Size = new System.Drawing.Size(1014, 90);
             this.signInButton.TabIndex = 19;
