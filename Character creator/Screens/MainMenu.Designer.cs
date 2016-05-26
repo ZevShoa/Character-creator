@@ -127,7 +127,7 @@
             this.copyrightLabel.BackColor = System.Drawing.Color.Transparent;
             this.copyrightLabel.Font = new System.Drawing.Font("Agency FB", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copyrightLabel.ForeColor = System.Drawing.Color.White;
-            this.copyrightLabel.Location = new System.Drawing.Point(273, 474);
+            this.copyrightLabel.Location = new System.Drawing.Point(280, 472);
             this.copyrightLabel.Name = "copyrightLabel";
             this.copyrightLabel.Size = new System.Drawing.Size(139, 14);
             this.copyrightLabel.TabIndex = 7;
@@ -139,6 +139,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.copyrightLabel);
             this.Controls.Add(this.leaderboardButton);
             this.Controls.Add(this.loginButton);
