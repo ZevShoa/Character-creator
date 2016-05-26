@@ -16,5 +16,15 @@ namespace Character_creator
         {
             InitializeComponent();
         }
+
+        private void LoginScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clickSignUpLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
