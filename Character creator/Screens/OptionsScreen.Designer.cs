@@ -33,6 +33,7 @@
             this.exitButton = new System.Windows.Forms.Button();
             this.menuButton = new System.Windows.Forms.Button();
             this.volumeBar = new System.Windows.Forms.ProgressBar();
+            this.volumeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // optionsLabel
@@ -78,24 +79,38 @@
             this.volumeBar.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.volumeBar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.volumeBar.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.volumeBar.Location = new System.Drawing.Point(180, 209);
+            this.volumeBar.Location = new System.Drawing.Point(248, 195);
             this.volumeBar.Name = "volumeBar";
-            this.volumeBar.Size = new System.Drawing.Size(361, 11);
-            this.volumeBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.volumeBar.Size = new System.Drawing.Size(100, 11);
             this.volumeBar.TabIndex = 8;
-            this.volumeBar.Value = 54;
+            this.volumeBar.Value = 55;
+            this.volumeBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.volumeBar_MouseDown);
+            // 
+            // volumeLabel
+            // 
+            this.volumeLabel.AutoSize = true;
+            this.volumeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.volumeLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.volumeLabel.ForeColor = System.Drawing.Color.White;
+            this.volumeLabel.Location = new System.Drawing.Point(171, 181);
+            this.volumeLabel.Name = "volumeLabel";
+            this.volumeLabel.Size = new System.Drawing.Size(65, 28);
+            this.volumeLabel.TabIndex = 9;
+            this.volumeLabel.Text = "Volume";
             // 
             // OptionsScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.volumeLabel);
             this.Controls.Add(this.volumeBar);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.optionsLabel);
             this.Name = "OptionsScreen";
             this.Size = new System.Drawing.Size(700, 500);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OptionsScreen_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -107,5 +122,6 @@
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button menuButton;
         private System.Windows.Forms.ProgressBar volumeBar;
+        private System.Windows.Forms.Label volumeLabel;
     }
 }
