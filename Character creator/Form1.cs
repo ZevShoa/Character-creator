@@ -22,6 +22,9 @@ namespace Character_creator
             Form f = this.FindForm();
             f.Controls.Remove(this);
 
+            MainMenu mm = new MainMenu();
+            this.Controls.Add(mm);
+
             //OptionsScreen os = new OptionsScreen();
             //this.Controls.Add(os);
 
