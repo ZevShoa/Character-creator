@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace Character_creator
 {
-    public partial class LoginScreen : UserControl
+    public partial class PauseMenu : UserControl
     {
-        public LoginScreen()
+        public PauseMenu()
         {
             InitializeComponent();
         }
 
-        private void LoginScreen_Load(object sender, EventArgs e)
+        private void quitButton_Click(object sender, EventArgs e)
         {
-            usernameBox.MaxLength = 8;
-            passwordBox.MaxLength = 8;
-        }
-
-        private void clickSignUpLabel_Click(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
     }
 }

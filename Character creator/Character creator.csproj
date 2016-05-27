@@ -54,6 +54,12 @@
       <DependentUpon>BattleScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Character.cs" />
+    <Compile Include="Screens\PauseMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\PauseMenu.Designer.cs">
+      <DependentUpon>PauseMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\GameScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     <EmbeddedResource Include="Screens\OptionsScreen.resx">
       <DependentUpon>OptionsScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PauseMenu.resx">
+      <DependentUpon>PauseMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\reviewScreen.resx">
       <DependentUpon>reviewScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,9 +216,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bernie0.JPG" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\HanSolo.jpg" />

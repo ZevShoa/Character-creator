@@ -19,8 +19,13 @@ namespace Character_creator
 
         private void signUpScreen_Load(object sender, EventArgs e)
         {
-            userTextBox.MaxLength = 8;
-            passwordTextBox.MaxLength = 8;
+            usernameBox.MaxLength = 8;
+            passwordBox.MaxLength = 8;
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
