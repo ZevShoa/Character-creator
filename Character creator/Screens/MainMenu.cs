@@ -21,22 +21,38 @@ namespace Character_creator
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            MainMenu mm = new MainMenu();
+            mm.Location = new Point((f.Width - mm.Width) / 2, (f.Height - mm.Height) / 2);
+            f.Controls.Add(mm);
         }
 
         private void newUserButton_Click(object sender, EventArgs e)
         {
-
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            signUpScreen sus = new signUpScreen();
+            sus.Location = new Point((f.Width - sus.Width) / 2, (f.Height - sus.Height) / 2);
+            f.Controls.Add(sus);
         }
 
         private void leaderboardButton_Click(object sender, EventArgs e)
         {
-
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+           LeaderboardScreen ls = new LeaderboardScreen();
+            ls.Location = new Point((f.Width - ls.Width) / 2, (f.Height - ls.Height) / 2);
+            f.Controls.Add(ls);
         }
 
         private void optionsButton_Click(object sender, EventArgs e)
         {
-
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            OptionsScreen os = new OptionsScreen();
+            os.Location = new Point((f.Width - os.Width) / 2, (f.Height - os.Height) / 2);
+            f.Controls.Add(os);
         }
 
         private void exitButton_Click(object sender, EventArgs e)

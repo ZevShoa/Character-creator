@@ -27,5 +27,19 @@ namespace Character_creator
         {
             Application.Exit();
         }
+
+        private void clickLogInLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            MainMenu mm = new MainMenu();
+            mm.Location = new Point((f.Width - mm.Width) / 2, (f.Height - mm.Height) / 2);
+            f.Controls.Add(mm);
+        }
     }
 }

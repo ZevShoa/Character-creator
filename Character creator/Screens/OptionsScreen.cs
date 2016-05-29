@@ -35,5 +35,13 @@ namespace Character_creator
            // int temp = 0;
         }
 
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            MainMenu mm = new MainMenu();
+            mm.Location = new Point((f.Width - mm.Width) / 2, (f.Height - mm.Height) / 2);
+            f.Controls.Add(mm);
+        }
     }
 }

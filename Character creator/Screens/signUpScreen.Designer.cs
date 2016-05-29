@@ -44,22 +44,24 @@
             // 
             this.clickLogInLabel.AutoSize = true;
             this.clickLogInLabel.BackColor = System.Drawing.Color.Transparent;
-            this.clickLogInLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clickLogInLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clickLogInLabel.ForeColor = System.Drawing.Color.Blue;
-            this.clickLogInLabel.Location = new System.Drawing.Point(684, 683);
+            this.clickLogInLabel.Location = new System.Drawing.Point(745, 683);
             this.clickLogInLabel.Name = "clickLogInLabel";
-            this.clickLogInLabel.Size = new System.Drawing.Size(84, 49);
+            this.clickLogInLabel.Size = new System.Drawing.Size(113, 65);
             this.clickLogInLabel.TabIndex = 31;
             this.clickLogInLabel.Text = "here";
+            this.clickLogInLabel.Click += new System.EventHandler(this.clickLogInLabel_Click);
             // 
             // accountLabel
             // 
             this.accountLabel.AutoSize = true;
             this.accountLabel.BackColor = System.Drawing.Color.Transparent;
-            this.accountLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accountLabel.Location = new System.Drawing.Point(249, 683);
+            this.accountLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accountLabel.ForeColor = System.Drawing.Color.White;
+            this.accountLabel.Location = new System.Drawing.Point(144, 683);
             this.accountLabel.Name = "accountLabel";
-            this.accountLabel.Size = new System.Drawing.Size(449, 49);
+            this.accountLabel.Size = new System.Drawing.Size(614, 65);
             this.accountLabel.TabIndex = 30;
             this.accountLabel.Text = "Already have an account? Sign in";
             // 
@@ -94,7 +96,9 @@
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
+            this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordLabel.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.ForeColor = System.Drawing.Color.White;
             this.passwordLabel.Location = new System.Drawing.Point(183, 358);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(196, 62);
@@ -104,7 +108,9 @@
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
+            this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.usernameLabel.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.ForeColor = System.Drawing.Color.White;
             this.usernameLabel.Location = new System.Drawing.Point(183, 216);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(198, 62);
@@ -122,6 +128,7 @@
             this.backButton.TabIndex = 24;
             this.backButton.Text = "↩";
             this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // exitButton
             // 
@@ -139,7 +146,9 @@
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
+            this.titleLabel.BackColor = System.Drawing.Color.Transparent;
             this.titleLabel.Font = new System.Drawing.Font("Agency FB", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.White;
             this.titleLabel.Location = new System.Drawing.Point(419, 74);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(223, 88);
@@ -150,6 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Character_creator.Properties.Resources.BackgroundUnset;
             this.Controls.Add(this.clickLogInLabel);
             this.Controls.Add(this.accountLabel);
             this.Controls.Add(this.signInButton);

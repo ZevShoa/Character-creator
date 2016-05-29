@@ -71,7 +71,7 @@
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
             this.titleLabel.Font = new System.Drawing.Font("Agency FB", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.White;
-            this.titleLabel.Location = new System.Drawing.Point(430, 60);
+            this.titleLabel.Location = new System.Drawing.Point(429, 65);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(181, 97);
             this.titleLabel.TabIndex = 11;
@@ -83,7 +83,7 @@
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.usernameLabel.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.Color.White;
-            this.usernameLabel.Location = new System.Drawing.Point(200, 190);
+            this.usernameLabel.Location = new System.Drawing.Point(199, 237);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(198, 62);
             this.usernameLabel.TabIndex = 15;
@@ -95,7 +95,7 @@
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordLabel.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLabel.ForeColor = System.Drawing.Color.White;
-            this.passwordLabel.Location = new System.Drawing.Point(200, 331);
+            this.passwordLabel.Location = new System.Drawing.Point(199, 378);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(196, 62);
             this.passwordLabel.TabIndex = 16;
@@ -104,7 +104,7 @@
             // usernameBox
             // 
             this.usernameBox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameBox.Location = new System.Drawing.Point(547, 190);
+            this.usernameBox.Location = new System.Drawing.Point(546, 237);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(368, 69);
             this.usernameBox.TabIndex = 17;
@@ -112,7 +112,7 @@
             // passwordBox
             // 
             this.passwordBox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordBox.Location = new System.Drawing.Point(547, 331);
+            this.passwordBox.Location = new System.Drawing.Point(546, 378);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(368, 69);
             this.passwordBox.TabIndex = 18;
@@ -147,7 +147,7 @@
             this.clickSignUpLabel.BackColor = System.Drawing.Color.Transparent;
             this.clickSignUpLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clickSignUpLabel.ForeColor = System.Drawing.Color.Blue;
-            this.clickSignUpLabel.Location = new System.Drawing.Point(638, 672);
+            this.clickSignUpLabel.Location = new System.Drawing.Point(631, 672);
             this.clickSignUpLabel.Name = "clickSignUpLabel";
             this.clickSignUpLabel.Size = new System.Drawing.Size(113, 65);
             this.clickSignUpLabel.TabIndex = 21;

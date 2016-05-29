@@ -21,16 +21,9 @@ namespace Character_creator
         {
             Form f = this.FindForm();
             f.Controls.Remove(this);
-
             MainMenu mm = new MainMenu();
-            this.Controls.Add(mm);
-
-            //OptionsScreen os = new OptionsScreen();
-            //this.Controls.Add(os);
-
-            //signUpScreen sus = new signUpScreen();
-            //this.Controls.Add(sus);
-            //sus.Location = new Point((this.Width - sus.Width) / 2, (this.Height - sus.Height) / 2);
+            mm.Location = new Point((f.Width - mm.Width) / 2, (f.Height - mm.Height) / 2);
+            f.Controls.Add(mm);
         }
     }
 }
