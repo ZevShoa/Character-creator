@@ -52,6 +52,7 @@
             this.backButton.TabIndex = 14;
             this.backButton.Text = "↩";
             this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // exitButton
             // 
@@ -128,6 +129,7 @@
             this.signInButton.TabIndex = 19;
             this.signInButton.Text = "Sign In";
             this.signInButton.UseVisualStyleBackColor = false;
+            this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
             // signUpLabel
             // 

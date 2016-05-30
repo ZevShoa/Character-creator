@@ -54,6 +54,12 @@
       <DependentUpon>BattleScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Character.cs" />
+    <Compile Include="Screens\OldOrNewCharacter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\OldOrNewCharacter.Designer.cs">
+      <DependentUpon>OldOrNewCharacter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\PauseMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </Compile>
     <EmbeddedResource Include="BattleScreen.resx">
       <DependentUpon>BattleScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\OldOrNewCharacter.resx">
+      <DependentUpon>OldOrNewCharacter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\GameScreen.resx">
       <DependentUpon>GameScreen.cs</DependentUpon>

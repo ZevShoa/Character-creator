@@ -30,7 +30,7 @@ namespace Character_creator
         private void volumeBar_MouseDown(object sender, MouseEventArgs e)
         {
             //int x = e.X;
-            volumeBar.Value = e.X;
+            //volumeBar.Value = e.X;
 
            // int temp = 0;
         }

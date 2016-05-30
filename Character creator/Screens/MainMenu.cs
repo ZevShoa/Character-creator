@@ -23,9 +23,9 @@ namespace Character_creator
         {
             Form f = this.FindForm();
             f.Controls.Remove(this);
-            MainMenu mm = new MainMenu();
-            mm.Location = new Point((f.Width - mm.Width) / 2, (f.Height - mm.Height) / 2);
-            f.Controls.Add(mm);
+            LoginScreen ls = new LoginScreen();
+            ls.Location = new Point((f.Width - ls.Width) / 2, (f.Height - ls.Height) / 2);
+            f.Controls.Add(ls);
         }
 
         private void newUserButton_Click(object sender, EventArgs e)

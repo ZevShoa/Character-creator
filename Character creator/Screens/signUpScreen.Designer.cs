@@ -46,7 +46,7 @@
             this.clickLogInLabel.BackColor = System.Drawing.Color.Transparent;
             this.clickLogInLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clickLogInLabel.ForeColor = System.Drawing.Color.Blue;
-            this.clickLogInLabel.Location = new System.Drawing.Point(745, 683);
+            this.clickLogInLabel.Location = new System.Drawing.Point(739, 683);
             this.clickLogInLabel.Name = "clickLogInLabel";
             this.clickLogInLabel.Size = new System.Drawing.Size(113, 65);
             this.clickLogInLabel.TabIndex = 31;
@@ -74,8 +74,9 @@
             this.signInButton.Name = "signInButton";
             this.signInButton.Size = new System.Drawing.Size(1014, 90);
             this.signInButton.TabIndex = 29;
-            this.signInButton.Text = "Sign In";
+            this.signInButton.Text = "Sign Up";
             this.signInButton.UseVisualStyleBackColor = false;
+            this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
             // passwordBox
             // 
@@ -160,6 +161,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Character_creator.Properties.Resources.BackgroundUnset;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.clickLogInLabel);
             this.Controls.Add(this.accountLabel);
             this.Controls.Add(this.signInButton);
