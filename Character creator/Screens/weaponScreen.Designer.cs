@@ -28,80 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.swordButton = new System.Windows.Forms.Button();
-            this.staffButton = new System.Windows.Forms.Button();
-            this.axeButton = new System.Windows.Forms.Button();
-            this.daggerButton = new System.Windows.Forms.Button();
-            this.fistButton = new System.Windows.Forms.Button();
             this.nameLabel = new System.Windows.Forms.Label();
             this.backButton = new System.Windows.Forms.Button();
+            this.weaponBox = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.swordButton = new System.Windows.Forms.Button();
+            this.staffButton = new System.Windows.Forms.Button();
+            this.fistButton = new System.Windows.Forms.Button();
+            this.axeButtton = new System.Windows.Forms.Button();
+            this.daggerButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.weaponBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // swordButton
-            // 
-            this.swordButton.BackColor = System.Drawing.Color.Transparent;
-            this.swordButton.BackgroundImage = global::Character_creator.Properties.Resources.sword;
-            this.swordButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.swordButton.Location = new System.Drawing.Point(25, 143);
-            this.swordButton.Name = "swordButton";
-            this.swordButton.Size = new System.Drawing.Size(175, 175);
-            this.swordButton.TabIndex = 0;
-            this.swordButton.UseVisualStyleBackColor = false;
-            this.swordButton.Click += new System.EventHandler(this.swordButton_Click);
-            // 
-            // staffButton
-            // 
-            this.staffButton.BackColor = System.Drawing.Color.Transparent;
-            this.staffButton.BackgroundImage = global::Character_creator.Properties.Resources.staff;
-            this.staffButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.staffButton.Location = new System.Drawing.Point(125, 302);
-            this.staffButton.Name = "staffButton";
-            this.staffButton.Size = new System.Drawing.Size(175, 175);
-            this.staffButton.TabIndex = 1;
-            this.staffButton.UseVisualStyleBackColor = false;
-            this.staffButton.Click += new System.EventHandler(this.staffButton_Click);
-            // 
-            // axeButton
-            // 
-            this.axeButton.BackColor = System.Drawing.Color.Transparent;
-            this.axeButton.BackgroundImage = global::Character_creator.Properties.Resources.axe;
-            this.axeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.axeButton.Location = new System.Drawing.Point(277, 143);
-            this.axeButton.Name = "axeButton";
-            this.axeButton.Size = new System.Drawing.Size(175, 175);
-            this.axeButton.TabIndex = 2;
-            this.axeButton.UseVisualStyleBackColor = false;
-            this.axeButton.Click += new System.EventHandler(this.axeButton_Click);
-            // 
-            // daggerButton
-            // 
-            this.daggerButton.BackColor = System.Drawing.Color.Transparent;
-            this.daggerButton.BackgroundImage = global::Character_creator.Properties.Resources.dagger;
-            this.daggerButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.daggerButton.Location = new System.Drawing.Point(427, 302);
-            this.daggerButton.Name = "daggerButton";
-            this.daggerButton.Size = new System.Drawing.Size(175, 175);
-            this.daggerButton.TabIndex = 3;
-            this.daggerButton.UseVisualStyleBackColor = false;
-            this.daggerButton.Click += new System.EventHandler(this.daggerButton_Click);
-            // 
-            // fistButton
-            // 
-            this.fistButton.BackColor = System.Drawing.Color.Transparent;
-            this.fistButton.BackgroundImage = global::Character_creator.Properties.Resources.fist;
-            this.fistButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.fistButton.Location = new System.Drawing.Point(529, 143);
-            this.fistButton.Name = "fistButton";
-            this.fistButton.Size = new System.Drawing.Size(175, 175);
-            this.fistButton.TabIndex = 4;
-            this.fistButton.UseVisualStyleBackColor = false;
-            this.fistButton.Click += new System.EventHandler(this.fistButton_Click);
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
             this.nameLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLabel.Location = new System.Drawing.Point(331, 58);
+            this.nameLabel.Location = new System.Drawing.Point(304, 27);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(0, 49);
             this.nameLabel.TabIndex = 5;
@@ -117,35 +60,112 @@
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // weaponBox
+            // 
+            this.weaponBox.BackColor = System.Drawing.Color.Transparent;
+            this.weaponBox.Location = new System.Drawing.Point(230, 66);
+            this.weaponBox.Name = "weaponBox";
+            this.weaponBox.Size = new System.Drawing.Size(300, 400);
+            this.weaponBox.TabIndex = 7;
+            this.weaponBox.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(-22, -22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // swordButton
+            // 
+            this.swordButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.swordButton.Location = new System.Drawing.Point(25, 114);
+            this.swordButton.Name = "swordButton";
+            this.swordButton.Size = new System.Drawing.Size(140, 48);
+            this.swordButton.TabIndex = 9;
+            this.swordButton.Text = "Sword";
+            this.swordButton.UseVisualStyleBackColor = true;
+            this.swordButton.MouseEnter += new System.EventHandler(this.swordButton_MouseEnter);
+            // 
+            // staffButton
+            // 
+            this.staffButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.staffButton.Location = new System.Drawing.Point(25, 190);
+            this.staffButton.Name = "staffButton";
+            this.staffButton.Size = new System.Drawing.Size(140, 48);
+            this.staffButton.TabIndex = 10;
+            this.staffButton.Text = "Staff";
+            this.staffButton.UseVisualStyleBackColor = true;
+            this.staffButton.MouseEnter += new System.EventHandler(this.staffButton_MouseEnter);
+            // 
+            // fistButton
+            // 
+            this.fistButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fistButton.Location = new System.Drawing.Point(25, 266);
+            this.fistButton.Name = "fistButton";
+            this.fistButton.Size = new System.Drawing.Size(140, 48);
+            this.fistButton.TabIndex = 11;
+            this.fistButton.Text = "Fist";
+            this.fistButton.UseVisualStyleBackColor = true;
+            this.fistButton.MouseEnter += new System.EventHandler(this.fistButton_MouseEnter);
+            // 
+            // axeButtton
+            // 
+            this.axeButtton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.axeButtton.Location = new System.Drawing.Point(25, 342);
+            this.axeButtton.Name = "axeButtton";
+            this.axeButtton.Size = new System.Drawing.Size(140, 48);
+            this.axeButtton.TabIndex = 12;
+            this.axeButtton.Text = "Axe";
+            this.axeButtton.UseVisualStyleBackColor = true;
+            this.axeButtton.MouseEnter += new System.EventHandler(this.axeButtton_MouseEnter);
+            // 
+            // daggerButton
+            // 
+            this.daggerButton.Font = new System.Drawing.Font("Agency FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.daggerButton.Location = new System.Drawing.Point(25, 418);
+            this.daggerButton.Name = "daggerButton";
+            this.daggerButton.Size = new System.Drawing.Size(140, 48);
+            this.daggerButton.TabIndex = 13;
+            this.daggerButton.Text = "Dagger";
+            this.daggerButton.UseVisualStyleBackColor = true;
+            this.daggerButton.MouseEnter += new System.EventHandler(this.daggerButton_MouseEnter);
+            // 
             // weaponScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
-            this.Controls.Add(this.backButton);
-            this.Controls.Add(this.nameLabel);
-            this.Controls.Add(this.fistButton);
             this.Controls.Add(this.daggerButton);
-            this.Controls.Add(this.axeButton);
+            this.Controls.Add(this.axeButtton);
+            this.Controls.Add(this.fistButton);
             this.Controls.Add(this.staffButton);
             this.Controls.Add(this.swordButton);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.weaponBox);
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.nameLabel);
             this.Name = "weaponScreen";
             this.Size = new System.Drawing.Size(750, 500);
             this.Load += new System.EventHandler(this.weaponScreen_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.weaponBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button swordButton;
-        private System.Windows.Forms.Button staffButton;
-        private System.Windows.Forms.Button axeButton;
-        private System.Windows.Forms.Button daggerButton;
-        private System.Windows.Forms.Button fistButton;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.PictureBox weaponBox;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button swordButton;
+        private System.Windows.Forms.Button staffButton;
+        private System.Windows.Forms.Button fistButton;
+        private System.Windows.Forms.Button axeButtton;
+        private System.Windows.Forms.Button daggerButton;
     }
 }

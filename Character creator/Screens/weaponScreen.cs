@@ -17,7 +17,7 @@ namespace Character_creator
         {
             InitializeComponent();
         }
-
+        #region buttons clicks
         private void swordButton_Click(object sender, EventArgs e)
         {
             weapon = "sword";
@@ -47,6 +47,7 @@ namespace Character_creator
             weapon = "fist";
             changeScreen();
         }
+        #endregion
 
         public void changeScreen()
         {
@@ -69,6 +70,68 @@ namespace Character_creator
             clothingScreen cs = new clothingScreen();
             f.Controls.Add(cs);
             cs.Location = new Point((f.Width - cs.Width) / 2, (f.Height - cs.Height) / 2);
+        }
+
+        private void swordButton_MouseEnter(object sender, EventArgs e)
+        {
+            switch (GenderScreen.gender)
+            {
+                case "female":
+                    switch (colorScreen.color)
+                    {
+                        case "purple":
+
+                            break;
+                        case "yellow":
+
+                            break;
+                        case "red":
+
+                            break;
+                        case "green":
+
+                            break;
+                    }
+                    break;
+                case "male":
+                    switch (colorScreen.color)
+                    {
+                        case "purple":
+
+                            break;
+                        case "yellow":
+
+                            break;
+                        case "red":
+
+                            break;
+                        case "green":
+
+                            break;
+                        
+                    }
+                    
+            }
+        }
+
+        private void staffButton_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fistButton_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void axeButtton_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void daggerButton_MouseEnter(object sender, EventArgs e)
+        {
+
         }
     }
 }

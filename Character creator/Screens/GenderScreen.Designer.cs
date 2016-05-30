@@ -39,7 +39,9 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("Agency FB", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.ForeColor = System.Drawing.Color.White;
             this.nameLabel.Location = new System.Drawing.Point(315, 18);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(0, 50);
@@ -73,7 +75,7 @@
             // 
             // genderPicBox
             // 
-            this.genderPicBox.BackColor = System.Drawing.Color.Transparent;
+            this.genderPicBox.BackColor = System.Drawing.Color.MintCream;
             this.genderPicBox.Location = new System.Drawing.Point(219, 93);
             this.genderPicBox.Name = "genderPicBox";
             this.genderPicBox.Size = new System.Drawing.Size(300, 400);

@@ -46,7 +46,9 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.ForeColor = System.Drawing.Color.White;
             this.nameLabel.Location = new System.Drawing.Point(327, 44);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(0, 49);
@@ -158,8 +160,10 @@
             // messageLabel
             // 
             this.messageLabel.AutoSize = true;
+            this.messageLabel.BackColor = System.Drawing.Color.Transparent;
             this.messageLabel.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messageLabel.Location = new System.Drawing.Point(32, 426);
+            this.messageLabel.ForeColor = System.Drawing.Color.White;
+            this.messageLabel.Location = new System.Drawing.Point(96, 133);
             this.messageLabel.Name = "messageLabel";
             this.messageLabel.Size = new System.Drawing.Size(0, 40);
             this.messageLabel.TabIndex = 10;
@@ -167,7 +171,7 @@
             // continueButton
             // 
             this.continueButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.continueButton.Location = new System.Drawing.Point(302, 392);
+            this.continueButton.Location = new System.Drawing.Point(307, 375);
             this.continueButton.Name = "continueButton";
             this.continueButton.Size = new System.Drawing.Size(181, 92);
             this.continueButton.TabIndex = 11;

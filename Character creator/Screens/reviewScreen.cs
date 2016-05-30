@@ -1068,7 +1068,8 @@ namespace Character_creator
             writer.WriteElementString("health Stat", Convert.ToString(ch.healthStat));
             writer.WriteElementString("energy Stat", Convert.ToString(ch.energyStat));
             writer.WriteEndElement();
-            writer.WriteEndElement();            writer.Close();
+            writer.WriteEndElement();
+            writer.Close();
 
 
         }

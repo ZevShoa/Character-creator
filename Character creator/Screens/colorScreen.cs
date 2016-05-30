@@ -12,6 +12,7 @@ namespace Character_creator
 {
     public partial class colorScreen : UserControl
     {
+        string gender = GenderScreen.gender;
         public static string color;
         public colorScreen()
         {
@@ -29,7 +30,15 @@ namespace Character_creator
         #region mouse enter/leave
         private void purpleButton_MouseEnter(object sender, EventArgs e)
         {
-            colorBox.Image = Properties.Resources.purple;
+            switch(GenderScreen.gender)
+            {
+                case "female":
+                    colorBox.Image = Properties.Resources.Female_Purple;
+                    break;
+                case "male":
+                    colorBox.Image = Properties.Resources.Male_Purple;
+                    break;
+            }
         }
 
         private void purpleButton_MouseLeave(object sender, EventArgs e)
@@ -39,7 +48,15 @@ namespace Character_creator
 
         private void yellowButton_MouseEnter(object sender, EventArgs e)
         {
-            colorBox.Image = Properties.Resources.yellow;
+            switch (GenderScreen.gender)
+            {
+                case "female":
+                    colorBox.Image = Properties.Resources.Female_Yellow;
+                    break;
+                case "male":
+                    colorBox.Image = Properties.Resources.Male_Yellow;
+                    break;
+            }
         }
 
         private void yellowButton_MouseLeave(object sender, EventArgs e)
@@ -49,7 +66,15 @@ namespace Character_creator
 
         private void redButton_MouseEnter(object sender, EventArgs e)
         {
-            colorBox.Image = Properties.Resources.red;
+            switch (GenderScreen.gender)
+            {
+                case "female":
+                    colorBox.Image = Properties.Resources.Female_Red;
+                    break;
+                case "male":
+                    colorBox.Image = Properties.Resources.Male_Red;
+                    break;
+            }
         }
 
         private void redButton_MouseLeave(object sender, EventArgs e)
@@ -59,7 +84,15 @@ namespace Character_creator
 
         private void greenButton_MouseEnter(object sender, EventArgs e)
         {
-            colorBox.Image = Properties.Resources.green;
+            switch (GenderScreen.gender)
+            {
+                case "female":
+                    colorBox.Image = Properties.Resources.Female_Green;
+                    break;
+                case "male":
+                    colorBox.Image = Properties.Resources.Male_Green;
+                    break;
+            }
         }
 
         private void greenButton_MouseLeave(object sender, EventArgs e)
