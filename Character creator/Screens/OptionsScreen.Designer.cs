@@ -136,12 +136,12 @@
             this.TopChartLabel.BackColor = System.Drawing.Color.Transparent;
             this.TopChartLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TopChartLabel.ForeColor = System.Drawing.Color.White;
-            this.TopChartLabel.Location = new System.Drawing.Point(179, 327);
+            this.TopChartLabel.Location = new System.Drawing.Point(103, 327);
             this.TopChartLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TopChartLabel.Name = "TopChartLabel";
-            this.TopChartLabel.Size = new System.Drawing.Size(688, 39);
+            this.TopChartLabel.Size = new System.Drawing.Size(528, 39);
             this.TopChartLabel.TabIndex = 12;
-            this.TopChartLabel.Text = "Controls:       Button                   Response";
+            this.TopChartLabel.Text = "Controls:       Button   Response";
             // 
             // buttonChartLabel
             // 
