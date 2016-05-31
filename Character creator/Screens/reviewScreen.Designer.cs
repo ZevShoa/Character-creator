@@ -59,7 +59,7 @@
             this.classLabel.BackColor = System.Drawing.Color.Transparent;
             this.classLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.classLabel.ForeColor = System.Drawing.Color.White;
-            this.classLabel.Location = new System.Drawing.Point(267, 211);
+            this.classLabel.Location = new System.Drawing.Point(289, 237);
             this.classLabel.Name = "classLabel";
             this.classLabel.Size = new System.Drawing.Size(105, 50);
             this.classLabel.TabIndex = 1;
@@ -71,7 +71,7 @@
             this.weaponLabel.BackColor = System.Drawing.Color.Transparent;
             this.weaponLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weaponLabel.ForeColor = System.Drawing.Color.White;
-            this.weaponLabel.Location = new System.Drawing.Point(27, 103);
+            this.weaponLabel.Location = new System.Drawing.Point(39, 140);
             this.weaponLabel.Name = "weaponLabel";
             this.weaponLabel.Size = new System.Drawing.Size(134, 50);
             this.weaponLabel.TabIndex = 2;
@@ -83,7 +83,7 @@
             this.healthLabel.BackColor = System.Drawing.Color.Transparent;
             this.healthLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.healthLabel.ForeColor = System.Drawing.Color.White;
-            this.healthLabel.Location = new System.Drawing.Point(27, 201);
+            this.healthLabel.Location = new System.Drawing.Point(39, 244);
             this.healthLabel.Name = "healthLabel";
             this.healthLabel.Size = new System.Drawing.Size(115, 50);
             this.healthLabel.TabIndex = 3;
@@ -95,7 +95,7 @@
             this.enrgyLabel.BackColor = System.Drawing.Color.Transparent;
             this.enrgyLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.enrgyLabel.ForeColor = System.Drawing.Color.White;
-            this.enrgyLabel.Location = new System.Drawing.Point(27, 299);
+            this.enrgyLabel.Location = new System.Drawing.Point(39, 348);
             this.enrgyLabel.Name = "enrgyLabel";
             this.enrgyLabel.Size = new System.Drawing.Size(122, 50);
             this.enrgyLabel.TabIndex = 4;
@@ -107,7 +107,7 @@
             this.colorLabel.BackColor = System.Drawing.Color.Transparent;
             this.colorLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorLabel.ForeColor = System.Drawing.Color.White;
-            this.colorLabel.Location = new System.Drawing.Point(267, 316);
+            this.colorLabel.Location = new System.Drawing.Point(291, 349);
             this.colorLabel.Name = "colorLabel";
             this.colorLabel.Size = new System.Drawing.Size(103, 50);
             this.colorLabel.TabIndex = 5;
@@ -115,9 +115,10 @@
             // 
             // finalPictureBox
             // 
-            this.finalPictureBox.Location = new System.Drawing.Point(521, 106);
+            this.finalPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.finalPictureBox.Location = new System.Drawing.Point(536, 28);
             this.finalPictureBox.Name = "finalPictureBox";
-            this.finalPictureBox.Size = new System.Drawing.Size(198, 243);
+            this.finalPictureBox.Size = new System.Drawing.Size(300, 400);
             this.finalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.finalPictureBox.TabIndex = 6;
             this.finalPictureBox.TabStop = false;
@@ -128,7 +129,7 @@
             this.genderLabel.BackColor = System.Drawing.Color.Transparent;
             this.genderLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genderLabel.ForeColor = System.Drawing.Color.White;
-            this.genderLabel.Location = new System.Drawing.Point(267, 106);
+            this.genderLabel.Location = new System.Drawing.Point(267, 150);
             this.genderLabel.Name = "genderLabel";
             this.genderLabel.Size = new System.Drawing.Size(127, 50);
             this.genderLabel.TabIndex = 7;
@@ -137,7 +138,7 @@
             // saveButton
             // 
             this.saveButton.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButton.Location = new System.Drawing.Point(141, 411);
+            this.saveButton.Location = new System.Drawing.Point(180, 476);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(420, 69);
             this.saveButton.TabIndex = 8;
@@ -172,7 +173,7 @@
             this.Controls.Add(this.classLabel);
             this.Controls.Add(this.nameLabel);
             this.Name = "reviewScreen";
-            this.Size = new System.Drawing.Size(750, 500);
+            this.Size = new System.Drawing.Size(857, 563);
             this.Load += new System.EventHandler(this.reviewScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.finalPictureBox)).EndInit();
             this.ResumeLayout(false);

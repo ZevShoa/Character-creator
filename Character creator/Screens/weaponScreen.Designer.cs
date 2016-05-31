@@ -43,7 +43,9 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.ForeColor = System.Drawing.Color.White;
             this.nameLabel.Location = new System.Drawing.Point(304, 27);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(0, 49);
@@ -63,9 +65,10 @@
             // weaponBox
             // 
             this.weaponBox.BackColor = System.Drawing.Color.Transparent;
-            this.weaponBox.Location = new System.Drawing.Point(230, 66);
+            this.weaponBox.Location = new System.Drawing.Point(236, 100);
             this.weaponBox.Name = "weaponBox";
             this.weaponBox.Size = new System.Drawing.Size(300, 400);
+            this.weaponBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.weaponBox.TabIndex = 7;
             this.weaponBox.TabStop = false;
             // 
@@ -87,7 +90,9 @@
             this.swordButton.TabIndex = 9;
             this.swordButton.Text = "Sword";
             this.swordButton.UseVisualStyleBackColor = true;
+            this.swordButton.Click += new System.EventHandler(this.swordButton_Click_1);
             this.swordButton.MouseEnter += new System.EventHandler(this.swordButton_MouseEnter);
+            this.swordButton.MouseLeave += new System.EventHandler(this.swordButton_MouseLeave);
             // 
             // staffButton
             // 
@@ -98,7 +103,9 @@
             this.staffButton.TabIndex = 10;
             this.staffButton.Text = "Staff";
             this.staffButton.UseVisualStyleBackColor = true;
+            this.staffButton.Click += new System.EventHandler(this.staffButton_Click_1);
             this.staffButton.MouseEnter += new System.EventHandler(this.staffButton_MouseEnter);
+            this.staffButton.MouseLeave += new System.EventHandler(this.staffButton_MouseLeave);
             // 
             // fistButton
             // 
@@ -109,7 +116,9 @@
             this.fistButton.TabIndex = 11;
             this.fistButton.Text = "Fist";
             this.fistButton.UseVisualStyleBackColor = true;
+            this.fistButton.Click += new System.EventHandler(this.fistButton_Click_1);
             this.fistButton.MouseEnter += new System.EventHandler(this.fistButton_MouseEnter);
+            this.fistButton.MouseLeave += new System.EventHandler(this.fistButton_MouseLeave);
             // 
             // axeButtton
             // 
@@ -120,7 +129,9 @@
             this.axeButtton.TabIndex = 12;
             this.axeButtton.Text = "Axe";
             this.axeButtton.UseVisualStyleBackColor = true;
+            this.axeButtton.Click += new System.EventHandler(this.axeButtton_Click);
             this.axeButtton.MouseEnter += new System.EventHandler(this.axeButtton_MouseEnter);
+            this.axeButtton.MouseLeave += new System.EventHandler(this.axeButtton_MouseLeave);
             // 
             // daggerButton
             // 
@@ -131,7 +142,9 @@
             this.daggerButton.TabIndex = 13;
             this.daggerButton.Text = "Dagger";
             this.daggerButton.UseVisualStyleBackColor = true;
+            this.daggerButton.Click += new System.EventHandler(this.daggerButton_Click_1);
             this.daggerButton.MouseEnter += new System.EventHandler(this.daggerButton_MouseEnter);
+            this.daggerButton.MouseLeave += new System.EventHandler(this.daggerButton_MouseLeave);
             // 
             // weaponScreen
             // 
