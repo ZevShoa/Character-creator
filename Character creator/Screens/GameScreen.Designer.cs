@@ -28,33 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.characterBox = new System.Windows.Forms.PictureBox();
-            this.exitButton = new System.Windows.Forms.Button();
+            this.pauseButton = new System.Windows.Forms.Button();
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.characterBox)).BeginInit();
             this.SuspendLayout();
             // 
             // characterBox
             // 
-            this.characterBox.Location = new System.Drawing.Point(358, 319);
-            this.characterBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.characterBox.Location = new System.Drawing.Point(273, 303);
+            this.characterBox.Margin = new System.Windows.Forms.Padding(2);
             this.characterBox.Name = "characterBox";
             this.characterBox.Size = new System.Drawing.Size(82, 125);
             this.characterBox.TabIndex = 2;
             this.characterBox.TabStop = false;
             // 
-            // exitButton
+            // pauseButton
             // 
-            this.exitButton.BackColor = System.Drawing.Color.Maroon;
-            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(659, 0);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(39, 41);
-            this.exitButton.TabIndex = 17;
-            this.exitButton.Text = "| |";
-            this.exitButton.UseVisualStyleBackColor = false;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.pauseButton.BackColor = System.Drawing.Color.Maroon;
+            this.pauseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pauseButton.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pauseButton.ForeColor = System.Drawing.Color.White;
+            this.pauseButton.Location = new System.Drawing.Point(659, 2);
+            this.pauseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.pauseButton.Name = "pauseButton";
+            this.pauseButton.Size = new System.Drawing.Size(39, 41);
+            this.pauseButton.TabIndex = 17;
+            this.pauseButton.Text = "| |";
+            this.pauseButton.UseVisualStyleBackColor = false;
+            this.pauseButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // GameScreen
             // 
@@ -62,9 +65,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Character_creator.Properties.Resources.WaveLevel;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.pauseButton);
             this.Controls.Add(this.characterBox);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(700, 500);
             this.Load += new System.EventHandler(this.GameScreen_Load);
@@ -76,6 +80,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox characterBox;
-        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button pauseButton;
+        private System.Windows.Forms.Timer gameTimer;
     }
 }
