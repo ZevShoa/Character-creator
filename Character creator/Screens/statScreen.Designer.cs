@@ -46,7 +46,9 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.ForeColor = System.Drawing.Color.White;
             this.nameLabel.Location = new System.Drawing.Point(327, 44);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(0, 49);
@@ -56,11 +58,11 @@
             // 
             this.healthLabel.AutoSize = true;
             this.healthLabel.BackColor = System.Drawing.Color.Transparent;
-            this.healthLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.healthLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.healthLabel.ForeColor = System.Drawing.Color.White;
-            this.healthLabel.Location = new System.Drawing.Point(338, 163);
+            this.healthLabel.Location = new System.Drawing.Point(467, 168);
             this.healthLabel.Name = "healthLabel";
-            this.healthLabel.Size = new System.Drawing.Size(38, 49);
+            this.healthLabel.Size = new System.Drawing.Size(42, 50);
             this.healthLabel.TabIndex = 1;
             this.healthLabel.Text = "5";
             // 
@@ -68,18 +70,18 @@
             // 
             this.energyLabel.AutoSize = true;
             this.energyLabel.BackColor = System.Drawing.Color.Transparent;
-            this.energyLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.energyLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.energyLabel.ForeColor = System.Drawing.Color.White;
-            this.energyLabel.Location = new System.Drawing.Point(338, 296);
+            this.energyLabel.Location = new System.Drawing.Point(467, 299);
             this.energyLabel.Name = "energyLabel";
-            this.energyLabel.Size = new System.Drawing.Size(38, 49);
+            this.energyLabel.Size = new System.Drawing.Size(42, 50);
             this.energyLabel.TabIndex = 2;
             this.energyLabel.Text = "5";
             // 
             // healthPlusButton
             // 
-            this.healthPlusButton.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.healthPlusButton.Location = new System.Drawing.Point(225, 164);
+            this.healthPlusButton.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.healthPlusButton.Location = new System.Drawing.Point(577, 168);
             this.healthPlusButton.Name = "healthPlusButton";
             this.healthPlusButton.Size = new System.Drawing.Size(50, 50);
             this.healthPlusButton.TabIndex = 3;
@@ -89,8 +91,8 @@
             // 
             // energyMinusButton
             // 
-            this.energyMinusButton.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.energyMinusButton.Location = new System.Drawing.Point(439, 297);
+            this.energyMinusButton.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.energyMinusButton.Location = new System.Drawing.Point(342, 299);
             this.energyMinusButton.Name = "energyMinusButton";
             this.energyMinusButton.Size = new System.Drawing.Size(50, 50);
             this.energyMinusButton.TabIndex = 4;
@@ -100,8 +102,8 @@
             // 
             // healthMinusButton
             // 
-            this.healthMinusButton.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.healthMinusButton.Location = new System.Drawing.Point(439, 164);
+            this.healthMinusButton.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.healthMinusButton.Location = new System.Drawing.Point(342, 168);
             this.healthMinusButton.Name = "healthMinusButton";
             this.healthMinusButton.Size = new System.Drawing.Size(50, 50);
             this.healthMinusButton.TabIndex = 5;
@@ -111,8 +113,8 @@
             // 
             // energyPlusButton
             // 
-            this.energyPlusButton.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.energyPlusButton.Location = new System.Drawing.Point(225, 297);
+            this.energyPlusButton.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.energyPlusButton.Location = new System.Drawing.Point(577, 301);
             this.energyPlusButton.Name = "energyPlusButton";
             this.energyPlusButton.Size = new System.Drawing.Size(50, 50);
             this.energyPlusButton.TabIndex = 6;
@@ -124,23 +126,22 @@
             // 
             this.statLabel.AutoSize = true;
             this.statLabel.BackColor = System.Drawing.Color.Transparent;
-            this.statLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statLabel.ForeColor = System.Drawing.Color.White;
-            this.statLabel.Location = new System.Drawing.Point(621, 24);
+            this.statLabel.Location = new System.Drawing.Point(604, 36);
             this.statLabel.Name = "statLabel";
-            this.statLabel.Size = new System.Drawing.Size(92, 49);
+            this.statLabel.Size = new System.Drawing.Size(0, 44);
             this.statLabel.TabIndex = 7;
-            this.statLabel.Text = "label1";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(70, 163);
+            this.label1.Location = new System.Drawing.Point(140, 169);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 49);
+            this.label1.Size = new System.Drawing.Size(115, 50);
             this.label1.TabIndex = 8;
             this.label1.Text = "Health:";
             // 
@@ -148,29 +149,31 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(70, 298);
+            this.label2.Location = new System.Drawing.Point(140, 297);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 49);
+            this.label2.Size = new System.Drawing.Size(122, 50);
             this.label2.TabIndex = 9;
             this.label2.Text = "Energy:";
             // 
             // messageLabel
             // 
             this.messageLabel.AutoSize = true;
+            this.messageLabel.BackColor = System.Drawing.Color.Transparent;
             this.messageLabel.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.messageLabel.Location = new System.Drawing.Point(32, 426);
+            this.messageLabel.ForeColor = System.Drawing.Color.White;
+            this.messageLabel.Location = new System.Drawing.Point(96, 133);
             this.messageLabel.Name = "messageLabel";
             this.messageLabel.Size = new System.Drawing.Size(0, 40);
             this.messageLabel.TabIndex = 10;
             // 
             // continueButton
             // 
-            this.continueButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.continueButton.Location = new System.Drawing.Point(532, 208);
+            this.continueButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.continueButton.Location = new System.Drawing.Point(307, 375);
             this.continueButton.Name = "continueButton";
-            this.continueButton.Size = new System.Drawing.Size(181, 105);
+            this.continueButton.Size = new System.Drawing.Size(181, 92);
             this.continueButton.TabIndex = 11;
             this.continueButton.Text = "Continue";
             this.continueButton.UseVisualStyleBackColor = true;

@@ -37,7 +37,7 @@ namespace Character_creator
         private void femaleButton_MouseEnter(object sender, EventArgs e)
         {
             
-            genderPicBox.Image = Properties.Resources.female;
+            genderPicBox.Image = Properties.Resources.Female_Transparent;
         }
 
         private void femaleButton_MouseLeave(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace Character_creator
         }
         private void maleButton_MouseEnter(object sender, EventArgs e)
         {
-            genderPicBox.Image = Properties.Resources.male;
+            genderPicBox.Image = Properties.Resources.Male_Transparent;
         }
         private void maleButton_MouseLeave(object sender, EventArgs e)
         {

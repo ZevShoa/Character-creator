@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +57,18 @@
       <DependentUpon>BattleScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Character.cs" />
+    <Compile Include="Screens\OldOrNewCharacter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\OldOrNewCharacter.Designer.cs">
+      <DependentUpon>OldOrNewCharacter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\PauseMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\PauseMenu.Designer.cs">
+      <DependentUpon>PauseMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\GameScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -143,6 +158,9 @@
     <EmbeddedResource Include="BattleScreen.resx">
       <DependentUpon>BattleScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\OldOrNewCharacter.resx">
+      <DependentUpon>OldOrNewCharacter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\GameScreen.resx">
       <DependentUpon>GameScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\OptionsScreen.resx">
       <DependentUpon>OptionsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PauseMenu.resx">
+      <DependentUpon>PauseMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\reviewScreen.resx">
       <DependentUpon>reviewScreen.cs</DependentUpon>
@@ -195,6 +216,7 @@
     <EmbeddedResource Include="Screens\signUpScreen.resx">
       <DependentUpon>signUpScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -207,9 +229,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bernie0.JPG" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\HanSolo.jpg" />
@@ -282,6 +301,765 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WaveLevel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female_Purple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female_Transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Female_Yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenDeprived.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenDeprivedAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenDeprivedDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenDeprivedFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenDeprivedStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenDeprivedSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenKnight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenKnightAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenKnightDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenKnightFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenKnightStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenKnightSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenMage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenMageAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenMageDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenMageFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenMageStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenMageSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenPeasant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenPeasantAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenPeasantDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenPeasantFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenPeasantStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenPeasantSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenThief.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenThiefAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenThiefDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenThiefFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenThiefStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleGreenThiefSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleDeprived.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleDeprivedAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleDeprivedDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleDeprivedFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleDeprivedStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleDeprivedSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleKnight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleKnightAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleKnightDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleKnightFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleKnightStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleKnightSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleMage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleMageAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleMageDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleMageFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleMageStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleMageSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurplePeasant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurplePeasantAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurplePeasantDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurplePeasantFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurplePeasantStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurplePeasantSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleThief.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleThiefAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleThiefDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleThiefFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleThiefStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femalePurpleThiefSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedDeprived.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedDeprivedAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedDeprivedDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedDeprivedFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedDeprivedStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedDeprivedSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedKnight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedKnightAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedKnightDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedKnightFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedKnightStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedKnightSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedMage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedMageAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedMageDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedMageFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedMageStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedMageSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedPeasant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedPeasantAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedPeasantDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedPeasantFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedPeasantStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedPeasantSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedThief.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedThiefAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedThiefDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedThiefFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedThiefStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleRedThiefSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowDeprived.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowDeprivedAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowDeprivedDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowDeprivedFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowDeprivedStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowDeprivedSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowKnight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowKnightAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowKnightDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowKnightFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowKnightStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowKnightSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowMage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowMageAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowMageDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowMageFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowMageStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowMageSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowPeasant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowPeasantAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowPeasantDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowPeasantFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowPeasantStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowPeasantSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowThief.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowThiefAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowThiefDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowThiefFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowThiefStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\femaleYellowThiefSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fisticuffs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mage Robes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male_Purple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male_Transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Male_Yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenDeprived.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenDeprivedAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenDeprivedDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenDeprivedFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenDeprivedStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenDeprivedSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenKnight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenKnightAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenKnightDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenKnightFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenKnightStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenKnightSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenMage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenMageAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenMageDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenMageFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenMageStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenMageSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenPeasant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenPeasantAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenPeasantDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenPeasantFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenPeasantStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenPeasantSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenThief.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenThiefAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenThiefDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenThiefFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenThiefStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleGreenThiefSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleDeprived.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleDeprivedAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleDeprivedDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleDeprivedFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleDeprivedStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleDeprivedSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleKnight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleKnightAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleKnightDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleKnightFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleKnightStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleKnightSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleMage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleMageAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleMageDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleMageFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleMageStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleMageSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurplePeasant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurplePeasantAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurplePeasantDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurplePeasantFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurplePeasantStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurplePeasantSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleThief.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleThiefAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleThiefDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleThiefFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleThiefStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\malePurpleThiefSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedDeprived.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedDeprivedAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedDeprivedDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedDeprivedFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedDeprivedStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedDeprivedSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedKnight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedKnightAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedKnightDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedKnightFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedKnightStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedKnightSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedMage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedMageAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedMageDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedMageFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedMageStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedMageSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedPeasant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedPeasantAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedPeasantDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedPeasantFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedPeasantStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedPeasantSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedTheifAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedTheifDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedTheifFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedTheifStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedTheifSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleRedThief.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowDeprived.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowDeprivedAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowDeprivedDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowDeprivedFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowDeprivedStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowDeprivedSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowKnight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowKnightAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowKnightDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowKnightFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowKnightStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowKnightSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowMage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowMageAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowMageDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowMageFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowMageStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowMageSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowPeasant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowPeasantAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowPeasantDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowPeasantFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowPeasantStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowPeasantSword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowThief.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowThiefAxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowThiefDagger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowThiefFist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowThiefStaff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maleYellowThiefSword.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

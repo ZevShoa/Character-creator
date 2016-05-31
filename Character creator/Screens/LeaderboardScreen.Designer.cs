@@ -73,7 +73,9 @@
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
+            this.titleLabel.BackColor = System.Drawing.Color.Transparent;
             this.titleLabel.Font = new System.Drawing.Font("Agency FB", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.White;
             this.titleLabel.Location = new System.Drawing.Point(325, 52);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(360, 88);
@@ -84,12 +86,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Character_creator.Properties.Resources.GameBackground;
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.updatesLabel);
             this.Controls.Add(this.titleLabel);
             this.Name = "LeaderboardScreen";
             this.Size = new System.Drawing.Size(1050, 769);
+            this.Load += new System.EventHandler(this.LeaderboardScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

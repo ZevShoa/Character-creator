@@ -19,7 +19,7 @@ namespace Character_creator
 
         private void volumeBar_Click(object sender, EventArgs e)
         {
-            //int value = 
+            
         }
 
         private void OptionsScreen_MouseDown(object sender, MouseEventArgs e)
@@ -30,17 +30,18 @@ namespace Character_creator
         private void volumeBar_MouseDown(object sender, MouseEventArgs e)
         {
             //int x = e.X;
-            volumeBar.Value = e.X;
+            //volumeBar.Value = e.X;
 
            // int temp = 0;
         }
 
         private void menuButton_Click(object sender, EventArgs e)
         {
-            Controls.Remove(this);
-
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
             MainMenu mm = new MainMenu();
-            this.Controls.Add(mm);
+            mm.Location = new Point((f.Width - mm.Width) / 2, (f.Height - mm.Height) / 2);
+            f.Controls.Add(mm);
         }
 
         private void exitButton_Click(object sender, EventArgs e)

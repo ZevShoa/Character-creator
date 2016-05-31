@@ -28,83 +28,152 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.userTextBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.clickLogInLabel = new System.Windows.Forms.Label();
+            this.accountLabel = new System.Windows.Forms.Label();
+            this.signInButton = new System.Windows.Forms.Button();
+            this.passwordBox = new System.Windows.Forms.TextBox();
+            this.usernameBox = new System.Windows.Forms.TextBox();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.usernameLabel = new System.Windows.Forms.Label();
+            this.backButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // clickLogInLabel
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 395);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(750, 75);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Continue";
-            this.button1.UseVisualStyleBackColor = true;
+            this.clickLogInLabel.AutoSize = true;
+            this.clickLogInLabel.BackColor = System.Drawing.Color.Transparent;
+            this.clickLogInLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clickLogInLabel.ForeColor = System.Drawing.Color.Blue;
+            this.clickLogInLabel.Location = new System.Drawing.Point(739, 683);
+            this.clickLogInLabel.Name = "clickLogInLabel";
+            this.clickLogInLabel.Size = new System.Drawing.Size(113, 65);
+            this.clickLogInLabel.TabIndex = 31;
+            this.clickLogInLabel.Text = "here";
+            this.clickLogInLabel.Click += new System.EventHandler(this.clickLogInLabel_Click);
             // 
-            // passwordTextBox
+            // accountLabel
             // 
-            this.passwordTextBox.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTextBox.Location = new System.Drawing.Point(228, 274);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(385, 45);
-            this.passwordTextBox.TabIndex = 10;
+            this.accountLabel.AutoSize = true;
+            this.accountLabel.BackColor = System.Drawing.Color.Transparent;
+            this.accountLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accountLabel.ForeColor = System.Drawing.Color.White;
+            this.accountLabel.Location = new System.Drawing.Point(144, 683);
+            this.accountLabel.Name = "accountLabel";
+            this.accountLabel.Size = new System.Drawing.Size(614, 65);
+            this.accountLabel.TabIndex = 30;
+            this.accountLabel.Text = "Already have an account? Sign in";
             // 
-            // userTextBox
+            // signInButton
             // 
-            this.userTextBox.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userTextBox.Location = new System.Drawing.Point(228, 138);
-            this.userTextBox.Name = "userTextBox";
-            this.userTextBox.Size = new System.Drawing.Size(385, 45);
-            this.userTextBox.TabIndex = 9;
+            this.signInButton.BackColor = System.Drawing.SystemColors.Control;
+            this.signInButton.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signInButton.ForeColor = System.Drawing.Color.Black;
+            this.signInButton.Location = new System.Drawing.Point(20, 530);
+            this.signInButton.Name = "signInButton";
+            this.signInButton.Size = new System.Drawing.Size(1014, 90);
+            this.signInButton.TabIndex = 29;
+            this.signInButton.Text = "Sign Up";
+            this.signInButton.UseVisualStyleBackColor = false;
+            this.signInButton.Click += new System.EventHandler(this.signInButton_Click);
             // 
-            // label3
+            // passwordBox
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(43, 134);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 49);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "User Name:";
+            this.passwordBox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordBox.Location = new System.Drawing.Point(529, 358);
+            this.passwordBox.Name = "passwordBox";
+            this.passwordBox.Size = new System.Drawing.Size(368, 69);
+            this.passwordBox.TabIndex = 28;
             // 
-            // label2
+            // usernameBox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(43, 274);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 49);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Password:";
+            this.usernameBox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameBox.Location = new System.Drawing.Point(529, 216);
+            this.usernameBox.Name = "usernameBox";
+            this.usernameBox.Size = new System.Drawing.Size(368, 69);
+            this.usernameBox.TabIndex = 27;
             // 
-            // label1
+            // passwordLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(142, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(486, 49);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Choose a user name and Password";
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.passwordLabel.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLabel.ForeColor = System.Drawing.Color.White;
+            this.passwordLabel.Location = new System.Drawing.Point(183, 358);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(196, 62);
+            this.passwordLabel.TabIndex = 26;
+            this.passwordLabel.Text = "Password:";
+            // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.usernameLabel.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameLabel.ForeColor = System.Drawing.Color.White;
+            this.usernameLabel.Location = new System.Drawing.Point(183, 216);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(198, 62);
+            this.usernameLabel.TabIndex = 25;
+            this.usernameLabel.Text = "Username:";
+            // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.SystemColors.Control;
+            this.backButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.ForeColor = System.Drawing.Color.Black;
+            this.backButton.Location = new System.Drawing.Point(3, 3);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(120, 69);
+            this.backButton.TabIndex = 24;
+            this.backButton.Text = "↩";
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // exitButton
+            // 
+            this.exitButton.BackColor = System.Drawing.Color.Maroon;
+            this.exitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.ForeColor = System.Drawing.Color.White;
+            this.exitButton.Location = new System.Drawing.Point(989, 0);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(58, 63);
+            this.exitButton.TabIndex = 23;
+            this.exitButton.Text = "X";
+            this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.titleLabel.Font = new System.Drawing.Font("Agency FB", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.White;
+            this.titleLabel.Location = new System.Drawing.Point(419, 74);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(223, 88);
+            this.titleLabel.TabIndex = 22;
+            this.titleLabel.Text = "Sign Up";
             // 
             // signUpScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.passwordTextBox);
-            this.Controls.Add(this.userTextBox);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.BackgroundImage = global::Character_creator.Properties.Resources.BackgroundUnset;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.clickLogInLabel);
+            this.Controls.Add(this.accountLabel);
+            this.Controls.Add(this.signInButton);
+            this.Controls.Add(this.passwordBox);
+            this.Controls.Add(this.usernameBox);
+            this.Controls.Add(this.passwordLabel);
+            this.Controls.Add(this.usernameLabel);
+            this.Controls.Add(this.backButton);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.titleLabel);
             this.Name = "signUpScreen";
-            this.Size = new System.Drawing.Size(750, 500);
+            this.Size = new System.Drawing.Size(1050, 769);
             this.Load += new System.EventHandler(this.signUpScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -113,11 +182,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox passwordTextBox;
-        private System.Windows.Forms.TextBox userTextBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label clickLogInLabel;
+        private System.Windows.Forms.Label accountLabel;
+        private System.Windows.Forms.Button signInButton;
+        private System.Windows.Forms.TextBox passwordBox;
+        private System.Windows.Forms.TextBox usernameBox;
+        private System.Windows.Forms.Label passwordLabel;
+        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Label titleLabel;
     }
 }
