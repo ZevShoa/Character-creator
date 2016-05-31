@@ -74,44 +74,44 @@ namespace Character_creator
 
         private void swordButton_MouseEnter(object sender, EventArgs e)
         {
-            switch (GenderScreen.gender)
-            {
-                case "female":
-                    switch (colorScreen.color)
-                    {
-                        case "purple":
+            //switch (GenderScreen.gender)
+            //{
+            //    case "female":
+            //        switch (colorScreen.color)
+            //        {
+            //            case "purple":
 
-                            break;
-                        case "yellow":
+            //                break;
+            //            case "yellow":
 
-                            break;
-                        case "red":
+            //                break;
+            //            case "red":
 
-                            break;
-                        case "green":
+            //                break;
+            //            case "green":
 
-                            break;
-                    }
-                    break;
-                case "male":
-                    switch (colorScreen.color)
-                    {
-                        case "purple":
+            //                break;
+            //        }
+            //        break;
+            //    case "male":
+            //        switch (colorScreen.color)
+            //        {
+            //            case "purple":
 
-                            break;
-                        case "yellow":
+            //                break;
+            //            case "yellow":
 
-                            break;
-                        case "red":
+            //                break;
+            //            case "red":
 
-                            break;
-                        case "green":
+            //                break;
+            //            case "green":
 
-                            break;
+            //                break;
                         
-                    }
+            //        }
                     
-            }
+            //}
         }
 
         private void staffButton_MouseEnter(object sender, EventArgs e)
