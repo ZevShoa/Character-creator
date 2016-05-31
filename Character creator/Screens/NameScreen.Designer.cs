@@ -32,6 +32,7 @@
             this.nameChooseLabel = new System.Windows.Forms.Label();
             this.ranNameButton = new System.Windows.Forms.Button();
             this.continueButton = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nameTextBox
@@ -78,12 +79,24 @@
             this.continueButton.UseVisualStyleBackColor = true;
             this.continueButton.Click += new System.EventHandler(this.continueButton_Click_1);
             // 
+            // ExitButton
+            // 
+            this.ExitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitButton.Location = new System.Drawing.Point(426, 14);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(56, 45);
+            this.ExitButton.TabIndex = 4;
+            this.ExitButton.Text = "X";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
             // NameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.continueButton);
             this.Controls.Add(this.ranNameButton);
             this.Controls.Add(this.nameChooseLabel);
@@ -101,5 +114,6 @@
         private System.Windows.Forms.Label nameChooseLabel;
         private System.Windows.Forms.Button ranNameButton;
         private System.Windows.Forms.Button continueButton;
+        private System.Windows.Forms.Button ExitButton;
     }
 }
