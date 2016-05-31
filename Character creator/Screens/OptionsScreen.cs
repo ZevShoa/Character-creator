@@ -35,5 +35,17 @@ namespace Character_creator
            // int temp = 0;
         }
 
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            Controls.Remove(this);
+
+            MainMenu mm = new MainMenu();
+            this.Controls.Add(mm);
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

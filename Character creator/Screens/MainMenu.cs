@@ -36,6 +36,10 @@ namespace Character_creator
 
         private void optionsButton_Click(object sender, EventArgs e)
         {
+            Controls.Remove(this);
+            OptionsScreen os = new OptionsScreen();
+
+            this.Controls.Add(os);
 
         }
 

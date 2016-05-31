@@ -64,12 +64,13 @@
             this.exitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.White;
             this.exitButton.Location = new System.Drawing.Point(659, 2);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(2);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(39, 41);
             this.exitButton.TabIndex = 3;
             this.exitButton.Text = "X";
             this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // menuButton
             // 
@@ -77,12 +78,13 @@
             this.menuButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuButton.ForeColor = System.Drawing.Color.Black;
             this.menuButton.Location = new System.Drawing.Point(2, 2);
-            this.menuButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(2);
             this.menuButton.Name = "menuButton";
             this.menuButton.Size = new System.Drawing.Size(80, 45);
             this.menuButton.TabIndex = 5;
             this.menuButton.Text = "↩";
             this.menuButton.UseVisualStyleBackColor = false;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // volumeBar
             // 
@@ -115,7 +117,7 @@
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(171, 287);
-            this.chart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";

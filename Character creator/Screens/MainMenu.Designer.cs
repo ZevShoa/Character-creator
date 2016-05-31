@@ -44,7 +44,7 @@
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
             this.titleLabel.Font = new System.Drawing.Font("Agency FB", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.White;
-            this.titleLabel.Location = new System.Drawing.Point(299, 13);
+            this.titleLabel.Location = new System.Drawing.Point(287, 13);
             this.titleLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(122, 45);
@@ -57,7 +57,7 @@
             this.exitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.White;
             this.exitButton.Location = new System.Drawing.Point(634, 13);
-            this.exitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(2);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(39, 32);
             this.exitButton.TabIndex = 2;
@@ -71,7 +71,7 @@
             this.newUserButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newUserButton.ForeColor = System.Drawing.Color.Black;
             this.newUserButton.Location = new System.Drawing.Point(276, 83);
-            this.newUserButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.newUserButton.Margin = new System.Windows.Forms.Padding(2);
             this.newUserButton.Name = "newUserButton";
             this.newUserButton.Size = new System.Drawing.Size(145, 55);
             this.newUserButton.TabIndex = 3;
@@ -85,7 +85,7 @@
             this.optionsButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionsButton.ForeColor = System.Drawing.Color.Black;
             this.optionsButton.Location = new System.Drawing.Point(276, 362);
-            this.optionsButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optionsButton.Margin = new System.Windows.Forms.Padding(2);
             this.optionsButton.Name = "optionsButton";
             this.optionsButton.Size = new System.Drawing.Size(145, 55);
             this.optionsButton.TabIndex = 4;
@@ -99,7 +99,7 @@
             this.loginButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.ForeColor = System.Drawing.Color.Black;
             this.loginButton.Location = new System.Drawing.Point(274, 173);
-            this.loginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(2);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(145, 55);
             this.loginButton.TabIndex = 5;
@@ -113,7 +113,7 @@
             this.leaderboardButton.Font = new System.Drawing.Font("Agency FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.leaderboardButton.ForeColor = System.Drawing.Color.Black;
             this.leaderboardButton.Location = new System.Drawing.Point(274, 267);
-            this.leaderboardButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.leaderboardButton.Margin = new System.Windows.Forms.Padding(2);
             this.leaderboardButton.Name = "leaderboardButton";
             this.leaderboardButton.Size = new System.Drawing.Size(145, 55);
             this.leaderboardButton.TabIndex = 6;
@@ -148,7 +148,7 @@
             this.Controls.Add(this.newUserButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.titleLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainMenu";
             this.Size = new System.Drawing.Size(700, 500);
             this.Load += new System.EventHandler(this.MainMenu_Load);
