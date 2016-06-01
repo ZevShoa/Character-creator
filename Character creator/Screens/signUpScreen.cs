@@ -14,6 +14,7 @@ namespace Character_creator
     public partial class signUpScreen : UserControl
     {
         List<User> userList = new List<User>();
+        bool failure = false;
         public signUpScreen()
         {
             InitializeComponent();
@@ -51,8 +52,8 @@ namespace Character_creator
         private void signInButton_Click(object sender, EventArgs e)
         {
             // Open the file to be read
-            XmlTextReader reader = new XmlTextReader("User.xml");
-
+            XmlTextReader reader = new XmlTextReader("UserFile.xml");
+            int z = 0;
             // Continue to read each element and text until the file is done
             while (reader.Read())
             {
@@ -60,39 +61,64 @@ namespace Character_creator
                 // otherwise the loop repeats getting the next piece of information
                 if (reader.NodeType == XmlNodeType.Text)
                 {
-                    string newUser = usernameBox.Text;
-                    string newPassword = passwordBox.Text;
+                    string name, password, score, char1, char2, char3;
+
+                    name = usernameBox.Text;
+                    password = passwordBox.Text;
+                    score = "";
+                    char1 = "";
+                    char2 = "";
+                    char3 = "";
+
+                    foreach (User newUser in userList)
+                    {
+                        if (userList[z].username == name)
+                        {
+                            failure = true;
+                        }
+                    }
+                    if (failure == true)
+                    {
+                        accountLabel.Text = "Account already exists. Sign in";
+                    }
+                    else if (failure == false)
+                    {
+                        User newUser = new User(name, password, score, char1, char2, char3);
+                        userList.Add(newUser);
+                    }
                 }
             }
             // When done reading the file close it
             reader.Close();
 
-            XmlTextWriter writer = new XmlTextWriter("User.xml", null);
-            writer.WriteStartElement("player");
-
-            for (int i = 0; i < userList.Count; i++)
+            if (failure == false)
             {
-                //Start "student" element
+                XmlTextWriter writer = new XmlTextWriter("UserFile.xml", null);
                 writer.WriteStartElement("player");
 
-                //Write sub-elements
-                writer.WriteElementString("username", userList[i].username);
-                writer.WriteElementString("password", userList[i].password);
-                writer.WriteElementString("score", userList[i].score);
-                writer.WriteElementString("username", userList[i].character1);
-                writer.WriteElementString("password", userList[i].character2);
-                writer.WriteElementString("score", userList[i].character3);
+                for (int i = 0; i < userList.Count; i++)
+                {
+                    writer.WriteStartElement("player");
+                    writer.WriteStartElement("username", userList[i].username);
 
-                // end the "student" element
+                    writer.WriteElementString("password", userList[i].password);
+                    writer.WriteElementString("score", userList[i].score);
+                    writer.WriteElementString("username", userList[i].character1);
+                    writer.WriteElementString("password", userList[i].character2);
+                    writer.WriteElementString("score", userList[i].character3);
+
+                    // end the "student" element
+                    writer.WriteEndElement();
+                }
                 writer.WriteEndElement();
+                writer.Close();
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                NameScreen ns = new NameScreen();
+                ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
+                f.Controls.Add(ns);
             }
-            writer.WriteEndElement();
-            writer.Close();
-            Form f = this.FindForm();
-            f.Controls.Remove(this);
-            NameScreen ns = new NameScreen();
-            ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
-            f.Controls.Add(ns);
+            failure = false;
         }
     }
 }
