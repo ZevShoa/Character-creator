@@ -13,6 +13,7 @@ namespace Character_creator
     public partial class weaponScreen : UserControl
     {
         public static  string weapon;
+        public static int picSpot;
         public weaponScreen()
         {
             InitializeComponent();
@@ -954,6 +955,179 @@ namespace Character_creator
 
         private void swordButton_Click_1(object sender, EventArgs e)
         {
+            switch (GenderScreen.gender)
+            {
+                case "female":
+                    switch (colorScreen.color)
+                    {
+                        case "purple":
+                            switch (clothingScreen.clothing)
+                            {
+                                case "Knight":
+                                    weaponBox.Image = Properties.Resources.femalePurpleKnightSword;
+                                    break;
+                                case "Mage":
+                                    weaponBox.Image = Properties.Resources.femalePurpleMageSword;
+                                    break;
+                                case "Peasant":
+                                    weaponBox.Image = Properties.Resources.femalePurplePeasantSword;
+                                    break;
+                                case "Deprived":
+                                    weaponBox.Image = Properties.Resources.femalePurpleDeprivedSword;
+                                    break;
+                                case "Rogue":
+                                    weaponBox.Image = Properties.Resources.femalePurpleThiefSword;
+                                    break;
+                            }
+                            break;
+                        case "yellow":
+                            switch (clothingScreen.clothing)
+                            {
+                                case "Knight":
+                                    weaponBox.Image = Properties.Resources.femaleYellowKnightSword;
+                                    break;
+                                case "Mage":
+                                    weaponBox.Image = Properties.Resources.femaleYellowMageSword;
+                                    break;
+                                case "Peasant":
+                                    weaponBox.Image = Properties.Resources.femaleYellowPeasantSword;
+                                    break;
+                                case "Deprived":
+                                    weaponBox.Image = Properties.Resources.femaleYellowDeprivedSword;
+                                    break;
+                                case "Rogue":
+                                    weaponBox.Image = Properties.Resources.femaleYellowThiefSword;
+                                    break;
+                            }
+                            break;
+                        case "red":
+                            switch (clothingScreen.clothing)
+                            {
+                                case "Knight":
+                                    weaponBox.Image = Properties.Resources.femaleRedKnightSword;
+                                    break;
+                                case "Mage":
+                                    weaponBox.Image = Properties.Resources.femaleRedMageSword;
+                                    break;
+                                case "Peasant":
+                                    weaponBox.Image = Properties.Resources.femaleRedPeasantSword;
+                                    break;
+                                case "Deprived":
+                                    weaponBox.Image = Properties.Resources.femaleRedDeprivedSword;
+                                    break;
+                                case "Rogue":
+                                    weaponBox.Image = Properties.Resources.femaleRedThiefSword;
+                                    break;
+                            }
+                            break;
+                        case "green":
+                            switch (clothingScreen.clothing)
+                            {
+                                case "Knight":
+                                    weaponBox.Image = Properties.Resources.femaleGreenKnightSword;
+                                    break;
+                                case "Mage":
+                                    weaponBox.Image = Properties.Resources.femaleGreenMageSword;
+                                    break;
+                                case "Peasant":
+                                    weaponBox.Image = Properties.Resources.femaleGreenPeasantSword;
+                                    break;
+                                case "Deprived":
+                                    weaponBox.Image = Properties.Resources.femaleGreenDeprivedSword;
+                                    break;
+                                case "Rogue":
+                                    weaponBox.Image = Properties.Resources.femaleGreenThiefSword;
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
+                case "male":
+                    switch (colorScreen.color)
+                    {
+                        case "purple":
+                            switch (clothingScreen.clothing)
+                            {
+                                case "Knight":
+                                    weaponBox.Image = Properties.Resources.malePurpleKnightSword;
+                                    break;
+                                case "Mage":
+                                    weaponBox.Image = Properties.Resources.malePurpleMageSword;
+                                    break;
+                                case "Peasant":
+                                    weaponBox.Image = Properties.Resources.malePurplePeasantSword;
+                                    break;
+                                case "Deprived":
+                                    weaponBox.Image = Properties.Resources.malePurpleDeprivedSword;
+                                    break;
+                                case "Rogue":
+                                    weaponBox.Image = Properties.Resources.malePurpleThiefSword;
+                                    break;
+                            }
+                            break;
+                        case "yellow":
+                            switch (clothingScreen.clothing)
+                            {
+                                case "Knight":
+                                    weaponBox.Image = Properties.Resources.maleYellowKnightSword;
+                                    break;
+                                case "Mage":
+                                    weaponBox.Image = Properties.Resources.maleYellowMageSword;
+                                    break;
+                                case "Peasant":
+                                    weaponBox.Image = Properties.Resources.maleYellowPeasantSword;
+                                    break;
+                                case "Deprived":
+                                    weaponBox.Image = Properties.Resources.maleYellowDeprivedSword;
+                                    break;
+                                case "Rogue":
+                                    weaponBox.Image = Properties.Resources.maleYellowThiefSword;
+                                    break;
+                            }
+                            break;
+                        case "red":
+                            switch (clothingScreen.clothing)
+                            {
+                                case "Knight":
+                                    weaponBox.Image = Properties.Resources.maleRedKnightSword;
+                                    break;
+                                case "Mage":
+                                    weaponBox.Image = Properties.Resources.maleRedMageSword;
+                                    break;
+                                case "Peasant":
+                                    weaponBox.Image = Properties.Resources.maleRedPeasantSword;
+                                    break;
+                                case "Deprived":
+                                    weaponBox.Image = Properties.Resources.maleRedDeprivedSword;
+                                    break;
+                                case "Rogue":
+                                    weaponBox.Image = Properties.Resources.maleRedTheifSword;
+                                    break;
+                            }
+                            break;
+                        case "green":
+                            switch (clothingScreen.clothing)
+                            {
+                                case "Knight":
+                                    weaponBox.Image = Properties.Resources.maleGreenKnightSword;
+                                    break;
+                                case "Mage":
+                                    weaponBox.Image = Properties.Resources.maleGreenMageSword;
+                                    break;
+                                case "Peasant":
+                                    weaponBox.Image = Properties.Resources.maleGreenPeasantSword;
+                                    break;
+                                case "Deprived":
+                                    weaponBox.Image = Properties.Resources.maleGreenDeprivedSword;
+                                    break;
+                                case "Rogue":
+                                    weaponBox.Image = Properties.Resources.maleGreenThiefSword;
+                                    break;
+                            }
+                            break;
+                    }
+                    break;
+            }
             weapon = "Sword";
             changeScreen();
         }
