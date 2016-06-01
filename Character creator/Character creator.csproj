@@ -155,6 +155,7 @@
     <Compile Include="Screens\signUpScreen.Designer.cs">
       <DependentUpon>signUpScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="BattleScreen.resx">
       <DependentUpon>BattleScreen.cs</DependentUpon>
     </EmbeddedResource>

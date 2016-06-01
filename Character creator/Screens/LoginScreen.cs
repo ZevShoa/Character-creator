@@ -25,6 +25,10 @@ namespace Character_creator
 
         private void clickSignUpLabel_Click(object sender, EventArgs e)
         {
+            string username = usernameBox.Text;
+            string password = passwordBox.Text;
+
+
             Form f = this.FindForm();
             f.Controls.Remove(this);
             signUpScreen sus = new signUpScreen();
