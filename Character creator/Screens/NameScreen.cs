@@ -18,6 +18,10 @@ namespace Character_creator
         int nameLength;
         int nextLetter;
         int vowel;
+        List<Image> finalCreations = new List<Image>(new Image[] { Properties.Resources.femaleGreenDeprivedAxe, Properties.Resources.femaleGreenDeprivedDagger, Properties.Resources.femaleGreenDeprivedFist, Properties.Resources.femaleGreenDeprivedStaff, Properties.Resources.femaleGreenDeprivedSword, Properties.Resources.femaleGreenKnightAxe, Properties.Resources.femaleGreenKnightDagger, Properties.Resources.femaleGreenKnightFist, Properties.Resources.femaleGreenKnightStaff, Properties.Resources.femaleGreenKnightSword, Properties.Resources.femaleGreenMageAxe, Properties.Resources.femaleGreenMageDagger, Properties.Resources.femaleGreenMageFist, Properties.Resources.femaleGreenMageStaff, Properties.Resources.femaleGreenMageSword, Properties.Resources.femaleGreenPeasantAxe, Properties.Resources.femaleGreenPeasantDagger, Properties.Resources.femaleGreenPeasantFist, Properties.Resources.femaleGreenPeasantStaff, Properties.Resources.femaleGreenPeasantSword, Properties.Resources.femaleGreenThiefAxe, Properties.Resources.femaleGreenThiefDagger, Properties.Resources.femaleGreenThiefFist, Properties.Resources.femaleGreenThiefStaff, Properties.Resources.femaleGreenThiefSword,
+        Properties.Resources.femalePurpleDeprivedAxe,Properties.Resources.femalePurpleDeprivedDagger,Properties.Resources.femalePurpleDeprivedFist,Properties.Resources.femalePurpleDeprivedStaff,Properties.Resources.femalePurpleDeprivedSword,Properties.Resources.femalePurpleKnightAxe,Properties.Resources.femalePurpleKnightDagger,Properties.Resources.femalePurpleKnightFist,Properties.Resources.femalePurpleKnightStaff,Properties.Resources.femalePurpleKnightSword,Properties.Resources.femalePurpleMageAxe,Properties.Resources.femalePurpleMageDagger,Properties.Resources.femalePurpleMageFist,Properties.Resources.femalePurpleMageStaff,Properties.Resources.femalePurpleMageSword,Properties.Resources.femalePurplePeasantAxe,Properties.Resources.femalePurplePeasantDagger,Properties.Resources.femalePurplePeasantFist,Properties.Resources.femalePurplePeasantStaff,Properties.Resources.femalePurplePeasantSword,Properties.Resources.femalePurpleThiefAxe,Properties.Resources.femalePurpleThiefDagger,Properties.Resources.femalePurpleThiefFist,Properties.Resources.femalePurpleThiefStaff,Properties.Resources.femalePurpleThiefSword,
+        });
+
         string[] letters = {"a","e","i","o","u","y","g","h","c","j",
             "k","l","m","n","d","p","q","r","s","t","b","v","w","x","f","z"};
         List<string> theName = new List<string>();
@@ -74,6 +78,11 @@ namespace Character_creator
                 gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
             }
 
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
