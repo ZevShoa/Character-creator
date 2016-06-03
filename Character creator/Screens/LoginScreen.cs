@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Character_creator
 {
@@ -47,11 +48,48 @@ namespace Character_creator
 
         private void signInButton_Click(object sender, EventArgs e)
         {
-            Form f = this.FindForm();
-            f.Controls.Remove(this);
-            OldOrNewCharacter onc = new OldOrNewCharacter();
-            onc.Location = new Point((f.Width - onc.Width) / 2, (f.Height - onc.Height) / 2);
-            f.Controls.Add(onc);
+            //loads the xml document to be read
+            XmlDocument doc = new XmlDocument();
+            doc.Load("UserFile.xml");
+            XmlNode parent;
+            parent = doc.DocumentElement;
+
+            //Displays the correct weather information
+            foreach (XmlNode child in parent.ChildNodes)
+            {
+                if (child.Name == "username")
+                {
+                    if (child.Attributes["username"].Value == usernameBox.Text)
+                    {
+                        foreach (XmlNode grandChild in child.ChildNodes)
+                        {
+                            if (grandChild.Name == "password")
+                            {
+                                if (grandChild.Attributes["password"].Value == passwordBox.Text)
+                                {
+                                    Form f = this.FindForm();
+                                    f.Controls.Remove(this);
+                                    OldOrNewCharacter onc = new OldOrNewCharacter();
+                                    onc.Location = new Point((f.Width - onc.Width) / 2, (f.Height - onc.Height) / 2);
+                                    f.Controls.Add(onc);
+                                }
+                                else
+                                {
+                                    errorLabel.Text = "Incorrect Username Or Password";
+                                    usernameBox.Text = "";
+                                    passwordBox.Text = "";
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        errorLabel.Text = "Incorrect Username Or Password";
+                        usernameBox.Text = "";
+                        passwordBox.Text = "";
+                    }
+                }
+            }
         }
     }
 }

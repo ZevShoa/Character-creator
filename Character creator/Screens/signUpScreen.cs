@@ -13,8 +13,7 @@ namespace Character_creator
 {
     public partial class signUpScreen : UserControl
     {
-        List<User> userList = new List<User>();
-        bool failure = false;
+        string name, password, score, char1, char2, char3;
         public signUpScreen()
         {
             InitializeComponent();
@@ -51,63 +50,42 @@ namespace Character_creator
 
         private void signInButton_Click(object sender, EventArgs e)
         {
-            // Open the file to be read
-            XmlTextReader reader = new XmlTextReader("UserFile.xml");
-            int z = 0;
-            // Continue to read each element and text until the file is done
-            while (reader.Read())
+
+            if (MainMenu.failure == true)
             {
-                // If the currently read item is text then print it to screen,
-                // otherwise the loop repeats getting the next piece of information
-                if (reader.NodeType == XmlNodeType.Text)
-                {
-                    string name, password, score, char1, char2, char3;
-
-                    name = usernameBox.Text;
-                    password = passwordBox.Text;
-                    score = "";
-                    char1 = "";
-                    char2 = "";
-                    char3 = "";
-
-                    foreach (User newUser in userList)
-                    {
-                        if (userList[z].username == name)
-                        {
-                            failure = true;
-                        }
-                    }
-                    if (failure == true)
-                    {
-                        accountLabel.Text = "Account already exists. Sign in";
-                    }
-                    else if (failure == false)
-                    {
-                        User newUser = new User(name, password, score, char1, char2, char3);
-                        userList.Add(newUser);
-                    }
-                }
+                errorLabel.Text = "Account Already Exists";
+                usernameBox.Text = "";
+                passwordBox.Text = "";
             }
-            // When done reading the file close it
-            reader.Close();
+            else if (MainMenu.failure == false)
+            {
+                name = usernameBox.Text;
+                password = passwordBox.Text;
+                score = "";
+                char1 = "";
+                char2 = "";
+                char3 = "";
 
-            if (failure == false)
+                User newUser = new User(name, password, score, char1, char2, char3);
+                MainMenu.userList.Add(newUser);
+            }
+
+            if (MainMenu.failure == false)
             {
                 XmlTextWriter writer = new XmlTextWriter("UserFile.xml", null);
                 writer.WriteStartElement("player");
 
-                for (int i = 0; i < userList.Count; i++)
+                for (int i = 0; i < MainMenu.userList.Count; i++)
                 {
-                    writer.WriteStartElement("player");
-                    writer.WriteStartElement("username", userList[i].username);
+                    writer.WriteStartElement("username", MainMenu.userList[i].username);
 
-                    writer.WriteElementString("password", userList[i].password);
-                    writer.WriteElementString("score", userList[i].score);
-                    writer.WriteElementString("username", userList[i].character1);
-                    writer.WriteElementString("password", userList[i].character2);
-                    writer.WriteElementString("score", userList[i].character3);
+                    writer.WriteElementString("password", MainMenu.userList[i].password);
+                    writer.WriteElementString("score", MainMenu.userList[i].score);
+                    writer.WriteElementString("characterone", MainMenu.userList[i].character1);
+                    writer.WriteElementString("charactertwo", MainMenu.userList[i].character2);
+                    writer.WriteElementString("characterthree", MainMenu.userList[i].character3);
 
-                    // end the "student" element
+                    // end the elements
                     writer.WriteEndElement();
                 }
                 writer.WriteEndElement();
@@ -118,7 +96,7 @@ namespace Character_creator
                 ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
                 f.Controls.Add(ns);
             }
-            failure = false;
+            MainMenu.failure = false;
         }
     }
 }

@@ -39,6 +39,7 @@
             this.signInButton = new System.Windows.Forms.Button();
             this.signUpLabel = new System.Windows.Forms.Label();
             this.clickSignUpLabel = new System.Windows.Forms.Label();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // backButton
@@ -156,11 +157,24 @@
             this.clickSignUpLabel.Text = "here";
             this.clickSignUpLabel.Click += new System.EventHandler(this.clickSignUpLabel_Click);
             // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.BackColor = System.Drawing.Color.Transparent;
+            this.errorLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel.ForeColor = System.Drawing.Color.White;
+            this.errorLabel.Location = new System.Drawing.Point(535, 458);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(0, 65);
+            this.errorLabel.TabIndex = 22;
+            this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.clickSignUpLabel);
             this.Controls.Add(this.signUpLabel);
             this.Controls.Add(this.signInButton);
@@ -191,5 +205,6 @@
         private System.Windows.Forms.Button signInButton;
         private System.Windows.Forms.Label signUpLabel;
         private System.Windows.Forms.Label clickSignUpLabel;
+        private System.Windows.Forms.Label errorLabel;
     }
 }
