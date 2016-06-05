@@ -59,13 +59,13 @@ namespace Character_creator
             {
                 if (child.Name == "username")
                 {
-                    if (child.Attributes["username"].Value == usernameBox.Text)
+                    if (child.Attributes["xmlns"].Value == usernameBox.Text)
                     {
                         foreach (XmlNode grandChild in child.ChildNodes)
                         {
                             if (grandChild.Name == "password")
                             {
-                                if (grandChild.Attributes["password"].Value == passwordBox.Text)
+                                if (grandChild.Attributes[""].Value == passwordBox.Text)
                                 {
                                     Form f = this.FindForm();
                                     f.Controls.Remove(this);
