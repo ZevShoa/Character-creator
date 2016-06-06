@@ -60,6 +60,11 @@ namespace Character_creator
             writer.WriteEndElement();
             writer.Close();
 
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            GameScreen gs = new GameScreen();
+            f.Controls.Add(gs);
+            gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
 
         }
     }
