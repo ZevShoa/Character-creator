@@ -61,8 +61,7 @@
             this.pauseButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // gameTimer
-            // 
-            this.gameTimer.Tick += new System.EventHandler(this.gameTimer_Tick_1);
+            //
             // 
             // resumeButton
             // 

@@ -51,11 +51,6 @@ namespace Character_creator
             }
         }
 
-        private void gameTimer_Tick(object sender, EventArgs e)
-        {
-
-        }
-
         private void GameScreen_KeyUp(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
