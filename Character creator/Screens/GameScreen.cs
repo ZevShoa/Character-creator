@@ -26,6 +26,7 @@ namespace Character_creator
 
         private void GameScreen_Load(object sender, EventArgs e)
         {
+            characterBox.Image = weaponScreen.finalPic;
         }
 
         private void exitButton_Click(object sender, EventArgs e)

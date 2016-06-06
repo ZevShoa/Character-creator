@@ -38,10 +38,10 @@
             // 
             // characterBox
             // 
-            this.characterBox.Location = new System.Drawing.Point(273, 303);
-            this.characterBox.Margin = new System.Windows.Forms.Padding(2);
+            this.characterBox.Location = new System.Drawing.Point(410, 466);
             this.characterBox.Name = "characterBox";
-            this.characterBox.Size = new System.Drawing.Size(82, 125);
+            this.characterBox.Size = new System.Drawing.Size(123, 192);
+            this.characterBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.characterBox.TabIndex = 2;
             this.characterBox.TabStop = false;
             // 
@@ -51,31 +51,28 @@
             this.pauseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pauseButton.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pauseButton.ForeColor = System.Drawing.Color.White;
-            this.pauseButton.Location = new System.Drawing.Point(659, 2);
-            this.pauseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.pauseButton.Location = new System.Drawing.Point(988, 3);
             this.pauseButton.Name = "pauseButton";
-            this.pauseButton.Size = new System.Drawing.Size(39, 41);
+            this.pauseButton.Size = new System.Drawing.Size(58, 63);
             this.pauseButton.TabIndex = 17;
             this.pauseButton.Text = "| |";
             this.pauseButton.UseVisualStyleBackColor = false;
             this.pauseButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // gameTimer
-            //
-            // 
             // resumeButton
             // 
             this.resumeButton.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resumeButton.Location = new System.Drawing.Point(279, 223);
+            this.resumeButton.Location = new System.Drawing.Point(418, 343);
+            this.resumeButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.resumeButton.Name = "resumeButton";
-            this.resumeButton.Size = new System.Drawing.Size(76, 36);
+            this.resumeButton.Size = new System.Drawing.Size(114, 55);
             this.resumeButton.TabIndex = 18;
             this.resumeButton.Text = "Resume";
             this.resumeButton.UseVisualStyleBackColor = true;
             // 
             // GameScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Character_creator.Properties.Resources.WaveLevel;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -83,9 +80,8 @@
             this.Controls.Add(this.pauseButton);
             this.Controls.Add(this.characterBox);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GameScreen";
-            this.Size = new System.Drawing.Size(700, 500);
+            this.Size = new System.Drawing.Size(1050, 769);
             this.Load += new System.EventHandler(this.GameScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.characterBox)).EndInit();
             this.ResumeLayout(false);
