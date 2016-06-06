@@ -20,6 +20,8 @@ namespace Character_creator
             InitializeComponent();
             gameTimer.Enabled = true;
             gameTimer.Start();
+
+
         }
 
         private void GameScreen_Load(object sender, EventArgs e)
@@ -29,6 +31,7 @@ namespace Character_creator
         private void exitButton_Click(object sender, EventArgs e)
         {
             gameTimer.Stop();
+
 
         }
 
@@ -47,6 +50,12 @@ namespace Character_creator
                     break;
             }
         }
+
+        private void gameTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
+
         private void GameScreen_KeyUp(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)

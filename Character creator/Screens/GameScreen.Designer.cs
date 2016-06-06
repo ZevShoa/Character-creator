@@ -32,6 +32,7 @@
             this.characterBox = new System.Windows.Forms.PictureBox();
             this.pauseButton = new System.Windows.Forms.Button();
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
+            this.resumeButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.characterBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,12 +60,27 @@
             this.pauseButton.UseVisualStyleBackColor = false;
             this.pauseButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // gameTimer
+            // 
+            this.gameTimer.Tick += new System.EventHandler(this.gameTimer_Tick_1);
+            // 
+            // resumeButton
+            // 
+            this.resumeButton.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resumeButton.Location = new System.Drawing.Point(279, 223);
+            this.resumeButton.Name = "resumeButton";
+            this.resumeButton.Size = new System.Drawing.Size(76, 36);
+            this.resumeButton.TabIndex = 18;
+            this.resumeButton.Text = "Resume";
+            this.resumeButton.UseVisualStyleBackColor = true;
+            // 
             // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Character_creator.Properties.Resources.WaveLevel;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.resumeButton);
             this.Controls.Add(this.pauseButton);
             this.Controls.Add(this.characterBox);
             this.DoubleBuffered = true;
@@ -82,5 +98,6 @@
         private System.Windows.Forms.PictureBox characterBox;
         private System.Windows.Forms.Button pauseButton;
         private System.Windows.Forms.Timer gameTimer;
+        private System.Windows.Forms.Button resumeButton;
     }
 }
