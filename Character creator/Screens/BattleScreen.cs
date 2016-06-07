@@ -14,6 +14,7 @@ namespace Character_creator
     {
         Random ranNum = new Random();
         int attackNum;
+        
 
         public BattleScreen()
         {
@@ -22,8 +23,20 @@ namespace Character_creator
         string attack1, attack2,attack3;
         private void BattleScreen_Load(object sender, EventArgs e)
         {
-          //  attackNum = ranNum.Next 
-            characterBox.Image = reviewScreen.ch.picture;
+            attackNum = ranNum.Next(0, 61);
+            if (attackNum >= 0 && attackNum <= 20)
+            {
+                attack3 = "Body Slam";
+            }
+            else if (attackNum >= 21 && attackNum <= 40)
+            {
+                attack3 = "Light attack";
+            }
+            else if (attackNum >= 41 && attackNum <= 59)
+            {
+
+            }
+                characterBox.Image = reviewScreen.ch.picture;
              switch (reviewScreen.ch.weapon)
             {
                 case "Axe":
