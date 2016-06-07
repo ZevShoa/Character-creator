@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace Character_creator
 {
-    class Character
+   public class Character
     {
         public string name, clothes, weapon, gender, color;
         public int healthStat, energyStat;

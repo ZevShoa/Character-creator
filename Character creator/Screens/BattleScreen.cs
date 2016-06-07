@@ -19,7 +19,8 @@ namespace Character_creator
 
         private void BattleScreen_Load(object sender, EventArgs e)
         {
-
+            characterBox.Image = weaponScreen.finalPic;
+            
         }
     }
 }
