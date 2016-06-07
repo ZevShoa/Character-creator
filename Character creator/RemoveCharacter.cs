@@ -11,53 +11,24 @@ using System.Xml;
 
 namespace Character_creator
 {
-    public partial class OldOrNewCharacter : UserControl
+    public partial class RemoveCharacter : UserControl
     {
-        public static string characterName;
-        int characterint = 0;
-        public OldOrNewCharacter()
+        string characterRemoved;
+        public RemoveCharacter()
         {
             InitializeComponent();
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
+        private void menuButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            OldOrNewCharacter onc = new OldOrNewCharacter();
+            onc.Location = new Point((f.Width - onc.Width) / 2, (f.Height - onc.Height) / 2);
+            f.Controls.Add(onc);
         }
 
-        private void newCharacterButton_Click(object sender, EventArgs e)
-        {
-            if (characterint < 3)
-            {
-                Form f = this.FindForm();
-                f.Controls.Remove(this);
-                NameScreen ns = new NameScreen();
-                ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
-                f.Controls.Add(ns);
-            }
-            if (characterint == 3)
-            {
-
-            }
-        }
-
-        private void selectOldCharacterButton_Click(object sender, EventArgs e)
-        {
-            if (characterName != "")
-            {
-                Form f = this.FindForm();
-                f.Controls.Remove(this);
-                reviewScreen rs = new reviewScreen();
-                rs.Location = new Point((f.Width - rs.Width) / 2, (f.Height - rs.Height) / 2);
-                f.Controls.Add(rs);
-            }
-            else
-            {
-                errorLabel.Text = "Please Select A Character";
-            }
-        }
-
-        private void OldOrNewCharacter_Load(object sender, EventArgs e)
+        private void RemoveCharacter_Load(object sender, EventArgs e)
         {
             //loads the xml document to be read
             XmlDocument doc = new XmlDocument();
@@ -78,16 +49,7 @@ namespace Character_creator
                             {
                                 if (grandChild.Name != "")
                                 {
-                                   characterBox.Tag = grandChild.InnerText;
-                                    characterint++;
-                                }   
-                                }
-                            if (grandChild.Name == "character1")
-                            {
-                                if (grandChild.Name != "")
-                                {
                                     characterBox.Tag = grandChild.InnerText;
-                                    characterint++;
                                 }
                             }
                             if (grandChild.Name == "character1")
@@ -95,19 +57,41 @@ namespace Character_creator
                                 if (grandChild.Name != "")
                                 {
                                     characterBox.Tag = grandChild.InnerText;
-                                    characterint++;
                                 }
                             }
-                      }
+                            if (grandChild.Name == "character1")
+                            {
+                                if (grandChild.Name != "")
+                                {
+                                    characterBox.Tag = grandChild.InnerText;
+                                }
+                            }
+                        }
 
+                    }
                 }
             }
         }
-    }
 
         private void characterBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            characterName = characterBox.Text;   
+            characterRemoved = characterBox.Text;
+        }
+
+        private void selectOldCharacterButton_Click(object sender, EventArgs e)
+        {
+            if (characterRemoved != "")
+            {
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                reviewScreen rs = new reviewScreen();
+                rs.Location = new Point((f.Width - rs.Width) / 2, (f.Height - rs.Height) / 2);
+                f.Controls.Add(rs);
+            }
+            else
+            {
+                errorLabel.Text = "Please Select A Character \nTo Remove or Go Back";
+            }
         }
     }
 }

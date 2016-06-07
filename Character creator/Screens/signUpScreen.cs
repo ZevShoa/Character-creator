@@ -87,7 +87,9 @@ namespace Character_creator
 
                     // end the elements
                     writer.WriteEndElement();
+                    MainMenu.playerName = MainMenu.userList[i].username;
                 }
+                
                 writer.WriteEndElement();
                 writer.Close();
                 Form f = this.FindForm();

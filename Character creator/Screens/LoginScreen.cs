@@ -26,10 +26,6 @@ namespace Character_creator
 
         private void clickSignUpLabel_Click(object sender, EventArgs e)
         {
-            string username = usernameBox.Text;
-            string password = passwordBox.Text;
-
-
             Form f = this.FindForm();
             f.Controls.Remove(this);
             signUpScreen sus = new signUpScreen();
@@ -65,8 +61,9 @@ namespace Character_creator
                         {
                             if (grandChild.Name == "password")
                             {
-                                if (grandChild.Attributes[""].Value == passwordBox.Text)
+                                if (grandChild.InnerText == passwordBox.Text)
                                 {
+                                    MainMenu.playerName = usernameBox.Text;
                                     Form f = this.FindForm();
                                     f.Controls.Remove(this);
                                     OldOrNewCharacter onc = new OldOrNewCharacter();
@@ -88,8 +85,14 @@ namespace Character_creator
                         usernameBox.Text = "";
                         passwordBox.Text = "";
                     }
+
                 }
             }
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
