@@ -34,7 +34,6 @@ namespace Character_creator
         {
             gameTimer.Stop();
 
-
         }
 
         private void GameScreen_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
@@ -68,5 +67,18 @@ namespace Character_creator
                     break;
             }
         }
+
+        private void gameTimer_Tick(object sender, EventArgs e)
+        {
+            if (aArrowDown)
+            {
+                cs.move(ch, "Left");
+            }
+            else if (dArrowDown)
+            {
+                cs.move(ch, "Right");
+            }
+        }
+
     }
 }

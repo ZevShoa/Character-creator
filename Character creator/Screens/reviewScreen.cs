@@ -18,7 +18,7 @@ namespace Character_creator
         {
             InitializeComponent();
         }
-        Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, statScreen.healthStat, statScreen.energyStat, weaponScreen.finalPic);
+       public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, statScreen.healthStat, statScreen.energyStat, weaponScreen.finalPic);
         private void reviewScreen_Load(object sender, EventArgs e)
         {
             nameLabel.Text = ch.name;
