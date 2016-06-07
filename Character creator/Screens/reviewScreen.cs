@@ -60,12 +60,23 @@ namespace Character_creator
             writer.WriteEndElement();
             writer.Close();
 
+            XmlTextWriter writer1 = new XmlTextWriter("UserFile.xml", null);
+
             Form f = this.FindForm();
             f.Controls.Remove(this);
             GameScreen gs = new GameScreen();
             f.Controls.Add(gs);
             gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
 
+        }
+
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            MainMenu mm = new MainMenu();
+            f.Controls.Add(mm);
+            mm.Location = new Point((f.Width - mm.Width) / 2, (f.Height - mm.Height) / 2);
         }
     }
 }
