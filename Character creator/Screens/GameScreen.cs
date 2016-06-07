@@ -20,6 +20,7 @@ namespace Character_creator
             InitializeComponent();
             gameTimer.Enabled = true;
             gameTimer.Start();
+            resumeButton.Visible = false;
 
 
         }
