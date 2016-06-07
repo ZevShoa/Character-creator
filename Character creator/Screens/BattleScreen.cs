@@ -22,7 +22,7 @@ namespace Character_creator
         string attack1, attack2,attack3;
         private void BattleScreen_Load(object sender, EventArgs e)
         {
-            attackNum = 
+            attackNum = ranNum.Next 
             characterBox.Image = reviewScreen.ch.picture;
              switch (reviewScreen.ch.weapon)
             {
