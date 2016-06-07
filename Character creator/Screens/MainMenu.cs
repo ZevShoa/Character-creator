@@ -18,6 +18,7 @@ namespace Character_creator
         public static List<User> userList = new List<User>();
         public static bool failure = false;
         string name, password, score, char1, char2, char3;
+        public static string playerName;
         int index = 1;
 
         public MainMenu()

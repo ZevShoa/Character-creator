@@ -57,6 +57,12 @@
       <DependentUpon>BattleScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Character.cs" />
+    <Compile Include="RemoveCharacter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RemoveCharacter.Designer.cs">
+      <DependentUpon>RemoveCharacter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\OldOrNewCharacter.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="Screens\BattleScreen.resx">
       <DependentUpon>BattleScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveCharacter.resx">
+      <DependentUpon>RemoveCharacter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\OldOrNewCharacter.resx">
       <DependentUpon>OldOrNewCharacter.cs</DependentUpon>
