@@ -33,7 +33,6 @@ namespace Character_creator
         {
             gameTimer.Stop();
 
-
         }
 
         private void GameScreen_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
