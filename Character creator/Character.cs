@@ -23,6 +23,7 @@ namespace Character_creator
             healthStat = _healthstat;
             energyStat = _energyStat;
             picture = _picture;
+
         }
 
     }

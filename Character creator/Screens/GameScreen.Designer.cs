@@ -62,8 +62,14 @@
             this.pauseButton.UseVisualStyleBackColor = false;
             this.pauseButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // gameTimer
+            // 
+            this.gameTimer.Interval = 16;
+            this.gameTimer.Tick += new System.EventHandler(this.gameTimer_Tick);
+            // 
             // resumeButton
             // 
+            this.resumeButton.Enabled = false;
             this.resumeButton.Font = new System.Drawing.Font("Agency FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resumeButton.Location = new System.Drawing.Point(325, 236);
             this.resumeButton.Name = "resumeButton";
@@ -71,6 +77,7 @@
             this.resumeButton.TabIndex = 18;
             this.resumeButton.Text = "Resume";
             this.resumeButton.UseVisualStyleBackColor = true;
+            this.resumeButton.Visible = false;
             // 
             // GameScreen
             // 
