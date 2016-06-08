@@ -13,8 +13,8 @@ namespace Character_creator
 {
     public partial class GameScreen : UserControl
     {
-        Boolean aArrowDown, dArrowDown, spaceArrowDown;
-        Character cs;
+       Boolean aArrowDown, dArrowDown, spaceArrowDown;
+       // Character cs;
         public GameScreen()
         {
             InitializeComponent();
@@ -70,14 +70,14 @@ namespace Character_creator
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {
-            if (aArrowDown)
-            {
-                cs.move(ch, "Left");
-            }
-            else if (dArrowDown)
-            {
-                cs.move(ch, "Right");
-            }
+            //if (aArrowDown)
+            //{
+            //    cs.move(ch, "Left");
+            //}
+            //else if (dArrowDown)
+            //{
+            //    cs.move(ch, "Right");
+            //}
         }
 
     }
