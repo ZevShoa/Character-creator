@@ -53,12 +53,22 @@ namespace Character_creator
             //Displays the correct weather information
             foreach (XmlNode child in parent.ChildNodes)
             {
-                if (child.Name == "username")
+                if (child.Name == "player")
                 {
-                    if (child.Attributes["xmlns"].Value == usernameBox.Text)
+
+                    foreach (XmlNode grandChild in child.ChildNodes)
                     {
-                        foreach (XmlNode grandChild in child.ChildNodes)
+                        if (grandChild.Name == "username")
                         {
+                            if (grandChild.InnerText == usernameBox.Text)
+                            {
+                                MainMenu.playerName = usernameBox.Text;
+                                Form f = this.FindForm();
+                                f.Controls.Remove(this);
+                                OldOrNewCharacter onc = new OldOrNewCharacter();
+                                onc.Location = new Point((f.Width - onc.Width) / 2, (f.Height - onc.Height) / 2);
+                                f.Controls.Add(onc);
+                            }
                             if (grandChild.Name == "password")
                             {
                                 if (grandChild.InnerText == passwordBox.Text)
@@ -79,16 +89,11 @@ namespace Character_creator
                             }
                         }
                     }
-                    else
-                    {
-                        errorLabel.Text = "Incorrect Username Or Password";
-                        usernameBox.Text = "";
-                        passwordBox.Text = "";
-                    }
-
                 }
             }
+            doc.Save("UserFile.xml");
         }
+        
 
         private void exitButton_Click(object sender, EventArgs e)
         {

@@ -61,10 +61,10 @@ namespace Character_creator
             {
                 name = usernameBox.Text;
                 password = passwordBox.Text;
-                score = "";
-                char1 = "";
-                char2 = "";
-                char3 = "";
+                score = "test";
+                char1 = "test";
+                char2 = "test";
+                char3 = "test";
 
                 User newUser = new User(name, password, score, char1, char2, char3);
                 MainMenu.userList.Add(newUser);
@@ -73,11 +73,13 @@ namespace Character_creator
             if (MainMenu.failure == false)
             {
                 XmlTextWriter writer = new XmlTextWriter("UserFile.xml", null);
-                writer.WriteStartElement("player");
+                writer.WriteStartElement("players");
 
                 for (int i = 0; i < MainMenu.userList.Count; i++)
                 {
-                    writer.WriteStartElement("username", MainMenu.userList[i].username);
+                    writer.WriteStartElement("player", "");
+
+                    writer.WriteElementString("username", MainMenu.userList[i].username);
 
                     writer.WriteElementString("password", MainMenu.userList[i].password);
                     writer.WriteElementString("score", MainMenu.userList[i].score);
@@ -87,11 +89,12 @@ namespace Character_creator
 
                     // end the elements
                     writer.WriteEndElement();
-                    MainMenu.playerName = MainMenu.userList[i].username;
+                    //MainMenu.playerName = MainMenu.userList[i].username;
                 }
                 
                 writer.WriteEndElement();
                 writer.Close();
+
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
                 NameScreen ns = new NameScreen();
