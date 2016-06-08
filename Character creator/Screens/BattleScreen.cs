@@ -25,7 +25,18 @@ namespace Character_creator
 
         private void attackTwoButton_Click(object sender, EventArgs e)
         {
-
+            switch(attack2)
+            {
+                case "Healing":
+                    if (playerHealthBar.Value > 100)
+                    {
+                        playerHealthBar.Value += ranNum.Next(1, 20);
+                    }
+                    break;
+                case "Stink Attack":
+                    break;
+                    
+            }
         }
 
         private void attackThreeButton_Click(object sender, EventArgs e)
@@ -36,25 +47,25 @@ namespace Character_creator
         private void attackOneButton_Click(object sender, EventArgs e)
         {
             //assigning values to what happens when you use your weapon based attack
-            switch (reviewScreen.ch.weapon)
+            switch (attack1)
             {
-                case "Axe":
+                case "Heavy Swing":
                     playerEnergyBar.Value -= ranNum.Next(10, 16);
                     monsterHealthBar.Value -= ranNum.Next(15, 21);
                     break;
-                case "Sword":
+                case "Slash":
                     playerEnergyBar.Value -= ranNum.Next(6, 13);
                     monsterHealthBar.Value -= ranNum.Next(10, 15);
                     break;
-                case "Dagger":
+                case "Knife Throw":
                     playerEnergyBar.Value -= ranNum.Next(3, 10);
                     monsterHealthBar.Value -= ranNum.Next(1, 7);
                     break;
-                case "Staff":
+                case "Fireball":
                     playerEnergyBar.Value -= ranNum.Next(13, 20);
                     monsterHealthBar.Value -= ranNum.Next(18, 25);
                     break;
-                case "Fist":
+                case "Sucker punch":
                     playerEnergyBar.Value -= ranNum.Next(5, 18);
                     monsterHealthBar.Value -= ranNum.Next(5, 18);
                     break;
@@ -125,7 +136,7 @@ namespace Character_creator
                     break;
                 case "Deprived":
                     //low energy moderate attack with chance of monster fleeing
-                    attack2 = "Stink attack";
+                    attack2 = "Stink Attack";
                     break;
                 case "Thief":
                     //low energy high attack
@@ -145,7 +156,7 @@ namespace Character_creator
                     break;
             }
             #endregion
-            //assiging a name to each button so player knows what their doing
+            //assigning a name to each button so player knows what their doing
             attackOneButton.Text = attack1;
             attackTwoButton.Text = attack2;
             attackThreeButton.Text = attack3;
