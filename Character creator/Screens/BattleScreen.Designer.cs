@@ -43,6 +43,7 @@
             this.playerHealthNumberLabel = new System.Windows.Forms.Label();
             this.monsterHealthNunberLabel = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
+            this.announcerLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.characterBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.monsterBox)).BeginInit();
             this.SuspendLayout();
@@ -198,10 +199,21 @@
             this.exitButton.Text = "| |";
             this.exitButton.UseVisualStyleBackColor = false;
             // 
+            // announcerLabel
+            // 
+            this.announcerLabel.AutoSize = true;
+            this.announcerLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.announcerLabel.Location = new System.Drawing.Point(16, 22);
+            this.announcerLabel.Name = "announcerLabel";
+            this.announcerLabel.Size = new System.Drawing.Size(77, 44);
+            this.announcerLabel.TabIndex = 17;
+            this.announcerLabel.Text = "label1";
+            // 
             // BattleScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.announcerLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.monsterHealthNunberLabel);
             this.Controls.Add(this.playerHealthNumberLabel);
@@ -244,5 +256,6 @@
         private System.Windows.Forms.Label playerHealthNumberLabel;
         private System.Windows.Forms.Label monsterHealthNunberLabel;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Label announcerLabel;
     }
 }
