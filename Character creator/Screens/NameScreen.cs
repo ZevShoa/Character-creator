@@ -72,12 +72,14 @@ namespace Character_creator
         }
         private void continueButton_Click_1(object sender, EventArgs e)
         {
+            //if there is nothing in the text box then you cant continue
             if (nameTextBox.TextLength == 0)
             {
 
             }
             else
             {
+                // if there is something in the text box then it saves it and goes to the next screen
                 name = nameTextBox.Text;
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
@@ -90,6 +92,7 @@ namespace Character_creator
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
+            // if they want to close the program down
             Application.Exit();
         }
     }
