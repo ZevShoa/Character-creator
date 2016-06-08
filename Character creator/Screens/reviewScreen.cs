@@ -18,7 +18,7 @@ namespace Character_creator
         {
             InitializeComponent();
         }
-       public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, statScreen.healthStat, statScreen.energyStat, weaponScreen.finalPic);
+       public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, statScreen.healthStat, statScreen.energyStat, weaponScreen.finalPic, 100, 100, 5);
         private void reviewScreen_Load(object sender, EventArgs e)
         {
             nameLabel.Text = ch.name;
@@ -29,8 +29,8 @@ namespace Character_creator
             enrgyLabel.Text = "Energy: " + Convert.ToString(ch.energyStat);
             genderLabel.Text = ch.gender;
             finalPictureBox.Image = ch.picture;
-
-         
+            
+            
         }
 
         private void backButton_Click(object sender, EventArgs e)
