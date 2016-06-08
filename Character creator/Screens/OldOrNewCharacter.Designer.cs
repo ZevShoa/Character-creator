@@ -35,6 +35,7 @@
             this.selectLabel = new System.Windows.Forms.Label();
             this.orLabel = new System.Windows.Forms.Label();
             this.selectOldCharacterButton = new System.Windows.Forms.Button();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // newCharacterButton
@@ -83,6 +84,7 @@
             this.characterBox.Name = "characterBox";
             this.characterBox.Size = new System.Drawing.Size(406, 70);
             this.characterBox.TabIndex = 31;
+            this.characterBox.SelectedIndexChanged += new System.EventHandler(this.characterBox_SelectedIndexChanged);
             // 
             // selectLabel
             // 
@@ -121,11 +123,23 @@
             this.selectOldCharacterButton.UseVisualStyleBackColor = false;
             this.selectOldCharacterButton.Click += new System.EventHandler(this.selectOldCharacterButton_Click);
             // 
+            // errorLabel
+            // 
+            this.errorLabel.BackColor = System.Drawing.Color.Transparent;
+            this.errorLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel.ForeColor = System.Drawing.Color.White;
+            this.errorLabel.Location = new System.Drawing.Point(12, 550);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(1014, 65);
+            this.errorLabel.TabIndex = 35;
+            this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // OldOrNewCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.selectOldCharacterButton);
             this.Controls.Add(this.orLabel);
             this.Controls.Add(this.selectLabel);
@@ -135,6 +149,7 @@
             this.Controls.Add(this.titleLabel);
             this.Name = "OldOrNewCharacter";
             this.Size = new System.Drawing.Size(1050, 700);
+            this.Load += new System.EventHandler(this.OldOrNewCharacter_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,5 +164,6 @@
         private System.Windows.Forms.Label selectLabel;
         private System.Windows.Forms.Label orLabel;
         private System.Windows.Forms.Button selectOldCharacterButton;
+        private System.Windows.Forms.Label errorLabel;
     }
 }

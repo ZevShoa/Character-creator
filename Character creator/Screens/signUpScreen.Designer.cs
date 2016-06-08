@@ -38,6 +38,7 @@
             this.backButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // clickLogInLabel
@@ -156,12 +157,25 @@
             this.titleLabel.TabIndex = 22;
             this.titleLabel.Text = "Sign Up";
             // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.BackColor = System.Drawing.Color.Transparent;
+            this.errorLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabel.ForeColor = System.Drawing.Color.White;
+            this.errorLabel.Location = new System.Drawing.Point(527, 451);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(0, 65);
+            this.errorLabel.TabIndex = 32;
+            this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // signUpScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Character_creator.Properties.Resources.BackgroundUnset;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.clickLogInLabel);
             this.Controls.Add(this.accountLabel);
             this.Controls.Add(this.signInButton);
@@ -192,5 +206,6 @@
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.Label errorLabel;
     }
 }

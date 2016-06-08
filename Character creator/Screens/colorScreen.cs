@@ -22,11 +22,11 @@ namespace Character_creator
 
         private void colorScreen_Load(object sender, EventArgs e)
         {
-
-            nameLabel.Text = NameScreen.name;
-
-            
+            // sets label to users name
+            nameLabel.Text = NameScreen.name;   
         }
+        //all of the code to make the pictures of the different colors and genders appear when mouse hovers over the 
+        //buttons
         #region mouse enter/leave
         private void purpleButton_MouseEnter(object sender, EventArgs e)
         {
@@ -101,6 +101,8 @@ namespace Character_creator
         }
         #endregion
 
+        //saves colour choices and runs method to change screen
+        #region button clicks
         private void purpleButton_MouseClick(object sender, MouseEventArgs e)
         {
             color = "purple";
@@ -124,9 +126,10 @@ namespace Character_creator
             color = "green";
             changeScreen();
         }
-
+        #endregion
         public void changeScreen()
         {
+            //goes to next screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
             clothingScreen cs = new clothingScreen();
@@ -136,6 +139,7 @@ namespace Character_creator
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            //goes back a screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
             GenderScreen gs = new GenderScreen();

@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Character_creator
 {
     public partial class signUpScreen : UserControl
     {
+        string name, password, score, char1, char2, char3;
         public signUpScreen()
         {
             InitializeComponent();
@@ -48,11 +50,61 @@ namespace Character_creator
 
         private void signInButton_Click(object sender, EventArgs e)
         {
-            Form f = this.FindForm();
-            f.Controls.Remove(this);
-            NameScreen ns = new NameScreen();
-            ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
-            f.Controls.Add(ns);
+            int z = 0;
+            foreach (User newUser in MainMenu.userList)
+            {
+                if (MainMenu.userList[z].username == MainMenu.playerName)
+                {
+                    errorLabel.Text = "Account Already Exists";
+                    usernameBox.Text = "";
+                    passwordBox.Text = "";
+                    MainMenu.failure = true;
+                }
+                z++;
+            }
+
+            if (MainMenu.failure == false)
+            {
+                name = usernameBox.Text;
+                password = passwordBox.Text;
+                score = "space";
+                char1 = "space";
+                char2 = "spacce";
+                char3 = "space";
+
+                User newUser = new User(name, password, score, char1, char2, char3);
+                MainMenu.userList.Add(newUser);
+
+                XmlTextWriter writer = new XmlTextWriter("UserFile.xml", null);
+                writer.WriteStartElement("players");
+
+                for (int i = 0; i < MainMenu.userList.Count; i++)
+                {
+                    writer.WriteStartElement("player", "");
+
+                    writer.WriteElementString("username", MainMenu.userList[i].username);
+
+                    writer.WriteElementString("password", MainMenu.userList[i].password);
+                    writer.WriteElementString("score", MainMenu.userList[i].score);
+                    writer.WriteElementString("characterone", MainMenu.userList[i].character1);
+                    writer.WriteElementString("charactertwo", MainMenu.userList[i].character2);
+                    writer.WriteElementString("characterthree", MainMenu.userList[i].character3);
+
+                    // end the elements
+                    writer.WriteEndElement();
+                    //MainMenu.playerName = MainMenu.userList[i].username;
+                }
+                
+                writer.WriteEndElement();
+                writer.Close();
+
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                NameScreen ns = new NameScreen();
+                ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
+                f.Controls.Add(ns);
+            }
+            MainMenu.failure = false;
         }
     }
 }
