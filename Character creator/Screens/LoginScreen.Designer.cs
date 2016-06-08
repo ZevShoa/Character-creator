@@ -66,6 +66,7 @@
             this.exitButton.TabIndex = 13;
             this.exitButton.Text = "X";
             this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // titleLabel
             // 
@@ -159,13 +160,12 @@
             // 
             // errorLabel
             // 
-            this.errorLabel.AutoSize = true;
             this.errorLabel.BackColor = System.Drawing.Color.Transparent;
             this.errorLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorLabel.ForeColor = System.Drawing.Color.White;
-            this.errorLabel.Location = new System.Drawing.Point(535, 458);
+            this.errorLabel.Location = new System.Drawing.Point(20, 467);
             this.errorLabel.Name = "errorLabel";
-            this.errorLabel.Size = new System.Drawing.Size(0, 65);
+            this.errorLabel.Size = new System.Drawing.Size(1014, 65);
             this.errorLabel.TabIndex = 22;
             this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

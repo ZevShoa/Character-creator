@@ -61,6 +61,8 @@ namespace Character_creator
             writer.Close();
 
             XmlTextWriter writer1 = new XmlTextWriter("UserFile.xml", null);
+            writer.WriteStartElement(MainMenu.playerName);
+           if()
 
             Form f = this.FindForm();
             f.Controls.Remove(this);
