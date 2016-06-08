@@ -13,11 +13,12 @@ namespace Character_creator
 {
     public partial class NameScreen : UserControl
     {
-        
+        //create a random number generator for choosing letters
         Random ranNum = new Random();
         int nameLength;
         int nextLetter;
         int vowel;        
+        // created a list with all the letters of the alphabet in it
         string[] letters = {"a","e","i","o","u","y","g","h","c","j",
             "k","l","m","n","d","p","q","r","s","t","b","v","w","x","f","z"};
         List<string> theName = new List<string>();
