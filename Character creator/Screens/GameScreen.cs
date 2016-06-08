@@ -13,8 +13,8 @@ namespace Character_creator
 {
     public partial class GameScreen : UserControl
     {
-       Boolean aArrowDown, dArrowDown, spaceArrowDown;
-       // Character cs;
+        Boolean aArrowDown, dArrowDown, spaceArrowDown;
+        Character ch;
         public GameScreen()
         {
             InitializeComponent();
@@ -28,6 +28,7 @@ namespace Character_creator
         private void GameScreen_Load(object sender, EventArgs e)
         {
             characterBox.Image = weaponScreen.finalPic;
+            this.Focus();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -60,24 +61,24 @@ namespace Character_creator
                     aArrowDown = false;
                     break;
                 case Keys.D:
-                    dArrowDown = true;
+                    dArrowDown = false;
                     break;
                 case Keys.Space:
-                    spaceArrowDown = true;
+                    spaceArrowDown = false;
                     break;
             }
         }
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {
-            //if (aArrowDown)
-            //{
-            //    cs.move(ch, "Left");
-            //}
-            //else if (dArrowDown)
-            //{
-            //    cs.move(ch, "Right");
-            //}
+            if (aArrowDown == true)
+            {
+                ch.move(ch, "Left");
+            }
+            else if (dArrowDown == true)
+            {
+                ch.move(ch, "Right");
+            }
         }
 
     }

@@ -40,7 +40,7 @@
             // 
             this.characterBox.BackColor = System.Drawing.Color.White;
             this.characterBox.Location = new System.Drawing.Point(319, 302);
-            this.characterBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.characterBox.Margin = new System.Windows.Forms.Padding(2);
             this.characterBox.Name = "characterBox";
             this.characterBox.Size = new System.Drawing.Size(82, 125);
             this.characterBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -54,7 +54,7 @@
             this.pauseButton.Font = new System.Drawing.Font("Agency FB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pauseButton.ForeColor = System.Drawing.Color.White;
             this.pauseButton.Location = new System.Drawing.Point(659, 2);
-            this.pauseButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pauseButton.Margin = new System.Windows.Forms.Padding(2);
             this.pauseButton.Name = "pauseButton";
             this.pauseButton.Size = new System.Drawing.Size(39, 41);
             this.pauseButton.TabIndex = 17;
@@ -89,10 +89,12 @@
             this.Controls.Add(this.pauseButton);
             this.Controls.Add(this.characterBox);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GameScreen";
             this.Size = new System.Drawing.Size(700, 500);
             this.Load += new System.EventHandler(this.GameScreen_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.GameScreen_KeyUp);
+            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.GameScreen_PreviewKeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.characterBox)).EndInit();
             this.ResumeLayout(false);
 
