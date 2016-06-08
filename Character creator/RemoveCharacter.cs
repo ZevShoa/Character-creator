@@ -44,6 +44,7 @@ namespace Character_creator
                     if (child.Attributes["xmlns"].Value == MainMenu.playerName)
                     {
                         foreach (XmlNode grandChild in child.ChildNodes)
+
                         {
                             if (grandChild.Name == "character1")
                             {
@@ -52,14 +53,14 @@ namespace Character_creator
                                     characterBox.Tag = grandChild.InnerText;
                                 }
                             }
-                            if (grandChild.Name == "character1")
+                            if (grandChild.Name == "character2")
                             {
                                 if (grandChild.Name != "")
                                 {
                                     characterBox.Tag = grandChild.InnerText;
                                 }
                             }
-                            if (grandChild.Name == "character1")
+                            if (grandChild.Name == "character3")
                             {
                                 if (grandChild.Name != "")
                                 {

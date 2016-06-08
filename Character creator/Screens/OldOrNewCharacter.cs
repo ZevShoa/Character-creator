@@ -74,26 +74,29 @@ namespace Character_creator
                     {
                         foreach (XmlNode grandChild in child.ChildNodes)
                         {
-                            if (grandChild.Name == "character1")
+                            if (grandChild.Name == "characterone")
                             {
                                 if (grandChild.Name != "")
                                 {
+                                    MainMenu.space1 = false;
                                    characterBox.Tag = grandChild.InnerText;
                                     characterint++;
                                 }   
                                 }
-                            if (grandChild.Name == "character1")
+                            if (grandChild.Name == "charactertwo")
                             {
                                 if (grandChild.Name != "")
                                 {
+                                    MainMenu.space2 = false;
                                     characterBox.Tag = grandChild.InnerText;
                                     characterint++;
                                 }
                             }
-                            if (grandChild.Name == "character1")
+                            if (grandChild.Name == "characterthree")
                             {
                                 if (grandChild.Name != "")
                                 {
+                                    MainMenu.space3 = false;
                                     characterBox.Tag = grandChild.InnerText;
                                     characterint++;
                                 }

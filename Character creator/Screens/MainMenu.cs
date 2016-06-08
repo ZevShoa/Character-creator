@@ -17,6 +17,9 @@ namespace Character_creator
     {
         public static List<User> userList = new List<User>();
         public static bool failure = false;
+        public static bool space1 = true;
+        public static bool space2 = true;
+        public static bool space3 = true;
         string name, password, score, char1, char2, char3;
         public static string playerName;
         int index = 1;
