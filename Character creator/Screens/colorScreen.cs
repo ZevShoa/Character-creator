@@ -101,6 +101,7 @@ namespace Character_creator
         }
         #endregion
 
+        //saves colour choices and runs method to change screen
         #region button clicks
         private void purpleButton_MouseClick(object sender, MouseEventArgs e)
         {
@@ -128,6 +129,7 @@ namespace Character_creator
         #endregion
         public void changeScreen()
         {
+            //goes to next screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
             clothingScreen cs = new clothingScreen();
@@ -137,6 +139,7 @@ namespace Character_creator
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            //goes back a screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
             GenderScreen gs = new GenderScreen();
