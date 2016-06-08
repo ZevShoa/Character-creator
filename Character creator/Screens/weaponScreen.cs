@@ -93,7 +93,7 @@ namespace Character_creator
                             break;
                     }
                     break;
-                case "male":
+                //case "male":
                     switch (colorScreen.color)
                     {
                         case "purple":
