@@ -61,8 +61,31 @@ namespace Character_creator
             writer.Close();
 
             XmlTextWriter writer1 = new XmlTextWriter("UserFile.xml", null);
-            writer.WriteStartElement(MainMenu.playerName);
-           if()
+            writer1.WriteStartElement(MainMenu.playerName);
+           if(MainMenu.space1 == true)
+            {
+                writer1.WriteElementString("characterone",ch.name);
+                writer.WriteEndElement();
+                writer.Close();
+            }
+           else if (MainMenu.space1 == false)
+            {
+                if(MainMenu.space2 == true)
+                {
+                    writer1.WriteElementString("charactertwo",ch.name);
+                    writer.WriteEndElement();
+                    writer.Close();
+                }
+                else if(MainMenu.space2 == false)
+                {
+                    if(MainMenu.space3 == true)
+                    {
+                        writer1.WriteElementString("characterthree",ch.name);
+                        writer.WriteEndElement();
+                        writer.Close();
+                    }
+                }
+            }
 
             Form f = this.FindForm();
             f.Controls.Remove(this);
