@@ -50,28 +50,31 @@ namespace Character_creator
 
         private void signInButton_Click(object sender, EventArgs e)
         {
-
-            if (MainMenu.failure == true)
+            int z = 0;
+            foreach (User newUser in MainMenu.userList)
             {
-                errorLabel.Text = "Account Already Exists";
-                usernameBox.Text = "";
-                passwordBox.Text = "";
-            }
-            else if (MainMenu.failure == false)
-            {
-                name = usernameBox.Text;
-                password = passwordBox.Text;
-                score = "test";
-                char1 = "test";
-                char2 = "test";
-                char3 = "test";
-
-                User newUser = new User(name, password, score, char1, char2, char3);
-                MainMenu.userList.Add(newUser);
+                if (MainMenu.userList[z].username == MainMenu.playerName)
+                {
+                    errorLabel.Text = "Account Already Exists";
+                    usernameBox.Text = "";
+                    passwordBox.Text = "";
+                    MainMenu.failure = true;
+                }
+                z++;
             }
 
             if (MainMenu.failure == false)
             {
+                name = usernameBox.Text;
+                password = passwordBox.Text;
+                score = "space";
+                char1 = "space";
+                char2 = "spacce";
+                char3 = "space";
+
+                User newUser = new User(name, password, score, char1, char2, char3);
+                MainMenu.userList.Add(newUser);
+
                 XmlTextWriter writer = new XmlTextWriter("UserFile.xml", null);
                 writer.WriteStartElement("players");
 
