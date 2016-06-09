@@ -14,15 +14,14 @@ namespace Character_creator
     public partial class GameScreen : UserControl
     {
         Boolean aArrowDown, dArrowDown, spaceArrowDown;
-        public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, statScreen.healthStat, statScreen.energyStat, weaponScreen.finalPic, ch.x, ch.y, 5);
-        PictureBox[] Character = new PictureBox[2];
+        
         public GameScreen()
         {
             InitializeComponent();
+          
             gameTimer.Enabled = true;
-            gameTimer.Start();
             resumeButton.Visible = false;
-            Character[0] = characterBox;
+          
 
 
         }
@@ -72,14 +71,16 @@ namespace Character_creator
         }
 
         private void gameTimer_Tick(object sender, EventArgs e)
+            
         {
             if (aArrowDown == true)
             {
-                ch.move(ch, "Left");
+                reviewScreen.ch.move(reviewScreen.ch, "Left");
+                
             }
             else if (dArrowDown == true)
             {
-                ch.move(ch, "Right");
+                reviewScreen.ch.move(reviewScreen.ch, "Right");
             }
         }
 
