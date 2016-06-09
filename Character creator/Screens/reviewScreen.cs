@@ -54,8 +54,6 @@ namespace Character_creator
             writer.WriteElementString("color", ch.color);
             writer.WriteElementString("weapon", ch.weapon);
             writer.WriteElementString("gender", ch.gender);
-            writer.WriteElementString("health Stat", Convert.ToString(ch.healthStat));
-            writer.WriteElementString("energy Stat", Convert.ToString(ch.energyStat));
             writer.WriteElementString("Image", "finalPic");
             writer.WriteEndElement();
             writer.WriteEndElement();
