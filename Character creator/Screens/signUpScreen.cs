@@ -50,34 +50,39 @@ namespace Character_creator
 
         private void signInButton_Click(object sender, EventArgs e)
         {
-
-            if (MainMenu.failure == true)
+            int z = 0;
+            foreach (User newUser in MainMenu.userList)
             {
-                errorLabel.Text = "Account Already Exists";
-                usernameBox.Text = "";
-                passwordBox.Text = "";
-            }
-            else if (MainMenu.failure == false)
-            {
-                name = usernameBox.Text;
-                password = passwordBox.Text;
-                score = "";
-                char1 = "";
-                char2 = "";
-                char3 = "";
-
-                User newUser = new User(name, password, score, char1, char2, char3);
-                MainMenu.userList.Add(newUser);
+                if (MainMenu.userList[z].username == MainMenu.playerName)
+                {
+                    errorLabel.Text = "Account Already Exists";
+                    usernameBox.Text = "";
+                    passwordBox.Text = "";
+                    MainMenu.failure = true;
+                }
+                z++;
             }
 
             if (MainMenu.failure == false)
             {
+                name = usernameBox.Text;
+                password = passwordBox.Text;
+                score = "space";
+                char1 = "space";
+                char2 = "spacce";
+                char3 = "space";
+
+                User newUser = new User(name, password, score, char1, char2, char3);
+                MainMenu.userList.Add(newUser);
+
                 XmlTextWriter writer = new XmlTextWriter("UserFile.xml", null);
-                writer.WriteStartElement("player");
+                writer.WriteStartElement("players");
 
                 for (int i = 0; i < MainMenu.userList.Count; i++)
                 {
-                    writer.WriteStartElement("username", MainMenu.userList[i].username);
+                    writer.WriteStartElement("player", "");
+
+                    writer.WriteElementString("username", MainMenu.userList[i].username);
 
                     writer.WriteElementString("password", MainMenu.userList[i].password);
                     writer.WriteElementString("score", MainMenu.userList[i].score);
@@ -87,11 +92,12 @@ namespace Character_creator
 
                     // end the elements
                     writer.WriteEndElement();
-                    MainMenu.playerName = MainMenu.userList[i].username;
+                    //MainMenu.playerName = MainMenu.userList[i].username;
                 }
                 
                 writer.WriteEndElement();
                 writer.Close();
+
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
                 NameScreen ns = new NameScreen();

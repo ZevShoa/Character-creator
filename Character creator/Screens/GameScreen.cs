@@ -14,20 +14,19 @@ namespace Character_creator
     public partial class GameScreen : UserControl
     {
         Boolean aArrowDown, dArrowDown, spaceArrowDown;
-        Character ch;
-
-        List<Monsters> Monsters = new List<Monsters>();
-
+        public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, statScreen.healthStat, statScreen.energyStat, weaponScreen.finalPic, ch.x, ch.y, 5);
+        PictureBox[] Character = new PictureBox[2];
         public GameScreen()
         {
             InitializeComponent();
             gameTimer.Enabled = true;
             gameTimer.Start();
             resumeButton.Visible = false;
+            Character[0] = characterBox;
 
 
         }
-
+       
         private void GameScreen_Load(object sender, EventArgs e)
         {
             characterBox.Image = weaponScreen.finalPic;

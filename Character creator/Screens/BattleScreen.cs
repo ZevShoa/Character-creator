@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace Character_creator
 {
@@ -14,7 +15,7 @@ namespace Character_creator
     {
         Random ranNum = new Random();
         int attackNum;
-        
+        int stinkRan;
 
         public BattleScreen()
         {
@@ -22,9 +23,10 @@ namespace Character_creator
         }
         // strings for attacks
         string attack1, attack2,attack3;
-
+        #region button clicks
         private void attackTwoButton_Click(object sender, EventArgs e)
         {
+            //attacks based on class
             switch(attack2)
             {
                 case "Healing":
@@ -34,16 +36,64 @@ namespace Character_creator
                     }
                     break;
                 case "Stink Attack":
+                    stinkRan = ranNum.Next(0, 11);
+                    if (stinkRan >= 10)
+                    {
+                        Form f = this.FindForm();
+                        f.Controls.Remove(this);
+                        GameScreen gs = new GameScreen();
+                        f.Controls.Add(gs);
+                        gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+                        //ALSO NEED CODE TO DELTE MONSTER
+                    }
+                    else
+                    {
+                        playerEnergyBar.Value -= ranNum.Next(2, 12);
+                        monsterHealthBar.Value -= ranNum.Next(1, 15);
+                    }
                     break;
-                    
+                case "BackStab":
+                    playerEnergyBar.Value -= ranNum.Next(20, 30);
+                    monsterHealthBar.Value -= ranNum.Next(20, 35);
+                    break;
+                case "Regeneration":
+                    playerEnergyBar.Value += ranNum.Next(5, 13);
+                    playerHealthBar.Value -= ranNum.Next(1, 5);
+                     break;                  
             }
+            //calling monster to attack
+            monsterTurn();
         }
 
         private void attackThreeButton_Click(object sender, EventArgs e)
         {
-
+            //random attacks that anyone could have in any fight
+            switch (attack3)
+            {
+                case "Body Slam":
+                    playerEnergyBar.Value -= ranNum.Next(20, 31);
+                    monsterHealthBar.Value -= ranNum.Next(1, 36);
+                    break;
+                case "Light Attack":
+                    playerEnergyBar.Value -= ranNum.Next(2, 11);
+                    monsterHealthBar.Value -= ranNum.Next(5, 15);
+                    break;
+                case "Gentle Poke":
+                    playerEnergyBar.Value -= ranNum.Next(3, 6);
+                    monsterHealthBar.Value -= ranNum.Next(0, 6);
+                    break;
+                case "Divine Intervention":
+                    Form f = this.FindForm();
+                    f.Controls.Remove(this);
+                    GameScreen gs = new GameScreen();
+                    f.Controls.Add(gs);
+                    gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+                    //ALSO NEED CODE TO DELTE MONSTER
+                    break;                
+            }
+            //calling monster to attack
+            monsterTurn();
         }
-
         private void attackOneButton_Click(object sender, EventArgs e)
         {
             //assigning values to what happens when you use your weapon based attack
@@ -72,10 +122,13 @@ namespace Character_creator
                 default:
                     break;
             }
+            //calling monster to attack
+            monsterTurn();
         }
-
+        #endregion
         private void BattleScreen_Load(object sender, EventArgs e)
         {
+            announcerLabel.Text = reviewScreen.ch.name + "'s Turn";
             //puts the image of your character into the picture box
             characterBox.Image = reviewScreen.ch.picture;
             #region Attack Choices
@@ -84,7 +137,7 @@ namespace Character_creator
             // each attack will be different but there will be variety battle to battle
             if (attackNum >= 0 && attackNum <= 20)
             {
-                //High energy high attack
+                //High energy varying attack
                 attack3 = "Body Slam";
             }
             else if (attackNum >= 21 && attackNum <= 40)
@@ -95,7 +148,7 @@ namespace Character_creator
             else if (attackNum >= 41 && attackNum <= 59)
             {
                 //gets away from battle if need be
-                attack3 = "Run Away";
+                attack3 = "Gentle Poke";
             }
             else if (attackNum >= 60)
             {
@@ -161,5 +214,27 @@ namespace Character_creator
             attackTwoButton.Text = attack2;
             attackThreeButton.Text = attack3;
         }
+        public void monsterTurn()
+        {
+            attackOneButton.Enabled = false;
+            attackTwoButton.Enabled = false;
+            attackThreeButton.Enabled = false;
+            if(monsterHealthBar.Value >= 0)
+            {
+                announcerLabel.Text = "The Monster Is Vanquished";
+                Thread.Sleep(2000);
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                GameScreen gs = new GameScreen();
+                f.Controls.Add(gs);
+                gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+                //ALSO NEED CODE TO DELTE MONSTER
+            }
+            else
+            {
+                
+            }
+        }
+
     }
 }

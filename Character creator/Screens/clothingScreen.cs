@@ -20,8 +20,10 @@ namespace Character_creator
 
         private void clothingScreen_Load(object sender, EventArgs e)
         {
+            //gives label the users name
             nameLabel.Text = NameScreen.name;
         }
+        //has many switch statements to show an image in the picture box when mouse hovers over the button
         #region Mouse Enter/Leave
         private void knightButton_MouseEnter(object sender, EventArgs e)
         {
@@ -258,7 +260,7 @@ namespace Character_creator
             clothingBox.Image = null;
         }
         #endregion
-
+        // saves clothing choice and runs method to change screen
         #region Buttons Clicks
         private void knightButton_Click(object sender, EventArgs e)
         {
@@ -293,6 +295,7 @@ namespace Character_creator
 
         public void changeScreen()
         {
+            //changes screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
             weaponScreen ws = new weaponScreen();
@@ -302,6 +305,7 @@ namespace Character_creator
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            //goes back a screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
             colorScreen cs = new colorScreen();

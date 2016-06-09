@@ -30,48 +30,60 @@ namespace Character_creator
 
         private void RemoveCharacter_Load(object sender, EventArgs e)
         {
-            //loads the xml document to be read
-            XmlDocument doc = new XmlDocument();
-            doc.Load("UserFile.xml");
-            XmlNode parent;
-            parent = doc.DocumentElement;
-
-            //Displays the correct weather information
-            foreach (XmlNode child in parent.ChildNodes)
+            int i = 0;
+            foreach (User newUser in MainMenu.userList)
             {
-                if (child.Name == "username")
+                if (MainMenu.userList[i].username == MainMenu.playerName)
                 {
-                    if (child.Attributes["xmlns"].Value == MainMenu.playerName)
-                    {
-                        foreach (XmlNode grandChild in child.ChildNodes)
-
-                        {
-                            if (grandChild.Name == "character1")
-                            {
-                                if (grandChild.Name != "")
-                                {
-                                    characterBox.Tag = grandChild.InnerText;
-                                }
-                            }
-                            if (grandChild.Name == "character2")
-                            {
-                                if (grandChild.Name != "")
-                                {
-                                    characterBox.Tag = grandChild.InnerText;
-                                }
-                            }
-                            if (grandChild.Name == "character3")
-                            {
-                                if (grandChild.Name != "")
-                                {
-                                    characterBox.Tag = grandChild.InnerText;
-                                }
-                            }
-                        }
-
-                    }
+                    characterBox.Tag = MainMenu.userList[i].character1;
+                    characterBox.Tag = MainMenu.userList[i].character2;
+                    characterBox.Tag = MainMenu.userList[i].character3;
                 }
+                i++;
             }
+
+            ////loads the xml document to be read
+            //XmlDocument doc = new XmlDocument();
+            //doc.Load("UserFile.xml");
+            //XmlNode parent;
+            //parent = doc.DocumentElement;
+
+            ////Displays the correct weather information
+            //foreach (XmlNode child in parent.ChildNodes)
+            //{
+            //    if (child.Name == "username")
+            //    {
+            //        if (child.Attributes["xmlns"].Value == MainMenu.playerName)
+            //        {
+            //            foreach (XmlNode grandChild in child.ChildNodes)
+
+            //            {
+            //                if (grandChild.Name == "character1")
+            //                {
+            //                    if (grandChild.Name != "")
+            //                    {
+            //                        characterBox.Tag = grandChild.InnerText;
+            //                    }
+            //                }
+            //                if (grandChild.Name == "character2")
+            //                {
+            //                    if (grandChild.Name != "")
+            //                    {
+            //                        characterBox.Tag = grandChild.InnerText;
+            //                    }
+            //                }
+            //                if (grandChild.Name == "character3")
+            //                {
+            //                    if (grandChild.Name != "")
+            //                    {
+            //                        characterBox.Tag = grandChild.InnerText;
+            //                    }
+            //                }
+            //            }
+
+            //        }
+            //    }
+            //}
         }
 
         private void characterBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -81,18 +93,42 @@ namespace Character_creator
 
         private void selectOldCharacterButton_Click(object sender, EventArgs e)
         {
-            if (characterRemoved != "")
+            int i = 0;
+            foreach (User newUser in MainMenu.userList)
             {
-                Form f = this.FindForm();
-                f.Controls.Remove(this);
-                reviewScreen rs = new reviewScreen();
-                rs.Location = new Point((f.Width - rs.Width) / 2, (f.Height - rs.Height) / 2);
-                f.Controls.Add(rs);
+                if (MainMenu.userList[i].username == MainMenu.playerName)
+                {
+                   if(MainMenu.userList[i].character1 == characterRemoved)
+                    {
+                        MainMenu.userList[i].character1 = "space";
+                        Form f = this.FindForm();
+                        f.Controls.Remove(this);
+                        NameScreen ns = new NameScreen();
+                        ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
+                        f.Controls.Add(ns);
+                    }
+                    if (MainMenu.userList[i].character2 == characterRemoved)
+                    {
+                        MainMenu.userList[i].character2 = "space";
+                        Form f = this.FindForm();
+                        f.Controls.Remove(this);
+                        NameScreen ns = new NameScreen();
+                        ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
+                        f.Controls.Add(ns);
+                    }
+                    if (MainMenu.userList[i].character3 == characterRemoved)
+                    {
+                        MainMenu.userList[i].character3 = "space";
+                        Form f = this.FindForm();
+                        f.Controls.Remove(this);
+                        NameScreen ns = new NameScreen();
+                        ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
+                        f.Controls.Add(ns);
+                    }
+                }
+                i++;
             }
-            else
-            {
-                errorLabel.Text = "Please Select A Character \nTo Remove or Go Back";
-            }
+            
         }
     }
 }
