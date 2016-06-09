@@ -23,9 +23,9 @@ namespace Character_creator
         {
             Form f = this.FindForm();
             f.Controls.Remove(this);
-            statScreen ss = new statScreen();
-            f.Controls.Add(ss);
-            ss.Location = new Point((f.Width - ss.Width) / 2, (f.Height - ss.Height) / 2);
+            reviewScreen rs = new reviewScreen();
+            f.Controls.Add(rs);
+            rs.Location = new Point((f.Width - rs.Width) / 2, (f.Height - rs.Height) / 2);
         }
 
         private void weaponScreen_Load(object sender, EventArgs e)

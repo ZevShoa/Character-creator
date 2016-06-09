@@ -18,15 +18,15 @@ namespace Character_creator
         {
             InitializeComponent();
         }
-       public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, statScreen.healthStat, statScreen.energyStat, weaponScreen.finalPic, 100, 100, 5);
+        //used the class to make a character
+       public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, weaponScreen.finalPic, 100, 100, 5);
         private void reviewScreen_Load(object sender, EventArgs e)
         {
+            //set all the values for the screen
             nameLabel.Text = ch.name;
             classLabel.Text = "Class: " + ch.clothes;
             colorLabel.Text = "Color: " + ch.color;
             weaponLabel.Text = "Weapon: " + ch.weapon;
-            healthLabel.Text = "Health: " + Convert.ToString(ch.healthStat);
-            enrgyLabel.Text = "Energy: " + Convert.ToString(ch.energyStat);
             genderLabel.Text = ch.gender;
             finalPictureBox.Image = ch.picture;
             
@@ -35,6 +35,7 @@ namespace Character_creator
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            // goes back a screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
             statScreen ss = new statScreen();
@@ -119,8 +120,8 @@ namespace Character_creator
             Form f = this.FindForm();
             f.Controls.Remove(this);
             GameScreen gs = new GameScreen();
-            f.Controls.Add(gs);
             gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+            f.Controls.Add(gs);
 
         }
 

@@ -10,18 +10,16 @@ namespace Character_creator
    public class Character
     {
         public string name, clothes, weapon, gender, color;
-        public int healthStat, energyStat, x, y, speed;
+        public int  x, y, speed;
         public Image picture;
 
-        public Character(string _name, string _clothes, string _weapon, string _gender, string _color, int _healthstat, int _energyStat, Image _picture, int _x, int _y, int  _speed)
+        public Character(string _name, string _clothes, string _weapon, string _gender, string _color, Image _picture, int _x, int _y, int  _speed)
         {
             name = _name;
             clothes = _clothes;
             weapon = _weapon;
             gender = _gender;
             color = _color;
-            healthStat = _healthstat;
-            energyStat = _energyStat;
             picture = _picture;
             x = _x;
             y = _y;

@@ -72,6 +72,7 @@ namespace Character_creator
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
+            
             // Open the file to be read
             XmlTextReader reader = new XmlTextReader("UserFile.xml");
 
@@ -122,6 +123,7 @@ namespace Character_creator
             }
             // When done reading the file close it
             reader.Close();
+            
         }
     }
 }
