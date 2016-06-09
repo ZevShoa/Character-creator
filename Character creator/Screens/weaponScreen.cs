@@ -21,6 +21,7 @@ namespace Character_creator
 
         public void changeScreen()
         {
+            //go to review screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
             reviewScreen rs = new reviewScreen();
@@ -30,17 +31,20 @@ namespace Character_creator
 
         private void weaponScreen_Load(object sender, EventArgs e)
         {
+            //the name of the user is loaded
             nameLabel.Text = NameScreen.name;           
         }
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            // go back a screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
             clothingScreen cs = new clothingScreen();
             f.Controls.Add(cs);
             cs.Location = new Point((f.Width - cs.Width) / 2, (f.Height - cs.Height) / 2);
         }
+        //shows all the different weapons in the picture box
         #region Button enter/leave
         private void swordButton_MouseEnter(object sender, EventArgs e)
         {
@@ -131,7 +135,7 @@ namespace Character_creator
                             break;
                     }
                     break;
-                //case "male":
+                case "male":
                     switch (colorScreen.color)
                     {
                         case "purple":
@@ -952,7 +956,7 @@ namespace Character_creator
             weaponBox.Image = null;
         }
         #endregion
-
+        //when buttons are clicked the choice is saved the change screen method is run
         #region Button Click
         private void swordButton_Click_1(object sender, EventArgs e)
         {
