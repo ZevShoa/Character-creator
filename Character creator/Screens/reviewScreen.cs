@@ -60,32 +60,61 @@ namespace Character_creator
             writer.WriteEndElement();
             writer.Close();
 
-            XmlTextWriter writer1 = new XmlTextWriter("UserFile.xml", null);
-            writer1.WriteStartElement(MainMenu.playerName);
-           if(MainMenu.space1 == true)
+
+            int i = 0;
+            foreach (User newUser in MainMenu.userList)
             {
-                writer1.WriteElementString("characterone",ch.name);
-                writer.WriteEndElement();
-                writer.Close();
-            }
-           else if (MainMenu.space1 == false)
-            {
-                if(MainMenu.space2 == true)
+                if (MainMenu.userList[i].username == MainMenu.playerName)
                 {
-                    writer1.WriteElementString("charactertwo",ch.name);
-                    writer.WriteEndElement();
-                    writer.Close();
-                }
-                else if(MainMenu.space2 == false)
-                {
-                    if(MainMenu.space3 == true)
+                    if (MainMenu.userList[i].character1 == "space")
                     {
-                        writer1.WriteElementString("characterthree",ch.name);
-                        writer.WriteEndElement();
-                        writer.Close();
+                        MainMenu.userList[i].character1 = ch.name;
+                    }
+                    else
+                    {
+                        if (MainMenu.userList[i].character2 == "space")
+                        {
+                            MainMenu.userList[i].character2 = ch.name;
+                        }
+                        else
+                        {
+                            if (MainMenu.userList[i].character3 == "space")
+                            {
+                                MainMenu.userList[i].character3 = ch.name;
+                            }
+                           
+                        }
                     }
                 }
+                i++;
             }
+
+            // XmlTextWriter writer1 = new XmlTextWriter("UserFile.xml", null);
+            // writer1.WriteStartElement(MainMenu.playerName);
+            //if(MainMenu.space1 == true)
+            // {
+            //     writer1.WriteElementString("characterone",ch.name);
+            //     writer.WriteEndElement();
+            //     writer.Close();
+            // }
+            //else if (MainMenu.space1 == false)
+            // {
+            //     if(MainMenu.space2 == true)
+            //     {
+            //         writer1.WriteElementString("charactertwo",ch.name);
+            //         writer.WriteEndElement();
+            //         writer.Close();
+            //     }
+            //     else if(MainMenu.space2 == false)
+            //     {
+            //         if(MainMenu.space3 == true)
+            //         {
+            //             writer1.WriteElementString("characterthree",ch.name);
+            //             writer.WriteEndElement();
+            //             writer.Close();
+            //         }
+            //     }
+            // }
 
             Form f = this.FindForm();
             f.Controls.Remove(this);
