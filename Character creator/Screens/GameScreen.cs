@@ -15,13 +15,15 @@ namespace Character_creator
     {
         Boolean aArrowDown, dArrowDown, spaceArrowDown;
         Character ch;
+        PictureBox[] Character = new PictureBox[2];
         public GameScreen()
         {
             InitializeComponent();
             gameTimer.Enabled = true;
             gameTimer.Start();
             resumeButton.Visible = false;
-
+            Character[0] = characterBox;
+            characterBox.Location = new Point (ch.x);
 
         }
 
