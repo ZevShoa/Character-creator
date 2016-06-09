@@ -15,6 +15,9 @@ namespace Character_creator
     {
         Boolean aArrowDown, dArrowDown, spaceArrowDown;
         Character ch;
+
+        List<Monsters> Monsters = new List<Monsters>();
+
         public GameScreen()
         {
             InitializeComponent();
