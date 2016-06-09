@@ -82,6 +82,7 @@ namespace Character_creator
             {
                 reviewScreen.ch.move(reviewScreen.ch, "Right");
             }
+            Refresh();
         }
 
     }
