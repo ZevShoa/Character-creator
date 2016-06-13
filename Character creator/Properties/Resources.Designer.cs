@@ -111,6 +111,15 @@ namespace Character_creator.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream DARK__Video_Game____Main_Theme_Music {
+            get {
+                return ResourceManager.GetStream("DARK__Video_Game____Main_Theme_Music", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap deprived {

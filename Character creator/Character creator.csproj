@@ -1073,6 +1073,7 @@
     <None Include="Resources\maleYellowThiefSword.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\DARK %28Video Game%29 - Main Theme Music.wav" />
     <Content Include="UserFile.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
