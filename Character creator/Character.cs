@@ -33,7 +33,7 @@ namespace Character_creator
                 ch.x -= ch.speed;
             }
 
-            else
+            else if (direction == "right")
             {
                 ch.x += ch.speed;
             }
