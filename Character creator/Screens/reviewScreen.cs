@@ -45,6 +45,7 @@ namespace Character_creator
 
         private void saveButton_Click(object sender, EventArgs e)
         {
+            //saves users options
             XmlTextWriter writer = new XmlTextWriter(ch.name+".xml", null);
 
             writer.WriteStartElement("Character");
@@ -59,7 +60,7 @@ namespace Character_creator
             writer.WriteEndElement();
             writer.Close();
 
-
+            //more xml stuff
             int i = 0;
             foreach (User newUser in MainMenu.userList)
             {
@@ -114,17 +115,16 @@ namespace Character_creator
             //         }
             //     }
             // }
-
+            //goes to the accrual screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
             GameScreen gs = new GameScreen();
             gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
             f.Controls.Add(gs);
-
         }
-
         private void menuButton_Click(object sender, EventArgs e)
         {
+            //goes back to the main menu
             Form f = this.FindForm();
             f.Controls.Remove(this);
             MainMenu mm = new MainMenu();
