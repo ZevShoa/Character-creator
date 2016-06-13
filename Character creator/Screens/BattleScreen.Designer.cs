@@ -60,7 +60,7 @@
             // 
             this.monsterBox.Location = new System.Drawing.Point(24, 320);
             this.monsterBox.Name = "monsterBox";
-            this.monsterBox.Size = new System.Drawing.Size(294, 250);
+            this.monsterBox.Size = new System.Drawing.Size(300, 300);
             this.monsterBox.TabIndex = 2;
             this.monsterBox.TabStop = false;
             // 
