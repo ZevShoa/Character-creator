@@ -31,8 +31,6 @@
             this.nameLabel = new System.Windows.Forms.Label();
             this.classLabel = new System.Windows.Forms.Label();
             this.weaponLabel = new System.Windows.Forms.Label();
-            this.healthLabel = new System.Windows.Forms.Label();
-            this.enrgyLabel = new System.Windows.Forms.Label();
             this.colorLabel = new System.Windows.Forms.Label();
             this.finalPictureBox = new System.Windows.Forms.PictureBox();
             this.genderLabel = new System.Windows.Forms.Label();
@@ -62,7 +60,7 @@
             this.classLabel.BackColor = System.Drawing.Color.Transparent;
             this.classLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.classLabel.ForeColor = System.Drawing.Color.White;
-            this.classLabel.Location = new System.Drawing.Point(289, 237);
+            this.classLabel.Location = new System.Drawing.Point(39, 349);
             this.classLabel.Name = "classLabel";
             this.classLabel.Size = new System.Drawing.Size(105, 50);
             this.classLabel.TabIndex = 1;
@@ -79,30 +77,6 @@
             this.weaponLabel.Size = new System.Drawing.Size(134, 50);
             this.weaponLabel.TabIndex = 2;
             this.weaponLabel.Text = "Weapon:";
-            // 
-            // healthLabel
-            // 
-            this.healthLabel.AutoSize = true;
-            this.healthLabel.BackColor = System.Drawing.Color.Transparent;
-            this.healthLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.healthLabel.ForeColor = System.Drawing.Color.White;
-            this.healthLabel.Location = new System.Drawing.Point(39, 244);
-            this.healthLabel.Name = "healthLabel";
-            this.healthLabel.Size = new System.Drawing.Size(115, 50);
-            this.healthLabel.TabIndex = 3;
-            this.healthLabel.Text = "Health:";
-            // 
-            // enrgyLabel
-            // 
-            this.enrgyLabel.AutoSize = true;
-            this.enrgyLabel.BackColor = System.Drawing.Color.Transparent;
-            this.enrgyLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.enrgyLabel.ForeColor = System.Drawing.Color.White;
-            this.enrgyLabel.Location = new System.Drawing.Point(39, 348);
-            this.enrgyLabel.Name = "enrgyLabel";
-            this.enrgyLabel.Size = new System.Drawing.Size(122, 50);
-            this.enrgyLabel.TabIndex = 4;
-            this.enrgyLabel.Text = "Energy:";
             // 
             // colorLabel
             // 
@@ -202,8 +176,6 @@
             this.Controls.Add(this.genderLabel);
             this.Controls.Add(this.finalPictureBox);
             this.Controls.Add(this.colorLabel);
-            this.Controls.Add(this.enrgyLabel);
-            this.Controls.Add(this.healthLabel);
             this.Controls.Add(this.weaponLabel);
             this.Controls.Add(this.classLabel);
             this.Controls.Add(this.nameLabel);
@@ -221,8 +193,6 @@
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Label classLabel;
         private System.Windows.Forms.Label weaponLabel;
-        private System.Windows.Forms.Label healthLabel;
-        private System.Windows.Forms.Label enrgyLabel;
         private System.Windows.Forms.Label colorLabel;
         private System.Windows.Forms.PictureBox finalPictureBox;
         private System.Windows.Forms.Label genderLabel;
