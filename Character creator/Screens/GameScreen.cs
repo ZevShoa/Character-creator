@@ -20,16 +20,17 @@ namespace Character_creator
             InitializeComponent();
           
             gameTimer.Enabled = true;
-            resumeButton.Visible = false;
-          
+           // resumeButton.Visible = false;
+
+            aArrowDown = dArrowDown = spaceArrowDown = false;
 
 
         }
        
         private void GameScreen_Load(object sender, EventArgs e)
         {
-            characterBox.Image = weaponScreen.finalPic;
-            this.Focus();
+            //characterBox.Image = weaponScreen.finalPic;
+           // this.Focus();
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -54,9 +55,10 @@ namespace Character_creator
             }
         }
 
+
         private void GameScreen_KeyUp(object sender, KeyEventArgs e)
         {
-            switch (e.KeyCode)
+             switch (e.KeyCode)
             {
                 case Keys.A:
                     aArrowDown = false;
@@ -80,9 +82,14 @@ namespace Character_creator
             }
             else if (dArrowDown == true)
             {
-                reviewScreen.ch.move(reviewScreen.ch, "Right");
+                reviewScreen.ch.move(reviewScreen.ch, "right");
             }
             Refresh();
+        }
+
+        private void GameScreen_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.DrawImage(reviewScreen.ch.picture, reviewScreen.ch.x, reviewScreen.ch.y);
         }
 
     }
