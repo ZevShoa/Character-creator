@@ -20,7 +20,7 @@ namespace Character_creator
         string monsterType;
         int monsterStart;
         int totalScore;
-
+ 
         public GameScreen()
         {
             InitializeComponent();
