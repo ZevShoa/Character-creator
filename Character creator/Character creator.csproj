@@ -1085,6 +1085,9 @@
     <None Include="Resources\DARK %28Video Game%29 - Main Theme Music.wav" />
     <None Include="Resources\jungleBattle.jpg" />
     <None Include="Resources\392764.jpg" />
+    <None Include="Resources\monstereasy.jpg" />
+    <None Include="Resources\monsterHard.png" />
+    <None Include="Resources\monsterMedium.jpg" />
     <Content Include="UserFile.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
