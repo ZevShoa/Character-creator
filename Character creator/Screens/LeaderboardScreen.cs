@@ -34,7 +34,7 @@ namespace Character_creator
 
         private void LeaderboardScreen_Load(object sender, EventArgs e)
         {
-            
+       
         }
     }
-}
+}          
