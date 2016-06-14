@@ -78,35 +78,38 @@
             // 
             // attackOneButton
             // 
+            this.attackOneButton.BackColor = System.Drawing.Color.White;
             this.attackOneButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attackOneButton.Location = new System.Drawing.Point(73, 667);
             this.attackOneButton.Name = "attackOneButton";
             this.attackOneButton.Size = new System.Drawing.Size(252, 60);
             this.attackOneButton.TabIndex = 7;
             this.attackOneButton.Text = "Attack One";
-            this.attackOneButton.UseVisualStyleBackColor = true;
+            this.attackOneButton.UseVisualStyleBackColor = false;
             this.attackOneButton.Click += new System.EventHandler(this.attackOneButton_Click);
             // 
             // attackTwoButton
             // 
+            this.attackTwoButton.BackColor = System.Drawing.Color.White;
             this.attackTwoButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attackTwoButton.Location = new System.Drawing.Point(405, 667);
             this.attackTwoButton.Name = "attackTwoButton";
             this.attackTwoButton.Size = new System.Drawing.Size(252, 60);
             this.attackTwoButton.TabIndex = 8;
             this.attackTwoButton.Text = "Attack Two";
-            this.attackTwoButton.UseVisualStyleBackColor = true;
+            this.attackTwoButton.UseVisualStyleBackColor = false;
             this.attackTwoButton.Click += new System.EventHandler(this.attackTwoButton_Click);
             // 
             // attackThreeButton
             // 
+            this.attackThreeButton.BackColor = System.Drawing.Color.White;
             this.attackThreeButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attackThreeButton.Location = new System.Drawing.Point(737, 667);
             this.attackThreeButton.Name = "attackThreeButton";
             this.attackThreeButton.Size = new System.Drawing.Size(252, 60);
             this.attackThreeButton.TabIndex = 9;
             this.attackThreeButton.Text = "Attack Three";
-            this.attackThreeButton.UseVisualStyleBackColor = true;
+            this.attackThreeButton.UseVisualStyleBackColor = false;
             this.attackThreeButton.Click += new System.EventHandler(this.attackThreeButton_Click);
             // 
             // playerHealthLabel
