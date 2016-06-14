@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="failScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="failScreen.Designer.cs">
+      <DependentUpon>failScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Monsters.cs" />
     <Compile Include="Screens\BattleScreen.cs">
       <SubType>UserControl</SubType>
@@ -163,6 +169,9 @@
       <DependentUpon>signUpScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="failScreen.resx">
+      <DependentUpon>failScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\BattleScreen.resx">
       <DependentUpon>BattleScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -1074,6 +1083,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DARK %28Video Game%29 - Main Theme Music.wav" />
+    <None Include="Resources\jungleBattle.jpg" />
+    <None Include="Resources\392764.jpg" />
     <Content Include="UserFile.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
