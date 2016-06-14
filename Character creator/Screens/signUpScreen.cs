@@ -45,6 +45,11 @@ namespace Character_creator
             errorProvider1.SetError((Control)sender, error);
         }
 
+        private void passwordBox_TextChanged(object sender, EventArgs e)
+        {
+            passwordBox.PasswordChar = '*';
+        }
+
         private void usernameBox_Validating(object sender, CancelEventArgs e)
         {
 

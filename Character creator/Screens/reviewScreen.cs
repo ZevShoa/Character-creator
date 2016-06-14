@@ -122,14 +122,6 @@ namespace Character_creator
             gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
             f.Controls.Add(gs);
         }
-        private void menuButton_Click(object sender, EventArgs e)
-        {
-            //goes back to the main menu
-            Form f = this.FindForm();
-            f.Controls.Remove(this);
-            MainMenu mm = new MainMenu();
-            f.Controls.Add(mm);
-            mm.Location = new Point((f.Width - mm.Width) / 2, (f.Height - mm.Height) / 2);
-        }
+      
     }
 }
