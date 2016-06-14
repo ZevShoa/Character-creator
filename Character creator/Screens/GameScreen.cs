@@ -14,16 +14,16 @@ namespace Character_creator
     public partial class GameScreen : UserControl
     {
         Boolean aArrowDown, dArrowDown, spaceArrowDown;
-        List<Monsters> monsterList = new List<Monsters>();
+        public static List<Monsters> monsterList = new List<Monsters>();
         Random rand = new Random();
-        Monsters m = new Monsters(0, 700, 300, 4, "1");
         string monsterType;
         int monsterStart;
-        int totalScore;
+        public static int totalScore;
 
         public GameScreen()
         {
             InitializeComponent();
+            Monsters m = new Monsters(0, 700, 300, 4, "1");
             monsterList.Add(m);
             gameTimer.Enabled = true;
             // resumeButton.Visible = false;
@@ -112,13 +112,13 @@ namespace Character_creator
             {
                 if (m.monsterCollision(m, reviewScreen.ch) == true)
                 {
+                    gameTimer.Stop();
                     Form f = this.FindForm();
                     f.Controls.Remove(this);
                     BattleScreen bs = new BattleScreen();
                     bs.Location = new Point((f.Width - bs.Width) / 2, (f.Height - bs.Height) / 2);
                     f.Controls.Add(bs);
-                    
-                    
+
                     foreach (Monsters m in monsterList)
                     {
                         if (BattleScreen.win == true)
@@ -150,9 +150,16 @@ namespace Character_creator
                                     {
 
                                     }
+                                    gameTimer.Stop();
+                                    Form f = this.FindForm();
+                                    f.Controls.Remove(this);
+                                    failScreen fs = new failScreen();
+                                    fs.Location = new Point((f.Width - fs.Width) / 2, (f.Height - fs.Height) / 2);
+                                    f.Controls.Add(fs);
                                 }
                             }
                         }
+                    
                     }
                 }
             }
