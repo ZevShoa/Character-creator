@@ -14,16 +14,16 @@ namespace Character_creator
     public partial class GameScreen : UserControl
     {
         Boolean aArrowDown, dArrowDown, spaceArrowDown;
-        List<Monsters> monsterList = new List<Monsters>();
+        public static List<Monsters> monsterList = new List<Monsters>();
         Random rand = new Random();
-        Monsters m = new Monsters(0, 700, 300, 4, "1");
         string monsterType;
         int monsterStart;
-        int totalScore;
+        public static int totalScore;
 
         public GameScreen()
         {
             InitializeComponent();
+            Monsters m = new Monsters(0, 700, 300, 4, "1");
             monsterList.Add(m);
             gameTimer.Enabled = true;
             // resumeButton.Visible = false;
@@ -112,28 +112,29 @@ namespace Character_creator
             {
                 if (m.monsterCollision(m, reviewScreen.ch) == true)
                 {
+                    gameTimer.Stop();
                     Form f = this.FindForm();
                     f.Controls.Remove(this);
                     BattleScreen bs = new BattleScreen();
                     bs.Location = new Point((f.Width - bs.Width) / 2, (f.Height - bs.Height) / 2);
                     f.Controls.Add(bs);
-                    
-                    
-                    foreach (Monsters o in monsterList)
+
+                    foreach (Monsters mon in monsterList)
                     {
                         if (BattleScreen.win == true)
                         {
                             monsterType = Convert.ToString(rand.Next(1, 3));
                             monsterStart = rand.Next(0, 1);
+                            Monsters newMon = null;
                             if (monsterStart == 0)
                             {
-                                Monsters n = new Monsters(0, 700, 300, 4, monsterType);
+                                newMon = new Monsters(0, 700, 300, 4, monsterType);
                             }
                             if (monsterStart == 1)
                             {
-                                Monsters n = new Monsters(400, 700, 300, 4, monsterType);
+                                newMon = new Monsters(400, 700, 300, 4, monsterType);
                             }
-                            monsterList.Add(m);
+                            monsterList.Add(newMon);
                             totalScore = totalScore + BattleScreen.scoreIncrease;
                         }
                         else
@@ -144,15 +145,22 @@ namespace Character_creator
                                 {
                                     if (Convert.ToInt16(MainMenu.userList[i].score) > totalScore)
                                     {
-                                        MainMenu.userList[i].score = Convert.ToString(totalScore);
+                                        
                                     }
                                     else
                                     {
-
+                                        
                                     }
+                                    MainMenu.userList[i].score = Convert.ToString(totalScore);
+                                    Form s = this.FindForm();
+                                    f.Controls.Remove(this);
+                                    failScreen fs = new failScreen();
+                                    fs.Location = new Point((s.Width - fs.Width) / 2, (s.Height - fs.Height) / 2);
+                                    s.Controls.Add(fs);
                                 }
                             }
                         }
+                    
                     }
                 }
             }
@@ -164,7 +172,12 @@ namespace Character_creator
         private void GameScreen_Paint(object sender, PaintEventArgs e)
         {
             characterImage.Location = new Point(reviewScreen.ch.x, reviewScreen.ch.y);
-            monsterImage.Location = new Point(m.x, m.y);
+            foreach (Monsters m in monsterList)
+            {
+                monsterImage.Location = new Point(m.x, m.y);
+            }
+            Refresh();
+           
         }
 
     }

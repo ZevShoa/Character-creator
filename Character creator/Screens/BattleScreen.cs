@@ -25,7 +25,7 @@ namespace Character_creator
         public static int scoreIncrease;
        public static bool win;
         //abusive comments
-        string[] annoucerPhrases = { "That sucked", "Is that really the best you could do?", "Pathetic",
+        string[] annoucerPhrases = {"That sucked", "Is that really the best you could do?", "Pathetic",
         "lol that was a joke right?", "You dirty swine, what are you doing?"/*Credit to Ben Fortin*/, "WhAt ThE F*Ck ArE yOu DoInG"};
         public BattleScreen()
         {
@@ -237,13 +237,13 @@ namespace Character_creator
                 win = true;
                 //changes screens and removes monsters off the list
                 announcerLabel.Text = "The Monster Is Vanquished";
-                Thread.Sleep(2000);
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
                 GameScreen gs = new GameScreen();
                 f.Controls.Add(gs);
                 gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
                 //ALSO NEED CODE TO DELTE MONSTER
+                
             }
             else
             {
@@ -279,6 +279,12 @@ namespace Character_creator
                 win = false;
                 //adds health and energy to score but takes away how much health the monster had left
                 scoreIncrease = playerHealthBar.Value + playerEnergyBar.Value - monsterHealthBar.Value;
+                //goes back to battle screen to calculate score and then goes to fail screen from there
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                GameScreen gs = new GameScreen();
+                f.Controls.Add(gs);
+                gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
             }
             else
             {
@@ -286,6 +292,7 @@ namespace Character_creator
                 attackOneButton.Enabled = true;
                 attackTwoButton.Enabled = true;
                 attackThreeButton.Enabled = true;
+                //a message prompts player to go
                 announcerLabel.Text = reviewScreen.ch.name + "'s Turn";
             }
         
