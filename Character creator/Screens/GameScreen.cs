@@ -20,16 +20,16 @@ namespace Character_creator
         string monsterType;
         int monsterStart;
         int totalScore;
- 
+
         public GameScreen()
         {
             InitializeComponent();
             monsterList.Add(m);
             gameTimer.Enabled = true;
-           // resumeButton.Visible = false;
+            // resumeButton.Visible = false;
             aArrowDown = dArrowDown = spaceArrowDown = false;
         }
-       
+
         private void GameScreen_Load(object sender, EventArgs e)
         {
             //characterBox.Image = weaponScreen.finalPic;
@@ -65,7 +65,7 @@ namespace Character_creator
 
         private void GameScreen_KeyUp(object sender, KeyEventArgs e)
         {
-             switch (e.KeyCode)
+            switch (e.KeyCode)
             {
                 case Keys.A:
                     aArrowDown = false;
@@ -80,7 +80,7 @@ namespace Character_creator
         }
 
         private void gameTimer_Tick(object sender, EventArgs e)
-            
+
         {
             #region Character Movement
             if (aArrowDown == true)
@@ -96,7 +96,7 @@ namespace Character_creator
             #region Monster Movement
             foreach (Monsters m in monsterList)
             {
-                if(reviewScreen.ch.x > m.x)
+                if (reviewScreen.ch.x > m.x)
                 {
                     m.move(m, "right");
                 }
@@ -117,7 +117,8 @@ namespace Character_creator
                     BattleScreen bs = new BattleScreen();
                     bs.Location = new Point((f.Width - bs.Width) / 2, (f.Height - bs.Height) / 2);
                     f.Controls.Add(bs);
-
+                    
+                    
                     foreach (Monsters m in monsterList)
                     {
                         if (BattleScreen.win == true)
@@ -137,7 +138,7 @@ namespace Character_creator
                         }
                         else
                         {
-                            for(int i = 0; i < MainMenu.userList.Count(); i++)
+                            for (int i = 0; i < MainMenu.userList.Count(); i++)
                             {
                                 if (MainMenu.userList[i].username == MainMenu.playerName)
                                 {
@@ -168,3 +169,4 @@ namespace Character_creator
 
     }
 }
+

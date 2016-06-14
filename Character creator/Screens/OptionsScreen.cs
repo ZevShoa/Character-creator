@@ -29,8 +29,9 @@ namespace Character_creator
 
         private void volumeBar_MouseDown(object sender, MouseEventArgs e)
         {
-            int x = e.X;
-            volumeBar.Value = e.X;
+            
+            //int x = e.X;
+            //volumeBar.Value = e.X;
 
             // int temp = 0;
         }
@@ -47,6 +48,12 @@ namespace Character_creator
         private void exitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void volumeBar_Scroll(object sender, EventArgs e)
+        {
+            //soundBar.Value = MainMenu.player.volume
+
         }
     }
 }

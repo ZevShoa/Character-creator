@@ -16,6 +16,7 @@ namespace Character_creator
 {
     public partial class MainMenu : UserControl
     {
+        public static SoundPlayer player = new SoundPlayer(Properties.Resources.DARK__Video_Game____Main_Theme_Music);
         public static List<User> userList = new List<User>();
         public static bool failure = false;
         public static bool space1 = true;
@@ -74,8 +75,8 @@ namespace Character_creator
         private void MainMenu_Load(object sender, EventArgs e)
         {
             // Sounds
-            SoundPlayer player = new SoundPlayer(Properties.Resources.DARK__Video_Game____Main_Theme_Music);
-            player.Play();
+           
+            player.PlayLooping();
 
             // Open the file to be read
             XmlTextReader reader = new XmlTextReader("UserFile.xml");

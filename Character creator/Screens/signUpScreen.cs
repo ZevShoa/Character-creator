@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Text.RegularExpressions;
+
 
 namespace Character_creator
 {
@@ -23,6 +25,20 @@ namespace Character_creator
         {
             usernameBox.MaxLength = 8;
             passwordBox.MaxLength = 8;
+
+        }
+        private void usernameBox_Validating(object sender, CancelEventArgs e)
+        {
+         
+            string error = null;
+            string pattern = @"^\$?\-?([1-9]{1}[0-9]{0,2}(\,\d{3})*(\.\d{0,2})?|[1-9]{1}\d{0,}(\.\d{0,2})?|0(\.\d{0,2})?|(\.\d{1,2}))$|^\-?\$?([1-9]{1}\d{0,2}(\,\d{3})*(\.\d{0,2})?|[1-9]{1}\d{0,}(\.\d{0,2})?|0(\.\d{0,2})?|(\.\d{1,2}))$|^\(\$?([1-9]{1}\d{0,2}(\,\d{3})*(\.\d{0,2})?|[1-9]{1}\d{0,}(\.\d{0,2})?|0(\.\d{0,2})?|(\.\d{1,2}))\)$";
+
+            if (!Regex.IsMatch(usernameBox.Text, pattern))
+            {
+                error = "This character is invalid";
+                e.Cancel = true;
+            }
+            errorProvider1.SetError((Control)sender, error);
         }
 
         private void exitButton_Click(object sender, EventArgs e)
