@@ -119,7 +119,7 @@ namespace Character_creator
                     f.Controls.Add(bs);
                     
                     
-                    foreach (Monsters m in monsterList)
+                    foreach (Monsters o in monsterList)
                     {
                         if (BattleScreen.win == true)
                         {
@@ -127,11 +127,11 @@ namespace Character_creator
                             monsterStart = rand.Next(0, 1);
                             if (monsterStart == 0)
                             {
-                                Monsters m = new Monsters(0, 700, 300, 4, monsterType);
+                                Monsters n = new Monsters(0, 700, 300, 4, monsterType);
                             }
                             if (monsterStart == 1)
                             {
-                                Monsters m = new Monsters(400, 700, 300, 4, monsterType);
+                                Monsters n = new Monsters(400, 700, 300, 4, monsterType);
                             }
                             monsterList.Add(m);
                             totalScore = totalScore + BattleScreen.scoreIncrease;

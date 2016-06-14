@@ -29,6 +29,8 @@ namespace Character_creator
         public MainMenu()
         {
             InitializeComponent();
+
+            
         }
 
         private void loginButton_Click(object sender, EventArgs e)

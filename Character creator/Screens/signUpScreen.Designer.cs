@@ -91,6 +91,7 @@
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(328, 59);
             this.passwordBox.TabIndex = 28;
+            this.passwordBox.Validating += new System.ComponentModel.CancelEventHandler(this.passwordBox_Validating);
             // 
             // usernameBox
             // 

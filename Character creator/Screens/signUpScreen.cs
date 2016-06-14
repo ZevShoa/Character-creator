@@ -27,19 +27,43 @@ namespace Character_creator
             passwordBox.MaxLength = 8;
 
         }
-        private void usernameBox_Validating(object sender, CancelEventArgs e)
-        {
-         
-            string error = null;
-            string pattern = @"^\$?\-?([1-9]{1}[0-9]{0,2}(\,\d{3})*(\.\d{0,2})?|[1-9]{1}\d{0,}(\.\d{0,2})?|0(\.\d{0,2})?|(\.\d{1,2}))$|^\-?\$?([1-9]{1}\d{0,2}(\,\d{3})*(\.\d{0,2})?|[1-9]{1}\d{0,}(\.\d{0,2})?|0(\.\d{0,2})?|(\.\d{1,2}))$|^\(\$?([1-9]{1}\d{0,2}(\,\d{3})*(\.\d{0,2})?|[1-9]{1}\d{0,}(\.\d{0,2})?|0(\.\d{0,2})?|(\.\d{1,2}))\)$";
 
-            if (!Regex.IsMatch(usernameBox.Text, pattern))
+        private void passwordBox_Validating(object sender, CancelEventArgs e)
+        {
+            errorProvider1.Clear();
+
+
+            string error = null;
+
+            var regex = new Regex(@"[^a-zA-Z0-9]");
+            if (regex.IsMatch(passwordBox.Text))
+          
             {
                 error = "This character is invalid";
                 e.Cancel = true;
             }
             errorProvider1.SetError((Control)sender, error);
         }
+
+        private void usernameBox_Validating(object sender, CancelEventArgs e)
+        {
+
+            errorProvider1.Clear();
+            
+
+            string error = null;
+            
+            var regex = new Regex(@"[^a-zA-Z0-9]");
+            if (regex.IsMatch(usernameBox.Text))
+            //    if (usernameBox.Text.Length < 3)
+            {
+                error = "This character is invalid";
+                e.Cancel = true;
+            }
+            errorProvider1.SetError((Control)sender, error);
+        }
+
+
 
         private void exitButton_Click(object sender, EventArgs e)
         {

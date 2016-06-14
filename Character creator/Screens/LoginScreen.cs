@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Text.RegularExpressions;
+
 
 namespace Character_creator
 {
@@ -128,6 +130,40 @@ namespace Character_creator
         private void exitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void usernameBox_Validating(object sender, CancelEventArgs e)
+        {
+            errorProvider1.Clear();
+
+
+            string error = null;
+
+            var regex = new Regex(@"[^a-zA-Z0-9]");
+            if (regex.IsMatch(usernameBox.Text))
+   
+            {
+                error = "This character is invalid";
+                e.Cancel = true;
+            }
+            errorProvider1.SetError((Control)sender, error);
+        }
+
+        private void passwordBox_Validating(object sender, CancelEventArgs e)
+        {
+            errorProvider1.Clear();
+
+
+            string error = null;
+
+            var regex = new Regex(@"[^a-zA-Z0-9]");
+            if (regex.IsMatch(passwordBox.Text))
+
+            {
+                error = "This character is invalid";
+                e.Cancel = true;
+            }
+            errorProvider1.SetError((Control)sender, error);
         }
     }
 }

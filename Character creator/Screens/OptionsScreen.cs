@@ -52,8 +52,8 @@ namespace Character_creator
 
         private void volumeBar_Scroll(object sender, EventArgs e)
         {
-            //soundBar.Value = MainMenu.player.volume
-
+            //soundBar.Value = MainMenu.player.
+            
         }
     }
 }
