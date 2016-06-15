@@ -9,9 +9,9 @@ namespace Character_creator
 {
    public class Monsters
     {
-        public int x, y, size, speed;
-        public string type;
-        public Monsters(int _x, int _y, int _size, int _speed, string _type)
+        public Image[] monsterImages;
+        public int x, y, size, speed, type;
+        public Monsters(int _x, int _y, int _size, int _speed, int _type)
         {
             x = _x;
             y = _y;

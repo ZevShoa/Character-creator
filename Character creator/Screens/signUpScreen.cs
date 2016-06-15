@@ -95,6 +95,7 @@ namespace Character_creator
 
         private void signInButton_Click(object sender, EventArgs e)
         {
+            MainMenu.playerName = usernameBox.Text;
             int z = 0;
             foreach (User newUser in MainMenu.userList)
             {
@@ -114,7 +115,7 @@ namespace Character_creator
                 password = passwordBox.Text;
                 score = "space";
                 char1 = "space";
-                char2 = "spacce";
+                char2 = "space";
                 char3 = "space";
 
                 User newUser = new User(name, password, score, char1, char2, char3);
