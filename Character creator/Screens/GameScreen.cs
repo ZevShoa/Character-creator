@@ -16,15 +16,15 @@ namespace Character_creator
         Boolean aArrowDown, dArrowDown, spaceArrowDown;
         public static List<Monsters> monsterList = new List<Monsters>();
         Random rand = new Random();
-        string monsterType;
         int monsterStart;
         public static int totalScore;
 
         public GameScreen()
         {
             InitializeComponent();
-            Monsters m = new Monsters(0, 700, 300, 4, "1");
+            Monsters m = new Monsters(0, 100, 300, 4, 0);
             monsterList.Add(m);
+            m.monsterImages = new Image[] { Properties.Resources.monstereasy, Properties.Resources.monsterMedium, Properties.Resources.monsterHard };
             gameTimer.Enabled = true;
             // resumeButton.Visible = false;
             aArrowDown = dArrowDown = spaceArrowDown = false;
@@ -123,16 +123,15 @@ namespace Character_creator
                     {
                         if (BattleScreen.win == true)
                         {
-                            monsterType = Convert.ToString(rand.Next(1, 3));
                             monsterStart = rand.Next(0, 1);
                             Monsters newMon = null;
                             if (monsterStart == 0)
                             {
-                                newMon = new Monsters(0, 700, 300, 4, monsterType);
+                                newMon = new Monsters(0, 700, 300, 4, rand.Next(0, 3));
                             }
                             if (monsterStart == 1)
                             {
-                                newMon = new Monsters(400, 700, 300, 4, monsterType);
+                                newMon = new Monsters(400, 700, 300, 4, rand.Next(0, 3));
                             }
                             monsterList.Add(newMon);
                             totalScore = totalScore + BattleScreen.scoreIncrease;
@@ -171,10 +170,11 @@ namespace Character_creator
 
         private void GameScreen_Paint(object sender, PaintEventArgs e)
         {
-            characterImage.Location = new Point(reviewScreen.ch.x, reviewScreen.ch.y);
+            e.Graphics.DrawImage(reviewScreen.ch.picture, reviewScreen.ch.x, reviewScreen.ch.y, 150, 200);
+
             foreach (Monsters m in monsterList)
             {
-                monsterImage.Location = new Point(m.x, m.y);
+                    e.Graphics.DrawImage(m.monsterImages[m.type], m.x, m.y, 150, 150);
             }
             Refresh();
            
