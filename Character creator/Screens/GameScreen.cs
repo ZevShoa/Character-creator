@@ -25,15 +25,13 @@ namespace Character_creator
             Monsters m = new Monsters(0, 100, 300, 4, 0);
             monsterList.Add(m);
             m.monsterImages = new Image[] { Properties.Resources.monstereasy, Properties.Resources.monsterMedium, Properties.Resources.monsterHard };
-            gameTimer.Enabled = true;
-            // resumeButton.Visible = false;
             aArrowDown = dArrowDown = spaceArrowDown = false;
         }
 
         private void GameScreen_Load(object sender, EventArgs e)
         {
-            //characterBox.Image = weaponScreen.finalPic;
             this.Focus();
+            gameTimer.Enabled = true;
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -61,8 +59,6 @@ namespace Character_creator
                     break;
             }
         }
-
-
         private void GameScreen_KeyUp(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
@@ -78,10 +74,22 @@ namespace Character_creator
                     break;
             }
         }
-
-        private void gameTimer_Tick(object sender, EventArgs e)
-
+        public void pauseMethod()
         {
+            //calls a pause menu
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            PauseMenu pm  = new PauseMenu();
+            pm.Location = new Point((f.Width - pm.Width) / 2, (f.Height - pm.Height) / 2);
+            f.Controls.Add(pm);
+
+        }
+        private void gameTimer_Tick(object sender, EventArgs e)
+        {
+            if(spaceArrowDown == true)
+            {
+                pauseMethod();
+            }
             #region Character Movement
             if (aArrowDown == true)
             {
