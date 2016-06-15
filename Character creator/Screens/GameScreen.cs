@@ -120,13 +120,9 @@ namespace Character_creator
             {
                 if (m.monsterCollision(m, reviewScreen.ch) == true)
                 {
-                    gameTimer.Stop();
-                    Form f = this.FindForm();
-                    f.Controls.Remove(this);
-                    BattleScreen bs = new BattleScreen();
-                    bs.Location = new Point((f.Width - bs.Width) / 2, (f.Height - bs.Height) / 2);
-                    f.Controls.Add(bs);
+                    battleMove();
 
+                    break;
                     foreach (Monsters mon in monsterList)
                     {
                         if (BattleScreen.win == true)
@@ -160,7 +156,7 @@ namespace Character_creator
                                     }
                                     MainMenu.userList[i].score = Convert.ToString(totalScore);
                                     Form s = this.FindForm();
-                                    f.Controls.Remove(this);
+                                    s.Controls.Remove(this);
                                     failScreen fs = new failScreen();
                                     fs.Location = new Point((s.Width - fs.Width) / 2, (s.Height - fs.Height) / 2);
                                     s.Controls.Add(fs);
@@ -184,8 +180,17 @@ namespace Character_creator
             {
                     e.Graphics.DrawImage(m.monsterImages[m.type], m.x, m.y, 150, 150);
             }
-            Refresh();
            
+           
+        }
+        public void battleMove ()
+        {
+            gameTimer.Stop();
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            BattleScreen bs = new BattleScreen();
+            bs.Location = new Point((f.Width - bs.Width) / 2, (f.Height - bs.Height) / 2);
+            f.Controls.Add(bs);
         }
 
     }

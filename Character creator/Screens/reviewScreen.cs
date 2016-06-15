@@ -38,9 +38,9 @@ namespace Character_creator
             // goes back a screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
-            statScreen ss = new statScreen();
-            f.Controls.Add(ss);
-            ss.Location = new Point((f.Width - ss.Width) / 2, (f.Height - ss.Height) / 2);
+            weaponScreen ws = new weaponScreen();
+            f.Controls.Add(ws);
+            ws.Location = new Point((f.Width - ws.Width) / 2, (f.Height - ws.Height) / 2);
         }
 
         private void saveButton_Click(object sender, EventArgs e)
