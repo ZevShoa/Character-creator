@@ -22,27 +22,24 @@ namespace Character_creator
             
         }
 
-        private void OptionsScreen_MouseDown(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void volumeBar_MouseDown(object sender, MouseEventArgs e)
-        {
-            
-            //int x = e.X;
-            //volumeBar.Value = e.X;
-
-            // int temp = 0;
-        }
-
         private void menuButton_Click(object sender, EventArgs e)
         {
-            Form f = this.FindForm();
-            f.Controls.Remove(this);
-            MainMenu mm = new MainMenu();
-            mm.Location = new Point((f.Width - mm.Width) / 2, (f.Height - mm.Height) / 2);
-            f.Controls.Add(mm);
+            if (PauseMenu.gameStart == true)
+            {
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                PauseMenu pm = new PauseMenu();
+                pm.Location = new Point((f.Width - pm.Width) / 2, (f.Height - pm.Height) / 2);
+                f.Controls.Add(pm);
+            }
+            else
+            {
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                MainMenu mm = new MainMenu();
+                mm.Location = new Point((f.Width - mm.Width) / 2, (f.Height - mm.Height) / 2);
+                f.Controls.Add(mm);
+            }
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -50,10 +47,12 @@ namespace Character_creator
             Application.Exit();
         }
 
-        private void volumeBar_Scroll(object sender, EventArgs e)
+        private void OptionsScreen_Load(object sender, EventArgs e)
         {
-            //soundBar.Value = MainMenu.player.
-            
+            if(PauseMenu.gameStart == true)
+            {
+                menuButton.Text = "Back To Pause Menu";
+            }
         }
     }
 }

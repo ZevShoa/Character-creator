@@ -12,6 +12,7 @@ namespace Character_creator
 {
     public partial class PauseMenu : UserControl
     {
+        public static bool gameStart = false;
         public PauseMenu()
         {
             InitializeComponent();
@@ -20,6 +21,25 @@ namespace Character_creator
         private void quitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void optionsButton_Click(object sender, EventArgs e)
+        {
+            gameStart = true;
+            Form z = this.FindForm();
+            z.Controls.Remove(this);
+            OptionsScreen os = new OptionsScreen();
+            os.Location = new Point((z.Width - os.Width) / 2, (z.Height - os.Height) / 2);
+            z.Controls.Add(os);
+        }
+
+        private void resumeButton_Click(object sender, EventArgs e)
+        {
+            Form z = this.FindForm();
+            z.Controls.Remove(this);
+           GameScreen gs = new GameScreen();
+            gs.Location = new Point((z.Width - gs.Width) / 2, (z.Height - gs.Height) / 2);
+            z.Controls.Add(gs);
         }
     }
 }
