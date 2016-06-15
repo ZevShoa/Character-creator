@@ -20,7 +20,6 @@ namespace Character_creator
         //all variables that are used thorough out 
         int attackNum;
         int stinkRan;
-        string monsterTypePlaceHolder;
         int phraseNum;
         public static int scoreIncrease;
        public static bool win;
@@ -48,12 +47,13 @@ namespace Character_creator
                     stinkRan = ranNum.Next(0, 11);
                     if (stinkRan >= 10)
                     {
+                        win = true;
                         Form f = this.FindForm();
                         f.Controls.Remove(this);
                         GameScreen gs = new GameScreen();
                         f.Controls.Add(gs);
                         gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
-                        //ALSO NEED CODE TO DELTE MONSTER
+                        
                     }
                     else
                     {
@@ -68,7 +68,12 @@ namespace Character_creator
                 case "Regeneration":
                     playerEnergyBar.Value += ranNum.Next(5, 13);
                     playerHealthBar.Value -= ranNum.Next(1, 5);
-                     break;                  
+                     break;
+                case "Economic Crisis":
+                    playerEnergyBar.Value -= ranNum.Next(15, 35);
+                    monsterHealthBar.Value -= ranNum.Next(3, 40);
+                    break;
+
             }
             //calling monster to attack
             monsterTurn();
@@ -209,7 +214,7 @@ namespace Character_creator
                     attack2 = "Regeneration";
                     break;
                 case "Peasant":
-                    ///nothing really happens on some turns since oligarchs dont care about the peasnats
+                    ///nothing really happens on some turns since oligarchs don't care about the peasants
                    /// but might have big impact on monster 
                    /// Lots of energy being used though  
                     attack2 = "Economic Crisis";
@@ -235,32 +240,34 @@ namespace Character_creator
                 scoreIncrease = playerEnergyBar.Value + playerHealthBar.Value;
                 //so other screens can know the outcome of the battle
                 win = true;
-                //changes screens and removes monsters off the list
+                //changes screens 
                 announcerLabel.Text = "The Monster Is Vanquished";
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
                 GameScreen gs = new GameScreen();
                 f.Controls.Add(gs);
                 gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
-                //ALSO NEED CODE TO DELTE MONSTER
                 
             }
             else
             {
-                //takes a certain amount off the players health
-                switch (monsterTypePlaceHolder)
+                foreach (Monsters m in GameScreen.monsterList)
                 {
-                    case "easy":
-                        playerHealthBar.Value -= ranNum.Next(1, 20);
-                        break;
-                    case "medium":
-                        playerHealthBar.Value -= ranNum.Next(20, 40);
-                        break;
-                    case "hard":
-                        playerHealthBar.Value -= ranNum.Next(20, 50);
-                        break;
-                    default:
-                        break;
+                    //takes a certain amount off the players health
+                    switch (m.type)
+                    {
+                        case 0:
+                            playerHealthBar.Value -= ranNum.Next(1, 20);
+                            break;
+                        case 1:
+                            playerHealthBar.Value -= ranNum.Next(20, 40);
+                            break;
+                        case 2:
+                            playerHealthBar.Value -= ranNum.Next(20, 50);
+                            break;
+                        default:
+                            break;
+                    }
                 }
 
 
