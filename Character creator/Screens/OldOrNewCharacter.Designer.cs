@@ -31,11 +31,12 @@
             this.newCharacterButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.titleLabel = new System.Windows.Forms.Label();
-            this.characterBox = new System.Windows.Forms.ComboBox();
             this.selectLabel = new System.Windows.Forms.Label();
             this.orLabel = new System.Windows.Forms.Label();
-            this.selectOldCharacterButton = new System.Windows.Forms.Button();
+            this.char3Button = new System.Windows.Forms.Button();
             this.errorLabel = new System.Windows.Forms.Label();
+            this.char1Button = new System.Windows.Forms.Button();
+            this.char2Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // newCharacterButton
@@ -43,9 +44,9 @@
             this.newCharacterButton.BackColor = System.Drawing.SystemColors.Control;
             this.newCharacterButton.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newCharacterButton.ForeColor = System.Drawing.Color.Black;
-            this.newCharacterButton.Location = new System.Drawing.Point(632, 307);
+            this.newCharacterButton.Location = new System.Drawing.Point(632, 270);
             this.newCharacterButton.Name = "newCharacterButton";
-            this.newCharacterButton.Size = new System.Drawing.Size(406, 204);
+            this.newCharacterButton.Size = new System.Drawing.Size(406, 222);
             this.newCharacterButton.TabIndex = 28;
             this.newCharacterButton.Text = "Make New Character";
             this.newCharacterButton.UseVisualStyleBackColor = false;
@@ -76,23 +77,13 @@
             this.titleLabel.TabIndex = 22;
             this.titleLabel.Text = "Chose Your Character";
             // 
-            // characterBox
-            // 
-            this.characterBox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.characterBox.FormattingEnabled = true;
-            this.characterBox.Location = new System.Drawing.Point(33, 351);
-            this.characterBox.Name = "characterBox";
-            this.characterBox.Size = new System.Drawing.Size(406, 70);
-            this.characterBox.TabIndex = 31;
-            this.characterBox.SelectedIndexChanged += new System.EventHandler(this.characterBox_SelectedIndexChanged);
-            // 
             // selectLabel
             // 
             this.selectLabel.AutoSize = true;
             this.selectLabel.BackColor = System.Drawing.Color.Transparent;
             this.selectLabel.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selectLabel.ForeColor = System.Drawing.Color.White;
-            this.selectLabel.Location = new System.Drawing.Point(42, 266);
+            this.selectLabel.Location = new System.Drawing.Point(52, 202);
             this.selectLabel.Name = "selectLabel";
             this.selectLabel.Size = new System.Drawing.Size(367, 62);
             this.selectLabel.TabIndex = 32;
@@ -110,18 +101,17 @@
             this.orLabel.TabIndex = 33;
             this.orLabel.Text = "Or";
             // 
-            // selectOldCharacterButton
+            // char3Button
             // 
-            this.selectOldCharacterButton.BackColor = System.Drawing.SystemColors.Control;
-            this.selectOldCharacterButton.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectOldCharacterButton.ForeColor = System.Drawing.Color.Black;
-            this.selectOldCharacterButton.Location = new System.Drawing.Point(33, 440);
-            this.selectOldCharacterButton.Name = "selectOldCharacterButton";
-            this.selectOldCharacterButton.Size = new System.Drawing.Size(406, 71);
-            this.selectOldCharacterButton.TabIndex = 34;
-            this.selectOldCharacterButton.Text = "Select";
-            this.selectOldCharacterButton.UseVisualStyleBackColor = false;
-            this.selectOldCharacterButton.Click += new System.EventHandler(this.selectOldCharacterButton_Click);
+            this.char3Button.BackColor = System.Drawing.SystemColors.Control;
+            this.char3Button.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.char3Button.ForeColor = System.Drawing.Color.Black;
+            this.char3Button.Location = new System.Drawing.Point(33, 432);
+            this.char3Button.Name = "char3Button";
+            this.char3Button.Size = new System.Drawing.Size(406, 71);
+            this.char3Button.TabIndex = 34;
+            this.char3Button.UseVisualStyleBackColor = false;
+            this.char3Button.Click += new System.EventHandler(this.selectOldCharacterButton_Click);
             // 
             // errorLabel
             // 
@@ -134,16 +124,41 @@
             this.errorLabel.TabIndex = 35;
             this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // char1Button
+            // 
+            this.char1Button.BackColor = System.Drawing.SystemColors.Control;
+            this.char1Button.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.char1Button.ForeColor = System.Drawing.Color.Black;
+            this.char1Button.Location = new System.Drawing.Point(33, 278);
+            this.char1Button.Name = "char1Button";
+            this.char1Button.Size = new System.Drawing.Size(406, 71);
+            this.char1Button.TabIndex = 36;
+            this.char1Button.UseVisualStyleBackColor = false;
+            this.char1Button.Click += new System.EventHandler(this.char1Button_Click);
+            // 
+            // char2Button
+            // 
+            this.char2Button.BackColor = System.Drawing.SystemColors.Control;
+            this.char2Button.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.char2Button.ForeColor = System.Drawing.Color.Black;
+            this.char2Button.Location = new System.Drawing.Point(33, 355);
+            this.char2Button.Name = "char2Button";
+            this.char2Button.Size = new System.Drawing.Size(406, 71);
+            this.char2Button.TabIndex = 37;
+            this.char2Button.UseVisualStyleBackColor = false;
+            this.char2Button.Click += new System.EventHandler(this.char2Button_Click);
+            // 
             // OldOrNewCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
+            this.Controls.Add(this.char2Button);
+            this.Controls.Add(this.char1Button);
             this.Controls.Add(this.errorLabel);
-            this.Controls.Add(this.selectOldCharacterButton);
+            this.Controls.Add(this.char3Button);
             this.Controls.Add(this.orLabel);
             this.Controls.Add(this.selectLabel);
-            this.Controls.Add(this.characterBox);
             this.Controls.Add(this.newCharacterButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.titleLabel);
@@ -160,10 +175,11 @@
         private System.Windows.Forms.Button newCharacterButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.ComboBox characterBox;
         private System.Windows.Forms.Label selectLabel;
         private System.Windows.Forms.Label orLabel;
-        private System.Windows.Forms.Button selectOldCharacterButton;
+        private System.Windows.Forms.Button char3Button;
         private System.Windows.Forms.Label errorLabel;
+        private System.Windows.Forms.Button char1Button;
+        private System.Windows.Forms.Button char2Button;
     }
 }

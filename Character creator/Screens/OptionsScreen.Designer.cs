@@ -137,8 +137,8 @@
             this.ResponseChartLabel.Name = "ResponseChartLabel";
             this.ResponseChartLabel.Size = new System.Drawing.Size(346, 212);
             this.ResponseChartLabel.TabIndex = 14;
-            this.ResponseChartLabel.Text = "Moves The Player Left Moves The Player Right Toggles Between Battle Options Selec" +
-    "ts Battle Options";
+            this.ResponseChartLabel.Text = "Moves The Player Left Moves The Player Right Pauses The Game Selects Battle Optio" +
+    "ns";
             // 
             // horizontalChartLine
             // 
