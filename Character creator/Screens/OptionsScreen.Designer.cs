@@ -35,16 +35,13 @@
             this.optionsLabel = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.menuButton = new System.Windows.Forms.Button();
-            this.volumeLabel = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.TopChartLabel = new System.Windows.Forms.Label();
             this.buttonChartLabel = new System.Windows.Forms.Label();
             this.ResponseChartLabel = new System.Windows.Forms.Label();
             this.horizontalChartLine = new System.Windows.Forms.Label();
             this.verticalChartLine = new System.Windows.Forms.Label();
-            this.soundBar = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.soundBar)).BeginInit();
             this.SuspendLayout();
             // 
             // optionsLabel
@@ -53,22 +50,22 @@
             this.optionsLabel.BackColor = System.Drawing.Color.Transparent;
             this.optionsLabel.Font = new System.Drawing.Font("Agency FB", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionsLabel.ForeColor = System.Drawing.Color.White;
-            this.optionsLabel.Location = new System.Drawing.Point(359, 110);
+            this.optionsLabel.Location = new System.Drawing.Point(415, 170);
             this.optionsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.optionsLabel.Name = "optionsLabel";
-            this.optionsLabel.Size = new System.Drawing.Size(199, 73);
+            this.optionsLabel.Size = new System.Drawing.Size(254, 88);
             this.optionsLabel.TabIndex = 0;
-            this.optionsLabel.Text = "OPTIONS";
+            this.optionsLabel.Text = "Controls";
             // 
             // exitButton
             // 
             this.exitButton.BackColor = System.Drawing.Color.Maroon;
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(877, 2);
+            this.exitButton.Location = new System.Drawing.Point(987, 2);
             this.exitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(52, 50);
+            this.exitButton.Size = new System.Drawing.Size(58, 62);
             this.exitButton.TabIndex = 3;
             this.exitButton.Text = "X";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -82,24 +79,11 @@
             this.menuButton.Location = new System.Drawing.Point(3, 2);
             this.menuButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(107, 55);
+            this.menuButton.Size = new System.Drawing.Size(120, 69);
             this.menuButton.TabIndex = 5;
             this.menuButton.Text = "↩";
             this.menuButton.UseVisualStyleBackColor = false;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
-            // 
-            // volumeLabel
-            // 
-            this.volumeLabel.AutoSize = true;
-            this.volumeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.volumeLabel.Font = new System.Drawing.Font("Agency FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.volumeLabel.ForeColor = System.Drawing.Color.White;
-            this.volumeLabel.Location = new System.Drawing.Point(179, 219);
-            this.volumeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.volumeLabel.Name = "volumeLabel";
-            this.volumeLabel.Size = new System.Drawing.Size(101, 42);
-            this.volumeLabel.TabIndex = 9;
-            this.volumeLabel.Text = "Volume:";
             // 
             // chart1
             // 
@@ -107,7 +91,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(228, 354);
+            this.chart1.Location = new System.Drawing.Point(259, 349);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
@@ -124,22 +108,22 @@
             this.TopChartLabel.BackColor = System.Drawing.Color.Transparent;
             this.TopChartLabel.Font = new System.Drawing.Font("Agency FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TopChartLabel.ForeColor = System.Drawing.Color.White;
-            this.TopChartLabel.Location = new System.Drawing.Point(179, 326);
+            this.TopChartLabel.Location = new System.Drawing.Point(204, 315);
             this.TopChartLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TopChartLabel.Name = "TopChartLabel";
-            this.TopChartLabel.Size = new System.Drawing.Size(379, 42);
+            this.TopChartLabel.Size = new System.Drawing.Size(475, 50);
             this.TopChartLabel.TabIndex = 12;
-            this.TopChartLabel.Text = "Controls:       Button   Response";
+            this.TopChartLabel.Text = "Controls:       Button      Response";
             // 
             // buttonChartLabel
             // 
             this.buttonChartLabel.BackColor = System.Drawing.Color.Transparent;
             this.buttonChartLabel.Font = new System.Drawing.Font("Agency FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonChartLabel.ForeColor = System.Drawing.Color.White;
-            this.buttonChartLabel.Location = new System.Drawing.Point(332, 386);
+            this.buttonChartLabel.Location = new System.Drawing.Point(377, 389);
             this.buttonChartLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.buttonChartLabel.Name = "buttonChartLabel";
-            this.buttonChartLabel.Size = new System.Drawing.Size(115, 170);
+            this.buttonChartLabel.Size = new System.Drawing.Size(129, 212);
             this.buttonChartLabel.TabIndex = 13;
             this.buttonChartLabel.Text = "\"A\" Key \"D\" Key Space Enter\r\n";
             // 
@@ -148,10 +132,10 @@
             this.ResponseChartLabel.BackColor = System.Drawing.Color.Transparent;
             this.ResponseChartLabel.Font = new System.Drawing.Font("Agency FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResponseChartLabel.ForeColor = System.Drawing.Color.White;
-            this.ResponseChartLabel.Location = new System.Drawing.Point(468, 386);
+            this.ResponseChartLabel.Location = new System.Drawing.Point(529, 389);
             this.ResponseChartLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ResponseChartLabel.Name = "ResponseChartLabel";
-            this.ResponseChartLabel.Size = new System.Drawing.Size(308, 170);
+            this.ResponseChartLabel.Size = new System.Drawing.Size(346, 212);
             this.ResponseChartLabel.TabIndex = 14;
             this.ResponseChartLabel.Text = "Moves The Player Left Moves The Player Right Toggles Between Battle Options Selec" +
     "ts Battle Options";
@@ -159,50 +143,39 @@
             // horizontalChartLine
             // 
             this.horizontalChartLine.BackColor = System.Drawing.Color.White;
-            this.horizontalChartLine.Location = new System.Drawing.Point(339, 366);
+            this.horizontalChartLine.Location = new System.Drawing.Point(384, 365);
             this.horizontalChartLine.Name = "horizontalChartLine";
-            this.horizontalChartLine.Size = new System.Drawing.Size(429, 7);
+            this.horizontalChartLine.Size = new System.Drawing.Size(483, 9);
             this.horizontalChartLine.TabIndex = 15;
             // 
             // verticalChartLine
             // 
             this.verticalChartLine.BackColor = System.Drawing.Color.White;
-            this.verticalChartLine.Location = new System.Drawing.Point(436, 334);
+            this.verticalChartLine.Location = new System.Drawing.Point(493, 325);
             this.verticalChartLine.Name = "verticalChartLine";
-            this.verticalChartLine.Size = new System.Drawing.Size(11, 210);
+            this.verticalChartLine.Size = new System.Drawing.Size(12, 262);
             this.verticalChartLine.TabIndex = 16;
-            // 
-            // soundBar
-            // 
-            this.soundBar.Location = new System.Drawing.Point(339, 219);
-            this.soundBar.Name = "soundBar";
-            this.soundBar.Size = new System.Drawing.Size(416, 56);
-            this.soundBar.TabIndex = 17;
-            this.soundBar.Scroll += new System.EventHandler(this.volumeBar_Scroll);
             // 
             // OptionsScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.soundBar);
             this.Controls.Add(this.verticalChartLine);
             this.Controls.Add(this.horizontalChartLine);
             this.Controls.Add(this.ResponseChartLabel);
             this.Controls.Add(this.buttonChartLabel);
             this.Controls.Add(this.TopChartLabel);
             this.Controls.Add(this.chart1);
-            this.Controls.Add(this.volumeLabel);
             this.Controls.Add(this.menuButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.optionsLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "OptionsScreen";
-            this.Size = new System.Drawing.Size(933, 615);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OptionsScreen_MouseDown);
+            this.Size = new System.Drawing.Size(1050, 769);
+            this.Load += new System.EventHandler(this.OptionsScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.soundBar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,13 +186,11 @@
         private System.Windows.Forms.Label optionsLabel;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button menuButton;
-        private System.Windows.Forms.Label volumeLabel;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label TopChartLabel;
         private System.Windows.Forms.Label buttonChartLabel;
         private System.Windows.Forms.Label ResponseChartLabel;
         private System.Windows.Forms.Label horizontalChartLine;
         private System.Windows.Forms.Label verticalChartLine;
-        private System.Windows.Forms.TrackBar soundBar;
     }
 }
