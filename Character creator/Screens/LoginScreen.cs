@@ -54,11 +54,11 @@ namespace Character_creator
                     if(MainMenu.userList[i].password == passwordBox.Text)
                     {
                         MainMenu.playerName = usernameBox.Text;
-                        Form f = this.FindForm();
-                        f.Controls.Remove(this);
+                        Form z = this.FindForm();
+                        z.Controls.Remove(this);
                         OldOrNewCharacter onc = new OldOrNewCharacter();
-                        onc.Location = new Point((f.Width - onc.Width) / 2, (f.Height - onc.Height) / 2);
-                        f.Controls.Add(onc);
+                        onc.Location = new Point((z.Width - onc.Width) / 2, (z.Height - onc.Height) / 2);
+                        z.Controls.Add(onc);
                     }
                     else
                     {
@@ -67,63 +67,8 @@ namespace Character_creator
                         passwordBox.Text = "";
                     }
                 }
-                else
-                {
-                    errorLabel.Text = "Incorrect Username Or Password";
-                    usernameBox.Text = "";
-                    passwordBox.Text = "";
-                }
                 i++;
             }
-
-            ////loads the xml document to be read
-            //XmlDocument doc = new XmlDocument();
-            //doc.Load("UserFile.xml");
-            //XmlNode parent;
-            //parent = doc.DocumentElement;
-
-            ////Displays the correct weather information
-            //foreach (XmlNode child in parent.ChildNodes)
-            //{
-            //    if (child.Name == "player")
-            //    {
-
-            //        foreach (XmlNode grandChild in child.ChildNodes)
-            //        {
-            //            if (grandChild.Name == "username")
-            //            {
-            //                if (grandChild.InnerText == usernameBox.Text)
-            //                {
-            //                    MainMenu.playerName = usernameBox.Text;
-            //                    Form f = this.FindForm();
-            //                    f.Controls.Remove(this);
-            //                    OldOrNewCharacter onc = new OldOrNewCharacter();
-            //                    onc.Location = new Point((f.Width - onc.Width) / 2, (f.Height - onc.Height) / 2);
-            //                    f.Controls.Add(onc);
-            //                }
-            //                if (grandChild.Name == "password")
-            //                {
-            //                    if (grandChild.InnerText == passwordBox.Text)
-            //                    {
-            //                        MainMenu.playerName = usernameBox.Text;
-            //                        Form f = this.FindForm();
-            //                        f.Controls.Remove(this);
-            //                        OldOrNewCharacter onc = new OldOrNewCharacter();
-            //                        onc.Location = new Point((f.Width - onc.Width) / 2, (f.Height - onc.Height) / 2);
-            //                        f.Controls.Add(onc);
-            //                    }
-            //                    else
-            //                    {
-            //                        errorLabel.Text = "Incorrect Username Or Password";
-            //                        usernameBox.Text = "";
-            //                        passwordBox.Text = "";
-            //                    }
-            //                }
-            //            }
-            //        }
-            //    }
-            //}
-            //doc.Save("UserFile.xml");
         }
         
 
