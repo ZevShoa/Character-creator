@@ -47,7 +47,7 @@
             this.nameLabel.BackColor = System.Drawing.Color.Transparent;
             this.nameLabel.Font = new System.Drawing.Font("Agency FB", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.ForeColor = System.Drawing.Color.White;
-            this.nameLabel.Location = new System.Drawing.Point(261, 6);
+            this.nameLabel.Location = new System.Drawing.Point(223, 28);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(177, 88);
             this.nameLabel.TabIndex = 0;
@@ -83,7 +83,7 @@
             this.colorLabel.BackColor = System.Drawing.Color.Transparent;
             this.colorLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.colorLabel.ForeColor = System.Drawing.Color.White;
-            this.colorLabel.Location = new System.Drawing.Point(291, 349);
+            this.colorLabel.Location = new System.Drawing.Point(41, 448);
             this.colorLabel.Name = "colorLabel";
             this.colorLabel.Size = new System.Drawing.Size(103, 50);
             this.colorLabel.TabIndex = 5;
@@ -92,7 +92,7 @@
             // finalPictureBox
             // 
             this.finalPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.finalPictureBox.Location = new System.Drawing.Point(536, 28);
+            this.finalPictureBox.Location = new System.Drawing.Point(368, 140);
             this.finalPictureBox.Name = "finalPictureBox";
             this.finalPictureBox.Size = new System.Drawing.Size(300, 400);
             this.finalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -105,7 +105,7 @@
             this.genderLabel.BackColor = System.Drawing.Color.Transparent;
             this.genderLabel.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genderLabel.ForeColor = System.Drawing.Color.White;
-            this.genderLabel.Location = new System.Drawing.Point(267, 150);
+            this.genderLabel.Location = new System.Drawing.Point(39, 241);
             this.genderLabel.Name = "genderLabel";
             this.genderLabel.Size = new System.Drawing.Size(127, 50);
             this.genderLabel.TabIndex = 7;
@@ -114,7 +114,7 @@
             // saveButton
             // 
             this.saveButton.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButton.Location = new System.Drawing.Point(259, 473);
+            this.saveButton.Location = new System.Drawing.Point(368, 561);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(300, 69);
             this.saveButton.TabIndex = 8;
@@ -167,7 +167,7 @@
             this.Controls.Add(this.classLabel);
             this.Controls.Add(this.nameLabel);
             this.Name = "reviewScreen";
-            this.Size = new System.Drawing.Size(857, 563);
+            this.Size = new System.Drawing.Size(725, 633);
             this.Load += new System.EventHandler(this.reviewScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.finalPictureBox)).EndInit();
             this.ResumeLayout(false);

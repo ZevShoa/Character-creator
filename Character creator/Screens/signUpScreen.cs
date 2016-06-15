@@ -16,6 +16,7 @@ namespace Character_creator
     public partial class signUpScreen : UserControl
     {
         string name, password, score, char1, char2, char3;
+        public static bool createdUser = false;
         public signUpScreen()
         {
             InitializeComponent();
@@ -111,6 +112,7 @@ namespace Character_creator
 
             if (MainMenu.failure == false)
             {
+                createdUser = true;
                 name = usernameBox.Text;
                 password = passwordBox.Text;
                 score = "space";
@@ -138,7 +140,7 @@ namespace Character_creator
 
                     // end the elements
                     writer.WriteEndElement();
-                    //MainMenu.playerName = MainMenu.userList[i].username;
+                    MainMenu.playerName = MainMenu.userList[i].username;
                 }
                 
                 writer.WriteEndElement();
