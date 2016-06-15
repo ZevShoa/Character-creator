@@ -16,6 +16,7 @@ namespace Character_creator
 {
     public partial class MainMenu : UserControl
     {
+        
         public static SoundPlayer player = new SoundPlayer(Properties.Resources.DARK__Video_Game____Main_Theme_Music);
         public static List<User> userList = new List<User>();
         public static bool failure = false;
