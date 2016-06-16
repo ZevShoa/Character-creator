@@ -14,34 +14,20 @@ namespace Character_creator
     public partial class LeaderboardScreen : UserControl
     {
         List<Highscore> scoreList = new List<Highscore>();
-        List<int> positionList = new List<int>(new int[] { 1, 2, 3, 4, 5});
+
         
         public LeaderboardScreen()
         {
-            Highscore a = new Highscore(GameScreen.totalScore, MainMenu.playerName);
-            if (GameScreen.totalScore > positionList[4] && GameScreen.totalScore < positionList[3])
-            {
-                scoreList.Add(a);
-            }
-            else
-            {
-            }
-            if (GameScreen.totalScore > positionList[3] && GameScreen.totalScore < positionList[2])
-            {
-                scoreList.Add(a);
-            }
-            else
-            {
 
-            }
-          
-            
+            // adding highscore of new player
+            Highscore h = new Highscore(GameScreen.totalScore, MainMenu.playerName);
             InitializeComponent();
             
         }
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            //going back to main form
             Form f = this.FindForm();
             f.Controls.Remove(this);
             MainMenu mm = new MainMenu();
@@ -51,12 +37,22 @@ namespace Character_creator
 
         private void exitButton_Click(object sender, EventArgs e)
         {
+            //Closes the game
             Application.Exit();
         }
 
         private void LeaderboardScreen_Load(object sender, EventArgs e)
         {
-       
+            //Check if the total score is < than bronze, silver, etc.. Once total score is < than tier lvl, player is the specified tier
+            if (GameScreen.totalScore < 500)
+            {
+
+            } 
+            //Check if new totalscore is < than previeous high scores 
+            
+
+           
+
         }
     }
 }          
