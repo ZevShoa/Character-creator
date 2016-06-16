@@ -92,15 +92,7 @@ namespace Character_creator
 
         }
 
-        private void backButton_Click(object sender, EventArgs e)
-        {
-            // goes back a screen
-            Form f = this.FindForm();
-            f.Controls.Remove(this);
-            weaponScreen ws = new weaponScreen();
-            f.Controls.Add(ws);
-            ws.Location = new Point((f.Width - ws.Width) / 2, (f.Height - ws.Height) / 2);
-        }
+        
 
         private void saveButton_Click(object sender, EventArgs e)
         {
@@ -180,11 +172,13 @@ namespace Character_creator
             //     }
             // }
             //goes to the accrual screen
-            Form f = this.FindForm();
-            f.Controls.Remove(this);
-            GameScreen gs = new GameScreen();
-            gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
-            f.Controls.Add(gs);
+
+
+            //Form f = this.FindForm();
+            //f.Controls.Remove(this);
+            //GameScreen gs = new GameScreen();
+            //gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+            //f.Controls.Add(gs);
         }
       
     }
