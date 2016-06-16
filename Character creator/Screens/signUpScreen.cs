@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Text.RegularExpressions;
+
 
 namespace Character_creator
 {
     public partial class signUpScreen : UserControl
     {
         string name, password, score, char1, char2, char3;
+        public static bool createdUser = false;
         public signUpScreen()
         {
             InitializeComponent();
@@ -23,7 +26,50 @@ namespace Character_creator
         {
             usernameBox.MaxLength = 8;
             passwordBox.MaxLength = 8;
+
         }
+
+        private void passwordBox_Validating(object sender, CancelEventArgs e)
+        {
+            errorProvider1.Clear();
+
+
+            string error = null;
+
+            var regex = new Regex(@"[^a-zA-Z0-9]");
+            if (regex.IsMatch(passwordBox.Text))
+          
+            {
+                error = "This character is invalid";
+                e.Cancel = true;
+            }
+            errorProvider1.SetError((Control)sender, error);
+        }
+
+        private void passwordBox_TextChanged(object sender, EventArgs e)
+        {
+            passwordBox.PasswordChar = '*';
+        }
+
+        private void usernameBox_Validating(object sender, CancelEventArgs e)
+        {
+
+            errorProvider1.Clear();
+            
+
+            string error = null;
+            
+            var regex = new Regex(@"[^a-zA-Z0-9]");
+            if (regex.IsMatch(usernameBox.Text))
+            //    if (usernameBox.Text.Length < 3)
+            {
+                error = "This character is invalid";
+                e.Cancel = true;
+            }
+            errorProvider1.SetError((Control)sender, error);
+        }
+
+
 
         private void exitButton_Click(object sender, EventArgs e)
         {
@@ -50,6 +96,7 @@ namespace Character_creator
 
         private void signInButton_Click(object sender, EventArgs e)
         {
+            MainMenu.playerName = usernameBox.Text;
             int z = 0;
             foreach (User newUser in MainMenu.userList)
             {
@@ -65,11 +112,12 @@ namespace Character_creator
 
             if (MainMenu.failure == false)
             {
+                createdUser = true;
                 name = usernameBox.Text;
                 password = passwordBox.Text;
                 score = "space";
                 char1 = "space";
-                char2 = "spacce";
+                char2 = "space";
                 char3 = "space";
 
                 User newUser = new User(name, password, score, char1, char2, char3);
@@ -92,7 +140,7 @@ namespace Character_creator
 
                     // end the elements
                     writer.WriteEndElement();
-                    //MainMenu.playerName = MainMenu.userList[i].username;
+                    MainMenu.playerName = MainMenu.userList[i].username;
                 }
                 
                 writer.WriteEndElement();

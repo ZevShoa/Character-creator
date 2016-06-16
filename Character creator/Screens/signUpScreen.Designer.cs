@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.clickLogInLabel = new System.Windows.Forms.Label();
             this.accountLabel = new System.Windows.Forms.Label();
             this.signInButton = new System.Windows.Forms.Button();
@@ -39,6 +40,8 @@
             this.exitButton = new System.Windows.Forms.Button();
             this.titleLabel = new System.Windows.Forms.Label();
             this.errorLabel = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // clickLogInLabel
@@ -47,7 +50,7 @@
             this.clickLogInLabel.BackColor = System.Drawing.Color.Transparent;
             this.clickLogInLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clickLogInLabel.ForeColor = System.Drawing.Color.Blue;
-            this.clickLogInLabel.Location = new System.Drawing.Point(739, 683);
+            this.clickLogInLabel.Location = new System.Drawing.Point(739, 682);
             this.clickLogInLabel.Name = "clickLogInLabel";
             this.clickLogInLabel.Size = new System.Drawing.Size(113, 65);
             this.clickLogInLabel.TabIndex = 31;
@@ -60,7 +63,7 @@
             this.accountLabel.BackColor = System.Drawing.Color.Transparent;
             this.accountLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accountLabel.ForeColor = System.Drawing.Color.White;
-            this.accountLabel.Location = new System.Drawing.Point(144, 683);
+            this.accountLabel.Location = new System.Drawing.Point(144, 682);
             this.accountLabel.Name = "accountLabel";
             this.accountLabel.Size = new System.Drawing.Size(614, 65);
             this.accountLabel.TabIndex = 30;
@@ -72,6 +75,7 @@
             this.signInButton.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signInButton.ForeColor = System.Drawing.Color.Black;
             this.signInButton.Location = new System.Drawing.Point(20, 530);
+            this.signInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.signInButton.Name = "signInButton";
             this.signInButton.Size = new System.Drawing.Size(1014, 90);
             this.signInButton.TabIndex = 29;
@@ -83,17 +87,22 @@
             // 
             this.passwordBox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordBox.Location = new System.Drawing.Point(529, 358);
+            this.passwordBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(368, 69);
             this.passwordBox.TabIndex = 28;
+            this.passwordBox.TextChanged += new System.EventHandler(this.passwordBox_TextChanged);
+            this.passwordBox.Validating += new System.ComponentModel.CancelEventHandler(this.passwordBox_Validating);
             // 
             // usernameBox
             // 
             this.usernameBox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameBox.Location = new System.Drawing.Point(529, 216);
+            this.usernameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(368, 69);
             this.usernameBox.TabIndex = 27;
+            this.usernameBox.Validating += new System.ComponentModel.CancelEventHandler(this.usernameBox_Validating);
             // 
             // passwordLabel
             // 
@@ -124,7 +133,8 @@
             this.backButton.BackColor = System.Drawing.SystemColors.Control;
             this.backButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.ForeColor = System.Drawing.Color.Black;
-            this.backButton.Location = new System.Drawing.Point(3, 3);
+            this.backButton.Location = new System.Drawing.Point(3, 2);
+            this.backButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(120, 69);
             this.backButton.TabIndex = 24;
@@ -138,8 +148,9 @@
             this.exitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.White;
             this.exitButton.Location = new System.Drawing.Point(989, 0);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(58, 63);
+            this.exitButton.Size = new System.Drawing.Size(58, 62);
             this.exitButton.TabIndex = 23;
             this.exitButton.Text = "X";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -151,7 +162,7 @@
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
             this.titleLabel.Font = new System.Drawing.Font("Agency FB", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.White;
-            this.titleLabel.Location = new System.Drawing.Point(419, 74);
+            this.titleLabel.Location = new System.Drawing.Point(418, 74);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(223, 88);
             this.titleLabel.TabIndex = 22;
@@ -159,15 +170,18 @@
             // 
             // errorLabel
             // 
-            this.errorLabel.AutoSize = true;
             this.errorLabel.BackColor = System.Drawing.Color.Transparent;
             this.errorLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorLabel.ForeColor = System.Drawing.Color.White;
-            this.errorLabel.Location = new System.Drawing.Point(527, 451);
+            this.errorLabel.Location = new System.Drawing.Point(20, 451);
             this.errorLabel.Name = "errorLabel";
-            this.errorLabel.Size = new System.Drawing.Size(0, 65);
+            this.errorLabel.Size = new System.Drawing.Size(1014, 65);
             this.errorLabel.TabIndex = 32;
             this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // signUpScreen
             // 
@@ -186,9 +200,11 @@
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.titleLabel);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "signUpScreen";
             this.Size = new System.Drawing.Size(1050, 769);
             this.Load += new System.EventHandler(this.signUpScreen_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,5 +223,6 @@
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Label errorLabel;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

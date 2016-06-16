@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.characterBox = new System.Windows.Forms.PictureBox();
-            this.monsterBox = new System.Windows.Forms.PictureBox();
             this.monsterHealthLabel = new System.Windows.Forms.Label();
             this.playerHealthBar = new System.Windows.Forms.ProgressBar();
             this.monsterHealthBar = new System.Windows.Forms.ProgressBar();
@@ -44,25 +42,11 @@
             this.monsterHealthNunberLabel = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
             this.announcerLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.characterBox)).BeginInit();
+            this.monsterBox = new System.Windows.Forms.PictureBox();
+            this.characterBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.monsterBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.characterBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // characterBox
-            // 
-            this.characterBox.Location = new System.Drawing.Point(554, 132);
-            this.characterBox.Name = "characterBox";
-            this.characterBox.Size = new System.Drawing.Size(294, 378);
-            this.characterBox.TabIndex = 1;
-            this.characterBox.TabStop = false;
-            // 
-            // monsterBox
-            // 
-            this.monsterBox.Location = new System.Drawing.Point(24, 320);
-            this.monsterBox.Name = "monsterBox";
-            this.monsterBox.Size = new System.Drawing.Size(300, 300);
-            this.monsterBox.TabIndex = 2;
-            this.monsterBox.TabStop = false;
             // 
             // monsterHealthLabel
             // 
@@ -94,35 +78,38 @@
             // 
             // attackOneButton
             // 
+            this.attackOneButton.BackColor = System.Drawing.Color.White;
             this.attackOneButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attackOneButton.Location = new System.Drawing.Point(73, 667);
             this.attackOneButton.Name = "attackOneButton";
             this.attackOneButton.Size = new System.Drawing.Size(252, 60);
             this.attackOneButton.TabIndex = 7;
             this.attackOneButton.Text = "Attack One";
-            this.attackOneButton.UseVisualStyleBackColor = true;
+            this.attackOneButton.UseVisualStyleBackColor = false;
             this.attackOneButton.Click += new System.EventHandler(this.attackOneButton_Click);
             // 
             // attackTwoButton
             // 
+            this.attackTwoButton.BackColor = System.Drawing.Color.White;
             this.attackTwoButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attackTwoButton.Location = new System.Drawing.Point(405, 667);
             this.attackTwoButton.Name = "attackTwoButton";
             this.attackTwoButton.Size = new System.Drawing.Size(252, 60);
             this.attackTwoButton.TabIndex = 8;
             this.attackTwoButton.Text = "Attack Two";
-            this.attackTwoButton.UseVisualStyleBackColor = true;
+            this.attackTwoButton.UseVisualStyleBackColor = false;
             this.attackTwoButton.Click += new System.EventHandler(this.attackTwoButton_Click);
             // 
             // attackThreeButton
             // 
+            this.attackThreeButton.BackColor = System.Drawing.Color.White;
             this.attackThreeButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.attackThreeButton.Location = new System.Drawing.Point(737, 667);
             this.attackThreeButton.Name = "attackThreeButton";
             this.attackThreeButton.Size = new System.Drawing.Size(252, 60);
             this.attackThreeButton.TabIndex = 9;
             this.attackThreeButton.Text = "Attack Three";
-            this.attackThreeButton.UseVisualStyleBackColor = true;
+            this.attackThreeButton.UseVisualStyleBackColor = false;
             this.attackThreeButton.Click += new System.EventHandler(this.attackThreeButton_Click);
             // 
             // playerHealthLabel
@@ -202,17 +189,37 @@
             // announcerLabel
             // 
             this.announcerLabel.AutoSize = true;
+            this.announcerLabel.BackColor = System.Drawing.Color.Transparent;
             this.announcerLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.announcerLabel.ForeColor = System.Drawing.Color.MintCream;
             this.announcerLabel.Location = new System.Drawing.Point(16, 22);
             this.announcerLabel.Name = "announcerLabel";
             this.announcerLabel.Size = new System.Drawing.Size(77, 44);
             this.announcerLabel.TabIndex = 17;
             this.announcerLabel.Text = "label1";
             // 
+            // monsterBox
+            // 
+            this.monsterBox.Location = new System.Drawing.Point(24, 320);
+            this.monsterBox.Name = "monsterBox";
+            this.monsterBox.Size = new System.Drawing.Size(300, 300);
+            this.monsterBox.TabIndex = 2;
+            this.monsterBox.TabStop = false;
+            // 
+            // characterBox
+            // 
+            this.characterBox.Location = new System.Drawing.Point(554, 132);
+            this.characterBox.Name = "characterBox";
+            this.characterBox.Size = new System.Drawing.Size(294, 378);
+            this.characterBox.TabIndex = 1;
+            this.characterBox.TabStop = false;
+            // 
             // BattleScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Character_creator.Properties.Resources.jungleBattle;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.announcerLabel);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.monsterHealthNunberLabel);
@@ -232,8 +239,8 @@
             this.Name = "BattleScreen";
             this.Size = new System.Drawing.Size(1050, 769);
             this.Load += new System.EventHandler(this.BattleScreen_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.characterBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.monsterBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.characterBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

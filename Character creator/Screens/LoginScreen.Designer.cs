@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginScreen));
             this.backButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
@@ -40,6 +41,8 @@
             this.signUpLabel = new System.Windows.Forms.Label();
             this.clickSignUpLabel = new System.Windows.Forms.Label();
             this.errorLabel = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // backButton
@@ -47,7 +50,8 @@
             this.backButton.BackColor = System.Drawing.SystemColors.Control;
             this.backButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.ForeColor = System.Drawing.Color.Black;
-            this.backButton.Location = new System.Drawing.Point(3, 3);
+            this.backButton.Location = new System.Drawing.Point(3, 2);
+            this.backButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(120, 69);
             this.backButton.TabIndex = 14;
@@ -60,9 +64,10 @@
             this.exitButton.BackColor = System.Drawing.Color.Maroon;
             this.exitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(988, 3);
+            this.exitButton.Location = new System.Drawing.Point(988, 2);
+            this.exitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(58, 63);
+            this.exitButton.Size = new System.Drawing.Size(58, 62);
             this.exitButton.TabIndex = 13;
             this.exitButton.Text = "X";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -86,7 +91,7 @@
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.usernameLabel.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.Color.White;
-            this.usernameLabel.Location = new System.Drawing.Point(199, 237);
+            this.usernameLabel.Location = new System.Drawing.Point(199, 238);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(198, 62);
             this.usernameLabel.TabIndex = 15;
@@ -107,18 +112,23 @@
             // usernameBox
             // 
             this.usernameBox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameBox.Location = new System.Drawing.Point(546, 237);
+            this.usernameBox.Location = new System.Drawing.Point(546, 238);
+            this.usernameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(368, 69);
             this.usernameBox.TabIndex = 17;
+            this.usernameBox.Validating += new System.ComponentModel.CancelEventHandler(this.usernameBox_Validating);
             // 
             // passwordBox
             // 
             this.passwordBox.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordBox.Location = new System.Drawing.Point(546, 378);
+            this.passwordBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(368, 69);
             this.passwordBox.TabIndex = 18;
+            this.passwordBox.TextChanged += new System.EventHandler(this.passwordBox_TextChanged);
+            this.passwordBox.Validating += new System.ComponentModel.CancelEventHandler(this.passwordBox_Validating);
             // 
             // signInButton
             // 
@@ -126,6 +136,7 @@
             this.signInButton.Font = new System.Drawing.Font("Agency FB", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signInButton.ForeColor = System.Drawing.Color.Black;
             this.signInButton.Location = new System.Drawing.Point(20, 535);
+            this.signInButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.signInButton.Name = "signInButton";
             this.signInButton.Size = new System.Drawing.Size(1014, 89);
             this.signInButton.TabIndex = 19;
@@ -163,11 +174,15 @@
             this.errorLabel.BackColor = System.Drawing.Color.Transparent;
             this.errorLabel.Font = new System.Drawing.Font("Agency FB", 27F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errorLabel.ForeColor = System.Drawing.Color.White;
-            this.errorLabel.Location = new System.Drawing.Point(20, 467);
+            this.errorLabel.Location = new System.Drawing.Point(20, 468);
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(1014, 65);
             this.errorLabel.TabIndex = 22;
             this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // LoginScreen
             // 
@@ -185,9 +200,11 @@
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.titleLabel);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginScreen";
             this.Size = new System.Drawing.Size(1050, 769);
             this.Load += new System.EventHandler(this.LoginScreen_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +223,6 @@
         private System.Windows.Forms.Label signUpLabel;
         private System.Windows.Forms.Label clickSignUpLabel;
         private System.Windows.Forms.Label errorLabel;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

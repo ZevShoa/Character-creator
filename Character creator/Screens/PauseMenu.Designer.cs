@@ -31,7 +31,6 @@
             this.resumeButton = new System.Windows.Forms.Button();
             this.quitButton = new System.Windows.Forms.Button();
             this.optionsButton = new System.Windows.Forms.Button();
-            this.statsButton = new System.Windows.Forms.Button();
             this.titleLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -40,19 +39,20 @@
             this.resumeButton.BackColor = System.Drawing.SystemColors.Control;
             this.resumeButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resumeButton.ForeColor = System.Drawing.Color.Black;
-            this.resumeButton.Location = new System.Drawing.Point(81, 145);
+            this.resumeButton.Location = new System.Drawing.Point(3, 145);
             this.resumeButton.Name = "resumeButton";
             this.resumeButton.Size = new System.Drawing.Size(209, 69);
             this.resumeButton.TabIndex = 15;
             this.resumeButton.Text = "Resume";
             this.resumeButton.UseVisualStyleBackColor = false;
+            this.resumeButton.Click += new System.EventHandler(this.resumeButton_Click);
             // 
             // quitButton
             // 
             this.quitButton.BackColor = System.Drawing.SystemColors.Control;
             this.quitButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quitButton.ForeColor = System.Drawing.Color.Black;
-            this.quitButton.Location = new System.Drawing.Point(81, 254);
+            this.quitButton.Location = new System.Drawing.Point(227, 145);
             this.quitButton.Name = "quitButton";
             this.quitButton.Size = new System.Drawing.Size(209, 69);
             this.quitButton.TabIndex = 16;
@@ -65,24 +65,13 @@
             this.optionsButton.BackColor = System.Drawing.SystemColors.Control;
             this.optionsButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionsButton.ForeColor = System.Drawing.Color.Black;
-            this.optionsButton.Location = new System.Drawing.Point(358, 145);
+            this.optionsButton.Location = new System.Drawing.Point(452, 145);
             this.optionsButton.Name = "optionsButton";
             this.optionsButton.Size = new System.Drawing.Size(209, 69);
             this.optionsButton.TabIndex = 17;
-            this.optionsButton.Text = "Options";
+            this.optionsButton.Text = "Controls";
             this.optionsButton.UseVisualStyleBackColor = false;
-            // 
-            // statsButton
-            // 
-            this.statsButton.BackColor = System.Drawing.SystemColors.Control;
-            this.statsButton.Font = new System.Drawing.Font("Agency FB", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statsButton.ForeColor = System.Drawing.Color.Black;
-            this.statsButton.Location = new System.Drawing.Point(358, 254);
-            this.statsButton.Name = "statsButton";
-            this.statsButton.Size = new System.Drawing.Size(209, 69);
-            this.statsButton.TabIndex = 18;
-            this.statsButton.Text = "Player Stats";
-            this.statsButton.UseVisualStyleBackColor = false;
+            this.optionsButton.Click += new System.EventHandler(this.optionsButton_Click);
             // 
             // titleLabel
             // 
@@ -102,12 +91,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
             this.Controls.Add(this.titleLabel);
-            this.Controls.Add(this.statsButton);
             this.Controls.Add(this.optionsButton);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.resumeButton);
             this.Name = "PauseMenu";
-            this.Size = new System.Drawing.Size(664, 392);
+            this.Size = new System.Drawing.Size(664, 274);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,7 +106,6 @@
         private System.Windows.Forms.Button resumeButton;
         private System.Windows.Forms.Button quitButton;
         private System.Windows.Forms.Button optionsButton;
-        private System.Windows.Forms.Button statsButton;
         private System.Windows.Forms.Label titleLabel;
     }
 }

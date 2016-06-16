@@ -43,74 +43,75 @@ namespace Character_creator
 
         private void selectOldCharacterButton_Click(object sender, EventArgs e)
         {
-            if (characterName != "")
-            {
-                Form f = this.FindForm();
-                f.Controls.Remove(this);
-                reviewScreen rs = new reviewScreen();
-                rs.Location = new Point((f.Width - rs.Width) / 2, (f.Height - rs.Height) / 2);
-                f.Controls.Add(rs);
-            }
-            else
-            {
-                errorLabel.Text = "Please Select A Character";
-            }
+
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            reviewScreen rs = new reviewScreen();
+            rs.Location = new Point((f.Width - rs.Width) / 2, (f.Height - rs.Height) / 2);
+            f.Controls.Add(rs);
         }
 
         private void OldOrNewCharacter_Load(object sender, EventArgs e)
         {
-            //loads the xml document to be read
-            XmlDocument doc = new XmlDocument();
-            doc.Load("UserFile.xml");
-            XmlNode parent;
-            parent = doc.DocumentElement;
 
-            //Displays the correct weather information
-            foreach (XmlNode child in parent.ChildNodes)
+            int i = 0;
+            foreach (User newUser in MainMenu.userList)
             {
-                if (child.Name == "username")
+                if (MainMenu.userList[i].username == MainMenu.playerName)
                 {
-                    if (child.Attributes["xmlns"].Value == MainMenu.playerName)
+                    if (MainMenu.userList[i].character1 != "space")
                     {
-                        foreach (XmlNode grandChild in child.ChildNodes)
-                        {
-                            if (grandChild.Name == "characterone")
-                            {
-                                if (grandChild.Name != "")
-                                {
-                                    MainMenu.space1 = false;
-                                   characterBox.Tag = grandChild.InnerText;
-                                    characterint++;
-                                }   
-                                }
-                            if (grandChild.Name == "charactertwo")
-                            {
-                                if (grandChild.Name != "")
-                                {
-                                    MainMenu.space2 = false;
-                                    characterBox.Tag = grandChild.InnerText;
-                                    characterint++;
-                                }
-                            }
-                            if (grandChild.Name == "characterthree")
-                            {
-                                if (grandChild.Name != "")
-                                {
-                                    MainMenu.space3 = false;
-                                    characterBox.Tag = grandChild.InnerText;
-                                    characterint++;
-                                }
-                            }
-                      }
+                        MainMenu.space1 = false;
+                        char1Button.Text = MainMenu.userList[i].character1;
+                    }
+                    else
+                    {
+                        char1Button.Visible = false;
+                    }
+                    if (MainMenu.userList[i].character2 != "space")
+                    {
+                        MainMenu.space2 = false;
+                        char2Button.Text = MainMenu.userList[i].character2;
+                    }
+                    else
+                    {
+                        char2Button.Visible = false;
+                    }
+                    if (MainMenu.userList[i].character3 != "space")
+                    {
+                        MainMenu.space1 = false;
+                        char3Button.Text = MainMenu.userList[i].character3;
+                    }
+                    else
+                    {
+                        char3Button.Visible = false;
+                    }
 
+                    if (MainMenu.userList[i].character1 == "space" && MainMenu.userList[i].character2 == "space" && MainMenu.userList[i].character3 == "space")
+                    {
+                        errorLabel.Text = "You Have No Existing Characters. Create New";
+                    }
                 }
+                i++;
             }
-        }
-    }
+         }
 
-        private void characterBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void char1Button_Click(object sender, EventArgs e)
         {
-            characterName = characterBox.Text;   
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            reviewScreen rs = new reviewScreen();
+            rs.Location = new Point((f.Width - rs.Width) / 2, (f.Height - rs.Height) / 2);
+            f.Controls.Add(rs);
+        }
+
+        private void char2Button_Click(object sender, EventArgs e)
+        {
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            reviewScreen rs = new reviewScreen();
+            rs.Location = new Point((f.Width - rs.Width) / 2, (f.Height - rs.Height) / 2);
+            f.Controls.Add(rs);
         }
     }
 }

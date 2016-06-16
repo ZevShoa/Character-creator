@@ -63,9 +63,9 @@ namespace Character_creator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap axe {
+        public static System.Drawing.Bitmap _392764 {
             get {
-                object obj = ResourceManager.GetObject("axe", resourceCulture);
+                object obj = ResourceManager.GetObject("_392764", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -101,22 +101,11 @@ namespace Character_creator.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.Drawing.Bitmap dagger {
+        public static System.IO.UnmanagedMemoryStream DARK__Video_Game____Main_Theme_Music {
             get {
-                object obj = ResourceManager.GetObject("dagger", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap deprived {
-            get {
-                object obj = ResourceManager.GetObject("deprived", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetStream("DARK__Video_Game____Main_Theme_Music", resourceCulture);
             }
         }
         
@@ -1396,6 +1385,16 @@ namespace Character_creator.Properties {
         public static System.Drawing.Bitmap GameBackground {
             get {
                 object obj = ResourceManager.GetObject("GameBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jungleBattle {
+            get {
+                object obj = ResourceManager.GetObject("jungleBattle", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2693,49 +2692,39 @@ namespace Character_creator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap monstereasy {
+            get {
+                object obj = ResourceManager.GetObject("monstereasy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap monsterHard {
+            get {
+                object obj = ResourceManager.GetObject("monsterHard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap monsterMedium {
+            get {
+                object obj = ResourceManager.GetObject("monsterMedium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap OptionBG {
             get {
                 object obj = ResourceManager.GetObject("OptionBG", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap peseant {
-            get {
-                object obj = ResourceManager.GetObject("peseant", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap rogue {
-            get {
-                object obj = ResourceManager.GetObject("rogue", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap staff {
-            get {
-                object obj = ResourceManager.GetObject("staff", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap sword {
-            get {
-                object obj = ResourceManager.GetObject("sword", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

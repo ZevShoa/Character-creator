@@ -16,6 +16,8 @@ namespace Character_creator
 {
     public partial class MainMenu : UserControl
     {
+        
+        public static SoundPlayer player = new SoundPlayer(Properties.Resources.DARK__Video_Game____Main_Theme_Music);
         public static List<User> userList = new List<User>();
         public static bool failure = false;
         public static bool space1 = true;
@@ -28,6 +30,8 @@ namespace Character_creator
         public MainMenu()
         {
             InitializeComponent();
+
+            
         }
 
         private void loginButton_Click(object sender, EventArgs e)
@@ -73,15 +77,15 @@ namespace Character_creator
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-
-            //Sounds
-            SoundPlayer player = new SoundPlayer(Properties.Resources.);
+            // Sounds
+           
+            player.PlayLooping();
 
             // Open the file to be read
             XmlTextReader reader = new XmlTextReader("UserFile.xml");
 
             // Continue to read each element and text until the file is done
-               while (reader.Read())
+            while (reader.Read())
             {
                 // the loop repeats getting the next piece of information
                 if (reader.NodeType == XmlNodeType.Text)

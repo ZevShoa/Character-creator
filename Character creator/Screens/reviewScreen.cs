@@ -19,7 +19,7 @@ namespace Character_creator
             InitializeComponent();
         }
         //used the class to make a character
-       public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, weaponScreen.finalPic, 100, 100, 5);
+        public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, weaponScreen.finalPic, 100, 100, 5);
         private void reviewScreen_Load(object sender, EventArgs e)
         {
             //set all the values for the screen
@@ -27,7 +27,7 @@ namespace Character_creator
             classLabel.Text = "Class: " + ch.clothes;
             colorLabel.Text = "Color: " + ch.color;
             weaponLabel.Text = "Weapon: " + ch.weapon;
-            genderLabel.Text = ch.gender;
+            genderLabel.Text = "Gender: " + ch.gender;
             finalPictureBox.Image = ch.picture;
             
             
@@ -38,27 +38,32 @@ namespace Character_creator
             // goes back a screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
-            statScreen ss = new statScreen();
-            f.Controls.Add(ss);
-            ss.Location = new Point((f.Width - ss.Width) / 2, (f.Height - ss.Height) / 2);
+            weaponScreen ws = new weaponScreen();
+            f.Controls.Add(ws);
+            ws.Location = new Point((f.Width - ws.Width) / 2, (f.Height - ws.Height) / 2);
         }
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            //saves users options
-            XmlTextWriter writer = new XmlTextWriter(ch.name+".xml", null);
+            if (signUpScreen.createdUser == true)
+            {
+                //saves users options
+                XmlTextWriter writer = new XmlTextWriter("Characters.xml", null);
 
-            writer.WriteStartElement("Character");
-            writer.WriteStartElement(ch.name);
-            writer.WriteElementString("name", ch.name);
-            writer.WriteElementString("class", ch.clothes);
-            writer.WriteElementString("color", ch.color);
-            writer.WriteElementString("weapon", ch.weapon);
-            writer.WriteElementString("gender", ch.gender);
-            writer.WriteElementString("Image", "finalPic");
-            writer.WriteEndElement();
-            writer.WriteEndElement();
-            writer.Close();
+                writer.WriteStartElement("Character");
+                writer.WriteElementString("name", ch.name);
+                writer.WriteElementString("class", ch.clothes);
+                writer.WriteElementString("color", ch.color);
+                writer.WriteElementString("weapon", ch.weapon);
+                writer.WriteElementString("gender", ch.gender);
+                writer.WriteElementString("image", "Final Image");
+                writer.WriteEndElement();
+                writer.Close();
+            }
+            else
+            {
+
+            }
 
             //more xml stuff
             int i = 0;
@@ -122,14 +127,6 @@ namespace Character_creator
             gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
             f.Controls.Add(gs);
         }
-        private void menuButton_Click(object sender, EventArgs e)
-        {
-            //goes back to the main menu
-            Form f = this.FindForm();
-            f.Controls.Remove(this);
-            MainMenu mm = new MainMenu();
-            f.Controls.Add(mm);
-            mm.Location = new Point((f.Width - mm.Width) / 2, (f.Height - mm.Height) / 2);
-        }
+      
     }
 }
