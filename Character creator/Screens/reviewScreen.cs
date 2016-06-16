@@ -13,15 +13,23 @@ namespace Character_creator
 {
     public partial class reviewScreen : UserControl
     {
-
+        int index = 1;
+        public static List<Character>characterList = new List<Character>();
         public reviewScreen()
         {
             InitializeComponent();
         }
         //used the class to make a character
         public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, weaponScreen.finalPic, 100, 100, 5);
+
         private void reviewScreen_Load(object sender, EventArgs e)
         {
+            string name = ch.name;
+            string clothes = ch.clothes;
+            string colour = ch.color;
+            string weapon = ch.weapon;
+            string gender = ch.gender;
+
             //set all the values for the screen
             nameLabel.Text = ch.name;
             classLabel.Text = "Class: " + ch.clothes;
@@ -29,8 +37,59 @@ namespace Character_creator
             weaponLabel.Text = "Weapon: " + ch.weapon;
             genderLabel.Text = "Gender: " + ch.gender;
             finalPictureBox.Image = ch.picture;
+
+            // Open the file to be read
+            XmlTextReader reader = new XmlTextReader("UserFile.xml");
+
+            // Continue to read each element and text until the file is done
+            while (reader.Read())
+            {
+                // the loop repeats getting the next piece of information
+                if (reader.NodeType == XmlNodeType.Text)
+                {
+                    if (reader.NodeType == XmlNodeType.Text)
+                    {
+                        if (index == 1)
+                        {
+                            name = reader.Value;
+                            index++;
+                        }
+                        else if(index == 2)
+                        {
+                            clothes = reader.Value;
+                            index++;
+                        }
+                        else if (index == 3)
+                        {
+                            colour = reader.Value;
+                            index++;
+                        }
+                        else if (index == 4)
+                        {
+                            weapon = reader.Value;
+                            index++;
+
+                        }
+                        else if (index == 5)
+                        {
+                            gender = reader.Value;
+                            index++;
+                        }
+                        else if (index == 6)
+                        {
+                            index++;
+                            Character newChar = new Character(name, clothes, weapon, gender, colour, ch.picture, 100, 100, 5);
+                            characterList.Add(newChar);
+                        }
+
+                    }
+                }
+            }
             
-            
+            // When done reading the file close it
+            reader.Close();
+            index = 1;
+
         }
 
         private void backButton_Click(object sender, EventArgs e)
