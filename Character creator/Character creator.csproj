@@ -1073,6 +1073,7 @@
     <None Include="Resources\maleYellowThiefSword.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\More BeautifulSad Piano Songs By Yann Tiersen.mp3" />
     <Content Include="UserFile.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

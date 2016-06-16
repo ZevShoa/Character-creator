@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Media;
 
 // May 26 - updated UI
 
@@ -72,12 +73,15 @@ namespace Character_creator
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            
+
+            //Sounds
+            SoundPlayer player = new SoundPlayer(Properties.Resources.);
+
             // Open the file to be read
             XmlTextReader reader = new XmlTextReader("UserFile.xml");
 
             // Continue to read each element and text until the file is done
-            while (reader.Read())
+               while (reader.Read())
             {
                 // the loop repeats getting the next piece of information
                 if (reader.NodeType == XmlNodeType.Text)
