@@ -34,7 +34,6 @@
             this.rogueButton = new System.Windows.Forms.Button();
             this.deprivedButton = new System.Windows.Forms.Button();
             this.nameLabel = new System.Windows.Forms.Label();
-            this.backButton = new System.Windows.Forms.Button();
             this.clothingBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.clothingBox)).BeginInit();
             this.SuspendLayout();
@@ -114,17 +113,6 @@
             this.nameLabel.Size = new System.Drawing.Size(0, 40);
             this.nameLabel.TabIndex = 5;
             // 
-            // backButton
-            // 
-            this.backButton.Font = new System.Drawing.Font("Agency FB", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(28, 18);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(75, 60);
-            this.backButton.TabIndex = 7;
-            this.backButton.Text = "↩";
-            this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
-            // 
             // clothingBox
             // 
             this.clothingBox.BackColor = System.Drawing.Color.Transparent;
@@ -142,7 +130,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
-            this.Controls.Add(this.backButton);
             this.Controls.Add(this.clothingBox);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.deprivedButton);
@@ -168,6 +155,5 @@
         private System.Windows.Forms.Button deprivedButton;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.PictureBox clothingBox;
-        private System.Windows.Forms.Button backButton;
     }
 }

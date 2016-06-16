@@ -32,7 +32,6 @@
             this.maleButton = new System.Windows.Forms.Button();
             this.femaleButton = new System.Windows.Forms.Button();
             this.genderPicBox = new System.Windows.Forms.PictureBox();
-            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.genderPicBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,24 +82,12 @@
             this.genderPicBox.TabIndex = 3;
             this.genderPicBox.TabStop = false;
             // 
-            // backButton
-            // 
-            this.backButton.Font = new System.Drawing.Font("Agency FB", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(30, 18);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(75, 60);
-            this.backButton.TabIndex = 5;
-            this.backButton.Text = "↩";
-            this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
-            // 
             // GenderScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
-            this.Controls.Add(this.backButton);
             this.Controls.Add(this.genderPicBox);
             this.Controls.Add(this.femaleButton);
             this.Controls.Add(this.maleButton);
@@ -120,6 +107,5 @@
         private System.Windows.Forms.Button maleButton;
         private System.Windows.Forms.Button femaleButton;
         private System.Windows.Forms.PictureBox genderPicBox;
-        private System.Windows.Forms.Button backButton;
     }
 }

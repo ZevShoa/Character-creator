@@ -227,6 +227,7 @@ namespace Character_creator
             attackOneButton.Text = attack1;
             attackTwoButton.Text = attack2;
             attackThreeButton.Text = attack3;
+            playerTurn();
         }
         public void monsterTurn()
         {
