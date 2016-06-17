@@ -99,8 +99,9 @@ namespace Character_creator
             if (signUpScreen.createdUser == true)
             {
                 //saves users options
-                XmlTextWriter writer = new XmlTextWriter("Characters.xml", null);
+                XmlTextWriter writer = new XmlTextWriter("Players.xml", null);
 
+                writer.WriteStartElement("Characters");
                 for (int z = 0; z < characterList.Count; z++)
                 {
                     writer.WriteStartElement("Character");
@@ -112,8 +113,10 @@ namespace Character_creator
                     writer.WriteElementString("image", "Final Image");
                     writer.WriteEndElement();
                 }
+                writer.WriteEndElement();
                 writer.Close();
             }
+            
             else
             {
 
@@ -148,40 +151,6 @@ namespace Character_creator
                 i++;
             }
 
-            // XmlTextWriter writer1 = new XmlTextWriter("UserFile.xml", null);
-            // writer1.WriteStartElement(MainMenu.playerName);
-            //if(MainMenu.space1 == true)
-            // {
-            //     writer1.WriteElementString("characterone",ch.name);
-            //     writer.WriteEndElement();
-            //     writer.Close();
-            // }
-            //else if (MainMenu.space1 == false)
-            // {
-            //     if(MainMenu.space2 == true)
-            //     {
-            //         writer1.WriteElementString("charactertwo",ch.name);
-            //         writer.WriteEndElement();
-            //         writer.Close();
-            //     }
-            //     else if(MainMenu.space2 == false)
-            //     {
-            //         if(MainMenu.space3 == true)
-            //         {
-            //             writer1.WriteElementString("characterthree",ch.name);
-            //             writer.WriteEndElement();
-            //             writer.Close();
-            //         }
-            //     }
-            // }
-            //goes to the accrual screen
-
-
-            //Form f = this.FindForm();
-            //f.Controls.Remove(this);
-            //GameScreen gs = new GameScreen();
-            //gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
-            //f.Controls.Add(gs);
         }
       
     }
