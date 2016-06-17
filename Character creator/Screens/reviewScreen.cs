@@ -11,6 +11,7 @@ using System.Xml;
 
 namespace Character_creator
 {
+    //always us capitals!!!!!!!!!!!!!!
     public partial class reviewScreen : UserControl
     {
         int index = 1;
