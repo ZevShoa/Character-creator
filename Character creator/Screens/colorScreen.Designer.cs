@@ -34,7 +34,6 @@
             this.greenButton = new System.Windows.Forms.Button();
             this.nameLabel = new System.Windows.Forms.Label();
             this.colorBox = new System.Windows.Forms.PictureBox();
-            this.backButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.colorBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,24 +110,12 @@
             this.colorBox.TabIndex = 4;
             this.colorBox.TabStop = false;
             // 
-            // backButton
-            // 
-            this.backButton.Font = new System.Drawing.Font("Agency FB", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(31, 17);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(75, 60);
-            this.backButton.TabIndex = 6;
-            this.backButton.Text = "↩";
-            this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
-            // 
             // colorScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
-            this.Controls.Add(this.backButton);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.colorBox);
             this.Controls.Add(this.greenButton);
@@ -152,6 +139,5 @@
         private System.Windows.Forms.Button greenButton;
         private System.Windows.Forms.PictureBox colorBox;
         private System.Windows.Forms.Label nameLabel;
-        private System.Windows.Forms.Button backButton;
     }
 }

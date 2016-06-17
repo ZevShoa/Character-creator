@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.nameLabel = new System.Windows.Forms.Label();
-            this.backButton = new System.Windows.Forms.Button();
             this.weaponBox = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.swordButton = new System.Windows.Forms.Button();
@@ -50,17 +49,6 @@
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(0, 49);
             this.nameLabel.TabIndex = 5;
-            // 
-            // backButton
-            // 
-            this.backButton.Font = new System.Drawing.Font("Agency FB", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(25, 27);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(75, 60);
-            this.backButton.TabIndex = 6;
-            this.backButton.Text = "↩";
-            this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // weaponBox
             // 
@@ -159,7 +147,6 @@
             this.Controls.Add(this.swordButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.weaponBox);
-            this.Controls.Add(this.backButton);
             this.Controls.Add(this.nameLabel);
             this.Name = "weaponScreen";
             this.Size = new System.Drawing.Size(750, 500);
@@ -172,7 +159,6 @@
 
         #endregion
         private System.Windows.Forms.Label nameLabel;
-        private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.PictureBox weaponBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button swordButton;

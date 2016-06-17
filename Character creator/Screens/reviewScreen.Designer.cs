@@ -35,7 +35,6 @@
             this.finalPictureBox = new System.Windows.Forms.PictureBox();
             this.genderLabel = new System.Windows.Forms.Label();
             this.saveButton = new System.Windows.Forms.Button();
-            this.backButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.finalPictureBox)).BeginInit();
@@ -122,17 +121,6 @@
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // backButton
-            // 
-            this.backButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.Location = new System.Drawing.Point(36, 28);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(67, 66);
-            this.backButton.TabIndex = 9;
-            this.backButton.Text = "↩";
-            this.backButton.UseVisualStyleBackColor = true;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(-22, -22);
@@ -158,7 +146,6 @@
             this.BackgroundImage = global::Character_creator.Properties.Resources.brick;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.backButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.genderLabel);
             this.Controls.Add(this.finalPictureBox);
@@ -184,7 +171,6 @@
         private System.Windows.Forms.PictureBox finalPictureBox;
         private System.Windows.Forms.Label genderLabel;
         private System.Windows.Forms.Button saveButton;
-        private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }
