@@ -29,6 +29,7 @@ namespace Character_creator
         {
             if (characterint < 3)
             {
+                signUpScreen.createdUser = true;
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
                 NameScreen ns = new NameScreen();
@@ -37,7 +38,11 @@ namespace Character_creator
             }
             if (characterint == 3)
             {
-
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                RemoveCharacter rc = new RemoveCharacter();
+                rc.Location = new Point((f.Width - rc.Width) / 2, (f.Height - rc.Height) / 2);
+                f.Controls.Add(rc);
             }
         }
 

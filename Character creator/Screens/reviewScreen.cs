@@ -20,7 +20,7 @@ namespace Character_creator
             InitializeComponent();
         }
         //used the class to make a character
-        public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, weaponScreen.finalPic, 100, 100, 5);
+        public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, weaponScreen.finalPic, 300, 400, 5);
 
         private void reviewScreen_Load(object sender, EventArgs e)
         {
@@ -39,7 +39,7 @@ namespace Character_creator
             finalPictureBox.Image = ch.picture;
 
             // Open the file to be read
-            XmlTextReader reader = new XmlTextReader("UserFile.xml");
+            XmlTextReader reader = new XmlTextReader("Characters.xml");
 
             // Continue to read each element and text until the file is done
             while (reader.Read())
@@ -109,14 +109,17 @@ namespace Character_creator
                 //saves users options
                 XmlTextWriter writer = new XmlTextWriter("Characters.xml", null);
 
-                writer.WriteStartElement("Character");
-                writer.WriteElementString("name", ch.name);
-                writer.WriteElementString("class", ch.clothes);
-                writer.WriteElementString("color", ch.color);
-                writer.WriteElementString("weapon", ch.weapon);
-                writer.WriteElementString("gender", ch.gender);
-                writer.WriteElementString("image", "Final Image");
-                writer.WriteEndElement();
+                for (int z = 0; z < characterList.Count; z++)
+                {
+                    writer.WriteStartElement("Character");
+                    writer.WriteElementString("name", characterList[z].name);
+                    writer.WriteElementString("class", characterList[z].clothes);
+                    writer.WriteElementString("color", characterList[z].color);
+                    writer.WriteElementString("weapon", characterList[z].weapon);
+                    writer.WriteElementString("gender", characterList[z].gender);
+                    writer.WriteElementString("image", "Final Image");
+                    writer.WriteEndElement();
+                }
                 writer.Close();
             }
             else

@@ -145,6 +145,19 @@ namespace Character_creator
             announcerLabel.Text = reviewScreen.ch.name + "'s Turn";
             //puts the image of your character into the picture box
             characterBox.Image = reviewScreen.ch.picture;
+            if (GameScreen.monsterList[0].type == 0)
+            {
+                monsterBox.Image = Properties.Resources.monstereasy;
+            }
+            else if (GameScreen.monsterList[0].type == 1)
+            {
+                monsterBox.Image = Properties.Resources.monsterMedium;
+            }
+            else if (GameScreen.monsterList[0].type == 2)
+            {
+                monsterBox.Image = Properties.Resources.monsterHard;
+            }
+
             #region Attack Choices
             //choosing a number for base attack
             attackNum = ranNum.Next(0, 62);
@@ -228,6 +241,7 @@ namespace Character_creator
             attackTwoButton.Text = attack2;
             attackThreeButton.Text = attack3;
         }
+
         public void monsterTurn()
         {
             //makes it so you cant hit the monsters

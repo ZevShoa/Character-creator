@@ -17,12 +17,13 @@ namespace Character_creator
         public static List<Monsters> monsterList = new List<Monsters>();
         Random rand = new Random();
         int monsterStart;
+        public static bool battleOver = false;
         public static int totalScore;
 
         public GameScreen()
         {
             InitializeComponent();
-            Monsters m = new Monsters(0, 100, 300, 4, 0);
+            Monsters m = new Monsters(-300, 400, 150, 4, 0);
             monsterList.Add(m);
             m.monsterImages = new Image[] { Properties.Resources.monstereasy, Properties.Resources.monsterMedium, Properties.Resources.monsterHard };
             aArrowDown = dArrowDown = spaceArrowDown = false;
@@ -93,11 +94,25 @@ namespace Character_creator
             #region Character Movement
             if (aArrowDown == true)
             {
-                reviewScreen.ch.move(reviewScreen.ch, "Left");
+                if (reviewScreen.ch.x > 0)
+                {
+                    reviewScreen.ch.move(reviewScreen.ch, "Left");
+                }
+                else if (reviewScreen.ch.x < 0)
+                {
+                    reviewScreen.ch.x = 1500;
+                }
             }
             else if (dArrowDown == true)
             {
-                reviewScreen.ch.move(reviewScreen.ch, "right");
+                if (reviewScreen.ch.x < 1500)
+                {
+                    reviewScreen.ch.move(reviewScreen.ch, "right");
+                }
+                else if (reviewScreen.ch.x > 1500)
+                {
+                    reviewScreen.ch.x = 0;
+                }
             }
             #endregion
 
@@ -121,52 +136,43 @@ namespace Character_creator
                 if (m.monsterCollision(m, reviewScreen.ch) == true)
                 {
                     battleMove();
-
-                    break;
-                    foreach (Monsters mon in monsterList)
+                }
+                if (BattleScreen.win == true && battleOver == true)
+                {
+                    monsterStart = rand.Next(0, 1);
+                    Monsters newMon = null;
+                    if (monsterStart == 0)
                     {
-                        if (BattleScreen.win == true)
+                        newMon = new Monsters(-300, 400, 300, 4, rand.Next(0, 3));
+                    }
+                    if (monsterStart == 1)
+                    {
+                        newMon = new Monsters(900, 400, 300, 4, rand.Next(0, 3));
+                    }
+                    monsterList.Add(newMon);
+                    totalScore = totalScore + BattleScreen.scoreIncrease;
+                }
+                else if (battleOver == true && BattleScreen.win == false)
+                {
+                    for (int i = 0; i < MainMenu.userList.Count(); i++)
+                    {
+                        if (MainMenu.userList[i].username == MainMenu.playerName)
                         {
-                            monsterStart = rand.Next(0, 1);
-                            Monsters newMon = null;
-                            if (monsterStart == 0)
+                            if (Convert.ToInt16(MainMenu.userList[i].score) > totalScore)
                             {
-                                newMon = new Monsters(0, 700, 300, 4, rand.Next(0, 3));
+                                MainMenu.userList[i].score = Convert.ToString(totalScore);
                             }
-                            if (monsterStart == 1)
-                            {
-                                newMon = new Monsters(400, 700, 300, 4, rand.Next(0, 3));
-                            }
-                            monsterList.Add(newMon);
-                            totalScore = totalScore + BattleScreen.scoreIncrease;
+                            MainMenu.userList[i].score = Convert.ToString(totalScore);
+                            Form s = this.FindForm();
+                            s.Controls.Remove(this);
+                            failScreen fs = new failScreen();
+                            fs.Location = new Point((s.Width - fs.Width) / 2, (s.Height - fs.Height) / 2);
+                            s.Controls.Add(fs);
                         }
-                        else
-                        {
-                            for (int i = 0; i < MainMenu.userList.Count(); i++)
-                            {
-                                if (MainMenu.userList[i].username == MainMenu.playerName)
-                                {
-                                    if (Convert.ToInt16(MainMenu.userList[i].score) > totalScore)
-                                    {
-                                        
-                                    }
-                                    else
-                                    {
-                                        
-                                    }
-                                    MainMenu.userList[i].score = Convert.ToString(totalScore);
-                                    Form s = this.FindForm();
-                                    s.Controls.Remove(this);
-                                    failScreen fs = new failScreen();
-                                    fs.Location = new Point((s.Width - fs.Width) / 2, (s.Height - fs.Height) / 2);
-                                    s.Controls.Add(fs);
-                                }
-                            }
-                        }
-                    
                     }
                 }
             }
+
             #endregion
 
             Refresh();
