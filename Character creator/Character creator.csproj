@@ -157,12 +157,6 @@
     <Compile Include="Screens\weaponScreen.Designer.cs">
       <DependentUpon>weaponScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\statScreen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Screens\statScreen.Designer.cs">
-      <DependentUpon>statScreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Screens\signUpScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -228,9 +222,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Screens\statScreen.resx">
-      <DependentUpon>statScreen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Screens\weaponScreen.resx">
       <DependentUpon>weaponScreen.cs</DependentUpon>
     </EmbeddedResource>

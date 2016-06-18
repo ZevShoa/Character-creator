@@ -21,7 +21,7 @@ namespace Character_creator
             InitializeComponent();
         }
         //used the class to make a character
-        public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, weaponScreen.finalPic, 300, 400, 5);
+        public static Character ch = new Character(NameScreen.name, clothingScreen.clothing, weaponScreen.weapon, GenderScreen.gender, colorScreen.color, weaponScreen.finalPic, 300, 250, 5);
 
         private void reviewScreen_Load(object sender, EventArgs e)
         {
@@ -33,7 +33,7 @@ namespace Character_creator
 
             //set all the values for the screen
             nameLabel.Text = ch.name;
-            classLabel.Text = "Class: " + ch.clothes;
+            classLabel.Text = "Class: " +  ch.clothes;
             colorLabel.Text = "Color: " + ch.color;
             weaponLabel.Text = "Weapon: " + ch.weapon;
             genderLabel.Text = "Gender: " + ch.gender;
@@ -97,8 +97,6 @@ namespace Character_creator
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if (signUpScreen.createdUser == true)
-            {
                 //saves users options
                 XmlTextWriter writer = new XmlTextWriter("Players.xml", null);
 
@@ -116,12 +114,6 @@ namespace Character_creator
                 }
                 writer.WriteEndElement();
                 writer.Close();
-            }
-            
-            else
-            {
-
-            }
 
             //more xml stuff
             int i = 0;
@@ -151,6 +143,11 @@ namespace Character_creator
                 }
                 i++;
             }
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            GameScreen gs = new GameScreen();
+            f.Controls.Add(gs);
+            gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
 
         }
       

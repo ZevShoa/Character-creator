@@ -105,25 +105,25 @@ namespace Character_creator
         #region button clicks
         private void purpleButton_MouseClick(object sender, MouseEventArgs e)
         {
-            color = "purple";
+            color = "Purple";
             changeScreen();
         }
 
         private void yellowButton_Click(object sender, EventArgs e)
         {
-            color = "yellow";
+            color = "Yellow";
             changeScreen();
         }
 
         private void redButton_Click(object sender, EventArgs e)
         {
-            color = "red";
+            color = "Red";
             changeScreen();
         }
 
         private void greenButton_Click(object sender, EventArgs e)
         {
-            color = "green";
+            color = "Green";
             changeScreen();
         }
         #endregion

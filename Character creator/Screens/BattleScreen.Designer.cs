@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.monsterHealthLabel = new System.Windows.Forms.Label();
             this.playerHealthBar = new System.Windows.Forms.ProgressBar();
             this.monsterHealthBar = new System.Windows.Forms.ProgressBar();
@@ -44,6 +45,7 @@
             this.announcerLabel = new System.Windows.Forms.Label();
             this.monsterBox = new System.Windows.Forms.PictureBox();
             this.characterBox = new System.Windows.Forms.PictureBox();
+            this.battleTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.monsterBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.characterBox)).BeginInit();
             this.SuspendLayout();
@@ -209,19 +211,27 @@
             // 
             // monsterBox
             // 
+            this.monsterBox.BackColor = System.Drawing.Color.Transparent;
             this.monsterBox.Location = new System.Drawing.Point(24, 320);
             this.monsterBox.Name = "monsterBox";
             this.monsterBox.Size = new System.Drawing.Size(300, 300);
+            this.monsterBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.monsterBox.TabIndex = 2;
             this.monsterBox.TabStop = false;
             // 
             // characterBox
             // 
+            this.characterBox.BackColor = System.Drawing.Color.Transparent;
             this.characterBox.Location = new System.Drawing.Point(554, 132);
             this.characterBox.Name = "characterBox";
             this.characterBox.Size = new System.Drawing.Size(294, 378);
+            this.characterBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.characterBox.TabIndex = 1;
             this.characterBox.TabStop = false;
+            // 
+            // battleTimer
+            // 
+            this.battleTimer.Tick += new System.EventHandler(this.battleTimer_Tick);
             // 
             // BattleScreen
             // 
@@ -273,5 +283,6 @@
         private System.Windows.Forms.Label monsterHealthNunberLabel;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label announcerLabel;
+        private System.Windows.Forms.Timer battleTimer;
     }
 }

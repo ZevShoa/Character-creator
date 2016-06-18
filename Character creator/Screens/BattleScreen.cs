@@ -15,14 +15,19 @@ namespace Character_creator
     {
         // strings for attacks
         string attack1, attack2, attack3;
+        bool attackMade = false;
         //random number generator used throughout
         Random ranNum = new Random();
         //all variables that are used thorough out 
+        int humanHealth = 100;
+        int humanEnergy = 100;
+        int monsterHealth = 100;
         int attackNum;
         int stinkRan;
         int phraseNum;
         public static int scoreIncrease;
        public static bool win;
+        bool characterTurn = true;
         //abusive comments
         string[] annoucerPhrases = {"That sucked", "Is that really the best you could do?", "Pathetic",
         "lol that was a joke right?", "You dirty swine, what are you doing?"/*Credit to Ben Fortin*/, "WhAt ThE F*Ck ArE yOu DoInG"};
@@ -34,13 +39,18 @@ namespace Character_creator
         #region button clicks
         private void attackTwoButton_Click(object sender, EventArgs e)
         {
+            attackMade = true;
             //attacks based on class
             switch(attack2)
             {
                 case "Healing":
-                    if (playerHealthBar.Value > 100)
+                    if (humanHealth < 80)
                     {
-                        playerHealthBar.Value += ranNum.Next(1, 20);
+                        humanHealth += ranNum.Next(1, 20);
+                    }
+                    if(humanHealth <100 && humanHealth > 80)
+                    {
+                        humanHealth = 100;
                     }
                     break;
                 case "Stink Attack":
@@ -48,98 +58,86 @@ namespace Character_creator
                     if (stinkRan >= 10)
                     {
                         win = true;
-                        Form f = this.FindForm();
-                        f.Controls.Remove(this);
-                        GameScreen gs = new GameScreen();
-                        f.Controls.Add(gs);
-                        gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+                        monsterHealth = 0;
                         
                     }
                     else
                     {
-                        playerEnergyBar.Value -= ranNum.Next(2, 12);
-                        monsterHealthBar.Value -= ranNum.Next(1, 15);
+                       humanEnergy -= ranNum.Next(2, 12);
+                        monsterHealth -= ranNum.Next(1, 15);
                     }
                     break;
                 case "BackStab":
-                    playerEnergyBar.Value -= ranNum.Next(20, 30);
-                    monsterHealthBar.Value -= ranNum.Next(20, 35);
+                   humanEnergy -= ranNum.Next(20, 30);
+                    monsterHealth -= ranNum.Next(20, 35);
                     break;
                 case "Regeneration":
-                    playerEnergyBar.Value += ranNum.Next(5, 13);
-                    playerHealthBar.Value -= ranNum.Next(1, 5);
+                    humanEnergy += ranNum.Next(5, 13);
+                    humanHealth -= ranNum.Next(1, 5);
                      break;
                 case "Economic Crisis":
-                    playerEnergyBar.Value -= ranNum.Next(15, 35);
-                    monsterHealthBar.Value -= ranNum.Next(3, 40);
+                   humanEnergy -= ranNum.Next(15, 35);
+                    monsterHealth -= ranNum.Next(3, 40);
                     break;
 
             }
-            //calling monster to attack
-            monsterTurn();
         }
 
         private void attackThreeButton_Click(object sender, EventArgs e)
         {
+            attackMade = true;
             //random attacks that anyone could have in any fight
             switch (attack3)
             {
                 case "Body Slam":
-                    playerEnergyBar.Value -= ranNum.Next(20, 31);
-                    monsterHealthBar.Value -= ranNum.Next(1, 36);
+                    humanEnergy -= ranNum.Next(20, 31);
+                    monsterHealth -= ranNum.Next(1, 36);
                     break;
                 case "Light Attack":
-                    playerEnergyBar.Value -= ranNum.Next(2, 11);
-                    monsterHealthBar.Value -= ranNum.Next(5, 15);
+                    humanEnergy -= ranNum.Next(2, 11);
+                    monsterHealth -= ranNum.Next(5, 15);
                     break;
                 case "Gentle Poke":
-                    playerEnergyBar.Value -= ranNum.Next(3, 6);
-                    monsterHealthBar.Value -= ranNum.Next(0, 6);
+                   humanEnergy -= ranNum.Next(3, 6);
+                    monsterHealth -= ranNum.Next(1, 6);
                     break;
                 case "Divine Intervention":
-                    Form f = this.FindForm();
-                    f.Controls.Remove(this);
-                    GameScreen gs = new GameScreen();
-                    f.Controls.Add(gs);
-                    gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
-                    //ALSO NEED CODE TO DELTE MONSTER
+                    monsterHealth = 0;
                     break;                
             }
-            //calling monster to attack
-            monsterTurn();
         }
         private void attackOneButton_Click(object sender, EventArgs e)
         {
+            attackMade = true;
             //assigning values to what happens when you use your weapon based attack
             switch (attack1)
             {
                 case "Heavy Swing":
-                    playerEnergyBar.Value -= ranNum.Next(10, 16);
-                    monsterHealthBar.Value -= ranNum.Next(15, 21);
+                    humanEnergy -= ranNum.Next(10, 16);
+                    monsterHealth -= ranNum.Next(15, 21);
                     break;
                 case "Slash":
-                    playerEnergyBar.Value -= ranNum.Next(6, 13);
-                    monsterHealthBar.Value -= ranNum.Next(10, 15);
+                    humanEnergy -= ranNum.Next(6, 13);
+                    monsterHealth -= ranNum.Next(10, 15);
                     break;
                 case "Knife Throw":
-                    playerEnergyBar.Value -= ranNum.Next(3, 10);
-                    monsterHealthBar.Value -= ranNum.Next(1, 7);
+                    humanEnergy -= ranNum.Next(3, 10);
+                    monsterHealth -= ranNum.Next(1, 7);
                     break;
                 case "Fireball":
-                    playerEnergyBar.Value -= ranNum.Next(13, 20);
-                    monsterHealthBar.Value -= ranNum.Next(18, 25);
+                   humanEnergy -= ranNum.Next(13, 20);
+                    monsterHealth -= ranNum.Next(18, 25);
                     break;
                 case "Sucker punch":
-                    playerEnergyBar.Value -= ranNum.Next(5, 18);
-                    monsterHealthBar.Value -= ranNum.Next(5, 18);
+                    humanEnergy -= ranNum.Next(5, 18);
+                    monsterHealth -= ranNum.Next(5, 18);
                     break;
                 default:
                     break;
             }
-            //calling monster to attack
-            monsterTurn();
         }
         #endregion
+
         private void BattleScreen_Load(object sender, EventArgs e)
         {
             announcerLabel.Text = reviewScreen.ch.name + "'s Turn";
@@ -240,63 +238,77 @@ namespace Character_creator
             attackOneButton.Text = attack1;
             attackTwoButton.Text = attack2;
             attackThreeButton.Text = attack3;
-            playerTurn();
+            battleTimer.Enabled = true;
+        }
+
+        private void battleTimer_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                playerHealthBar.Value = humanHealth;
+                playerHealthLabel.Text = Convert.ToString(humanHealth) + "%";
+                playerEnergyBar.Value = humanEnergy;
+                playerEnergyLabel.Text = Convert.ToString(humanEnergy) + "%";
+                monsterHealthBar.Value = monsterHealth;
+                monsterHealthLabel.Text = Convert.ToString(monsterHealth) + "%";
+            }
+            catch
+            {
+                playerTurn();
+                monsterTurn();
+            }
+
+           if (characterTurn == true)
+            {
+                if (attackMade == true)
+                {
+                    playerTurn();
+                    characterTurn = false;
+                }
+            }
+            else if (characterTurn == false)
+            {
+                monsterTurn();
+                characterTurn = true;
+                attackMade = false;
+            }
         }
 
         public void monsterTurn()
         {
+            announcerLabel.Text = "Enemy's Turn";
+            Refresh();
             //makes it so you cant hit the monsters
             attackOneButton.Enabled = false;
             attackTwoButton.Enabled = false;
             attackThreeButton.Enabled = false;
-            if(monsterHealthBar.Value >= 0)
-            {
-                //adds health and energy to score
-                scoreIncrease = playerEnergyBar.Value + playerHealthBar.Value;
-                //so other screens can know the outcome of the battle
-                win = true;
-                //changes screens 
-                announcerLabel.Text = "The Monster Is Vanquished";
-                Form f = this.FindForm();
-                f.Controls.Remove(this);
-                GameScreen gs = new GameScreen();
-                f.Controls.Add(gs);
-                gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
-                
-            }
-            else
-            {
-                foreach (Monsters m in GameScreen.monsterList)
+
+            Thread.Sleep(1000);
+
+                //takes a certain amount off the players health
+                switch (GameScreen.monsterList[0].type)
                 {
-                    //takes a certain amount off the players health
-                    switch (m.type)
-                    {
-                        case 0:
-                            playerHealthBar.Value -= ranNum.Next(1, 20);
-                            break;
-                        case 1:
-                            playerHealthBar.Value -= ranNum.Next(20, 40);
-                            break;
-                        case 2:
-                            playerHealthBar.Value -= ranNum.Next(20, 50);
-                            break;
-                        default:
-                            break;
-                    }
+                    case 0:
+                        humanHealth -= ranNum.Next(1, 20);
+                        break;
+                    case 1:
+                        humanHealth -= ranNum.Next(20, 40);
+                        break;
+                    case 2:
+                        humanHealth -= ranNum.Next(20, 50);
+                        break;
+                    default:
+                        break;
                 }
+            Thread.Sleep(1000);
 
-
-
-            }
-        }
-
-        public void playerTurn()
-        {
-            if (playerHealthBar.Value >= 0 || playerEnergyBar.Value >= 0)
+            if (humanHealth <= 0 || humanEnergy <= 0)
             {
                 //an abusive comment about the user 
                 phraseNum = ranNum.Next(1, 7);
                 announcerLabel.Text = annoucerPhrases[phraseNum];
+                Thread.Sleep(2000);
+                Refresh();
                 //so other screens can know the outcome of the battle
                 win = false;
                 //adds health and energy to score but takes away how much health the monster had left
@@ -316,8 +328,48 @@ namespace Character_creator
                 attackThreeButton.Enabled = true;
                 //a message prompts player to go
                 announcerLabel.Text = reviewScreen.ch.name + "'s Turn";
+                Refresh();
+            }
+        }
+
+        public void playerTurn()
+        {
+            if (monsterHealth <= 0)
+            {
+                //adds health and energy to score
+                scoreIncrease = humanEnergy + humanHealth;
+                //so other screens can know the outcome of the battle
+                win = true;
+                //changes screens 
+                announcerLabel.Text = "The Monster Is Vanquished";
+                Refresh();
+                Thread.Sleep(2000);
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                GameScreen gs = new GameScreen();
+                f.Controls.Add(gs);
+                gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+
             }
         
+            if(humanEnergy <= 0)
+            {
+                //an abusive comment about the user 
+                phraseNum = ranNum.Next(1, 7);
+                announcerLabel.Text = annoucerPhrases[phraseNum];
+                Thread.Sleep(2000);
+                Refresh();
+                //so other screens can know the outcome of the battle
+                win = false;
+                //adds health and energy to score but takes away how much health the monster had left
+                scoreIncrease = playerHealthBar.Value + playerEnergyBar.Value - monsterHealthBar.Value;
+                //goes back to battle screen to calculate score and then goes to fail screen from there
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                GameScreen gs = new GameScreen();
+                f.Controls.Add(gs);
+                gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+            }
         }
     }
 }

@@ -27,13 +27,13 @@ namespace Character_creator
         private void maleButton_Click(object sender, EventArgs e)
         {
             //sets the variable of gender to male and calls method to move to next screen
-            gender = "male";
+            gender = "Male";
             nextScreen();
         }
         private void femaleButton_Click(object sender, EventArgs e)
         {
             //sets the variable of gender to female and calls method to move to next screen
-            gender = "female";
+            gender = "Female";
             nextScreen();
         }
         #region Mouse enter/leave

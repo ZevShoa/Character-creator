@@ -115,7 +115,7 @@ namespace Character_creator
                 createdUser = true;
                 name = usernameBox.Text;
                 password = passwordBox.Text;
-                score = "space";
+                score = "0";
                 char1 = "space";
                 char2 = "space";
                 char3 = "space";

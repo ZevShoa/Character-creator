@@ -180,7 +180,7 @@ namespace Character_creator
 
         private void GameScreen_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawImage(reviewScreen.ch.picture, reviewScreen.ch.x, reviewScreen.ch.y, 400, 200);
+            e.Graphics.DrawImage(reviewScreen.ch.picture, reviewScreen.ch.x, reviewScreen.ch.y, 200, 300);
 
             foreach (Monsters m in monsterList)
             {
