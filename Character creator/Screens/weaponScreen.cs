@@ -50,10 +50,10 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -73,7 +73,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "yellow":
+                        case "Yellow":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -93,7 +93,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "red":
+                        case "Red":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -113,7 +113,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "green":
+                        case "Green":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -135,10 +135,10 @@ namespace Character_creator
                             break;
                     }
                     break;
-                case "male":
+                case "Male":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -158,7 +158,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "yellow":
+                        case "Yellow":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -178,7 +178,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "red":
+                        case "Red":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -198,7 +198,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "green":
+                        case "Green":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -227,10 +227,10 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -250,7 +250,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "yellow":
+                        case "Yellow":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -270,7 +270,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "red":
+                        case "Red":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -290,7 +290,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "green":
+                        case "Green":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -312,10 +312,10 @@ namespace Character_creator
                             break;
                     }
                     break;
-                case "male":
+                case "Male":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -335,7 +335,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "yellow":
+                        case "Yellow":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -355,7 +355,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "red":
+                        case "Red":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -375,7 +375,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "green":
+                        case "Green":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -404,10 +404,10 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -427,7 +427,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "yellow":
+                        case "Yellow":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -447,7 +447,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "red":
+                        case "Red":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -467,7 +467,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "green":
+                        case "Green":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -489,10 +489,10 @@ namespace Character_creator
                             break;
                     }
                     break;
-                case "male":
+                case "Male":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -512,7 +512,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "yellow":
+                        case "Yellow":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -532,7 +532,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "red":
+                        case "Red":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -552,7 +552,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "green":
+                        case "Green":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -581,10 +581,10 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -604,7 +604,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "yellow":
+                        case "Yellow":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -624,7 +624,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "red":
+                        case "Red":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -644,7 +644,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "green":
+                        case "Green":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -666,10 +666,10 @@ namespace Character_creator
                             break;
                     }
                     break;
-                case "male":
+                case "Male":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -689,7 +689,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "yellow":
+                        case "Yellow":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -709,7 +709,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "red":
+                        case "Red":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -729,7 +729,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "green":
+                        case "Green":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -758,10 +758,10 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -781,7 +781,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "yellow":
+                        case "Yellow":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -801,7 +801,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "red":
+                        case "Red":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -821,7 +821,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "green":
+                        case "Green":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -843,10 +843,10 @@ namespace Character_creator
                             break;
                     }
                     break;
-                case "male":
+                case "Male":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -866,7 +866,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "yellow":
+                        case "Yellow":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -886,7 +886,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "red":
+                        case "Red":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
@@ -906,7 +906,7 @@ namespace Character_creator
                                     break;
                             }
                             break;
-                        case "green":
+                        case "Green":
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":

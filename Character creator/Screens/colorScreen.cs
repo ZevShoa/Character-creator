@@ -32,10 +32,10 @@ namespace Character_creator
         {
             switch(GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     colorBox.Image = Properties.Resources.Female_Purple;
                     break;
-                case "male":
+                case "Male":
                     colorBox.Image = Properties.Resources.Male_Purple;
                     break;
             }
@@ -50,10 +50,10 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     colorBox.Image = Properties.Resources.Female_Yellow;
                     break;
-                case "male":
+                case "Male":
                     colorBox.Image = Properties.Resources.Male_Yellow;
                     break;
             }
@@ -68,10 +68,10 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     colorBox.Image = Properties.Resources.Female_Red;
                     break;
-                case "male":
+                case "Male":
                     colorBox.Image = Properties.Resources.Male_Red;
                     break;
             }
@@ -86,10 +86,10 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     colorBox.Image = Properties.Resources.Female_Green;
                     break;
-                case "male":
+                case "Male":
                     colorBox.Image = Properties.Resources.Male_Green;
                     break;
             }

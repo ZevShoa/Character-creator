@@ -910,16 +910,16 @@
   <data name="jungleBattle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jungleBattle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="monstereasy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\monstereasy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="monsterHard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\monsterHard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="monsterMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\monsterMedium.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="_392764" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\392764.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monster_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monster_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monster_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monster_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monster_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monster_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
