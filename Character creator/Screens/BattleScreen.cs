@@ -143,17 +143,9 @@ namespace Character_creator
             announcerLabel.Text = reviewScreen.ch.name + "'s Turn";
             //puts the image of your character into the picture box
             characterBox.Image = reviewScreen.ch.picture;
-            if (GameScreen.monsterList[0].type == 0)
+            foreach (Monsters m in GameScreen.monsterList)
             {
-                monsterBox.Image = Properties.Resources.monstereasy;
-            }
-            else if (GameScreen.monsterList[0].type == 1)
-            {
-                monsterBox.Image = Properties.Resources.monsterMedium;
-            }
-            else if (GameScreen.monsterList[0].type == 2)
-            {
-                monsterBox.Image = Properties.Resources.monsterHard;
+                monsterBox.Image = m.monsterImages[m.type];
             }
 
             #region Attack Choices
@@ -316,9 +308,9 @@ namespace Character_creator
                 //goes back to battle screen to calculate score and then goes to fail screen from there
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
-                GameScreen gs = new GameScreen();
-                f.Controls.Add(gs);
-                gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+                failScreen fs = new failScreen();
+                f.Controls.Add(fs);
+                fs.Location = new Point((f.Width - fs.Width) / 2, (f.Height - fs.Height) / 2);
             }
             else
             {
