@@ -305,7 +305,7 @@ namespace Character_creator
             if (humanHealth <= 0 || humanEnergy <= 0)
             {
                 //an abusive comment about the user 
-                phraseNum = ranNum.Next(1, 7);
+                phraseNum = ranNum.Next(0, 7);
                 announcerLabel.Text = annoucerPhrases[phraseNum];
                 Thread.Sleep(2000);
                 Refresh();
