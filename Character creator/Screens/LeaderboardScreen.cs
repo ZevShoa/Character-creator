@@ -43,15 +43,18 @@ namespace Character_creator
 
         private void LeaderboardScreen_Load(object sender, EventArgs e)
         {
-
+            //checks each user in the userlist 
             int i = 0;
             foreach (User newUser in MainMenu.userList)
             {
+                //converts the users score at that location to an int value and adds it to a list
                 scoreList.Add(Convert.ToInt16(MainMenu.userList[i].score));
                 i++;
             }
+            //sorts the list from smallest to largest score
             scoreList.Sort();
 
+            //displays, in order, the top 10 scores and their users name
             i = 0;
             for (int s = scoreList.Count(); s > scoreList.Count() - 10; s--)
             {

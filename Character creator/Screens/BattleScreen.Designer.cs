@@ -38,7 +38,7 @@
             this.playerHealthLabel = new System.Windows.Forms.Label();
             this.playerEnergyLabel = new System.Windows.Forms.Label();
             this.playerEnergyBar = new System.Windows.Forms.ProgressBar();
-            this.energyNumberLabel = new System.Windows.Forms.Label();
+            this.energyNameLabel = new System.Windows.Forms.Label();
             this.playerHealthNumberLabel = new System.Windows.Forms.Label();
             this.monsterHealthNunberLabel = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
@@ -56,11 +56,11 @@
             this.monsterHealthLabel.BackColor = System.Drawing.Color.Transparent;
             this.monsterHealthLabel.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.monsterHealthLabel.ForeColor = System.Drawing.Color.MintCream;
-            this.monsterHealthLabel.Location = new System.Drawing.Point(18, 270);
+            this.monsterHealthLabel.Location = new System.Drawing.Point(282, 270);
             this.monsterHealthLabel.Name = "monsterHealthLabel";
-            this.monsterHealthLabel.Size = new System.Drawing.Size(66, 31);
+            this.monsterHealthLabel.Size = new System.Drawing.Size(57, 31);
             this.monsterHealthLabel.TabIndex = 3;
-            this.monsterHealthLabel.Text = "Health:";
+            this.monsterHealthLabel.Text = "100%";
             // 
             // playerHealthBar
             // 
@@ -123,24 +123,24 @@
             this.playerHealthLabel.AutoSize = true;
             this.playerHealthLabel.BackColor = System.Drawing.Color.Transparent;
             this.playerHealthLabel.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playerHealthLabel.ForeColor = System.Drawing.Color.MintCream;
-            this.playerHealthLabel.Location = new System.Drawing.Point(548, 80);
+            this.playerHealthLabel.ForeColor = System.Drawing.Color.White;
+            this.playerHealthLabel.Location = new System.Drawing.Point(802, 82);
             this.playerHealthLabel.Name = "playerHealthLabel";
-            this.playerHealthLabel.Size = new System.Drawing.Size(66, 31);
+            this.playerHealthLabel.Size = new System.Drawing.Size(57, 31);
             this.playerHealthLabel.TabIndex = 10;
-            this.playerHealthLabel.Text = "Health:";
+            this.playerHealthLabel.Text = "100%";
             // 
             // playerEnergyLabel
             // 
             this.playerEnergyLabel.AutoSize = true;
             this.playerEnergyLabel.BackColor = System.Drawing.Color.Transparent;
             this.playerEnergyLabel.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playerEnergyLabel.ForeColor = System.Drawing.Color.MintCream;
-            this.playerEnergyLabel.Location = new System.Drawing.Point(548, 35);
+            this.playerEnergyLabel.ForeColor = System.Drawing.Color.White;
+            this.playerEnergyLabel.Location = new System.Drawing.Point(802, 35);
             this.playerEnergyLabel.Name = "playerEnergyLabel";
-            this.playerEnergyLabel.Size = new System.Drawing.Size(72, 31);
+            this.playerEnergyLabel.Size = new System.Drawing.Size(57, 31);
             this.playerEnergyLabel.TabIndex = 11;
-            this.playerEnergyLabel.Text = "Energy:";
+            this.playerEnergyLabel.Text = "100%";
             // 
             // playerEnergyBar
             // 
@@ -152,38 +152,41 @@
             this.playerEnergyBar.TabIndex = 12;
             this.playerEnergyBar.Value = 100;
             // 
-            // energyNumberLabel
+            // energyNameLabel
             // 
-            this.energyNumberLabel.AutoSize = true;
-            this.energyNumberLabel.BackColor = System.Drawing.Color.Transparent;
-            this.energyNumberLabel.Font = new System.Drawing.Font("Agency FB", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.energyNumberLabel.Location = new System.Drawing.Point(802, 43);
-            this.energyNumberLabel.Name = "energyNumberLabel";
-            this.energyNumberLabel.Size = new System.Drawing.Size(46, 24);
-            this.energyNumberLabel.TabIndex = 13;
-            this.energyNumberLabel.Text = "100%";
+            this.energyNameLabel.AutoSize = true;
+            this.energyNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.energyNameLabel.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.energyNameLabel.ForeColor = System.Drawing.Color.White;
+            this.energyNameLabel.Location = new System.Drawing.Point(542, 32);
+            this.energyNameLabel.Name = "energyNameLabel";
+            this.energyNameLabel.Size = new System.Drawing.Size(72, 31);
+            this.energyNameLabel.TabIndex = 13;
+            this.energyNameLabel.Text = "Energy:";
             // 
             // playerHealthNumberLabel
             // 
             this.playerHealthNumberLabel.AutoSize = true;
             this.playerHealthNumberLabel.BackColor = System.Drawing.Color.Transparent;
-            this.playerHealthNumberLabel.Font = new System.Drawing.Font("Agency FB", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playerHealthNumberLabel.Location = new System.Drawing.Point(802, 88);
+            this.playerHealthNumberLabel.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerHealthNumberLabel.ForeColor = System.Drawing.Color.White;
+            this.playerHealthNumberLabel.Location = new System.Drawing.Point(542, 82);
             this.playerHealthNumberLabel.Name = "playerHealthNumberLabel";
-            this.playerHealthNumberLabel.Size = new System.Drawing.Size(46, 24);
+            this.playerHealthNumberLabel.Size = new System.Drawing.Size(66, 31);
             this.playerHealthNumberLabel.TabIndex = 14;
-            this.playerHealthNumberLabel.Text = "100%";
+            this.playerHealthNumberLabel.Text = "Health:";
             // 
             // monsterHealthNunberLabel
             // 
             this.monsterHealthNunberLabel.AutoSize = true;
             this.monsterHealthNunberLabel.BackColor = System.Drawing.Color.Transparent;
-            this.monsterHealthNunberLabel.Font = new System.Drawing.Font("Agency FB", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monsterHealthNunberLabel.Location = new System.Drawing.Point(279, 278);
+            this.monsterHealthNunberLabel.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monsterHealthNunberLabel.ForeColor = System.Drawing.Color.White;
+            this.monsterHealthNunberLabel.Location = new System.Drawing.Point(19, 270);
             this.monsterHealthNunberLabel.Name = "monsterHealthNunberLabel";
-            this.monsterHealthNunberLabel.Size = new System.Drawing.Size(46, 24);
+            this.monsterHealthNunberLabel.Size = new System.Drawing.Size(66, 31);
             this.monsterHealthNunberLabel.TabIndex = 15;
-            this.monsterHealthNunberLabel.Text = "100%";
+            this.monsterHealthNunberLabel.Text = "Health:";
             // 
             // exitButton
             // 
@@ -202,12 +205,11 @@
             this.announcerLabel.AutoSize = true;
             this.announcerLabel.BackColor = System.Drawing.Color.Transparent;
             this.announcerLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.announcerLabel.ForeColor = System.Drawing.Color.MintCream;
+            this.announcerLabel.ForeColor = System.Drawing.Color.White;
             this.announcerLabel.Location = new System.Drawing.Point(16, 22);
             this.announcerLabel.Name = "announcerLabel";
-            this.announcerLabel.Size = new System.Drawing.Size(77, 44);
+            this.announcerLabel.Size = new System.Drawing.Size(0, 44);
             this.announcerLabel.TabIndex = 17;
-            this.announcerLabel.Text = "label1";
             // 
             // monsterBox
             // 
@@ -243,7 +245,7 @@
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.monsterHealthNunberLabel);
             this.Controls.Add(this.playerHealthNumberLabel);
-            this.Controls.Add(this.energyNumberLabel);
+            this.Controls.Add(this.energyNameLabel);
             this.Controls.Add(this.playerEnergyBar);
             this.Controls.Add(this.playerEnergyLabel);
             this.Controls.Add(this.playerHealthLabel);
@@ -278,7 +280,7 @@
         private System.Windows.Forms.Label playerHealthLabel;
         private System.Windows.Forms.Label playerEnergyLabel;
         private System.Windows.Forms.ProgressBar playerEnergyBar;
-        private System.Windows.Forms.Label energyNumberLabel;
+        private System.Windows.Forms.Label energyNameLabel;
         private System.Windows.Forms.Label playerHealthNumberLabel;
         private System.Windows.Forms.Label monsterHealthNunberLabel;
         private System.Windows.Forms.Button exitButton;

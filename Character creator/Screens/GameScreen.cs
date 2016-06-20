@@ -25,7 +25,7 @@ namespace Character_creator
             InitializeComponent();
             Monsters m = new Monsters(-300, 400, 150, 4, 0);
             monsterList.Add(m);
-            m.monsterImages = new Image[] { Properties.Resources.monstereasy, Properties.Resources.monsterMedium, Properties.Resources.monsterHard };
+            m.monsterImages = new Image[] { Properties.Resources.Monster_1, Properties.Resources.Monster_2, Properties.Resources.Monster_3 };
             aArrowDown = dArrowDown = spaceArrowDown = false;
         }
 
@@ -143,14 +143,18 @@ namespace Character_creator
                     Monsters newMon = null;
                     if (monsterStart == 0)
                     {
+                        monsterList.RemoveAt(0);
                         newMon = new Monsters(-300, 400, 300, 4, rand.Next(0, 3));
                     }
                     if (monsterStart == 1)
                     {
+                        monsterList.RemoveAt(0);
                         newMon = new Monsters(900, 400, 300, 4, rand.Next(0, 3));
                     }
                     monsterList.Add(newMon);
                     totalScore = totalScore + BattleScreen.scoreIncrease;
+                    BattleScreen.win = false;
+                    battleOver = false;
                 }
                 else if (battleOver == true && BattleScreen.win == false)
                 {
@@ -181,10 +185,13 @@ namespace Character_creator
         private void GameScreen_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.DrawImage(reviewScreen.ch.picture, reviewScreen.ch.x, reviewScreen.ch.y, 200, 300);
+            ((Bitmap)reviewScreen.ch.picture).MakeTransparent(((Bitmap)reviewScreen.ch.picture).GetPixel(1, 1));
+            this.BackColor = System.Drawing.Color.Transparent;
 
             foreach (Monsters m in monsterList)
             {
-                    e.Graphics.DrawImage(m.monsterImages[m.type], m.x, m.y, 150, 150);
+                 e.Graphics.DrawImage(m.monsterImages[m.type], m.x, m.y, 150, 150);
+                ((Bitmap)m.monsterImages[m.type]).MakeTransparent(((Bitmap)m.monsterImages[m.type]).GetPixel(1, 1));
             }
            
            
