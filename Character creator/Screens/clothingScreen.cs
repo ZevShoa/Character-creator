@@ -29,36 +29,36 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                    switch(colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             clothingBox.Image = Properties.Resources.femalePurpleKnight;
                             break;
-                        case "yellow":
+                        case "Yellow":
                             clothingBox.Image = Properties.Resources.femaleYellowKnight;
                             break;
-                        case "red":
+                        case "Red":
                             clothingBox.Image = Properties.Resources.femaleRedKnight;
                             break;
-                        case "green":
+                        case "Green":
                             clothingBox.Image = Properties.Resources.femaleGreenKnight;
                             break;
                     }
                     break;
-                case "male":
+                case "Male":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             clothingBox.Image = Properties.Resources.malePurpleKnight;
                             break;
-                        case "yellow":
+                        case "Yellow":
                             clothingBox.Image = Properties.Resources.maleYellowKnight;
                             break;
-                        case "red":
+                        case "Red":
                             clothingBox.Image = Properties.Resources.maleRedKnight;
                             break;
-                        case "green":
+                        case "Green":
                             clothingBox.Image = Properties.Resources.maleGreenKnight;
                             break;
                     }
@@ -76,36 +76,36 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             clothingBox.Image = Properties.Resources.femalePurplePeasant;
                             break;
-                        case "yellow":
+                        case "Yellow":
                             clothingBox.Image = Properties.Resources.femaleYellowPeasant;
                             break;
-                        case "red":
+                        case "Red":
                             clothingBox.Image = Properties.Resources.femaleRedPeasant;
                             break;
-                        case "green":
+                        case "Green":
                             clothingBox.Image = Properties.Resources.femaleGreenPeasant;
                             break;
                     }
                     break;
-                case "male":
+                case "Male":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             clothingBox.Image = Properties.Resources.malePurplePeasant;
                             break;
-                        case "yellow":
+                        case "Yellow":
                             clothingBox.Image = Properties.Resources.maleYellowPeasant;
                             break;
-                        case "red":
+                        case "Red":
                             clothingBox.Image = Properties.Resources.maleRedPeasant;
                             break;
-                        case "green":
+                        case "Green":
                             clothingBox.Image = Properties.Resources.maleGreenPeasant;
                             break;
                     }
@@ -123,36 +123,36 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             clothingBox.Image = Properties.Resources.femalePurpleMage;
                             break;
-                        case "yellow":
+                        case "Yellow":
                             clothingBox.Image = Properties.Resources.femaleYellowMage;
                             break;
-                        case "red":
+                        case "Red":
                             clothingBox.Image = Properties.Resources.femaleRedMage;
                             break;
-                        case "green":
+                        case "Green":
                             clothingBox.Image = Properties.Resources.femaleGreenMage;
                             break;
                     }
                     break;
-                case "male":
+                case "Male":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             clothingBox.Image = Properties.Resources.malePurpleMage;
                             break;
-                        case "yellow":
+                        case "Yellow":
                             clothingBox.Image = Properties.Resources.maleYellowMage;
                             break;
-                        case "red":
+                        case "Red":
                             clothingBox.Image = Properties.Resources.maleRedMage;
                             break;
-                        case "green":
+                        case "Green":
                             clothingBox.Image = Properties.Resources.maleGreenMage;
                             break;
                     }
@@ -170,36 +170,36 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             clothingBox.Image = Properties.Resources.femalePurpleThief;
                             break;
-                        case "yellow":
+                        case "Yellow":
                             clothingBox.Image = Properties.Resources.femaleYellowThief;
                             break;
-                        case "red":
+                        case "Red":
                             clothingBox.Image = Properties.Resources.femaleRedThief;
                             break;
-                        case "green":
+                        case "Green":
                             clothingBox.Image = Properties.Resources.femaleGreenThief;
                             break;
                     }
                     break;
-                case "male":
+                case "Male":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             clothingBox.Image = Properties.Resources.malePurpleThief;
                             break;
-                        case "yellow":
+                        case "Yellow":
                             clothingBox.Image = Properties.Resources.maleYellowThief;
                             break;
-                        case "red":
+                        case "Red":
                             clothingBox.Image = Properties.Resources.maleRedThief;
                             break;
-                        case "green":
+                        case "Green":
                             clothingBox.Image = Properties.Resources.maleGreenThief;
                             break;
                     }
@@ -217,36 +217,36 @@ namespace Character_creator
         {
             switch (GenderScreen.gender)
             {
-                case "female":
+                case "Female":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             clothingBox.Image = Properties.Resources.femalePurpleDeprived;
                             break;
-                        case "yellow":
+                        case "Yellow":
                             clothingBox.Image = Properties.Resources.femaleYellowDeprived;
                             break;
-                        case "red":
+                        case "Red":
                             clothingBox.Image = Properties.Resources.femaleRedDeprived;
                             break;
-                        case "green":
+                        case "Green":
                             clothingBox.Image = Properties.Resources.femaleGreenDeprived;
                             break;
                     }
                     break;
-                case "male":
+                case "Male":
                     switch (colorScreen.color)
                     {
-                        case "purple":
+                        case "Purple":
                             clothingBox.Image = Properties.Resources.malePurpleDeprived;
                             break;
-                        case "yellow":
+                        case "Yellow":
                             clothingBox.Image = Properties.Resources.maleYellowDeprived;
                             break;
-                        case "red":
+                        case "Red":
                             clothingBox.Image = Properties.Resources.maleRedDeprived;
                             break;
-                        case "green":
+                        case "Green":
                             clothingBox.Image = Properties.Resources.maleGreenDeprived;
                             break;
                     }

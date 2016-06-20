@@ -1081,6 +1081,9 @@
     <None Include="Resources\monsterHard.png" />
     <None Include="Resources\monsterMedium.jpg" />
     <Content Include="Characters.xml" />
+    <None Include="Resources\Monster_1.png" />
+    <None Include="Resources\Monster_2.png" />
+    <None Include="Resources\Monster_3.png" />
     <Content Include="UserFile.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
