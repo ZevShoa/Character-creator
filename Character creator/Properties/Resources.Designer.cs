@@ -2720,6 +2720,15 @@ namespace Character_creator.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream No_mercy_Hipis_1227409429 {
+            get {
+                return ResourceManager.GetStream("No_mercy_Hipis_1227409429", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap OptionBG {
