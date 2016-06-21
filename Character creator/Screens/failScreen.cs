@@ -35,18 +35,18 @@ namespace Character_creator
         {
             XmlTextWriter writer = new XmlTextWriter("Characters.xml", null);
             writer.WriteStartElement("Characters");
-            for (int i = 0; i < characterDB.Count(); i++)
+            for (int i = 0; i < MainMenu.userList.Count(); i++)
             {
                 //Start "Employee" element
                 writer.WriteStartElement("Characters");
 
-
-                writer.WriteElementString("charClass", characterDB[i].charClass);
-                writer.WriteElementString("Name", characterDB[i].name);
-                writer.WriteElementString("Dex", characterDB[i].dexterity);
-                writer.WriteElementString("Strength", characterDB[i].strength);
-                writer.WriteElementString("Health", characterDB[i].health);
-                writer.WriteElementString("Perk", characterDB[i].perk);
+                writer.WriteElementString("username", MainMenu.userList[i].username);
+                writer.WriteElementString("password", MainMenu.userList[i].password);
+                writer.WriteElementString("score", MainMenu.userList[i].score);
+                writer.WriteElementString("character1", MainMenu.userList[i].character1);
+                writer.WriteElementString("character2", MainMenu.userList[i].character2);
+                writer.WriteElementString("character3", MainMenu.userList[i].character3);
+               
 
                 // end the "Employee" element
                 writer.WriteEndElement();
