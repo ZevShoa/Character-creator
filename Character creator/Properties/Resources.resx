@@ -925,4 +925,7 @@
   <data name="No_mercy_Hipis_1227409429" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\No_mercy-Hipis-1227409429.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Rip_Arm_Off_SoundBible_com_1079968039" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rip Arm Off-SoundBible.com-1079968039.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

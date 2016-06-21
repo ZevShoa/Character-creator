@@ -1084,6 +1084,7 @@
     <None Include="Resources\Monster_2.png" />
     <None Include="Resources\Monster_3.png" />
     <None Include="Resources\No_mercy-Hipis-1227409429.wav" />
+    <None Include="Resources\Rip Arm Off-SoundBible.com-1079968039.wav" />
     <Content Include="UserFile.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

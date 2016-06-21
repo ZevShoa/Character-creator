@@ -2739,6 +2739,15 @@ namespace Character_creator.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream Rip_Arm_Off_SoundBible_com_1079968039 {
+            get {
+                return ResourceManager.GetStream("Rip_Arm_Off_SoundBible_com_1079968039", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap WaveLevel {
