@@ -56,7 +56,6 @@
     <Compile Include="Screens\failScreen.Designer.cs">
       <DependentUpon>failScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Highscore.cs" />
     <Compile Include="Monsters.cs" />
     <Compile Include="Screens\BattleScreen.cs">
       <SubType>UserControl</SubType>

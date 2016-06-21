@@ -12,6 +12,7 @@ namespace Character_creator
 {
     public partial class weaponScreen : UserControl
     {
+        //set the weapon variable and the final pic
         public static  string weapon;
         public static Image finalPic;
         public weaponScreen()
