@@ -16,8 +16,13 @@ namespace Character_creator
 {
     public partial class MainMenu : UserControl
     {
-        
+     // Sets up all global variables    
+
+
+        // Creates the Sound Player
         public static SoundPlayer player = new SoundPlayer(Properties.Resources.DARK__Video_Game____Main_Theme_Music);
+
+        // Integers, strings, lists, and bools that are called later throughout the program
         public static List<User> userList = new List<User>();
         public static bool failure = false;
         public static bool space1 = true;
@@ -36,6 +41,7 @@ namespace Character_creator
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+            // Go to leaderboard
             Form f = this.FindForm();
             f.Controls.Remove(this);
             LoginScreen ls = new LoginScreen();
@@ -45,6 +51,7 @@ namespace Character_creator
 
         private void newUserButton_Click(object sender, EventArgs e)
         {
+            // Go to signup 
             Form f = this.FindForm();
             f.Controls.Remove(this);
             signUpScreen sus = new signUpScreen();
@@ -54,6 +61,7 @@ namespace Character_creator
 
         private void leaderboardButton_Click(object sender, EventArgs e)
         {
+            // Go to leaderboard
             Form f = this.FindForm();
             f.Controls.Remove(this);
            LeaderboardScreen ls = new LeaderboardScreen();
@@ -63,6 +71,7 @@ namespace Character_creator
 
         private void optionsButton_Click(object sender, EventArgs e)
         {
+            // Go to options
             Form f = this.FindForm();
             f.Controls.Remove(this);
             OptionsScreen os = new OptionsScreen();
@@ -72,6 +81,7 @@ namespace Character_creator
 
         private void exitButton_Click(object sender, EventArgs e)
         {
+            //Im not sure what this one does
             Application.Exit();
         }
 
