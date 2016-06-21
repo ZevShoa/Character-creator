@@ -59,6 +59,8 @@ namespace Character_creator
                         OldOrNewCharacter onc = new OldOrNewCharacter();
                         onc.Location = new Point((f.Width - onc.Width) / 2, (f.Height - onc.Height) / 2);
                         f.Controls.Add(onc);
+                        break;
+                       
                     }
                     else
                     {

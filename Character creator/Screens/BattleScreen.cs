@@ -296,6 +296,7 @@ namespace Character_creator
 
             if (humanHealth <= 0 || humanEnergy <= 0)
             {
+                battleTimer.Enabled = false;
                 //an abusive comment about the user 
                 phraseNum = ranNum.Next(0, 7);
                 announcerLabel.Text = annoucerPhrases[phraseNum];
@@ -328,6 +329,7 @@ namespace Character_creator
         {
             if (monsterHealth <= 0)
             {
+                battleTimer.Enabled = false;
                 //adds health and energy to score
                 scoreIncrease = humanEnergy + humanHealth;
                 //so other screens can know the outcome of the battle
@@ -346,6 +348,7 @@ namespace Character_creator
         
             if(humanEnergy <= 0)
             {
+                battleTimer.Enabled = false;
                 //an abusive comment about the user 
                 phraseNum = ranNum.Next(1, 7);
                 announcerLabel.Text = annoucerPhrases[phraseNum];
