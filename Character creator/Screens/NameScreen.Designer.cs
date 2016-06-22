@@ -103,6 +103,7 @@
             this.Controls.Add(this.nameTextBox);
             this.Name = "NameScreen";
             this.Size = new System.Drawing.Size(833, 489);
+            this.Load += new System.EventHandler(this.NameScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
