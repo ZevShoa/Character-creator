@@ -8,20 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
-using System.Media;
-
-// May 26 - updated UI
 
 namespace Character_creator
 {
     public partial class MainMenu : UserControl
-    {
-     // Sets up all global variables    
-
-
-        // Creates the Sound Player
-        public static SoundPlayer player = new SoundPlayer(Properties.Resources.DARK__Video_Game____Main_Theme_Music);
-
+    { 
         // Integers, strings, lists, and bools that are called later throughout the program
         public static List<User> userList = new List<User>();
         public static bool failure = false;
@@ -29,6 +20,9 @@ namespace Character_creator
         public static bool space2 = true;
         public static bool space3 = true;
         string name, password, score, char1, char2, char3;
+        string charName, clothes, colour, weapon,  gender;
+        Image charImage;
+        public static List<Character> characterList = new List<Character>();
         public static string playerName;
         int index = 1;
 
@@ -87,9 +81,6 @@ namespace Character_creator
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            // Sounds
-           
-            player.PlayLooping();
 
             // Open the file to be read
             XmlTextReader reader = new XmlTextReader("UserFile.xml");
@@ -131,7 +122,6 @@ namespace Character_creator
                         else if (index == 6)
                         {
                             char3 = reader.Value;
-
                             index = 1;
                             User newUser = new User(name, password, score, char1, char2, char3);
                             userList.Add(newUser);
@@ -141,7 +131,57 @@ namespace Character_creator
             }
             // When done reading the file close it
             reader.Close();
-            
+
+            // Open the file to be read
+            XmlTextReader Reader = new XmlTextReader("Characters.xml");
+
+            // Continue to read each element and text until the file is done
+            while (Reader.Read())
+            {
+                // the loop repeats getting the next piece of information
+                if (Reader.NodeType == XmlNodeType.Text)
+                {
+                    if (index == 1)
+                    {
+                        charName = Reader.Value;
+                        index++;
+                    }
+                    else if (index == 2)
+                    {
+                        clothes = Reader.Value;
+                        index++;
+                    }
+                    else if (index == 3)
+                    {
+                        colour = Reader.Value;
+                        index++;
+                    }
+                    else if (index == 4)
+                    {
+                        weapon = Reader.Value;
+                        index++;
+
+                    }
+                    else if (index == 5)
+                    {
+                        gender = Reader.Value;
+                        index++;
+                    }
+                    else if (index == 6)
+                    {
+                        charImage = Image.FromFile(reader.Value);
+                        //charImage = System.Resources.ResourceManager(Reader.Value, typeof(Resources).Assembly);
+                        index = 1;
+                        Character newChar = new Character(charName, clothes, weapon, gender, colour, charImage, 300, 250, 5);
+                        characterList.Add(newChar);
+                    }
+                }
+            }
+
+            // When done reading the file close it
+            Reader.Close();
+            index = 1;
+
         }
     }
 }

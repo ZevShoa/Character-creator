@@ -17,7 +17,8 @@ namespace Character_creator
         Random ranNum = new Random();
         int nameLength;
         int nextLetter;
-        int vowel;        
+        int vowel;
+        bool alreadyMade; 
         // created a list with all the letters of the alphabet in it
         string[] letters = {"a","e","i","o","u","y","g","h","c","j",
             "k","l","m","n","d","p","q","r","s","t","b","v","w","x","f","z"};
@@ -79,15 +80,32 @@ namespace Character_creator
             }
             else
             {
-                // if there is something in the text box then it saves it and goes to the next screen
-                name = nameTextBox.Text;
-                Form f = this.FindForm();
-                f.Controls.Remove(this);
-                GenderScreen gs = new GenderScreen();
-                f.Controls.Add(gs);
-                gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
-            }
+                int a = 0;
+                foreach (Character ch in MainMenu.characterList)
+                {
+                    if (MainMenu.characterList[a].name == NameScreen.name)
+                    {
+                        alreadyMade = true;
+                    }
+                    a++;
+                }
+                a = 0;
 
+                if (alreadyMade == false)
+                {
+                    // if there is something in the text box then it saves it and goes to the next screen
+                    name = nameTextBox.Text;
+                    Form f = this.FindForm();
+                    f.Controls.Remove(this);
+                    GenderScreen gs = new GenderScreen();
+                    f.Controls.Add(gs);
+                    gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+                }
+                else
+                {
+                    errorLabel.Text = "Character Name Already Exists";
+                }
+            }
         }
 
         private void ExitButton_Click(object sender, EventArgs e)

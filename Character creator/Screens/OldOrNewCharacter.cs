@@ -48,7 +48,7 @@ namespace Character_creator
 
         private void selectOldCharacterButton_Click(object sender, EventArgs e)
         {
-
+            characterName = char3Button.Text;
             Form f = this.FindForm();
             f.Controls.Remove(this);
             reviewScreen rs = new reviewScreen();
@@ -58,7 +58,6 @@ namespace Character_creator
 
         private void OldOrNewCharacter_Load(object sender, EventArgs e)
         {
-
             int i = 0;
             foreach (User newUser in MainMenu.userList)
             {
@@ -103,6 +102,7 @@ namespace Character_creator
 
         private void char1Button_Click(object sender, EventArgs e)
         {
+            characterName = char1Button.Text;
             Form f = this.FindForm();
             f.Controls.Remove(this);
             reviewScreen rs = new reviewScreen();
@@ -112,6 +112,7 @@ namespace Character_creator
 
         private void char2Button_Click(object sender, EventArgs e)
         {
+            characterName = char2Button.Text;
             Form f = this.FindForm();
             f.Controls.Remove(this);
             reviewScreen rs = new reviewScreen();

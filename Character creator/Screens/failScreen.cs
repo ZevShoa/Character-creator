@@ -21,12 +21,30 @@ namespace Character_creator
         private void failScreen_Load(object sender, EventArgs e)
         {
             //shows players score
-            scoreLabel.Text = "Score:" + Convert.ToString(GameScreen.totalScore);
+            scoreLabel.Text = "Score: " + Convert.ToString(GameScreen.totalScore);
+            int i = 0;
+            foreach (User newUser in MainMenu.userList)
+            {
+                if (MainMenu.userList[i].username == MainMenu.playerName)
+                {
+                    if (Convert.ToInt16(MainMenu.userList[i].score) >= GameScreen.totalScore)
+                    {
+                        highScoreabel.Text = "Your High Score: " + MainMenu.userList[i].score;
+                    }
+                    else
+                    {
+                        highScoreabel.Text = "New High Score: " + GameScreen.totalScore;
+                        MainMenu.userList[i].score = Convert.ToString(GameScreen.totalScore);
+                    }
+                }
+                i++;
+            }
+
+            saveXML();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            saveXML();
             //closes the program if player rage quits
             Application.Exit();
         }

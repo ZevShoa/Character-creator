@@ -57,7 +57,7 @@
             this.exitButton.ForeColor = System.Drawing.Color.White;
             this.exitButton.Location = new System.Drawing.Point(988, 3);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(58, 49);
+            this.exitButton.Size = new System.Drawing.Size(58, 63);
             this.exitButton.TabIndex = 2;
             this.exitButton.Text = "X";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -85,7 +85,7 @@
             this.optionsButton.Name = "optionsButton";
             this.optionsButton.Size = new System.Drawing.Size(218, 85);
             this.optionsButton.TabIndex = 4;
-            this.optionsButton.Text = "Controls";
+            this.optionsButton.Text = "Instructions";
             this.optionsButton.UseVisualStyleBackColor = false;
             this.optionsButton.Click += new System.EventHandler(this.optionsButton_Click);
             // 

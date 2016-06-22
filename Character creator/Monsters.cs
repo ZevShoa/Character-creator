@@ -29,21 +29,12 @@ namespace Character_creator
             {
                 m.x += m.speed;
             }
-
-            else if (direction == "up")
-            {
-                m.y -= m.speed;
-            }
-            else if (direction == "down")
-            {
-                m.y += m.speed;
-            }
         }
 
         public bool monsterCollision(Monsters m, Character ch)
         {
             Rectangle pRec = new Rectangle(m.x, m.y, m.size, m.size);
-            Rectangle bRec = new Rectangle(ch.x, ch.y, 300, 400);
+            Rectangle bRec = new Rectangle(ch.x, ch.y, 200, 300);
             if (pRec.IntersectsWith(bRec))
             {
                 return true;

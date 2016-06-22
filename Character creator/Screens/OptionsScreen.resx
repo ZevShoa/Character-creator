@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="howToPlayLabel.Text" xml:space="preserve">
+    <value>Monsters, ranging in difficulty will be coming at you one at a time. The longer you avoid them, the more energy you lose, but the more health you gain. Once you hit a monster you go into battle mode. You have special attacks based on your characters skills. The more monsters you kill the higher your score will be. How long will you survive? </value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

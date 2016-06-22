@@ -118,713 +118,293 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="knight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\knight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="brick" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\brick.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BackgroundUnset" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BackgroundUnset.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BGImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BGImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GameBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GameBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="OptionBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OptionBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="WaveLevel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WaveLevel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenPeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenPeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleGreenThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleGreenThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="malePurpleDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="femalePurpleDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\femalePurpleDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="femalePurpleDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurplePeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurplePeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurplePeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurplePeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurplePeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurplePeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurplePeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurplePeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurplePeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurplePeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurplePeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurplePeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femalePurpleThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femalePurpleThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedPeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedPeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleRedThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleRedThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="femaleYellowPeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\femaleYellowPeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="femaleYellowThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\femaleYellowThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Female_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Female_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Female_Purple" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Female_Purple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Female_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Female_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Female_Transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Female_Transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Female_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Female_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fisticuffs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fisticuffs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Knight1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Knight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mage_Robes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mage Robes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenPeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenPeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleGreenThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleGreenThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurplePeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurplePeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurplePeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurplePeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurplePeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurplePeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurplePeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurplePeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurplePeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurplePeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurplePeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurplePeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="malePurpleThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\malePurpleThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedPeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedPeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maleRedTheifAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedTheifAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maleRedTheifDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maleRedTheifDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleRedTheifFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedTheifFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femalePurplePeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurplePeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleRedTheifStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedTheifStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femaleYellowDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OptionBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OptionBG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Female_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Female_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Male_Transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Male_Transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedTheifAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedTheifAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurplePeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurplePeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monster_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monster_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maleRedTheifSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maleRedTheifSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleRedThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleRedThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="malePurplePeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurplePeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleYellowThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="malePurpleKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Male_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Male_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="malePurpleKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleRedKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maleYellowDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maleYellowDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femaleYellowPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleGreenKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleGreenPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BGImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BGImage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mage_Robes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mage Robes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedTheifStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedTheifStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenPeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenPeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DARK__Video_Game____Main_Theme_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DARK (Video Game) - Main Theme Music.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="femaleYellowPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jungleBattle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jungleBattle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maleYellowKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maleYellowKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -832,94 +412,517 @@
   <data name="maleYellowKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maleYellowKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="femalePurpleKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Female_Purple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Female_Purple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="maleYellowKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maleYellowKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleRedPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="malePurpleMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femaleGreenDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleGreenPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femalePurpleKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femalePurpleThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowPeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowPeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femalePurpleKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femaleYellowThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleRedMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleGreenThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femaleGreenDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femaleRedKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femalePurpleMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maleYellowThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maleYellowThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femaleRedDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femalePurplePeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurplePeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Female_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Female_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedPeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedPeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurplePeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurplePeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="maleYellowThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maleYellowThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maleYellowThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maleYellowThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="femaleYellowPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Female_Transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Female_Transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brick.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WaveLevel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WaveLevel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Female_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Female_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedTheifFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedTheifFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurplePeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurplePeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Male_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Male_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Male_Purple" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Male_Purple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="malePurplePeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurplePeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Male_Red" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Male_Red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Male_Transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Male_Transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleYellowPeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowPeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Male_Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Male_Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleGreenDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DARK__Video_Game____Main_Theme_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DARK (Video Game) - Main Theme Music.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="maleYellowDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jungleBattle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jungleBattle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleYellowMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_392764" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\392764.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Monster_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Monster_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maleRedKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Monster_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Monster_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="malePurpleMageSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleMageSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurplePeasantStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurplePeasantStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Monster_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Monster_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurplePeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurplePeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurplePeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurplePeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GameBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackgroundUnset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackgroundUnset.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenThiefStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenThiefStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedPeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedPeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurplePeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurplePeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Knight1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Knight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowKnightAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowKnightAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowMageStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowMageStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monster_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monster_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleKnightDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleKnightDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Male_Purple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Male_Purple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedPeasantDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedPeasantDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurplePeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurplePeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowThiefDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowThiefDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenPeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenPeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowThiefAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowThiefAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleGreenMageFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleGreenMageFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleRedMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleRedMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedPeasantAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedPeasantAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenThiefFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenThiefFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleDeprivedFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleDeprivedFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleYellowMageDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleYellowMageDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleKnightFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleKnightFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedKnightSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedKnightSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowDeprivedAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowDeprivedAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fisticuffs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fisticuffs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedThief" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedThief.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleRedKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleRedKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleThiefSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleThiefSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleDeprived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleDeprived.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenPeasantFist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenPeasantFist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenDeprivedSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenDeprivedSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenKnightStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenKnightStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowDeprivedStaff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowDeprivedStaff.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowKnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowKnight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowPeasant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowPeasant.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femalePurpleDeprivedDagger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femalePurpleDeprivedDagger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="malePurpleMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\malePurpleMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenMage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="knight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\knight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="femaleGreenPeasantSword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\femaleGreenPeasantSword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maleYellowMageAxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maleYellowMageAxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="darkBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\darkBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
