@@ -73,8 +73,10 @@ namespace Character_creator
         }
         private void continueButton_Click_1(object sender, EventArgs e)
         {
+            errorLabel.Text = "";
+            alreadyMade = false;
             //if there is nothing in the text box then you cant continue
-            if (nameTextBox.TextLength == 0)
+            if (nameTextBox.TextLength == 0 || nameTextBox.Text == " " || nameTextBox.Text == "  " || nameTextBox.Text == "   " || nameTextBox.Text == "    " || nameTextBox.Text == "     " || nameTextBox.Text == "      " || nameTextBox.Text == "       " || nameTextBox.Text == "        ")
             {
 
             }
@@ -112,6 +114,11 @@ namespace Character_creator
         {
             // if they want to close the program down
             Application.Exit();
+        }
+
+        private void NameScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

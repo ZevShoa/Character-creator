@@ -74,7 +74,7 @@
             // 
             // genderPicBox
             // 
-            this.genderPicBox.BackColor = System.Drawing.Color.MintCream;
+            this.genderPicBox.BackColor = System.Drawing.Color.White;
             this.genderPicBox.Location = new System.Drawing.Point(219, 93);
             this.genderPicBox.Name = "genderPicBox";
             this.genderPicBox.Size = new System.Drawing.Size(300, 400);
