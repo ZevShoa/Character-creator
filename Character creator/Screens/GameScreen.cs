@@ -201,14 +201,14 @@ namespace Character_creator
             //random monster is created
             if (BattleScreen.win == true && battleOver == true)
             {
-                monsterStart = rand.Next(0, 1);
+                monsterStart = rand.Next(0, 2);
                 Monsters newMon = null;
-                if (monsterStart == 0)
+                if (monsterStart == 1)
                 {
                     monsterList.RemoveAt(0);
                     newMon = new Monsters(-300, 400, 300, 4, rand.Next(0, 3));
                 }
-                if (monsterStart == 1)
+                if (monsterStart == 2)
                 {
                     monsterList.RemoveAt(0);
                     newMon = new Monsters(900, 400, 300, 4, rand.Next(0, 3));
@@ -217,6 +217,7 @@ namespace Character_creator
                 totalScore = totalScore + BattleScreen.scoreIncrease;
                 BattleScreen.win = false;
                 battleOver = false;
+                Refresh();
             }
             #endregion
 
