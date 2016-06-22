@@ -19,15 +19,17 @@ namespace Character_creator
         {
             InitializeComponent();
         }
-
+       
         private void LoginScreen_Load(object sender, EventArgs e)
         {
+            //makes sure you cant have more than 8 characters
             usernameBox.MaxLength = 8;
             passwordBox.MaxLength = 8;
         }
 
         private void clickSignUpLabel_Click(object sender, EventArgs e)
         {
+            //changes screen when you sign up
             Form f = this.FindForm();
             f.Controls.Remove(this);
             signUpScreen sus = new signUpScreen();
@@ -37,6 +39,7 @@ namespace Character_creator
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            //goes back to main menu
             Form f = this.FindForm();
             f.Controls.Remove(this);
             MainMenu mm = new MainMenu();
@@ -46,6 +49,7 @@ namespace Character_creator
 
         private void signInButton_Click(object sender, EventArgs e)
         {
+            //saves all the stuff
             int i = 0;
             foreach(User newUser in MainMenu.userList)
             {
@@ -76,11 +80,13 @@ namespace Character_creator
 
         private void exitButton_Click(object sender, EventArgs e)
         {
+            //closes the program
             Application.Exit();
         }
 
         private void usernameBox_Validating(object sender, CancelEventArgs e)
         {
+            //makes sure that there is no odd characters
             errorProvider1.Clear();
 
 
@@ -98,6 +104,7 @@ namespace Character_creator
 
         private void passwordBox_Validating(object sender, CancelEventArgs e)
         {
+            //make sure that ther is no characters
             errorProvider1.Clear();
 
 
@@ -115,6 +122,7 @@ namespace Character_creator
 
         private void passwordBox_TextChanged(object sender, EventArgs e)
         {
+            //makes the characters in the password box asterisks
            passwordBox.PasswordChar = '*';
         }
     }
