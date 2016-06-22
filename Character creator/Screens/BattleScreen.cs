@@ -213,7 +213,7 @@ namespace Character_creator
                     //low energy moderate attack with chance of monster fleeing
                     attack2 = "Stink Attack";
                     break;
-                case "Thief":
+                case "Rogue":
                     //low energy high attack
                     attack2 = "BackStab";
                     break;
@@ -313,7 +313,7 @@ namespace Character_creator
                 }
                 GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
                 //an abusive comment about the user 
-                phraseNum = ranNum.Next(0, 7);
+                phraseNum = ranNum.Next(0, 6);
                 announcerLabel.Text = annoucerPhrases[phraseNum];
                 announcerLabel.Refresh();
                 Thread.Sleep(2000);
@@ -346,14 +346,15 @@ namespace Character_creator
             if (monsterHealth <= 0)
             {   //adds health and energy to score
                 scoreIncrease = humanEnergy + humanHealth;
-                GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
-                battleTimer.Enabled = false;
                 //so other screens can know the outcome of the battle
                 win = true;
-                //changes screens 
                 announcerLabel.Text = "The Monster Is Vanquished";
                 announcerLabel.Refresh();
                 Thread.Sleep(2000);
+
+                //changes screens 
+                GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
+                battleTimer.Enabled = false;
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
                 GiftScreen gs = new GiftScreen();
@@ -375,7 +376,7 @@ namespace Character_creator
                 }
                 GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
                 //an abusive comment about the user 
-                phraseNum = ranNum.Next(1, 7);
+                phraseNum = ranNum.Next(0, 6);
                 announcerLabel.Text = annoucerPhrases[phraseNum];
                 Thread.Sleep(2000);
                 Refresh();

@@ -50,10 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GiftScreen.cs">
+    <Compile Include="Screens\GiftScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GiftScreen.Designer.cs">
+    <Compile Include="Screens\GiftScreen.Designer.cs">
       <DependentUpon>GiftScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\HowToPlay.cs">
@@ -175,7 +175,7 @@
       <DependentUpon>signUpScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
-    <EmbeddedResource Include="GiftScreen.resx">
+    <EmbeddedResource Include="Screens\GiftScreen.resx">
       <DependentUpon>GiftScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\failScreen.resx">

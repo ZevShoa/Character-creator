@@ -51,12 +51,12 @@ namespace Character_creator
 
         private static void saveXML()
         {
-            XmlTextWriter writer = new XmlTextWriter("Characters.xml", null);
-            writer.WriteStartElement("Characters");
+            XmlTextWriter writer = new XmlTextWriter("UserFile.xml", null);
+            writer.WriteStartElement("players");
             for (int i = 0; i < MainMenu.userList.Count(); i++)
             {
                 //Start "Employee" element
-                writer.WriteStartElement("Characters");
+                writer.WriteStartElement("player");
 
                 writer.WriteElementString("username", MainMenu.userList[i].username);
                 writer.WriteElementString("password", MainMenu.userList[i].password);
