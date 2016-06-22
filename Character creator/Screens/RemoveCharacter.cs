@@ -13,7 +13,6 @@ namespace Character_creator
 {
     public partial class RemoveCharacter : UserControl
     {
-        string characterRemoved;
         public RemoveCharacter()
         {
             InitializeComponent();

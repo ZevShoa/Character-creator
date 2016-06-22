@@ -41,7 +41,6 @@
             this.energyNameLabel = new System.Windows.Forms.Label();
             this.playerHealthNumberLabel = new System.Windows.Forms.Label();
             this.monsterHealthNunberLabel = new System.Windows.Forms.Label();
-            this.exitButton = new System.Windows.Forms.Button();
             this.announcerLabel = new System.Windows.Forms.Label();
             this.monsterBox = new System.Windows.Forms.PictureBox();
             this.characterBox = new System.Windows.Forms.PictureBox();
@@ -188,18 +187,6 @@
             this.monsterHealthNunberLabel.TabIndex = 15;
             this.monsterHealthNunberLabel.Text = "Health:";
             // 
-            // exitButton
-            // 
-            this.exitButton.BackColor = System.Drawing.Color.Maroon;
-            this.exitButton.Font = new System.Drawing.Font("Agency FB", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(989, 3);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(58, 63);
-            this.exitButton.TabIndex = 16;
-            this.exitButton.Text = "| |";
-            this.exitButton.UseVisualStyleBackColor = false;
-            // 
             // announcerLabel
             // 
             this.announcerLabel.AutoSize = true;
@@ -242,7 +229,6 @@
             this.BackgroundImage = global::Character_creator.Properties.Resources.jungleBattle;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.announcerLabel);
-            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.monsterHealthNunberLabel);
             this.Controls.Add(this.playerHealthNumberLabel);
             this.Controls.Add(this.energyNameLabel);
@@ -283,7 +269,6 @@
         private System.Windows.Forms.Label energyNameLabel;
         private System.Windows.Forms.Label playerHealthNumberLabel;
         private System.Windows.Forms.Label monsterHealthNunberLabel;
-        private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Label announcerLabel;
         private System.Windows.Forms.Timer battleTimer;
     }

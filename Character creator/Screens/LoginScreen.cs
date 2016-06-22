@@ -58,13 +58,13 @@ namespace Character_creator
                     if(MainMenu.userList[i].password == passwordBox.Text)
                     {
                         MainMenu.playerName = usernameBox.Text;
+                        signUpScreen.createdUser = false;
                         Form f = this.FindForm();
                         f.Controls.Remove(this);
                         OldOrNewCharacter onc = new OldOrNewCharacter();
                         onc.Location = new Point((f.Width - onc.Width) / 2, (f.Height - onc.Height) / 2);
                         f.Controls.Add(onc);
-                        break;
-                       
+                        break;   
                     }
                     else
                     {

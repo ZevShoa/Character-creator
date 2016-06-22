@@ -8,19 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace Character_creator
 {
     public partial class BattleScreen : UserControl
     {
+        //Battle Sounds
+        SoundPlayer battleSound = new SoundPlayer(Properties.Resources.No_mercy_Hipis_1227409429);
+
         // strings for attacks
         string attack1, attack2, attack3;
         bool attackMade = false;
         //random number generator used throughout
         Random ranNum = new Random();
         //all variables that are used thorough out 
-        int humanHealth = 100;
-        int humanEnergy = 100;
+        public static int humanHealth = 100;
+        public static int humanEnergy = 100;
         int monsterHealth = 100;
         int attackNum;
         int stinkRan;
@@ -140,6 +144,7 @@ namespace Character_creator
 
         private void BattleScreen_Load(object sender, EventArgs e)
         {
+            this.BackgroundImage = GameScreen.background[GameScreen.position];
             announcerLabel.Text = reviewScreen.ch.name + "'s Turn";
             //puts the image of your character into the picture box
             characterBox.Image = reviewScreen.ch.picture;
@@ -208,7 +213,7 @@ namespace Character_creator
                     //low energy moderate attack with chance of monster fleeing
                     attack2 = "Stink Attack";
                     break;
-                case "Thief":
+                case "Rogue":
                     //low energy high attack
                     attack2 = "BackStab";
                     break;
@@ -274,7 +279,7 @@ namespace Character_creator
             attackOneButton.Enabled = false;
             attackTwoButton.Enabled = false;
             attackThreeButton.Enabled = false;
-
+            battleSound.Play();
             Thread.Sleep(1000);
 
                 //takes a certain amount off the players health
@@ -296,16 +301,27 @@ namespace Character_creator
 
             if (humanHealth <= 0 || humanEnergy <= 0)
             {
-                battleTimer.Enabled = false;
+                //adds health and energy to score and subtracts the health of the monster, but doesnt allow
+                //the increase to be negative
+                if (humanEnergy + humanHealth - monsterHealth > 0)
+                {
+                    scoreIncrease = humanEnergy + humanHealth - monsterHealth;
+                }
+                else
+                {
+                    scoreIncrease = 0;
+                }
+                GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
                 //an abusive comment about the user 
-                phraseNum = ranNum.Next(0, 7);
+                phraseNum = ranNum.Next(0, 6);
                 announcerLabel.Text = annoucerPhrases[phraseNum];
+                announcerLabel.Refresh();
                 Thread.Sleep(2000);
-                Refresh();
+                battleTimer.Enabled = false;
+       
                 //so other screens can know the outcome of the battle
                 win = false;
-                //adds health and energy to score but takes away how much health the monster had left
-                scoreIncrease = playerHealthBar.Value + playerEnergyBar.Value - monsterHealthBar.Value;
+                GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
                 //goes back to battle screen to calculate score and then goes to fail screen from there
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
@@ -321,47 +337,58 @@ namespace Character_creator
                 attackThreeButton.Enabled = true;
                 //a message prompts player to go
                 announcerLabel.Text = reviewScreen.ch.name + "'s Turn";
-                Refresh();
+                announcerLabel.Refresh();
             }
         }
 
         public void playerTurn()
         {
             if (monsterHealth <= 0)
-            {
-                battleTimer.Enabled = false;
-                //adds health and energy to score
+            {   //adds health and energy to score
                 scoreIncrease = humanEnergy + humanHealth;
                 //so other screens can know the outcome of the battle
                 win = true;
-                //changes screens 
                 announcerLabel.Text = "The Monster Is Vanquished";
-                Refresh();
+                announcerLabel.Refresh();
                 Thread.Sleep(2000);
+
+                //changes screens 
+                GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
+                battleTimer.Enabled = false;
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
-                GameScreen gs = new GameScreen();
+                GiftScreen gs = new GiftScreen();
                 f.Controls.Add(gs);
                 gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
-
             }
         
             if(humanEnergy <= 0)
             {
-                battleTimer.Enabled = false;
+                //adds health and energy to score and subtracts the health of the monster, but doesnt allow
+                //the increase to be negative
+                if (humanEnergy + humanHealth - monsterHealth > 0)
+                {
+                    scoreIncrease = humanEnergy + humanHealth - monsterHealth;
+                }
+                else
+                {
+                    scoreIncrease = 0;
+                }
+                GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
                 //an abusive comment about the user 
-                phraseNum = ranNum.Next(1, 7);
+                phraseNum = ranNum.Next(0, 6);
                 announcerLabel.Text = annoucerPhrases[phraseNum];
                 Thread.Sleep(2000);
                 Refresh();
+                battleTimer.Enabled = false;
+               
                 //so other screens can know the outcome of the battle
                 win = false;
-                //adds health and energy to score but takes away how much health the monster had left
-                scoreIncrease = playerHealthBar.Value + playerEnergyBar.Value - monsterHealthBar.Value;
+
                 //goes back to battle screen to calculate score and then goes to fail screen from there
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
-                GameScreen gs = new GameScreen();
+                failScreen gs = new failScreen();
                 f.Controls.Add(gs);
                 gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
             }

@@ -41,6 +41,7 @@
             this.ResponseChartLabel = new System.Windows.Forms.Label();
             this.horizontalChartLine = new System.Windows.Forms.Label();
             this.verticalChartLine = new System.Windows.Forms.Label();
+            this.howToPlayLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,12 +51,12 @@
             this.optionsLabel.BackColor = System.Drawing.Color.Transparent;
             this.optionsLabel.Font = new System.Drawing.Font("Agency FB", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.optionsLabel.ForeColor = System.Drawing.Color.White;
-            this.optionsLabel.Location = new System.Drawing.Point(415, 170);
+            this.optionsLabel.Location = new System.Drawing.Point(334, 122);
             this.optionsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.optionsLabel.Name = "optionsLabel";
-            this.optionsLabel.Size = new System.Drawing.Size(254, 88);
+            this.optionsLabel.Size = new System.Drawing.Size(345, 88);
             this.optionsLabel.TabIndex = 0;
-            this.optionsLabel.Text = "Controls";
+            this.optionsLabel.Text = "Instructions";
             // 
             // exitButton
             // 
@@ -91,7 +92,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(259, 349);
+            this.chart1.Location = new System.Drawing.Point(205, 512);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
@@ -106,44 +107,43 @@
             // 
             this.TopChartLabel.AutoSize = true;
             this.TopChartLabel.BackColor = System.Drawing.Color.Transparent;
-            this.TopChartLabel.Font = new System.Drawing.Font("Agency FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TopChartLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TopChartLabel.ForeColor = System.Drawing.Color.White;
-            this.TopChartLabel.Location = new System.Drawing.Point(204, 315);
+            this.TopChartLabel.Location = new System.Drawing.Point(177, 488);
             this.TopChartLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TopChartLabel.Name = "TopChartLabel";
-            this.TopChartLabel.Size = new System.Drawing.Size(475, 50);
+            this.TopChartLabel.Size = new System.Drawing.Size(428, 44);
             this.TopChartLabel.TabIndex = 12;
-            this.TopChartLabel.Text = "Controls:       Button      Response";
+            this.TopChartLabel.Text = "Controls:       Button         Response";
             // 
             // buttonChartLabel
             // 
             this.buttonChartLabel.BackColor = System.Drawing.Color.Transparent;
-            this.buttonChartLabel.Font = new System.Drawing.Font("Agency FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonChartLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonChartLabel.ForeColor = System.Drawing.Color.White;
-            this.buttonChartLabel.Location = new System.Drawing.Point(377, 389);
+            this.buttonChartLabel.Location = new System.Drawing.Point(323, 552);
             this.buttonChartLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.buttonChartLabel.Name = "buttonChartLabel";
-            this.buttonChartLabel.Size = new System.Drawing.Size(129, 212);
+            this.buttonChartLabel.Size = new System.Drawing.Size(129, 143);
             this.buttonChartLabel.TabIndex = 13;
-            this.buttonChartLabel.Text = "\"A\" Key \"D\" Key Space Enter\r\n";
+            this.buttonChartLabel.Text = "\"A\" Key \"D\" Key Space";
             // 
             // ResponseChartLabel
             // 
             this.ResponseChartLabel.BackColor = System.Drawing.Color.Transparent;
-            this.ResponseChartLabel.Font = new System.Drawing.Font("Agency FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResponseChartLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResponseChartLabel.ForeColor = System.Drawing.Color.White;
-            this.ResponseChartLabel.Location = new System.Drawing.Point(529, 389);
+            this.ResponseChartLabel.Location = new System.Drawing.Point(475, 552);
             this.ResponseChartLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ResponseChartLabel.Name = "ResponseChartLabel";
-            this.ResponseChartLabel.Size = new System.Drawing.Size(346, 212);
+            this.ResponseChartLabel.Size = new System.Drawing.Size(346, 143);
             this.ResponseChartLabel.TabIndex = 14;
-            this.ResponseChartLabel.Text = "Moves The Player Left Moves The Player Right Pauses The Game Selects Battle Optio" +
-    "ns";
+            this.ResponseChartLabel.Text = "Moves The Player Left Moves The Player Right Pauses The Game";
             // 
             // horizontalChartLine
             // 
             this.horizontalChartLine.BackColor = System.Drawing.Color.White;
-            this.horizontalChartLine.Location = new System.Drawing.Point(384, 365);
+            this.horizontalChartLine.Location = new System.Drawing.Point(330, 528);
             this.horizontalChartLine.Name = "horizontalChartLine";
             this.horizontalChartLine.Size = new System.Drawing.Size(483, 9);
             this.horizontalChartLine.TabIndex = 15;
@@ -151,10 +151,23 @@
             // verticalChartLine
             // 
             this.verticalChartLine.BackColor = System.Drawing.Color.White;
-            this.verticalChartLine.Location = new System.Drawing.Point(493, 325);
+            this.verticalChartLine.Location = new System.Drawing.Point(437, 488);
             this.verticalChartLine.Name = "verticalChartLine";
-            this.verticalChartLine.Size = new System.Drawing.Size(12, 262);
+            this.verticalChartLine.Size = new System.Drawing.Size(15, 207);
             this.verticalChartLine.TabIndex = 16;
+            // 
+            // howToPlayLabel
+            // 
+            this.howToPlayLabel.BackColor = System.Drawing.Color.Transparent;
+            this.howToPlayLabel.Font = new System.Drawing.Font("Agency FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.howToPlayLabel.ForeColor = System.Drawing.Color.White;
+            this.howToPlayLabel.Location = new System.Drawing.Point(25, 210);
+            this.howToPlayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.howToPlayLabel.Name = "howToPlayLabel";
+            this.howToPlayLabel.Size = new System.Drawing.Size(957, 278);
+            this.howToPlayLabel.TabIndex = 17;
+            this.howToPlayLabel.Text = resources.GetString("howToPlayLabel.Text");
+            this.howToPlayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OptionsScreen
             // 
@@ -162,6 +175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.howToPlayLabel);
             this.Controls.Add(this.verticalChartLine);
             this.Controls.Add(this.horizontalChartLine);
             this.Controls.Add(this.ResponseChartLabel);
@@ -192,5 +206,6 @@
         private System.Windows.Forms.Label ResponseChartLabel;
         private System.Windows.Forms.Label horizontalChartLine;
         private System.Windows.Forms.Label verticalChartLine;
+        private System.Windows.Forms.Label howToPlayLabel;
     }
 }

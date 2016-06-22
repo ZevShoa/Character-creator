@@ -50,6 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Screens\GiftScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\GiftScreen.Designer.cs">
+      <DependentUpon>GiftScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\HowToPlay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Screens\HowToPlay.Designer.cs">
+      <DependentUpon>HowToPlay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\failScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -163,11 +175,17 @@
       <DependentUpon>signUpScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="Screens\GiftScreen.resx">
+      <DependentUpon>GiftScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\failScreen.resx">
       <DependentUpon>failScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\BattleScreen.resx">
       <DependentUpon>BattleScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\HowToPlay.resx">
+      <DependentUpon>HowToPlay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\RemoveCharacter.resx">
       <DependentUpon>RemoveCharacter.cs</DependentUpon>
@@ -1083,6 +1101,7 @@
     <None Include="Resources\Monster_1.png" />
     <None Include="Resources\Monster_2.png" />
     <None Include="Resources\Monster_3.png" />
+    <None Include="Resources\darkBackground.jpg" />
     <Content Include="UserFile.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
