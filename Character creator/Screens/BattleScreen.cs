@@ -15,8 +15,9 @@ namespace Character_creator
     public partial class BattleScreen : UserControl
     {
         //Battle Sounds
-        SoundPlayer battleSound = new SoundPlayer(Properties.Resources.No_mercy_Hipis_1227409429);
-
+        SoundPlayer monsterSound = new SoundPlayer(Properties.Resources.No_mercy_Hipis_1227409429);
+        SoundPlayer knifeThrow = new SoundPlayer(Properties.Resources.Throw_Knife_Anonymous_1894795848);
+        SoundPlayer ripSound = new SoundPlayer(Properties.Resources.Rip_Arm_Off_SoundBible_com_1079968039);
         // strings for attacks
         string attack1, attack2, attack3;
         bool attackMade = false;
@@ -279,7 +280,19 @@ namespace Character_creator
             attackOneButton.Enabled = false;
             attackTwoButton.Enabled = false;
             attackThreeButton.Enabled = false;
-            battleSound.Play();
+            if (ranNum.Next(1, 10) > 8)
+            {
+                monsterSound.Play();
+
+            }
+           else if (ranNum.Next(1, 10) <= 8 && ranNum.Next(1,10) >= 4)
+            {
+                knifeThrow.Play();
+            }
+            else
+            {
+                ripSound.Play();
+            }
             Thread.Sleep(1000);
 
                 //takes a certain amount off the players health

@@ -1102,6 +1102,7 @@
     <None Include="Resources\Monster_2.png" />
     <None Include="Resources\Monster_3.png" />
     <None Include="Resources\darkBackground.jpg" />
+    <None Include="Resources\Throw_Knife-Anonymous-1894795848.wav" />
     <Content Include="UserFile.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

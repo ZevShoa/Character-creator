@@ -2758,6 +2758,15 @@ namespace Character_creator.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream Throw_Knife_Anonymous_1894795848 {
+            get {
+                return ResourceManager.GetStream("Throw_Knife_Anonymous_1894795848", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap WaveLevel {
