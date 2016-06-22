@@ -8,11 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace Character_creator
 {
     public partial class BattleScreen : UserControl
     {
+        //Battle Sounds
+        SoundPlayer battleSound = new SoundPlayer(Properties.Resources.No_mercy_Hipis_1227409429);
+
         // strings for attacks
         string attack1, attack2, attack3;
         bool attackMade = false;
@@ -275,7 +279,7 @@ namespace Character_creator
             attackOneButton.Enabled = false;
             attackTwoButton.Enabled = false;
             attackThreeButton.Enabled = false;
-
+            battleSound.Play();
             Thread.Sleep(1000);
 
                 //takes a certain amount off the players health
