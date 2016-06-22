@@ -19,6 +19,9 @@ namespace Character_creator
         public reviewScreen()
         {
             InitializeComponent();
+            BattleScreen.humanHealth = 100;
+            BattleScreen.humanEnergy = 100;
+
         }
 
         //used the class to make a character

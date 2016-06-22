@@ -29,7 +29,6 @@ namespace Character_creator
         public MainMenu()
         {
             InitializeComponent();
-
             
         }
 
