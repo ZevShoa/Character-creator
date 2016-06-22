@@ -169,7 +169,7 @@ namespace Character_creator
                     }
                     else if (index == 6)
                     {
-                        charImage = Image.FromFile(reader.Value);
+                        //charImage = Image.FromFile(reader.Value);
                         //charImage = System.Resources.ResourceManager(Reader.Value, typeof(Resources).Assembly);
                         index = 1;
                         Character newChar = new Character(charName, clothes, weapon, gender, colour, charImage, 300, 250, 5);
