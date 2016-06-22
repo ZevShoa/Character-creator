@@ -23,11 +23,14 @@ namespace Character_creator
         int monsterStart;
         public static bool battleOver = false;
         public static int totalScore;
+        public static bool gamePlayed = false;
         int counter = 0;
 
         public GameScreen()
         {
             InitializeComponent();
+            if(gamePlayed == false)
+            { 
             Monsters m = new Monsters(-300, 400, 150, 5, 0);
             monsterList.Add(m);
             m.monsterImages = new Image[] { Properties.Resources.Monster_1, Properties.Resources.Monster_2, Properties.Resources.Monster_3 };
@@ -36,6 +39,7 @@ namespace Character_creator
             changeDirectionRight = true;
             changeDirectionLeft = true;
             start = true;
+                 }
         }
 
         private void GameScreen_Load(object sender, EventArgs e)
