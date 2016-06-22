@@ -323,11 +323,11 @@ namespace Character_creator
                 win = false;
                 GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
                 //goes back to battle screen to calculate score and then goes to fail screen from there
-                Form f = this.FindForm();
-                f.Controls.Remove(this);
+                Form s = this.FindForm();
+                s.Controls.Remove(this);
                 failScreen fs = new failScreen();
-                f.Controls.Add(fs);
-                fs.Location = new Point((f.Width - fs.Width) / 2, (f.Height - fs.Height) / 2);
+                s.Controls.Add(fs);
+                fs.Location = new Point((s.Width - fs.Width) / 2, (s.Height - fs.Height) / 2);
             }
             else
             {
