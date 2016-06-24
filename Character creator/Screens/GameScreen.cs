@@ -31,15 +31,14 @@ namespace Character_creator
             InitializeComponent();
             if(gamePlayed == false)
             { 
-            Monsters m = new Monsters(-300, 400, 150, 5, 0);
-            monsterList.Add(m);
+          Monsters m = new Monsters(-300, 400, 150, 5, 0);
             m.monsterImages = new Image[] { Properties.Resources.Monster_1, Properties.Resources.Monster_2, Properties.Resources.Monster_3 };
             background = new Image[] { Properties.Resources.WaveLevel, Properties.Resources.GameBackground, Properties.Resources.jungleBattle, Properties.Resources.OptionBG };
             aArrowDown = dArrowDown = spaceArrowDown = false;
             changeDirectionRight = true;
             changeDirectionLeft = true;
             start = true;
-                 }
+           }
         }
 
         private void GameScreen_Load(object sender, EventArgs e)
@@ -207,6 +206,7 @@ namespace Character_creator
             {
                 monsterStart = rand.Next(0, 2);
                 Monsters newMon = null;
+               
                 if (monsterStart == 1)
                 {
                     monsterList.RemoveAt(0);
@@ -217,10 +217,12 @@ namespace Character_creator
                     monsterList.RemoveAt(0);
                     newMon = new Monsters(900, 400, 300, 4, rand.Next(0, 3));
                 }
-                monsterList.Add(newMon);
+           
+               
                 totalScore = totalScore + BattleScreen.scoreIncrease;
                 BattleScreen.win = false;
                 battleOver = false;
+                
                 Refresh();
             }
             #endregion
