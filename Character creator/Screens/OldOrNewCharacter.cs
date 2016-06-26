@@ -44,6 +44,7 @@ namespace Character_creator
                 rc.Location = new Point((f.Width - rc.Width) / 2, (f.Height - rc.Height) / 2);
                 f.Controls.Add(rc);
             }
+            characterint = 0;
         }
 
         private void selectOldCharacterButton_Click(object sender, EventArgs e)
@@ -67,6 +68,7 @@ namespace Character_creator
                     {
                         MainMenu.space1 = false;
                         char1Button.Text = MainMenu.userList[i].character1;
+                        characterint++;
                     }
                     else
                     {
@@ -76,6 +78,7 @@ namespace Character_creator
                     {
                         MainMenu.space2 = false;
                         char2Button.Text = MainMenu.userList[i].character2;
+                        characterint++;
                     }
                     else
                     {
@@ -85,6 +88,7 @@ namespace Character_creator
                     {
                         MainMenu.space1 = false;
                         char3Button.Text = MainMenu.userList[i].character3;
+                        characterint++;
                     }
                     else
                     {

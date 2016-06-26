@@ -145,14 +145,12 @@ namespace Character_creator
 
         private void BattleScreen_Load(object sender, EventArgs e)
         {
+            MainMenu.musicStopped = true;
             this.BackgroundImage = GameScreen.background[GameScreen.position];
             announcerLabel.Text = reviewScreen.ch.name + "'s Turn";
             //puts the image of your character into the picture box
             characterBox.Image = reviewScreen.ch.picture;
-            foreach (Monsters m in GameScreen.monsterList)
-            {
-                monsterBox.Image = m.monsterImages[m.type];
-            }
+            monsterBox.Image = GameScreen.monsterImages[GameScreen.m.type];
 
             #region Attack Choices
             //choosing a number for base attack
@@ -296,16 +294,16 @@ namespace Character_creator
             Thread.Sleep(1000);
 
                 //takes a certain amount off the players health
-                switch (GameScreen.monsterList[0].type)
+                switch (GameScreen.m.type)
                 {
                     case 0:
-                        humanHealth -= ranNum.Next(1, 20);
+                        humanHealth -= ranNum.Next(1, 8);
                         break;
                     case 1:
-                        humanHealth -= ranNum.Next(20, 40);
+                        humanHealth -= ranNum.Next(9, 17);
                         break;
                     case 2:
-                        humanHealth -= ranNum.Next(20, 50);
+                        humanHealth -= ranNum.Next(18, 26);
                         break;
                     default:
                         break;
@@ -368,43 +366,14 @@ namespace Character_creator
                 //changes screens 
                 GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
                 battleTimer.Enabled = false;
-                Form f = this.FindForm();
-                f.Controls.Remove(this);
-                GiftScreen gs = new GiftScreen();
-                f.Controls.Add(gs);
-                gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+                Form s = this.FindForm();
+                s.Controls.Remove(this);
+                GiftScreen gft = new GiftScreen();
+                s.Controls.Add(gft);
+                gft.Location = new Point((s.Width - gft.Width) / 2, (s.Height - gft.Height) / 2);
             }
         
-            if(humanEnergy <= 0)
-            {
-                //adds health and energy to score and subtracts the health of the monster, but doesnt allow
-                //the increase to be negative
-                if (humanEnergy + humanHealth - monsterHealth > 0)
-                {
-                    scoreIncrease = humanEnergy + humanHealth - monsterHealth;
-                }
-                else
-                {
-                    scoreIncrease = 0;
-                }
-                GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
-                //an abusive comment about the user 
-                phraseNum = ranNum.Next(0, 6);
-                announcerLabel.Text = annoucerPhrases[phraseNum];
-                Thread.Sleep(2000);
-                Refresh();
-                battleTimer.Enabled = false;
-               
-                //so other screens can know the outcome of the battle
-                win = false;
-
-                //goes back to battle screen to calculate score and then goes to fail screen from there
-                Form f = this.FindForm();
-                f.Controls.Remove(this);
-                failScreen gs = new failScreen();
-                f.Controls.Add(gs);
-                gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
-            }
+           
         }
     }
 }

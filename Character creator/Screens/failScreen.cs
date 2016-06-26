@@ -20,6 +20,12 @@ namespace Character_creator
 
         private void failScreen_Load(object sender, EventArgs e)
         {
+            if (MainMenu.musicStopped == true)
+            {
+                Form1.player.PlayLooping();
+                MainMenu.musicStopped = false;
+            }
+
             //shows players score
             scoreLabel.Text = "Score: " + Convert.ToString(GameScreen.totalScore);
             int i = 0;
@@ -35,6 +41,7 @@ namespace Character_creator
                     {
                         highScoreabel.Text = "New High Score: " + GameScreen.totalScore;
                         MainMenu.userList[i].score = Convert.ToString(GameScreen.totalScore);
+                        BackStory.runOnce = true;
                     }
                 }
                 i++;

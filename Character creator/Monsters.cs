@@ -9,7 +9,6 @@ namespace Character_creator
 {
    public class Monsters
     {
-        public Image[] monsterImages;
         public int x, y, size, speed, type;
         public Monsters(int _x, int _y, int _size, int _speed, int _type)
         {

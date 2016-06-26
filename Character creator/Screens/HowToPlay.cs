@@ -13,6 +13,7 @@ namespace Character_creator
 {
     public partial class BackStory : UserControl
     {
+        public static bool runOnce = true;
         public BackStory()
         {
             InitializeComponent();

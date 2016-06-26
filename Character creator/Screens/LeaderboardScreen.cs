@@ -13,9 +13,6 @@ namespace Character_creator
 {
     public partial class LeaderboardScreen : UserControl
     {
-        //List<Highscore> scoreList = new List<Highscore>();
-        List<int> scoreList = new List<int>();
-        int topFiveOrLess;
 
         public LeaderboardScreen()
         {
@@ -44,33 +41,14 @@ namespace Character_creator
 
         private void LeaderboardScreen_Load(object sender, EventArgs e)
         {
-            //checks each user in the userlist 
-            int i = 0;
-            foreach (User newUser in MainMenu.userList)
-            {
-                //converts the users score at that location to an int value and adds it to a list
-                scoreList.Add(Convert.ToInt16(MainMenu.userList[i].score));
-                i++;
-            }
-            i = 0;
-            //sorts the list from smallest to largest score
-            scoreList.Sort();
-            scoreList.Reverse();
-            if (scoreList.Count >= 5)
-            {
-                topFiveOrLess = 5;
-            }
-            else
-            {
-                topFiveOrLess = scoreList.Count;
-            }
 
+            int i = 0;
             //displays, in order, the top 5 scores and their users name
-            for (int s = 0; s <= topFiveOrLess - 1; s++)
+            for (int s = 0; s <= MainMenu.topFiveOrLess - 1; s++)
             {
                 foreach (User newUser in MainMenu.userList)
                 {
-                    if (Convert.ToInt16(MainMenu.userList[i].score) == scoreList[s])
+                    if (Convert.ToInt16(MainMenu.userList[i].score) == MainMenu.scoreList[s])
                     {
                         label1.Text = label1.Text + "\n" + MainMenu.userList[i].username + ": " + MainMenu.userList[i].score;
                         break;

@@ -12,6 +12,8 @@ namespace Character_creator
 {
     public partial class GiftScreen : UserControl
     {
+        Random rand = new Random();
+        int monsterStart;
         public GiftScreen()
         {
             InitializeComponent();
@@ -19,6 +21,15 @@ namespace Character_creator
 
         private void continueButton_Click(object sender, EventArgs e)
         {
+            monsterStart = rand.Next(0, 2);
+            if (monsterStart == 0)
+            {
+                GameScreen.m = new Monsters(-300, 400, 300, 4, rand.Next(0, 3));
+            }
+            if (monsterStart == 1)
+            {
+                GameScreen.m = new Monsters(900, 400, 300, 4, rand.Next(0, 3));
+            }
             Form f = this.FindForm();
             f.Controls.Remove(this);
             GameScreen gs = new GameScreen();
@@ -28,8 +39,14 @@ namespace Character_creator
 
         private void GiftScreen_Load(object sender, EventArgs e)
         {
-            battleScoreLabel.Text = Convert.ToString(BattleScreen.scoreIncrease);
-            totalScoreLabel.Text = Convert.ToString(GameScreen.totalScore);
+            if (MainMenu.musicStopped == true)
+            {
+                Form1.player.PlayLooping();
+                MainMenu.musicStopped = false;
+            }
+
+            battleScoreLabel.Text = "Battle Score: " + Convert.ToString(BattleScreen.scoreIncrease);
+            totalScoreLabel.Text = "Total Score: " + Convert.ToString(GameScreen.totalScore);
             if (BattleScreen.scoreIncrease >= 80)
             {
                 energyGiftLabel.Text = Convert.ToString(100 - BattleScreen.humanEnergy) + "% Energy";

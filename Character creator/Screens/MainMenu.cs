@@ -12,13 +12,16 @@ using System.Xml;
 namespace Character_creator
 {
     public partial class MainMenu : UserControl
-    { 
+    {
         // Integers, strings, lists, and bools that are called later throughout the program
+        public static bool musicStopped = false;
         public static List<User> userList = new List<User>();
+        public static List<int> scoreList = new List<int>();
         public static bool failure = false;
         public static bool space1 = true;
         public static bool space2 = true;
         public static bool space3 = true;
+        public static int topFiveOrLess = 0;
         string name, password, score, char1, char2, char3;
         string charName, clothes, colour, weapon,  gender;
         Image finalPic;
@@ -80,7 +83,6 @@ namespace Character_creator
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-
             // Open the file to be read
             XmlTextReader reader = new XmlTextReader("UserFile.xml");
 
@@ -522,355 +524,355 @@ namespace Character_creator
                                 break;
                             case "Fist":
 
-                                switch(gender)
-            {
-                case "Female":
-                                switch (colour)
+                                switch (gender)
                                 {
-                                    case "Purple":
-                                        switch (clothes)
+                                    case "Female":
+                                        switch (colour)
                                         {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.femalePurpleKnightFist;
+                                            case "Purple":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.femalePurpleKnightFist;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.femalePurpleMageFist;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.femalePurplePeasantFist;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.femalePurpleDeprivedFist;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.femalePurpleThiefFist;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.femalePurpleMageFist;
+                                            case "Yellow":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.femaleYellowKnightFist;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.femaleYellowMageFist;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.femaleYellowPeasantFist;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.femaleYellowDeprivedFist;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.femaleYellowThiefFist;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.femalePurplePeasantFist;
+                                            case "Red":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.femaleRedKnightFist;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.femaleRedMageFist;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.femaleRedPeasantFist;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.femaleRedDeprivedFist;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.femaleRedThiefFist;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.femalePurpleDeprivedFist;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.femalePurpleThiefFist;
+                                            case "Green":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.femaleGreenKnightFist;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.femaleGreenMageFist;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.femaleGreenPeasantFist;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.femaleGreenDeprivedFist;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.femaleGreenThiefFist;
+                                                        break;
+                                                }
                                                 break;
                                         }
                                         break;
-                                    case "Yellow":
-                                        switch (clothes)
+                                    case "Male":
+                                        switch (colour)
                                         {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.femaleYellowKnightFist;
+                                            case "Purple":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.malePurpleKnightFist;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.malePurpleMageFist;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.malePurplePeasantFist;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.malePurpleDeprivedFist;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.malePurpleThiefFist;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.femaleYellowMageFist;
+                                            case "Yellow":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.maleYellowKnightFist;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.maleYellowMageFist;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.maleYellowPeasantFist;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.maleYellowDeprivedFist;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.maleYellowThiefFist;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.femaleYellowPeasantFist;
+                                            case "Red":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.maleRedKnightFist;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.maleRedMageFist;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.maleRedPeasantFist;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.maleRedDeprivedFist;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.maleRedTheifFist;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.femaleYellowDeprivedFist;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.femaleYellowThiefFist;
-                                                break;
-                                        }
-                                        break;
-                                    case "Red":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.femaleRedKnightFist;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.femaleRedMageFist;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.femaleRedPeasantFist;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.femaleRedDeprivedFist;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.femaleRedThiefFist;
-                                                break;
-                                        }
-                                        break;
-                                    case "Green":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.femaleGreenKnightFist;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.femaleGreenMageFist;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.femaleGreenPeasantFist;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.femaleGreenDeprivedFist;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.femaleGreenThiefFist;
+                                            case "Green":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.maleGreenKnightFist;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.maleGreenMageFist;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.maleGreenPeasantFist;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.maleGreenDeprivedFist;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.maleGreenThiefFist;
+                                                        break;
+                                                }
                                                 break;
                                         }
                                         break;
                                 }
                                 break;
-                            case "Male":
-                                switch (colour)
+                            case "Axe":
+                                switch (gender)
                                 {
-                                    case "Purple":
-                                        switch (clothes)
+                                    case "Female":
+                                        switch (colour)
                                         {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.malePurpleKnightFist;
+                                            case "Purple":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.femalePurpleKnightAxe;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.femalePurpleMageAxe;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.femalePurplePeasantAxe;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.femalePurpleDeprivedAxe;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.femalePurpleThiefAxe;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.malePurpleMageFist;
+                                            case "Yellow":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.femaleYellowKnightAxe;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.femaleYellowMageAxe;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.femaleYellowPeasantAxe;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.femaleYellowDeprivedAxe;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.femaleYellowThiefAxe;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.malePurplePeasantFist;
+                                            case "Red":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.femaleRedKnightAxe;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.femaleRedMageAxe;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.femaleRedPeasantAxe;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.femaleRedDeprivedAxe;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.femaleRedThiefAxe;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.malePurpleDeprivedFist;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.malePurpleThiefFist;
+                                            case "Green":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.femaleGreenKnightAxe;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.femaleGreenMageAxe;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.femaleGreenPeasantAxe;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.femaleGreenDeprivedAxe;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.femaleGreenThiefAxe;
+                                                        break;
+                                                }
                                                 break;
                                         }
                                         break;
-                                    case "Yellow":
-                                        switch (clothes)
+                                    case "Male":
+                                        switch (colour)
                                         {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.maleYellowKnightFist;
+                                            case "Purple":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.malePurpleKnightAxe;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.malePurpleMageAxe;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.malePurplePeasantAxe;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.malePurpleDeprivedAxe;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.malePurpleThiefAxe;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.maleYellowMageFist;
+                                            case "Yellow":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.maleYellowKnightAxe;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.maleYellowMageAxe;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.maleYellowPeasantAxe;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.maleYellowDeprivedAxe;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.maleYellowThiefAxe;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.maleYellowPeasantFist;
+                                            case "Red":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.maleRedKnightAxe;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.maleRedMageAxe;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.maleRedPeasantAxe;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.maleRedDeprivedAxe;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.maleRedTheifAxe;
+                                                        break;
+                                                }
                                                 break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.maleYellowDeprivedFist;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.maleYellowThiefFist;
-                                                break;
-                                        }
-                                        break;
-                                    case "Red":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.maleRedKnightFist;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.maleRedMageFist;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.maleRedPeasantFist;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.maleRedDeprivedFist;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.maleRedTheifFist;
-                                                break;
-                                        }
-                                        break;
-                                    case "Green":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.maleGreenKnightFist;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.maleGreenMageFist;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.maleGreenPeasantFist;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.maleGreenDeprivedFist;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.maleGreenThiefFist;
+                                            case "Green":
+                                                switch (clothes)
+                                                {
+                                                    case "Knight":
+                                                        finalPic = Properties.Resources.maleGreenKnightAxe;
+                                                        break;
+                                                    case "Mage":
+                                                        finalPic = Properties.Resources.maleGreenMageAxe;
+                                                        break;
+                                                    case "Peasant":
+                                                        finalPic = Properties.Resources.maleGreenPeasantAxe;
+                                                        break;
+                                                    case "Deprived":
+                                                        finalPic = Properties.Resources.maleGreenDeprivedAxe;
+                                                        break;
+                                                    case "Rogue":
+                                                        finalPic = Properties.Resources.maleGreenThiefAxe;
+                                                        break;
+                                                }
                                                 break;
                                         }
                                         break;
                                 }
                                 break;
-                        }
-                        break;
-                        case "Axe":
-                         switch (gender)
-                        {
-                            case "Female":
-                                switch (colour)
-                                {
-                                    case "Purple":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.femalePurpleKnightAxe;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.femalePurpleMageAxe;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.femalePurplePeasantAxe;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.femalePurpleDeprivedAxe;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.femalePurpleThiefAxe;
-                                                break;
-                                        }
-                                        break;
-                                    case "Yellow":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.femaleYellowKnightAxe;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.femaleYellowMageAxe;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.femaleYellowPeasantAxe;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.femaleYellowDeprivedAxe;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.femaleYellowThiefAxe;
-                                                break;
-                                        }
-                                        break;
-                                    case "Red":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.femaleRedKnightAxe;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.femaleRedMageAxe;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.femaleRedPeasantAxe;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.femaleRedDeprivedAxe;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.femaleRedThiefAxe;
-                                                break;
-                                        }
-                                        break;
-                                    case "Green":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.femaleGreenKnightAxe;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.femaleGreenMageAxe;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.femaleGreenPeasantAxe;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.femaleGreenDeprivedAxe;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.femaleGreenThiefAxe;
-                                                break;
-                                        }
-                                        break;
-                                }
-                                break;
-                            case "Male":
-                                switch (colour)
-                                {
-                                    case "Purple":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.malePurpleKnightAxe;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.malePurpleMageAxe;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.malePurplePeasantAxe;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.malePurpleDeprivedAxe;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.malePurpleThiefAxe;
-                                                break;
-                                        }
-                                        break;
-                                    case "Yellow":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.maleYellowKnightAxe;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.maleYellowMageAxe;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.maleYellowPeasantAxe;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.maleYellowDeprivedAxe;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.maleYellowThiefAxe;
-                                                break;
-                                        }
-                                        break;
-                                    case "Red":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.maleRedKnightAxe;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.maleRedMageAxe;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.maleRedPeasantAxe;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.maleRedDeprivedAxe;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.maleRedTheifAxe;
-                                                break;
-                                        }
-                                        break;
-                                    case "Green":
-                                        switch (clothes)
-                                        {
-                                            case "Knight":
-                                                finalPic = Properties.Resources.maleGreenKnightAxe;
-                                                break;
-                                            case "Mage":
-                                                finalPic = Properties.Resources.maleGreenMageAxe;
-                                                break;
-                                            case "Peasant":
-                                                finalPic = Properties.Resources.maleGreenPeasantAxe;
-                                                break;
-                                            case "Deprived":
-                                                finalPic = Properties.Resources.maleGreenDeprivedAxe;
-                                                break;
-                                            case "Rogue":
-                                                finalPic = Properties.Resources.maleGreenThiefAxe;
-                                                break;
-                                        }
-                                        break;
-                                }
-                                break;
-                        }
-                        break;
                             case "Daggar":
                                 switch (gender)
                                 {
@@ -1059,6 +1061,30 @@ namespace Character_creator
             Reader.Close();
             index = 1;
 
+            if (BackStory.runOnce == true)
+            {
+                //checks each user in the userlist 
+                int i = 0;
+                foreach (User newUser in MainMenu.userList)
+                {
+                    //converts the users score at that location to an int value and adds it to a list
+                    scoreList.Add(Convert.ToInt16(MainMenu.userList[i].score));
+                    i++;
+                }
+                i = 0;
+                //sorts the list from smallest to largest score
+                scoreList.Sort();
+                scoreList.Reverse();
+                if (scoreList.Count >= 5)
+                {
+                    topFiveOrLess = 5;
+                }
+                else
+                {
+                    topFiveOrLess = scoreList.Count;
+                }
+                BackStory.runOnce = false;
+            }
         }
     }
 }

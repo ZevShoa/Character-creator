@@ -13,14 +13,15 @@ namespace Character_creator
 {
     public partial class GameScreen : UserControl
     {
+        int monsterStart;
+        public static Image[] monsterImages;
         Boolean aArrowDown, dArrowDown, spaceArrowDown, changeDirectionRight, changeDirectionLeft, start;
-        public static List<Monsters> monsterList = new List<Monsters>();
         public static Image [] background;
         public static int battleNum = 0;
+        public static Monsters m;
         string movement = "left";
         public static int position = 0;
         Random rand = new Random();
-        int monsterStart;
         public static bool battleOver = false;
         public static int totalScore;
         public static bool gamePlayed = false;
@@ -29,20 +30,25 @@ namespace Character_creator
         public GameScreen()
         {
             InitializeComponent();
-            if(gamePlayed == false)
-            { 
-          Monsters m = new Monsters(-300, 400, 150, 5, 0);
-            m.monsterImages = new Image[] { Properties.Resources.Monster_1, Properties.Resources.Monster_2, Properties.Resources.Monster_3 };
+            monsterImages = new Image[] { Properties.Resources.Monster_1, Properties.Resources.Monster_2, Properties.Resources.Monster_3 };
             background = new Image[] { Properties.Resources.WaveLevel, Properties.Resources.GameBackground, Properties.Resources.jungleBattle, Properties.Resources.OptionBG };
             aArrowDown = dArrowDown = spaceArrowDown = false;
             changeDirectionRight = true;
             changeDirectionLeft = true;
             start = true;
-           }
         }
 
         private void GameScreen_Load(object sender, EventArgs e)
         {
+            monsterStart = rand.Next(0, 2);
+            if (monsterStart == 0)
+            {
+                GameScreen.m = new Monsters(-300, 400, 300, 4, rand.Next(0, 3));
+            }
+            if (monsterStart == 1)
+            {
+                GameScreen.m = new Monsters(900, 400, 300, 4, rand.Next(0, 3));
+            }
             this.Focus();
             gameTimer.Enabled = true;
         }
@@ -130,10 +136,7 @@ namespace Character_creator
                 else if (reviewScreen.ch.x <= 0)
                 {
                     reviewScreen.ch.x = this.Width - 200;
-                    foreach( Monsters m in monsterList)
-                    {
-                        m.x = m.x + this.Width;
-                    }
+                    m.x = m.x + this.Width;
                     if (position > 0)
                     {
                         position--;
@@ -156,11 +159,7 @@ namespace Character_creator
                 else if (reviewScreen.ch.x >= this.Width - 200)
                 {
                     reviewScreen.ch.x = 0;
-
-                    foreach (Monsters m in monsterList)
-                    {
-                        m.x = m.x - this.Width;
-                    }
+                    m.x = m.x - this.Width;
                     if (position < 2)
                     {
                         position++;
@@ -177,8 +176,6 @@ namespace Character_creator
             #endregion
 
             #region Monster Movement
-            foreach (Monsters m in monsterList)
-            {
                 if (reviewScreen.ch.x > m.x)
                 {
                     m.move(m, "right");
@@ -187,44 +184,14 @@ namespace Character_creator
                 {
                     m.move(m, "left");
                 }
-            }
             #endregion
 
             #region Collision
             //if the monster and character collide the battlescreen opens
-            foreach (Monsters m in monsterList)
-            {
                 if (m.monsterCollision(m, reviewScreen.ch) == true)
                 {
                     battleMove();
                 }
-            }
-
-            //if the battle was won, the monster is removed, score is updated and a new
-            //random monster is created
-            if (BattleScreen.win == true && battleOver == true)
-            {
-                monsterStart = rand.Next(0, 2);
-                Monsters newMon = null;
-               
-                if (monsterStart == 1)
-                {
-                    monsterList.RemoveAt(0);
-                    newMon = new Monsters(-300, 400, 300, 4, rand.Next(0, 3));
-                }
-                if (monsterStart == 2)
-                {
-                    monsterList.RemoveAt(0);
-                    newMon = new Monsters(900, 400, 300, 4, rand.Next(0, 3));
-                }
-           
-               
-                totalScore = totalScore + BattleScreen.scoreIncrease;
-                BattleScreen.win = false;
-                battleOver = false;
-                
-                Refresh();
-            }
             #endregion
 
             #region Deplete Energy Replenish Health
@@ -280,11 +247,7 @@ namespace Character_creator
 
             ((Bitmap)reviewScreen.ch.picture).MakeTransparent(((Bitmap)reviewScreen.ch.picture).GetPixel(1, 1));
             this.BackColor = System.Drawing.Color.Transparent;
-
-            foreach (Monsters m in monsterList)
-            {
-                 e.Graphics.DrawImage(m.monsterImages[m.type], m.x, m.y, 150, 150);
-            }
+            e.Graphics.DrawImage(monsterImages[m.type], m.x, m.y, 150, 150);
             charHealthLabel.Location = new Point(reviewScreen.ch.x + 50, 180);
             charEnergyLabel.Location = new Point(reviewScreen.ch.x + 50, 200);
             charHealthBar.Location = new Point(reviewScreen.ch.x + 50 + 80, 180);
