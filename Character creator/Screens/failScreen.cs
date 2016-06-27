@@ -41,6 +41,7 @@ namespace Character_creator
                     {
                         highScoreabel.Text = "New High Score: " + GameScreen.totalScore;
                         MainMenu.userList[i].score = Convert.ToString(GameScreen.totalScore);
+                        MainMenu.scoreList.RemoveRange(0, 5);
                         BackStory.runOnce = true;
                     }
                 }

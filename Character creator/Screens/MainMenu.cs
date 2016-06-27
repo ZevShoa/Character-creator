@@ -83,6 +83,7 @@ namespace Character_creator
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
+            this.Focus();
             // Open the file to be read
             XmlTextReader reader = new XmlTextReader("UserFile.xml");
 

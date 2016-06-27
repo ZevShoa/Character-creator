@@ -366,11 +366,11 @@ namespace Character_creator
                 //changes screens 
                 GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
                 battleTimer.Enabled = false;
-                Form s = this.FindForm();
-                s.Controls.Remove(this);
-                GiftScreen gft = new GiftScreen();
-                s.Controls.Add(gft);
-                gft.Location = new Point((s.Width - gft.Width) / 2, (s.Height - gft.Height) / 2);
+                Form f = this.FindForm();
+                f.Controls.Remove(this);
+                GiftScreen gs = new GiftScreen();
+                gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+                f.Controls.Add(gs);
             }
         
            
