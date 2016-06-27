@@ -27,8 +27,10 @@ namespace Character_creator
 
         private void newCharacterButton_Click(object sender, EventArgs e)
         {
+            //looks to see if there are already three characters made
             if (characterint < 3)
             {
+                //moves on if there are less than three
                 signUpScreen.createdUser = true;
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
@@ -38,6 +40,7 @@ namespace Character_creator
             }
             if (characterint == 3)
             {
+                //moces to different form to remove character
                 Form f = this.FindForm();
                 f.Controls.Remove(this);
                 RemoveCharacter rc = new RemoveCharacter();
@@ -49,6 +52,7 @@ namespace Character_creator
 
         private void selectOldCharacterButton_Click(object sender, EventArgs e)
         {
+            //uses a character the user already made and goes straight to review screen
             characterName = char3Button.Text;
             Form f = this.FindForm();
             f.Controls.Remove(this);
@@ -59,6 +63,7 @@ namespace Character_creator
 
         private void OldOrNewCharacter_Load(object sender, EventArgs e)
         {
+            //looks for all the characters the user has made
             int i = 0;
             foreach (User newUser in MainMenu.userList)
             {
@@ -102,10 +107,11 @@ namespace Character_creator
                 }
                 i++;
             }
-         }
+        }
 
         private void char1Button_Click(object sender, EventArgs e)
         {
+            //loads first character 
             characterName = char1Button.Text;
             Form f = this.FindForm();
             f.Controls.Remove(this);
@@ -116,6 +122,7 @@ namespace Character_creator
 
         private void char2Button_Click(object sender, EventArgs e)
         {
+            //loads second character
             characterName = char2Button.Text;
             Form f = this.FindForm();
             f.Controls.Remove(this);
@@ -124,4 +131,4 @@ namespace Character_creator
             f.Controls.Add(rs);
         }
     }
-}
+}   

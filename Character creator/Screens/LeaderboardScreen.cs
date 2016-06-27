@@ -20,7 +20,7 @@ namespace Character_creator
             // adding highscore of new player
             //Highscore h = new Highscore(GameScreen.totalScore, MainMenu.playerName);
             InitializeComponent();
-            
+
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -41,7 +41,6 @@ namespace Character_creator
 
         private void LeaderboardScreen_Load(object sender, EventArgs e)
         {
-
             int i = 0;
             //displays, in order, the top 5 scores and their users name
             for (int s = 0; s <= MainMenu.topFiveOrLess - 1; s++)
@@ -59,4 +58,4 @@ namespace Character_creator
             }
         }
     }
-}          
+}         

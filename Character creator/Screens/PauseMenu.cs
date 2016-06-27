@@ -25,6 +25,7 @@ namespace Character_creator
 
         private void optionsButton_Click(object sender, EventArgs e)
         {
+            // goes to option screen
             gameStart = true;
             Form z = this.FindForm();
             z.Controls.Remove(this);
@@ -35,9 +36,10 @@ namespace Character_creator
 
         private void resumeButton_Click(object sender, EventArgs e)
         {
+            //goes back to game screen
             Form z = this.FindForm();
             z.Controls.Remove(this);
-           GameScreen gs = new GameScreen();
+            GameScreen gs = new GameScreen();
             gs.Location = new Point((z.Width - gs.Width) / 2, (z.Height - gs.Height) / 2);
             z.Controls.Add(gs);
         }

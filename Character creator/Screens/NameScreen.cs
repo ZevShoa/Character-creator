@@ -18,7 +18,7 @@ namespace Character_creator
         int nameLength;
         int nextLetter;
         int vowel;
-        bool alreadyMade; 
+        bool alreadyMade;
         // created a list with all the letters of the alphabet in it
         string[] letters = {"a","e","i","o","u","y","g","h","c","j",
             "k","l","m","n","d","p","q","r","s","t","b","v","w","x","f","z"};
@@ -105,6 +105,7 @@ namespace Character_creator
                 }
                 else
                 {
+                    //if there is a name that already exists then the user cant use it
                     errorLabel.Text = "Character Name Already Exists";
                 }
             }
@@ -114,11 +115,6 @@ namespace Character_creator
         {
             // if they want to close the program down
             Application.Exit();
-        }
-
-        private void NameScreen_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

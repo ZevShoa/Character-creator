@@ -19,7 +19,7 @@ namespace Character_creator
         {
             InitializeComponent();
         }
-       
+
         private void LoginScreen_Load(object sender, EventArgs e)
         {
             //makes sure you cant have more than 8 characters
@@ -51,11 +51,11 @@ namespace Character_creator
         {
             //saves all the stuff
             int i = 0;
-            foreach(User newUser in MainMenu.userList)
+            foreach (User newUser in MainMenu.userList)
             {
-                if(MainMenu.userList[i].username == usernameBox.Text)
+                if (MainMenu.userList[i].username == usernameBox.Text)
                 {
-                    if(MainMenu.userList[i].password == passwordBox.Text)
+                    if (MainMenu.userList[i].password == passwordBox.Text)
                     {
                         MainMenu.playerName = usernameBox.Text;
                         signUpScreen.createdUser = false;
@@ -64,7 +64,7 @@ namespace Character_creator
                         OldOrNewCharacter onc = new OldOrNewCharacter();
                         onc.Location = new Point((f.Width - onc.Width) / 2, (f.Height - onc.Height) / 2);
                         f.Controls.Add(onc);
-                        break;   
+                        break;
                     }
                     else
                     {
@@ -76,7 +76,6 @@ namespace Character_creator
                 i++;
             }
         }
-        
 
         private void exitButton_Click(object sender, EventArgs e)
         {
@@ -88,13 +87,11 @@ namespace Character_creator
         {
             //makes sure that there is no odd characters
             errorProvider1.Clear();
-
-
             string error = null;
 
             var regex = new Regex(@"[^a-zA-Z0-9]");
             if (regex.IsMatch(usernameBox.Text))
-   
+
             {
                 error = "This character is invalid";
                 e.Cancel = true;
@@ -106,8 +103,6 @@ namespace Character_creator
         {
             //make sure that ther is no characters
             errorProvider1.Clear();
-
-
             string error = null;
 
             var regex = new Regex(@"[^a-zA-Z0-9]");
@@ -123,7 +118,7 @@ namespace Character_creator
         private void passwordBox_TextChanged(object sender, EventArgs e)
         {
             //makes the characters in the password box asterisks
-           passwordBox.PasswordChar = '*';
+            passwordBox.PasswordChar = '*';
         }
     }
 }

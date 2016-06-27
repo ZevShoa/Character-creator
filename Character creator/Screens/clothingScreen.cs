@@ -30,7 +30,7 @@ namespace Character_creator
             switch (GenderScreen.gender)
             {
                 case "Female":
-                   switch(colorScreen.color)
+                    switch (colorScreen.color)
                     {
                         case "Purple":
                             clothingBox.Image = Properties.Resources.femalePurpleKnight;

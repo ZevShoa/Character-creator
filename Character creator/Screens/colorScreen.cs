@@ -18,19 +18,17 @@ namespace Character_creator
         {
             InitializeComponent();
         }
-      
 
         private void colorScreen_Load(object sender, EventArgs e)
         {
             // sets label to users name
-            nameLabel.Text = NameScreen.name;   
+            nameLabel.Text = NameScreen.name;
         }
-        //all of the code to make the pictures of the different colors and genders appear when mouse hovers over the 
-        //buttons
+        //all of the code to make the pictures of the different colors and genders appear when mouse hovers over the buttons
         #region mouse enter/leave
         private void purpleButton_MouseEnter(object sender, EventArgs e)
         {
-            switch(GenderScreen.gender)
+            switch (GenderScreen.gender)
             {
                 case "Female":
                     colorBox.Image = Properties.Resources.Female_Purple;

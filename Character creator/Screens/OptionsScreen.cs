@@ -17,13 +17,9 @@ namespace Character_creator
             InitializeComponent();
         }
 
-        private void volumeBar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void menuButton_Click(object sender, EventArgs e)
         {
+            //either goes to pause menu or to main menu
             if (PauseMenu.gameStart == true)
             {
                 Form f = this.FindForm();
@@ -49,7 +45,8 @@ namespace Character_creator
 
         private void OptionsScreen_Load(object sender, EventArgs e)
         {
-            if(PauseMenu.gameStart == true)
+            //changes text in menubutton
+            if (PauseMenu.gameStart == true)
             {
                 menuButton.Text = "Back To Pause Menu";
             }

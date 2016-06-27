@@ -13,7 +13,7 @@ namespace Character_creator
     public partial class weaponScreen : UserControl
     {
         //set the weapon variable and the final pic
-        public static  string weapon;
+        public static string weapon;
         public static Image finalPic;
         public weaponScreen()
         {
@@ -33,7 +33,7 @@ namespace Character_creator
         private void weaponScreen_Load(object sender, EventArgs e)
         {
             //the name of the user is loaded
-            nameLabel.Text = NameScreen.name;           
+            nameLabel.Text = NameScreen.name;
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -982,7 +982,7 @@ namespace Character_creator
                                     finalPic = Properties.Resources.femalePurpleDeprivedSword;
                                     break;
                                 case "Rogue":
-                                    finalPic =Properties.Resources.femalePurpleThiefSword;
+                                    finalPic = Properties.Resources.femalePurpleThiefSword;
                                     break;
                             }
                             break;
@@ -990,7 +990,7 @@ namespace Character_creator
                             switch (clothingScreen.clothing)
                             {
                                 case "Knight":
-                                    finalPic =Properties.Resources.femaleYellowKnightSword;
+                                    finalPic = Properties.Resources.femaleYellowKnightSword;
                                     break;
                                 case "Mage":
                                     finalPic = Properties.Resources.femaleYellowMageSword;

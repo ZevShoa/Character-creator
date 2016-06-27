@@ -68,14 +68,14 @@
     <Compile Include="Screens\failScreen.Designer.cs">
       <DependentUpon>failScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Monsters.cs" />
+    <Compile Include="Classes\Monsters.cs" />
     <Compile Include="Screens\BattleScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Screens\BattleScreen.Designer.cs">
       <DependentUpon>BattleScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Character.cs" />
+    <Compile Include="Classes\Character.cs" />
     <Compile Include="Screens\RemoveCharacter.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,7 +174,7 @@
     <Compile Include="Screens\signUpScreen.Designer.cs">
       <DependentUpon>signUpScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
+    <Compile Include="Classes\User.cs" />
     <EmbeddedResource Include="Screens\GiftScreen.resx">
       <DependentUpon>GiftScreen.cs</DependentUpon>
     </EmbeddedResource>

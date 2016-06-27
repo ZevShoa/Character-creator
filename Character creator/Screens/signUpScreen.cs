@@ -24,6 +24,7 @@ namespace Character_creator
 
         private void signUpScreen_Load(object sender, EventArgs e)
         {
+            //makes sure user cant go beyond 8 characters
             usernameBox.MaxLength = 8;
             passwordBox.MaxLength = 8;
 
@@ -31,14 +32,13 @@ namespace Character_creator
 
         private void passwordBox_Validating(object sender, CancelEventArgs e)
         {
+            //makes it so user cant use special or odd characters
             errorProvider1.Clear();
-
-
             string error = null;
 
             var regex = new Regex(@"[^a-zA-Z0-9]");
             if (regex.IsMatch(passwordBox.Text))
-          
+
             {
                 error = "This character is invalid";
                 e.Cancel = true;
@@ -48,17 +48,16 @@ namespace Character_creator
 
         private void passwordBox_TextChanged(object sender, EventArgs e)
         {
+            //any characters in the password box just look like *
             passwordBox.PasswordChar = '*';
         }
 
         private void usernameBox_Validating(object sender, CancelEventArgs e)
         {
-
+            //makes it so user cant use special or odd characters
             errorProvider1.Clear();
-            
-
             string error = null;
-            
+
             var regex = new Regex(@"[^a-zA-Z0-9]");
             if (regex.IsMatch(usernameBox.Text))
             //    if (usernameBox.Text.Length < 3)
@@ -69,8 +68,6 @@ namespace Character_creator
             errorProvider1.SetError((Control)sender, error);
         }
 
-
-
         private void exitButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -78,6 +75,7 @@ namespace Character_creator
 
         private void clickLogInLabel_Click(object sender, EventArgs e)
         {
+            //goes to login screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
             LoginScreen ls = new LoginScreen();
@@ -87,6 +85,7 @@ namespace Character_creator
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            //goes back to main menu
             Form f = this.FindForm();
             f.Controls.Remove(this);
             MainMenu mm = new MainMenu();
@@ -96,6 +95,7 @@ namespace Character_creator
 
         private void signInButton_Click(object sender, EventArgs e)
         {
+            //checks to see if that account already exist and if not makes a spot for you in the user XML file
             MainMenu.playerName = usernameBox.Text;
             int z = 0;
             foreach (User newUser in MainMenu.userList)
@@ -142,7 +142,7 @@ namespace Character_creator
                     writer.WriteEndElement();
                     MainMenu.playerName = MainMenu.userList[i].username;
                 }
-                
+
                 writer.WriteEndElement();
                 writer.Close();
 
@@ -155,4 +155,4 @@ namespace Character_creator
             MainMenu.failure = false;
         }
     }
-}
+}   
