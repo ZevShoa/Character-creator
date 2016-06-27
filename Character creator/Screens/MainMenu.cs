@@ -1,4 +1,8 @@
-﻿using System;
+﻿///Character Creator by Mackenzie Quigley, Zev Shoag and Liam Westman 
+/// June 27th, 2016
+/// A full login screen, sign up screen, in depth character creator
+/// and a small monster fighting game
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -23,7 +27,7 @@ namespace Character_creator
         public static bool space3 = true;
         public static int topFiveOrLess = 0;
         string name, password, score, char1, char2, char3;
-        string charName, clothes, colour, weapon,  gender;
+        string charName, clothes, colour, weapon, gender;
         Image finalPic;
         public static List<Character> characterList = new List<Character>();
         public static string playerName;
@@ -32,7 +36,7 @@ namespace Character_creator
         public MainMenu()
         {
             InitializeComponent();
-            
+
         }
 
         private void loginButton_Click(object sender, EventArgs e)
@@ -60,7 +64,7 @@ namespace Character_creator
             // Go to leaderboard
             Form f = this.FindForm();
             f.Controls.Remove(this);
-           LeaderboardScreen ls = new LeaderboardScreen();
+            LeaderboardScreen ls = new LeaderboardScreen();
             ls.Location = new Point((f.Width - ls.Width) / 2, (f.Height - ls.Height) / 2);
             f.Controls.Add(ls);
         }
@@ -77,7 +81,7 @@ namespace Character_creator
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            //Im not sure what this one does
+            //Closes program
             Application.Exit();
         }
 
@@ -140,6 +144,7 @@ namespace Character_creator
             while (Reader.Read())
             {
                 // the loop repeats getting the next piece of information
+                #region Information getting
                 if (Reader.NodeType == XmlNodeType.Text)
                 {
                     if (index == 1)
@@ -1049,7 +1054,7 @@ namespace Character_creator
                                 }
                                 break;
                         }
-
+                        #endregion
                         index = 1;
                         Character newChar = new Character(charName, clothes, weapon, gender, colour, finalPic, 300, 250, 5);
                         characterList.Add(newChar);

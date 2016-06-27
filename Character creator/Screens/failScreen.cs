@@ -20,13 +20,14 @@ namespace Character_creator
 
         private void failScreen_Load(object sender, EventArgs e)
         {
+            //keeps music playing
             if (MainMenu.musicStopped == true)
             {
                 Form1.player.PlayLooping();
                 MainMenu.musicStopped = false;
             }
 
-            //shows players score
+            //shows and then saves players score
             scoreLabel.Text = "Score: " + Convert.ToString(GameScreen.totalScore);
             int i = 0;
             foreach (User newUser in MainMenu.userList)
@@ -44,6 +45,7 @@ namespace Character_creator
                         BackStory.runOnce = true;
                     }
                 }
+
                 i++;
             }
 
@@ -70,8 +72,7 @@ namespace Character_creator
                 writer.WriteElementString("score", MainMenu.userList[i].score);
                 writer.WriteElementString("character1", MainMenu.userList[i].character1);
                 writer.WriteElementString("character2", MainMenu.userList[i].character2);
-                writer.WriteElementString("character3", MainMenu.userList[i].character3);
-               
+                writer.WriteElementString("character3", MainMenu.userList[i].character3);   
 
                 // end the "Employee" element
                 writer.WriteEndElement();

@@ -20,6 +20,7 @@ namespace Character_creator
 
         private void menuButton_Click(object sender, EventArgs e)
         {
+            //goes to a different screen to choose a character 
             Form f = this.FindForm();
             f.Controls.Remove(this);
             OldOrNewCharacter onc = new OldOrNewCharacter();
@@ -27,9 +28,9 @@ namespace Character_creator
             f.Controls.Add(onc);
         }
 
-
         private void char1Button_Click(object sender, EventArgs e)
         {
+            //looks to see if first spot is free
             int i = 0;
             foreach (User newUser in MainMenu.userList)
             {
@@ -37,12 +38,12 @@ namespace Character_creator
                 {
                     signUpScreen.createdUser = true;
                     MainMenu.userList[i].character1 = "space";
-                        MainMenu.space1 = true;
-                        Form f = this.FindForm();
-                        f.Controls.Remove(this);
-                        NameScreen ns = new NameScreen();
-                        ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
-                        f.Controls.Add(ns);
+                    MainMenu.space1 = true;
+                    Form f = this.FindForm();
+                    f.Controls.Remove(this);
+                    NameScreen ns = new NameScreen();
+                    ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
+                    f.Controls.Add(ns);
                 }
                 i++;
             }
@@ -50,6 +51,7 @@ namespace Character_creator
 
         private void char2Button_Click(object sender, EventArgs e)
         {
+            //looks to see of second spot is free
             int i = 0;
             foreach (User newUser in MainMenu.userList)
             {
@@ -57,13 +59,12 @@ namespace Character_creator
                 {
                     signUpScreen.createdUser = true;
                     MainMenu.userList[i].character2 = "space";
-                        MainMenu.space2 = true;
-                        Form f = this.FindForm();
-                        f.Controls.Remove(this);
-                        NameScreen ns = new NameScreen();
-                        ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
-                        f.Controls.Add(ns);
-                   
+                    MainMenu.space2 = true;
+                    Form f = this.FindForm();
+                    f.Controls.Remove(this);
+                    NameScreen ns = new NameScreen();
+                    ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
+                    f.Controls.Add(ns);
                 }
                 i++;
             }
@@ -71,19 +72,20 @@ namespace Character_creator
 
         private void char3Button_Click(object sender, EventArgs e)
         {
+            //looks to see if third spot is free
             int i = 0;
             foreach (User newUser in MainMenu.userList)
             {
                 if (MainMenu.userList[i].username == MainMenu.playerName)
                 {
-                        signUpScreen.createdUser = true;
-                        MainMenu.userList[i].character3 = "space";
-                        MainMenu.space3 = true;
-                        Form f = this.FindForm();
-                        f.Controls.Remove(this);
-                        NameScreen ns = new NameScreen();
-                        ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
-                        f.Controls.Add(ns);
+                    signUpScreen.createdUser = true;
+                    MainMenu.userList[i].character3 = "space";
+                    MainMenu.space3 = true;
+                    Form f = this.FindForm();
+                    f.Controls.Remove(this);
+                    NameScreen ns = new NameScreen();
+                    ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
+                    f.Controls.Add(ns);
                 }
                 i++;
             }
@@ -91,14 +93,15 @@ namespace Character_creator
 
         private void RemoveCharacter_Load(object sender, EventArgs e)
         {
+            //sets character boxes to the name of the characters the player has
             int i = 0;
             foreach (User newUser in MainMenu.userList)
             {
                 if (MainMenu.userList[i].username == MainMenu.playerName)
                 {
-                        char1Button.Text = MainMenu.userList[i].character1;
-                        char2Button.Text = MainMenu.userList[i].character2;
-                        char3Button.Text = MainMenu.userList[i].character3;
+                    char1Button.Text = MainMenu.userList[i].character1;
+                    char2Button.Text = MainMenu.userList[i].character2;
+                    char3Button.Text = MainMenu.userList[i].character3;
                 }
                 i++;
             }

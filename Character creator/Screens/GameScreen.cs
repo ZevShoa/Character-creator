@@ -13,10 +13,11 @@ namespace Character_creator
 {
     public partial class GameScreen : UserControl
     {
+        //creates all the variables needed for the game
         int monsterStart;
         public static Image[] monsterImages;
         Boolean aArrowDown, dArrowDown, spaceArrowDown, changeDirectionRight, changeDirectionLeft, start;
-        public static Image [] background;
+        public static Image[] background;
         public static int battleNum = 0;
         public static Monsters m;
         string movement = "left";
@@ -30,6 +31,7 @@ namespace Character_creator
         public GameScreen()
         {
             InitializeComponent();
+            //creates the lists of monster and background images
             monsterImages = new Image[] { Properties.Resources.Monster_1, Properties.Resources.Monster_2, Properties.Resources.Monster_3 };
             background = new Image[] { Properties.Resources.WaveLevel, Properties.Resources.GameBackground, Properties.Resources.jungleBattle, Properties.Resources.OptionBG };
             aArrowDown = dArrowDown = spaceArrowDown = false;
@@ -40,6 +42,7 @@ namespace Character_creator
 
         private void GameScreen_Load(object sender, EventArgs e)
         {
+            //sets the monster at either the left or the right of the screen and starts gametimer 
             monsterStart = rand.Next(0, 2);
             if (monsterStart == 0)
             {
@@ -55,6 +58,7 @@ namespace Character_creator
 
         private void exitButton_Click(object sender, EventArgs e)
         {
+            //goes to pause menu
             gameTimer.Stop();
             Form f = this.FindForm();
             f.Controls.Remove(this);
@@ -65,6 +69,7 @@ namespace Character_creator
 
         private void GameScreen_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
+            //see if a key is pressed
             switch (e.KeyCode)
             {
                 case Keys.A:
@@ -81,6 +86,7 @@ namespace Character_creator
 
         private void GameScreen_KeyUp(object sender, KeyEventArgs e)
         {
+            //sees if a key is not pressed
             switch (e.KeyCode)
             {
                 case Keys.A:
@@ -103,7 +109,7 @@ namespace Character_creator
             gameTimer.Stop();
             Form f = this.FindForm();
             f.Controls.Remove(this);
-            PauseMenu pm  = new PauseMenu();
+            PauseMenu pm = new PauseMenu();
             pm.Location = new Point((f.Width - pm.Width) / 2, (f.Height - pm.Height) / 2);
             f.Controls.Add(pm);
 
@@ -125,7 +131,7 @@ namespace Character_creator
             {
                 pauseMethod();
             }
-
+            //moving character left and right
             #region Character Movement
             if (aArrowDown == true)
             {
@@ -145,7 +151,7 @@ namespace Character_creator
                     {
                         position = 3;
                     }
-                    
+
                 }
                 movement = "left";
                 changeDirectionRight = true;
@@ -168,35 +174,36 @@ namespace Character_creator
                     {
                         position = 0;
                     }
-                    
+
                 }
                 movement = "right";
                 changeDirectionLeft = true;
             }
             #endregion
 
+            //moving monster to chase the player
             #region Monster Movement
-                if (reviewScreen.ch.x > m.x)
-                {
-                    m.move(m, "right");
-                }
-                else
-                {
-                    m.move(m, "left");
-                }
+            if (reviewScreen.ch.x > m.x)
+            {
+                m.move(m, "right");
+            }
+            else
+            {
+                m.move(m, "left");
+            }
             #endregion
 
             #region Collision
             //if the monster and character collide the battlescreen opens
-                if (m.monsterCollision(m, reviewScreen.ch) == true)
-                {
-                    battleMove();
-                }
+            if (m.monsterCollision(m, reviewScreen.ch) == true)
+            {
+                battleMove();
+            }
             #endregion
 
             #region Deplete Energy Replenish Health
             //ever 30 sec will take away 1 energy and add 1 health
-            if(counter/10 >= 30)
+            if (counter / 10 >= 30)
             {
                 if (BattleScreen.humanEnergy > 0)
                 {
@@ -210,7 +217,7 @@ namespace Character_creator
                     f.Controls.Add(fs);
                     fs.Location = new Point((f.Width - fs.Width) / 2, (f.Height - fs.Height) / 2);
                 }
-                if(BattleScreen.humanHealth < 100)
+                if (BattleScreen.humanHealth < 100)
                 {
                     BattleScreen.humanEnergy++;
                 }
@@ -227,7 +234,7 @@ namespace Character_creator
             this.BackgroundImage = background[position];
             if (movement == "right")
             {
-                if(changeDirectionRight == true)
+                if (changeDirectionRight == true)
                 {
                     reviewScreen.ch.picture.RotateFlip(RotateFlipType.Rotate180FlipY);
                     changeDirectionRight = false;
@@ -258,7 +265,7 @@ namespace Character_creator
         /// <summary>
         /// Opens battle screen and pauses timer
         /// </summary>
-        public void battleMove ()
+        public void battleMove()
         {
             gameTimer.Stop();
             Form f = this.FindForm();
@@ -270,4 +277,3 @@ namespace Character_creator
 
     }
 }
-

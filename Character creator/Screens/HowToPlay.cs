@@ -21,6 +21,7 @@ namespace Character_creator
 
         private void HowToPlay_Load(object sender, EventArgs e)
         {
+            //shows the animation and the very beginning of the program
             instructionsLabel.Text = "You";
             Thread.Sleep(200);
             instructionsLabel.Refresh();
@@ -96,6 +97,7 @@ namespace Character_creator
 
         private void startButton_Click(object sender, EventArgs e)
         {
+            //moves to the main menu
             Form f = this.FindForm();
             f.Controls.Remove(this);
             MainMenu mm = new MainMenu();

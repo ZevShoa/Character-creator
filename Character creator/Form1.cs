@@ -1,4 +1,8 @@
-﻿using System;
+﻿///Character Creator by Mackenzie Quigley, Zev Shoag and Liam Westman 
+/// June 27th, 2016
+/// A full login screen, sign up screen, in depth character creator
+/// and a small monster fighting game
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

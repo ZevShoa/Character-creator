@@ -19,9 +19,9 @@ namespace Character_creator
         public reviewScreen()
         {
             InitializeComponent();
+            //sets players energy and heath to 100
             BattleScreen.humanHealth = 100;
             BattleScreen.humanEnergy = 100;
-
         }
 
         //used the class to make a character
@@ -29,6 +29,7 @@ namespace Character_creator
 
         private void reviewScreen_Load(object sender, EventArgs e)
         {
+            //displays all information about character that was made
             if (signUpScreen.createdUser == true)
             {
                 charName = NameScreen.name;
@@ -72,16 +73,16 @@ namespace Character_creator
             else
             {
                 int b = 0;
-                foreach(Character ch in MainMenu.characterList)
+                foreach (Character ch in MainMenu.characterList)
                 {
-                    if(MainMenu.characterList[b].name == OldOrNewCharacter.characterName)
+                    if (MainMenu.characterList[b].name == OldOrNewCharacter.characterName)
                     {
                         charName = MainMenu.characterList[b].name;
                         clothes = MainMenu.characterList[b].clothes;
                         colour = MainMenu.characterList[b].color;
                         weapon = MainMenu.characterList[b].weapon;
                         gender = MainMenu.characterList[b].gender;
-                        charImage = MainMenu.characterList[b].picture;     
+                        charImage = MainMenu.characterList[b].picture;
                     }
                     b++;
                 }
@@ -102,28 +103,27 @@ namespace Character_creator
             //saves users options
             XmlTextWriter writer = new XmlTextWriter("Characters.xml", null);
 
-                writer.WriteStartElement("Characters");
-                for (int z = 0; z < MainMenu.characterList.Count; z++)
-                {
-                    writer.WriteStartElement("Character");
-                    writer.WriteElementString("name", MainMenu.characterList[z].name);
-                    writer.WriteElementString("class", MainMenu.characterList[z].clothes);
-                    writer.WriteElementString("color", MainMenu.characterList[z].color);
-                    writer.WriteElementString("weapon", MainMenu.characterList[z].weapon);
-                    writer.WriteElementString("gender", MainMenu.characterList[z].gender);
-                    writer.WriteElementString("image", "Final Image");
-                    writer.WriteEndElement();
-                }
+            writer.WriteStartElement("Characters");
+            for (int z = 0; z < MainMenu.characterList.Count; z++)
+            {
+                writer.WriteStartElement("Character");
+                writer.WriteElementString("name", MainMenu.characterList[z].name);
+                writer.WriteElementString("class", MainMenu.characterList[z].clothes);
+                writer.WriteElementString("color", MainMenu.characterList[z].color);
+                writer.WriteElementString("weapon", MainMenu.characterList[z].weapon);
+                writer.WriteElementString("gender", MainMenu.characterList[z].gender);
+                writer.WriteElementString("image", "Final Image");
                 writer.WriteEndElement();
-                writer.Close();
-
-                Form f = this.FindForm();
-                f.Controls.Remove(this);
-                GameScreen gs = new GameScreen();
-                f.Controls.Add(gs);
-                gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
-
             }
-      
+            writer.WriteEndElement();
+            writer.Close();
+
+            Form f = this.FindForm();
+            f.Controls.Remove(this);
+            GameScreen gs = new GameScreen();
+            f.Controls.Add(gs);
+            gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
+
+        }
     }
 }

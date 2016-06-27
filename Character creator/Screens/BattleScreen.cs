@@ -31,29 +31,30 @@ namespace Character_creator
         int stinkRan;
         int phraseNum;
         public static int scoreIncrease;
-       public static bool win;
+        public static bool win;
         bool characterTurn = true;
         //abusive comments
         string[] annoucerPhrases = {"That sucked", "Is that really the best you could do?", "Pathetic",
         "lol that was a joke right?", "You dirty swine, what are you doing?"/*Credit to Ben Fortin*/, "WhAt ThE F*Ck ArE yOu DoInG"};
         public BattleScreen()
         {
+            //initializes component
             InitializeComponent();
         }
-        
+
         #region button clicks
         private void attackTwoButton_Click(object sender, EventArgs e)
         {
             attackMade = true;
             //attacks based on class
-            switch(attack2)
+            switch (attack2)
             {
                 case "Healing":
                     if (humanHealth < 80)
                     {
                         humanHealth += ranNum.Next(1, 20);
                     }
-                    if(humanHealth <100 && humanHealth > 80)
+                    if (humanHealth < 100 && humanHealth > 80)
                     {
                         humanHealth = 100;
                     }
@@ -64,24 +65,24 @@ namespace Character_creator
                     {
                         win = true;
                         monsterHealth = 0;
-                        
+
                     }
                     else
                     {
-                       humanEnergy -= ranNum.Next(2, 12);
+                        humanEnergy -= ranNum.Next(2, 12);
                         monsterHealth -= ranNum.Next(1, 15);
                     }
                     break;
                 case "BackStab":
-                   humanEnergy -= ranNum.Next(20, 30);
+                    humanEnergy -= ranNum.Next(20, 30);
                     monsterHealth -= ranNum.Next(20, 35);
                     break;
                 case "Regeneration":
                     humanEnergy += ranNum.Next(5, 13);
                     humanHealth -= ranNum.Next(1, 5);
-                     break;
+                    break;
                 case "Economic Crisis":
-                   humanEnergy -= ranNum.Next(15, 35);
+                    humanEnergy -= ranNum.Next(15, 35);
                     monsterHealth -= ranNum.Next(3, 40);
                     break;
 
@@ -103,12 +104,12 @@ namespace Character_creator
                     monsterHealth -= ranNum.Next(5, 15);
                     break;
                 case "Gentle Poke":
-                   humanEnergy -= ranNum.Next(3, 6);
+                    humanEnergy -= ranNum.Next(3, 6);
                     monsterHealth -= ranNum.Next(1, 6);
                     break;
                 case "Divine Intervention":
                     monsterHealth = 0;
-                    break;                
+                    break;
             }
         }
         private void attackOneButton_Click(object sender, EventArgs e)
@@ -130,7 +131,7 @@ namespace Character_creator
                     monsterHealth -= ranNum.Next(1, 7);
                     break;
                 case "Fireball":
-                   humanEnergy -= ranNum.Next(13, 20);
+                    humanEnergy -= ranNum.Next(13, 20);
                     monsterHealth -= ranNum.Next(18, 25);
                     break;
                 case "Sucker punch":
@@ -145,7 +146,9 @@ namespace Character_creator
 
         private void BattleScreen_Load(object sender, EventArgs e)
         {
+            //stops music
             MainMenu.musicStopped = true;
+            //takes background from where player is in gamescreen
             this.BackgroundImage = GameScreen.background[GameScreen.position];
             announcerLabel.Text = reviewScreen.ch.name + "'s Turn";
             //puts the image of your character into the picture box
@@ -177,7 +180,7 @@ namespace Character_creator
                 attack3 = "Divine Intervention";
             }
             //attacks based on weapons
-             switch (reviewScreen.ch.weapon)
+            switch (reviewScreen.ch.weapon)
             {
                 case "Axe":
                     // high energy high attack
@@ -202,7 +205,7 @@ namespace Character_creator
                 default:
                     break;
             }
-            switch(reviewScreen.ch.clothes)
+            switch (reviewScreen.ch.clothes)
             {
                 case "Knight":
                     //raises own health high drain on energy
@@ -222,8 +225,8 @@ namespace Character_creator
                     break;
                 case "Peasant":
                     ///nothing really happens on some turns since oligarchs don't care about the peasants
-                   /// but might have big impact on monster 
-                   /// Lots of energy being used though  
+                    /// but might have big impact on monster 
+                    /// Lots of energy being used though  
                     attack2 = "Economic Crisis";
                     break;
                 default:
@@ -241,6 +244,7 @@ namespace Character_creator
         {
             try
             {
+                //shows how much health and energy the player and monster havex
                 playerHealthBar.Value = humanHealth;
                 playerHealthLabel.Text = Convert.ToString(humanHealth) + "%";
                 playerEnergyBar.Value = humanEnergy;
@@ -250,11 +254,12 @@ namespace Character_creator
             }
             catch
             {
+
                 playerTurn();
                 monsterTurn();
             }
-
-           if (characterTurn == true)
+            //run stuff for player to have they're turn
+            if (characterTurn == true)
             {
                 if (attackMade == true)
                 {
@@ -262,6 +267,7 @@ namespace Character_creator
                     characterTurn = false;
                 }
             }
+            //run stuff for monster to have its turn
             else if (characterTurn == false)
             {
                 monsterTurn();
@@ -278,12 +284,12 @@ namespace Character_creator
             attackOneButton.Enabled = false;
             attackTwoButton.Enabled = false;
             attackThreeButton.Enabled = false;
+            //different sounds
             if (ranNum.Next(1, 10) > 8)
             {
                 monsterSound.Play();
-
             }
-           else if (ranNum.Next(1, 10) <= 8 && ranNum.Next(1,10) >= 4)
+            else if (ranNum.Next(1, 10) <= 8 && ranNum.Next(1, 10) >= 4)
             {
                 knifeThrow.Play();
             }
@@ -293,21 +299,21 @@ namespace Character_creator
             }
             Thread.Sleep(1000);
 
-                //takes a certain amount off the players health
-                switch (GameScreen.m.type)
-                {
-                    case 0:
-                        humanHealth -= ranNum.Next(1, 8);
-                        break;
-                    case 1:
-                        humanHealth -= ranNum.Next(9, 17);
-                        break;
-                    case 2:
-                        humanHealth -= ranNum.Next(18, 26);
-                        break;
-                    default:
-                        break;
-                }
+            //takes a certain amount off the players health
+            switch (GameScreen.m.type)
+            {
+                case 0:
+                    humanHealth -= ranNum.Next(1, 8);
+                    break;
+                case 1:
+                    humanHealth -= ranNum.Next(9, 17);
+                    break;
+                case 2:
+                    humanHealth -= ranNum.Next(18, 26);
+                    break;
+                default:
+                    break;
+            }
             Thread.Sleep(1000);
 
             if (humanHealth <= 0 || humanEnergy <= 0)
@@ -329,7 +335,7 @@ namespace Character_creator
                 announcerLabel.Refresh();
                 Thread.Sleep(2000);
                 battleTimer.Enabled = false;
-       
+
                 //so other screens can know the outcome of the battle
                 win = false;
                 GameScreen.totalScore = GameScreen.totalScore + scoreIncrease;
@@ -372,8 +378,6 @@ namespace Character_creator
                 s.Controls.Add(gft);
                 gft.Location = new Point((s.Width - gft.Width) / 2, (s.Height - gft.Height) / 2);
             }
-        
-           
         }
     }
 }

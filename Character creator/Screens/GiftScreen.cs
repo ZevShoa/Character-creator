@@ -18,7 +18,11 @@ namespace Character_creator
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// sets next monster and moves to game screen
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void continueButton_Click(object sender, EventArgs e)
         {
             monsterStart = rand.Next(0, 2);
@@ -36,7 +40,11 @@ namespace Character_creator
             f.Controls.Add(gs);
             gs.Location = new Point((f.Width - gs.Width) / 2, (f.Height - gs.Height) / 2);
         }
-
+        /// <summary>
+        /// saves all scores, shows the player the score and gives player some energy and health
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void GiftScreen_Load(object sender, EventArgs e)
         {
             if (MainMenu.musicStopped == true)

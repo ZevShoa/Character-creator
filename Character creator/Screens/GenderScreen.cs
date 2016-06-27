@@ -13,7 +13,7 @@ namespace Character_creator
     public partial class GenderScreen : UserControl
     {
         public static string gender;
-        
+
         public GenderScreen()
         {
             InitializeComponent();
@@ -23,7 +23,7 @@ namespace Character_creator
         {
             //sets the label to the users name
             nameLabel.Text = NameScreen.name;
-        } 
+        }
         private void maleButton_Click(object sender, EventArgs e)
         {
             //sets the variable of gender to male and calls method to move to next screen
@@ -74,7 +74,7 @@ namespace Character_creator
             //moves back a screen
             Form f = this.FindForm();
             f.Controls.Remove(this);
-           NameScreen ns = new NameScreen();
+            NameScreen ns = new NameScreen();
             f.Controls.Add(ns);
             ns.Location = new Point((f.Width - ns.Width) / 2, (f.Height - ns.Height) / 2);
 
